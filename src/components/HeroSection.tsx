@@ -89,7 +89,7 @@ const HeroSection = () => {
         >
           <div className="relative rounded-[2rem] overflow-hidden surface-card p-0">
             <img
-              src={headshot}
+              src={headshot.url}
               alt="Marissa Cohen, social media and executive communications marketer"
               className="w-full h-[22rem] md:h-[26rem] object-cover object-[center_20%]"
             />
