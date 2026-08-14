@@ -31,6 +31,7 @@ const NavBar = () => {
       <div className="flex items-center gap-8">
         {[
           { label: "Work", id: "work" },
+          { label: "Words", id: "writing" },
           { label: "Experience", id: "experience" },
           { label: "About", id: "about" },
           { label: "Contact", id: "contact" },
