@@ -211,13 +211,13 @@ const ProjectDetail = () => {
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className={`overflow-hidden rounded-3xl bg-muted relative ${isKHWide ? "md:col-span-2 lg:col-span-3 aspect-video" : isBecoming ? "lg:col-span-4 h-[380px]" : isHumanitas ? "aspect-video" : "aspect-square"}`}
+                  className={`overflow-hidden rounded-3xl bg-muted relative ${isBecoming ? "lg:col-span-4 h-[380px]" : isHumanitas ? "aspect-video" : "aspect-square"}`}
                 >
                   <img
                     src={img}
                     alt={`${project.title} gallery ${i + 1}`}
-                    className={`w-full h-full ${isKHWide || isHumanitas ? "object-contain bg-muted" : isBecoming ? "object-cover object-center" : "object-cover"}`}
-                    style={isElevateMug ? { objectPosition: 'center center', transform: 'scale(1.4)' } : (isBecoming && i === 4) ? { objectPosition: '60% center' } : undefined}
+                    className={`w-full h-full ${isHumanitas ? "object-contain bg-muted" : isBecoming ? "object-cover object-center" : "object-cover"}`}
+                    style={(isBecoming && i === 4) ? { objectPosition: '60% center' } : undefined}
                     loading="lazy"
                     />
                     {isBecoming && i === 0 && (
