@@ -87,11 +87,11 @@ const HeroSection = () => {
           className="justify-self-center lg:justify-self-end w-full max-w-sm"
         >
           <div className="relative rounded-[2rem] overflow-hidden surface-card p-0">
-            <img
-              src={headshot.url}
-              alt="Marissa Cohen, social media and executive communications marketer"
-              className="w-full h-[22rem] md:h-[26rem] object-cover object-[center_20%]"
-            />
+          <img
+            src="/headshot.png"
+            alt="Marissa Cohen, social media and executive communications marketer"
+            className="w-full h-[22rem] md:h-[26rem] object-cover object-[center_20%]"
+          />
           </div>
         </motion.div>
       </div>
