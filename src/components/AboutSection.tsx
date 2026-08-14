@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import headshot from "@/assets/headshot.png";
 
 const AboutSection = () =>
   <section id="about" className="py-32 px-8 md:px-16 grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-20 items-center border-t border-border">
@@ -17,7 +16,7 @@ const AboutSection = () =>
 
         <div className="relative w-full h-full rounded-full overflow-hidden bg-card ring-8 ring-card">
           <img
-            src={headshot}
+            src="/headshot.png"
             alt="Marissa Cohen professional headshot"
             className="w-full h-full object-cover scale-150" />
         </div>
