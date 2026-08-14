@@ -35,9 +35,10 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.15, ease: [0.2, 0, 0, 1] }}
           className="text-xl md:text-2xl text-muted-foreground max-w-2xl mb-12"
         >
-          I build the voice behind the leaders and the channels behind the growth —
-          social strategy, executive comms, and launch campaigns for talent, studios,
-          and enterprise teams.
+          I grew up in a family of engineers, snuck into Hollywood anyway, and ended up
+          doing both: writing for the people in front of the camera and marketing the
+          technology behind it. Social strategy and executive communications, mostly in
+          somebody else's voice.
         </motion.p>
         <motion.button
           initial={{ opacity: 0 }}

@@ -11,7 +11,11 @@ const ContactSection = () => (
     >
       Let's talk.
     </motion.h2>
-    <div className="flex justify-center gap-12">
+    <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-12">
+      Looking for a social media or executive communications role where the writing
+      matters. If that's the job you're hiring for, I'd love to hear about it.
+    </p>
+    <div className="flex flex-wrap justify-center gap-4 md:gap-6">
       <a
         href="mailto:marissadcohen@gmail.com"
         className="rounded-full bg-primary text-primary-foreground px-8 py-4 uppercase tracking-widest text-sm font-semibold transition-transform hover:-translate-y-0.5"
@@ -25,6 +29,14 @@ const ContactSection = () => (
         className="rounded-full bg-primary text-primary-foreground px-8 py-4 uppercase tracking-widest text-sm font-semibold transition-transform hover:-translate-y-0.5"
       >
         LinkedIn
+      </a>
+      <a
+        href="https://medium.com/@marissacohen"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="rounded-full border border-primary text-primary px-8 py-4 uppercase tracking-widest text-sm font-semibold transition-transform hover:-translate-y-0.5"
+      >
+        Medium
       </a>
     </div>
   </footer>
