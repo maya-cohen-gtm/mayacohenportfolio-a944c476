@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import headshot from "@/assets/headshot.png";
+import headshot from "@/assets/headshot.png.asset.json";
 
 const HeroSection = () => {
   const scrollToWork = () => {
