@@ -60,6 +60,7 @@ export type Project = {
   tag: string;
   image: string;
   cardImage?: string;
+  metric?: string;
   context: string;
   role: string;
   impact: string;
@@ -72,6 +73,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: "being-henry-book-tour",
+    metric: "NYT Bestseller on launch · 15+ cities",
     brand: "Henry Winkler x Celadon Books",
     title: "Being Henry Book Tour",
     description: "National launch campaign for a NYT bestselling memoir across 15+ cities.",
@@ -94,6 +96,7 @@ export const projects: Project[] = [
   },
   {
     id: "becoming-memoir-launch",
+    metric: "$21M raised in 60 days · 14M copies sold",
     brand: "Tracee Ellis Ross",
     title: "Becoming & PATTERN Beauty GTM",
     description: "Messaging and media training that supported a cultural book launch and a beauty brand debut.",
@@ -107,6 +110,7 @@ export const projects: Project[] = [
   },
   {
     id: "executive-brand-activations",
+    metric: "6+ conferences · 0 walk-backs",
     brand: "The Shade Room",
     title: "CEO Conference Circuit",
     description: "Executive appearances at SXSW, TechCrunch, AfroTech, Beautycon, and ComplexCon.",
@@ -127,6 +131,7 @@ export const projects: Project[] = [
   },
   {
     id: "hbo-barry-emmys",
+    metric: "3.4M viewers/episode · 11 Emmy noms",
     brand: "Henry Winkler x HBO",
     title: "Barry S4 Emmy Campaign",
     description: "Press, social, and awards campaign for the final season of HBO's Barry.",
@@ -148,6 +153,7 @@ export const projects: Project[] = [
   },
   {
     id: "infosys-instep-25",
+    metric: "25-year milestone · Fortune 500 internal launch",
     brand: "Infosys",
     title: "InStep 25th Anniversary",
     description: "AI demos and main-stage keynote content for a Fortune 500 milestone event.",
@@ -161,6 +167,7 @@ export const projects: Project[] = [
   },
   {
     id: "humanitas-prize-42",
+    metric: "Live social from the floor · 42nd annual",
     brand: "The Humanitas Prize",
     title: "42nd Humanitas Awards",
     description: "Owned the live social feed for a Hollywood awards ceremony, in real time from the floor.",
@@ -174,6 +181,7 @@ export const projects: Project[] = [
   },
   {
     id: "pipex-virtual-launch",
+    metric: "3,000+ employees · 80%+ tool adoption",
     brand: "DreamWorks Animation",
     title: "PipelineX Virtual Launch",
     description: "Live virtual activations that launched the first cloud-native animation pipeline.",
