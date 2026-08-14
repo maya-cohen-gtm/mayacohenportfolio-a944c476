@@ -17,7 +17,7 @@ const AboutSection = () =>
 
         <div className="relative w-full h-full rounded-full overflow-hidden bg-card ring-8 ring-card">
           <img
-            src={headshot}
+            src={headshot.url}
             alt="Marissa Cohen professional headshot"
             className="w-full h-full object-cover scale-150" />
         </div>
