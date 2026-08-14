@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 const ContactSection = () => (
-  <footer id="contact" className="py-32 px-8 md:px-16 text-center border-t border-border">
+  <footer id="contact" className="py-32 px-8 md:px-16 text-center border-t border-border pastel-bg">
     <motion.h2
       initial={{ opacity: 0, y: 16 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -9,12 +9,12 @@ const ContactSection = () => (
       transition={{ duration: 0.8 }}
       className="text-5xl md:text-7xl font-semibold text-foreground mb-12 tracking-tighter"
     >
-      Let's build.
+      Let's talk.
     </motion.h2>
     <div className="flex justify-center gap-12">
       <a
-        href="mailto:mayacohen033@gmail.com"
-        className="text-primary uppercase tracking-widest text-sm hover:line-through transition-all"
+        href="mailto:marissadcohen@gmail.com"
+        className="rounded-full bg-primary text-primary-foreground px-8 py-4 uppercase tracking-widest text-sm font-semibold transition-transform hover:-translate-y-0.5"
       >
         Email
       </a>
@@ -22,7 +22,7 @@ const ContactSection = () => (
         href="https://www.linkedin.com/in/mayadcohen/"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-primary uppercase tracking-widest text-sm hover:line-through transition-all"
+        className="rounded-full bg-primary text-primary-foreground px-8 py-4 uppercase tracking-widest text-sm font-semibold transition-transform hover:-translate-y-0.5"
       >
         LinkedIn
       </a>
