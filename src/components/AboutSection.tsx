@@ -31,22 +31,38 @@ const AboutSection = () =>
 
       <h2 className="label-text mb-8">About</h2>
       <p className="text-lg text-foreground leading-relaxed mb-6">
-        I'm a social media and executive communications marketer in Los Angeles. As
-        Chief of Staff to Henry Winkler, I led executive communications and social
-        strategy across a 3M+ follower digital network, growing Facebook likes 495%,
-        YouTube views 42,425%, and YouTube subscribers 4,035% in two years, while
-        managing an $8M+ annual influencer and social budget.
+        Most of my best work has somebody else's name on it. That's the job. For two
+        years I was Chief of Staff to Henry Winkler, which meant learning a
+        seventy-something legend's cadence well enough that three million people
+        couldn't tell where he stopped and I started — and then keeping the channels,
+        the calendar, and an $8M+ influencer budget running underneath it.
       </p>
       <p className="text-lg text-foreground leading-relaxed mb-6">
-        Before that I built the internal comms engine at DreamWorks Animation for
-        PipelineX — a weekly campaign to 3,000+ employees, a newsletter with 22,000+
-        downloads, and a 70-page website redesign — and launched Michelle Obama's
-        <em> Becoming</em> and the #MeToo Movement Fund at Joy Mill Entertainment.
+        The numbers were good (Facebook +495%, YouTube views up from a nearly dormant
+        channel to +42,425%, subscribers +4,035%), but the part I'd actually tell you
+        about over coffee is the voice guide — one page, his rhythms, the words he'd
+        never say — and how much faster everything moved once the whole team had it.
+      </p>
+      <p className="text-lg text-foreground leading-relaxed mb-6">
+        Before that I was at DreamWorks Animation, translating a cloud migration into
+        something 3,000 artists would willingly read on a Monday, and at Joy Mill
+        Entertainment, where I helped launch Michelle Obama's <em>Becoming</em> and the
+        #MeToo Movement Fund. Different rooms, same problem: find the true sentence,
+        then get it in front of the right people.
       </p>
       <p className="text-lg text-foreground leading-relaxed mb-8">
-        <strong>USC Marshall MBA</strong> (Dean's List, Forté Fellow) and
-        <strong> Swarthmore College</strong> Political Science, 3.9 GPA. VP Marketing
-        of Graduate Women in Business, where I drove over 200% social growth.
+        <strong>USC Marshall MBA</strong> (Dean's List, Forté Fellow),{" "}
+        <strong>Swarthmore College</strong> Political Science. Based in Los Angeles.
+        Currently consulting on social and exec comms — and{" "}
+        <a
+          href="https://medium.com/@marissacohen"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary font-semibold hover:underline underline-offset-4"
+        >
+          writing about it on Medium
+        </a>
+        .
       </p>
       <div className="divider mb-8" />
       <div className="flex flex-wrap gap-2">
