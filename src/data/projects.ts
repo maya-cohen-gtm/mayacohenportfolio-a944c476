@@ -97,7 +97,7 @@ export const projects: Project[] = [
     brand: "Tracee Ellis Ross",
     title: "Becoming & PATTERN Beauty GTM",
     description: "Messaging and media training that supported a cultural book launch and a beauty brand debut.",
-    tag: "Campaigns",
+    tag: "Executive Comms",
     image: patternMacysHero,
     context: "In 2018, Michelle Obama launched Becoming, a #1 New York Times Bestseller and one of the best-selling memoirs in publishing history. Tracee Ellis Ross, coming off a viral Glamour Women of the Year speech, was selected as a key press figure in the Becoming campaign, including a high-profile New York Times interview with Obama herself. In 2019, Tracee launched PATTERN Beauty, a curly haircare line built around Tracee's personal brand. To prepare for this launch, Ross needed a strategic creative partner to help shape her approach to the material.",
     role: "Leading executive communications for Tracee Ellis Ross, I built the positioning and messaging frameworks that anchored her role as a key press figure in the GTM campaign for one of the most culturally significant book launches of the decade: Becoming by Michelle Obama. This included selecting and synthesizing thematic content from the memoir, structuring talking points, and developing media training materials used directly in her New York Times interview with Michelle Obama. I also advised on strategy and content for her Glamour Women of the Year speech, which went viral and led directly to her TED2018 invitation. Working sessions took place across Los Angeles including on the set of Black-ish. In parallel I supported the Time's Up movement at the C-suite level, converting live executive meeting notes into messaging and positioning frameworks for the GTM launch of their legal defense fund.",
@@ -110,7 +110,7 @@ export const projects: Project[] = [
     brand: "The Shade Room",
     title: "CEO Conference Circuit",
     description: "Executive appearances at SXSW, TechCrunch, AfroTech, Beautycon, and ComplexCon.",
-    tag: "Social Media",
+    tag: "Executive Comms",
     image: tsrComplexconFloor,
     context: "The Shade Room is one of the most influential multimedia brands in Black culture, reaching 40 million people weekly with 1.5 billion impressions, described by Refinery29 as the Oprah of our generation. As the brand expanded its executive presence across the tech and culture conference circuit, its founder & CEO required a strategic operational partner to manage high-stakes appearances across some of the most competitive stages in the industry.",
     role: "As Chief of Staff to the Founder & CEO of The Shade Room, I coordinated executive appearances across a portfolio of major tech and culture conventions including SXSW, TechCrunch Disrupt, AfroTech, Beautycon, and ComplexCon. I owned end-to-end vendor coordination and event logistics for each appearance, and contributed to messaging and positioning work including talking points developed for the CEO's on-stage presence. Each activation required translating the TSR brand voice into a professional conference context while maintaining the cultural authenticity the brand is known for.",
@@ -151,7 +151,7 @@ export const projects: Project[] = [
     brand: "Infosys",
     title: "InStep 25th Anniversary",
     description: "AI demos and main-stage keynote content for a Fortune 500 milestone event.",
-    tag: "Events",
+    tag: "Executive Comms",
     image: infosysCover,
     context: "In 2025, Infosys celebrated the 25th anniversary of its InStep global internship program, one of the largest and most recognized internship programs in enterprise technology. The milestone required internal activations that could communicate the program's legacy and future direction across a diverse employee audience ranging from associates to C-suite executives.",
     role: "As MBA Intern directly supporting the Global Head of Brand at Infosys, I contributed to the anniversary activation across multiple workstreams. I created live product demos showcasing Azure-native AI agent capabilities, developed sales enablement decks used across the event, presented to internal audiences spanning associates through C-suite, and wrote live keynote content for the main stage presentation at the celebration.",
@@ -177,7 +177,7 @@ export const projects: Project[] = [
     brand: "DreamWorks Animation",
     title: "PipeX Virtual Launch",
     description: "Live virtual activations that launched the first cloud-native animation pipeline.",
-    tag: "Executive Comms",
+    tag: "Campaigns",
     image: pipexTrollsHoliday,
     cardImage: pipexCardCover,
     context: "During the pandemic era production shutdown, DreamWorks Animation undertook a major infrastructure transformation, migrating its film pipeline to the industry-defining PipelineX (PipeX), a proprietary cloud-native production infrastructure. GTMs included PipelineX itself and Trolls: Holiday in Harmony, the first production to run fully on the new system. With in-person events off the table entirely, the studio needed to build internal excitement, drive adoption, and mark key milestones through virtual experiences that could actually cut through widespread Zoom fatigue.",
@@ -188,4 +188,4 @@ export const projects: Project[] = [
   },
 ];
 
-export const filterTags = ["All", "Social Media", "Executive Comms", "Campaigns", "Events"] as const;
+export const filterTags = ["All", "Executive Comms", "Social Media", "Campaigns"] as const;
