@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import heroBg from "@/assets/infosys-gallery-4.jpeg";
 
 const HeroSection = () => {
   const scrollToWork = () => {
@@ -7,43 +6,53 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative h-svh w-full flex flex-col justify-end p-8 md:p-16 overflow-hidden bg-black">
-      <div className="absolute inset-0 z-0">
-        <img src={heroBg} alt="" className="h-full w-full object-cover object-center" />
-      </div>
-      <div className="absolute inset-0 z-[1] bg-black/40" />
-      <div className="absolute inset-0 z-[2] bg-gradient-to-t from-black via-black/50 to-transparent" />
+    <section className="relative min-h-svh w-full flex flex-col justify-center px-8 md:px-16 py-32 overflow-hidden pastel-bg">
+      {/* Soft pastel blobs */}
+      <div className="absolute -top-24 -left-24 w-[28rem] h-[28rem] rounded-full bg-secondary/70 blur-3xl" />
+      <div className="absolute bottom-[-10rem] right-[-6rem] w-[32rem] h-[32rem] rounded-full bg-accent/70 blur-3xl" />
+      <div className="absolute top-1/3 right-1/4 w-72 h-72 rounded-full bg-muted/80 blur-3xl" />
 
-      <div className="relative z-10 max-w-5xl">
+      <div className="relative z-10 max-w-4xl">
+        <motion.span
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          className="label-text mb-6 block"
+        >
+          Social Media &amp; Executive Communications
+        </motion.span>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.2, 0, 0, 1] }}
-          className="text-[clamp(2.5rem,6vw,5.5rem)] leading-[0.9] font-semibold tracking-tighter text-foreground mb-8 whitespace-nowrap">
-          
+          className="text-[clamp(2.75rem,7vw,5.5rem)] leading-[1] font-semibold tracking-tight text-foreground mb-8"
+        >
           Marissa Cohen
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.15, ease: [0.2, 0, 0, 1] }}
-          className="text-xl md:text-2xl text-muted-foreground max-w-2xl mb-12">Product Marketing. Live Product Experiences. B2B2C.
-
-
+          className="text-xl md:text-2xl text-muted-foreground max-w-2xl mb-12"
+        >
+          I build the voice behind the leaders and the channels behind the growth —
+          social strategy, executive comms, and launch campaigns for talent, studios,
+          and enterprise teams.
         </motion.p>
         <motion.button
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           onClick={scrollToWork}
-          className="group flex items-center gap-4 text-primary font-medium tracking-widest uppercase text-sm cursor-pointer">
-          
+          className="group inline-flex items-center gap-3 rounded-full bg-primary text-primary-foreground px-8 py-4 text-sm font-semibold tracking-widest uppercase cursor-pointer transition-transform hover:-translate-y-0.5"
+          style={{ boxShadow: "var(--shadow-soft)" }}
+        >
           <span>See My Work</span>
-          <div className="h-px w-12 bg-primary transition-all duration-500 group-hover:w-20" />
+          <div className="h-px w-8 bg-primary-foreground transition-all duration-500 group-hover:w-14" />
         </motion.button>
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default HeroSection;
