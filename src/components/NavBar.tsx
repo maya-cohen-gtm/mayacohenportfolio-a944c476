@@ -22,7 +22,7 @@ const NavBar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 md:px-16 h-14 transition-colors duration-500 ${
-        scrolled ? "bg-background/95 backdrop-blur-sm border-b border-border" : "bg-transparent"
+        scrolled ? "bg-background/85 backdrop-blur-md border-b border-border" : "bg-transparent"
       }`}
     >
       <a href="/" className="text-primary font-semibold text-lg tracking-tight">
@@ -31,6 +31,7 @@ const NavBar = () => {
       <div className="flex items-center gap-8">
         {[
           { label: "Work", id: "work" },
+          { label: "Experience", id: "experience" },
           { label: "About", id: "about" },
           { label: "Contact", id: "contact" },
         ].map((link) => (

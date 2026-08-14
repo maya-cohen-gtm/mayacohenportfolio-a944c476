@@ -12,22 +12,21 @@ const ActivationCard = ({ project }: { project: Project }) => {
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.6, ease: [0.2, 0, 0, 1] }}
       whileHover={{ y: -8 }}
-      className="group cursor-pointer"
+      className="group cursor-pointer surface-card overflow-hidden"
       onClick={() => navigate(`/project/${project.id}`)}
     >
-      <div className="aspect-[16/9] overflow-hidden bg-muted mb-6 relative">
+      <div className="aspect-[16/9] overflow-hidden bg-muted relative">
         <img
           src={project.cardImage || project.image}
           alt={project.title}
-          className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${project.cardImage ? `object-contain ${project.id === "pipex-virtual-launch" ? "bg-[#0a0a2e]" : "bg-[#8a9bb5]"}` : project.id === "becoming-memoir-launch" ? "object-cover object-[center_35%]" : "object-cover"}`}
+          className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${project.cardImage ? "object-contain bg-muted" : project.id === "becoming-memoir-launch" ? "object-cover object-[center_35%]" : "object-cover"}`}
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent group-hover:from-background/70 transition-colors duration-500" />
       </div>
-      <div>
+      <div className="p-8">
         <span className="label-text mb-2 block">{project.brand}</span>
-        <h3 className="text-2xl text-foreground">{project.title}</h3>
-        <p className="text-muted-foreground mt-2 text-lg">{project.description}</p>
+        <h3 className="text-2xl text-foreground font-semibold">{project.title}</h3>
+        <p className="text-muted-foreground mt-3 text-lg">{project.description}</p>
       </div>
     </motion.div>
   );

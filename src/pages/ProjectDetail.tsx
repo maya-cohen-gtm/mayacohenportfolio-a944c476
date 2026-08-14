@@ -111,7 +111,7 @@ const ProjectDetail = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
         <button
           onClick={() => navigate("/")}
-          className="absolute top-8 left-8 z-10 flex items-center gap-3 text-primary uppercase tracking-widest text-sm cursor-pointer hover:gap-4 transition-all"
+          className="absolute top-8 left-8 z-10 flex items-center gap-3 rounded-full bg-card/90 px-5 py-3 text-primary uppercase tracking-widest text-sm cursor-pointer hover:gap-4 transition-all"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>Back</span>
@@ -198,7 +198,7 @@ const ProjectDetail = () => {
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className="overflow-hidden bg-muted break-inside-avoid mb-4"
+                  className="overflow-hidden rounded-3xl bg-muted break-inside-avoid mb-4"
                 >
                   <img
                     src={img}
@@ -214,7 +214,7 @@ const ProjectDetail = () => {
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className={`overflow-hidden bg-muted relative ${isKHWide ? "md:col-span-2 lg:col-span-3 aspect-video" : isBecoming ? "lg:col-span-4 h-[380px]" : isHumanitas ? "aspect-video" : "aspect-square"}`}
+                  className={`overflow-hidden rounded-3xl bg-muted relative ${isKHWide ? "md:col-span-2 lg:col-span-3 aspect-video" : isBecoming ? "lg:col-span-4 h-[380px]" : isHumanitas ? "aspect-video" : "aspect-square"}`}
                 >
                   <img
                     src={img}
