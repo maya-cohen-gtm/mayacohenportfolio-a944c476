@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import headshot from "@/assets/headshot.png.asset.json";
 
 const AboutSection = () =>
   <section id="about" className="py-32 px-8 md:px-16 grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-20 items-center border-t border-border">
