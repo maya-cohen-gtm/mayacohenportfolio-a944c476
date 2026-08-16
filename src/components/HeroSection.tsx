@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import resumeAsset from "@/assets/Marissa-Cohen-Resume.pdf.asset.json";
 
 const HeroSection = () => {
   const scrollToWork = () => {
@@ -57,7 +58,7 @@ const HeroSection = () => {
               <div className="h-px w-8 bg-primary-foreground transition-all duration-500 group-hover:w-14" />
             </button>
             <a
-              href="/Marissa-Cohen-Resume.pdf"
+              href={resumeAsset.url}
               download
               className="rounded-full border border-primary text-primary px-7 py-3.5 text-sm font-semibold tracking-widest uppercase transition-transform hover:-translate-y-0.5"
             >
