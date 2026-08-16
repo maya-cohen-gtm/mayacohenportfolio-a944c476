@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import resumeAsset from "@/assets/Marissa-Cohen-Resume.pdf.asset.json";
 
 const HeroSection = () => {
   const scrollToWork = () => {
