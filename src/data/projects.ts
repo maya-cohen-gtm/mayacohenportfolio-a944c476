@@ -9,7 +9,7 @@ import pipexCardCover from "@/assets/pipex-card-cover.webp";
 import becomingBookDisplay from "@/assets/becoming-book-display.jpg";
 import becomingTimesup from "@/assets/becoming-timesup.webp";
 import traceeMichelleInterview from "@/assets/tracee-michelle-interview.jpg";
-import becomingGlamourTracee from "@/assets/becoming-glamour-tracee.jpg";
+import traceeMichelleAsset from "@/assets/tracee-michelle.png.asset.json";
 import becomingGlamourWoty from "@/assets/becoming-glamour-woty.jpg";
 import henryTourBanner from "@/assets/henry-tour-banner.gif";
 import henryHelloSign from "@/assets/henry-hello-sign.png";
@@ -25,6 +25,8 @@ import barrySundayToday from "@/assets/barry-sunday-today.png";
 import humanitasBeverlyWilshire from "@/assets/humanitas-beverly-wilshire.webp";
 import humanitasDga from "@/assets/humanitas-dga.jpg";
 import humanitasWinners from "@/assets/humanitas-winners.webp";
+
+const traceeMichelleCaseStudy = traceeMichelleAsset.url;
 
 export type ProjectLink = {
   text: string;
@@ -118,8 +120,8 @@ export const projects: Project[] = [
     title: "Influencer & Partnership Campaigns",
     description: "Influencer outreach and partnership management behind two high-impact GTM campaigns.",
     tag: "Campaigns",
-    image: becomingGlamourTracee,
-    cardImage: becomingGlamourTracee,
+    image: traceeMichelleCaseStudy,
+    cardImage: traceeMichelleCaseStudy,
     context: "In 2018, Michelle Obama launched Becoming, a New York Times Bestseller that held the list for 100 weeks and became one of the best-selling memoirs in publishing history. In the same window, the #MeToo movement launched the Time's Up Legal Defense Fund. Both campaigns needed high-profile voices — talent, creators, and cultural figures like Tracee Ellis Ross — brought in credibly and at speed, with the briefing, approval, and relationship infrastructure to keep the messaging consistent across every channel they touched.",
     role: "As Marketing Manager for executive communications and social media, I led influencer outreach, identification, and partnership management for both GTM campaigns. I built the influencer briefing packets, ran content approvals, and owned ongoing relations with talent and their teams so that each partner had a clear point of view, on-brand assets, and a channel plan before anything went live. I ran channel monitoring for growth, trends, and insights across all owned accounts and adjusted the social strategy accordingly, and I led strategy development for every account — covering diversity and inclusion, accessibility, audience engagement, and moderation guidelines. In parallel I led messaging and the launch playbook for two national product launches, coordinating paid, earned, and owned channels and documenting a repeatable launch process for future teams.",
     impact: "Influencer briefings, content approvals, and ongoing relations delivered 5M+ social views on the Glamour keynote content. The Time's Up Legal Defense Fund raised $21M in 60 days. Becoming spent 100 weeks on the New York Times Bestsellers list. Across the same period, co-marketing campaigns with third-party studios and networks doubled our social following in six months, and the two national product launches I led sold 2M+ units in four months.",
