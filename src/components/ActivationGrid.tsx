@@ -2,6 +2,7 @@ import { useState } from "react";
 import { projects, filterTags } from "@/data/projects";
 import ActivationCard from "./ActivationCard";
 import { accentFor } from "@/lib/accents";
+import { Checker, ZigZag } from "@/components/GenZGraphics";
 
 const ActivationGrid = () => {
   const [activeTag, setActiveTag] = useState<string>("All");
@@ -11,7 +12,9 @@ const ActivationGrid = () => {
     : projects.filter((p) => p.tag === activeTag);
 
   return (
-    <section id="work" className="py-24 px-8 md:px-16 bg-background accent-pink">
+    <section id="work" className="relative overflow-hidden py-24 px-8 md:px-16 bg-background accent-pink">
+      <Checker className="pointer-events-none absolute top-10 right-6 w-28 h-28 text-secondary" />
+      <ZigZag className="pointer-events-none absolute bottom-10 left-[-2rem] w-64 h-16 text-brand-green/70" />
       <h2 className="label-text mb-10">Work</h2>
       <div className="flex flex-wrap gap-3 mb-16">
         {filterTags.map((tag, i) => (

@@ -1,7 +1,12 @@
 import { motion } from "framer-motion";
+import { Starburst, Checker, Bolt, Flower } from "@/components/GenZGraphics";
 
 const ContactSection = () => (
-  <footer id="contact" className="py-32 px-8 md:px-16 text-center border-t border-border pastel-bg accent-orange">
+  <footer id="contact" className="relative overflow-hidden py-32 px-8 md:px-16 text-center border-t border-border pastel-bg accent-orange">
+    <Flower className="pointer-events-none absolute -top-16 -left-16 w-64 h-64 text-secondary" />
+    <Checker className="pointer-events-none absolute bottom-10 right-10 w-28 h-28 text-brand-blue hidden md:block" />
+    <Starburst className="pointer-events-none absolute -bottom-20 -right-16 w-64 h-64 text-brand-yellow" />
+    <Bolt className="pointer-events-none absolute top-16 right-[18%] w-12 h-20 text-primary hidden md:block rotate-12" />
     <motion.h2
       initial={{ opacity: 0, y: 16 }}
       whileInView={{ opacity: 1, y: 0 }}
