@@ -21,14 +21,14 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 md:px-16 h-14 transition-colors duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-5 sm:px-8 md:px-16 h-14 transition-colors duration-500 ${
         scrolled ? "bg-background/85 backdrop-blur-md border-b border-border" : "bg-transparent"
       }`}
     >
       <a href="/" className="text-primary font-semibold text-lg tracking-tight">
         MC
       </a>
-      <div className="flex items-center gap-8">
+      <div className="flex items-center gap-4 sm:gap-6 md:gap-8">
         {[
           { label: "Work", id: "work" },
           { label: "Experience", id: "experience" },
@@ -37,7 +37,7 @@ const NavBar = () => {
           <button
             key={link.id}
             onClick={() => scrollTo(link.id)}
-            className="text-xs uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+            className="text-[10px] sm:text-xs uppercase tracking-[0.12em] sm:tracking-[0.2em] whitespace-nowrap text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
           >
             {link.label}
           </button>
