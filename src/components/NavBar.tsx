@@ -31,7 +31,7 @@ const NavBar = () => {
       <div className="flex items-center gap-4 sm:gap-6 md:gap-8">
         {[
           { label: "Work", id: "work" },
-          { label: "Experience", id: "experience" },
+          { label: "Words", id: "words" },
           { label: "Connect", id: "contact" },
         ].map((link) => (
           <button
