@@ -19,12 +19,6 @@ const ContactSection = () => (
     </p>
     <div className="flex flex-wrap justify-center gap-4 md:gap-6">
       <a
-        href="mailto:marissadcohen@gmail.com"
-        className="rounded-full bg-primary text-primary-foreground px-8 py-4 uppercase tracking-widest text-sm font-semibold transition-transform hover:-translate-y-0.5"
-      >
-        Email
-      </a>
-      <a
         href="https://www.linkedin.com/in/mayadcohen/"
         target="_blank"
         rel="noopener noreferrer"

@@ -75,12 +75,6 @@ const HeroSection = () => {
             >
               LinkedIn
             </a>
-            <a
-              href="mailto:marissadcohen@gmail.com"
-              className="rounded-full border border-border text-foreground/80 px-7 py-3.5 text-sm font-semibold tracking-widest uppercase transition-transform hover:-translate-y-0.5"
-            >
-              Email
-            </a>
           </motion.div>
         </div>
 
