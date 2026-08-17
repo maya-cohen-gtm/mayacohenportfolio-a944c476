@@ -27,7 +27,7 @@ const EndorsementsSection = () => {
   if (endorsements.length === 0) return null;
 
   return (
-    <section id="endorsements" className="relative overflow-hidden px-8 md:px-16 py-24 border-t border-border accent-pink">
+    <section id="endorsements" className="relative overflow-hidden px-8 md:px-16 py-24 accent-pink band">
       <Starburst className="pointer-events-none absolute -bottom-10 left-[-2rem] w-32 h-32 md:-bottom-16 md:left-[-3rem] md:w-56 md:h-56 text-secondary/70" />
       <Asterisk className="pointer-events-none absolute top-10 right-5 w-12 h-12 md:right-8 md:w-20 md:h-20 text-primary/60 -rotate-12" />
       <h2 className="label-text mb-10">What People Say</h2>
