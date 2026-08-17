@@ -233,7 +233,7 @@ const ProjectDetail = () => {
                   <img
                     src={img}
                     alt={`${project.title} gallery ${i + 1}`}
-                    className={`w-full h-full ${isHumanitas ? "object-contain bg-muted" : isBecoming ? (i === 3 ? "object-contain p-4 bg-background" : i === 1 ? "object-cover object-[center_45%]" : "object-cover object-center") : isBarryVertical ? "object-cover object-center" : "object-cover"}`}
+                    className={`w-full h-full ${isHumanitas ? "object-cover object-center" : isBecoming ? (i === 3 ? "object-contain p-4 bg-background" : i === 1 ? "object-cover object-[center_45%]" : "object-cover object-center") : isBarryVertical ? "object-cover object-center" : "object-cover"}`}
                     loading="lazy"
                     />
                   </motion.div>
