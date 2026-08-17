@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { accentFor } from "@/lib/accents";
 
 const stats = [
   { value: "3M+", label: "Audience reached across owned talent and entertainment channels" },
@@ -9,7 +10,7 @@ const stats = [
 
 
 const StatsSection = () => (
-  <section className="px-8 md:px-16 py-24">
+  <section className="px-8 md:px-16 py-24 accent-orange">
     <h2 className="label-text mb-10">By the Numbers</h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       {stats.map((stat, i) => (
@@ -19,9 +20,9 @@ const StatsSection = () => (
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: i * 0.05 }}
-          className="surface-card p-8"
+          className={`surface-card accent-card p-8 ${accentFor(i)}`}
         >
-          <div className="text-3xl lg:text-4xl font-semibold gradient-text mb-3">
+          <div className="text-3xl lg:text-4xl font-semibold accent-text mb-3">
             {stat.value}
           </div>
           <p className="text-muted-foreground">{stat.label}</p>
