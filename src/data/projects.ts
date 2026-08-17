@@ -56,8 +56,40 @@ export type Project = {
   links?: ProjectLink[];
   sections?: ProjectSection[];
 };
-
 export const projects: Project[] = [
+  {
+    id: "henry-winkler-tiktok",
+    metric: "1.3M followers · 6.1M likes · talent-led short form",
+    brand: "Henry Winkler x TikTok",
+    title: "Talent-Led Short Form for Barry's Final Season",
+    description: "Running an 80-year-old icon's TikTok as an owned channel during HBO's Barry S4.",
+    tag: "Social Media",
+    image: barryFinalSeason,
+    cardImage: barryFinalSeason,
+    context: "Henry Winkler joined TikTok in November 2020 at his granddaughter's urging and — with only a handful of posts — became one of the platform's most unlikely organic successes, with his early dance videos alone reaching tens of millions of views. By the time HBO's Barry entered its fourth and final season in 2023, the account sat at 1.3M followers and 6.1M likes: a Gen Z audience that had found him through TikTok, not Happy Days or Barry. The opportunity was to convert that audience into viewers for the final season without turning a beloved personal channel into an ad unit.",
+    role: "I treated the account as an owned channel with its own editorial rules rather than a distribution endpoint for HBO assets. The core call: never post a trailer cut. Everything shipped had to be something only Henry could make — grandkid dances, set moments, reactions to the show, and unguarded on-the-day footage from the press run. I set the format spine (vertical, face-forward, one idea per video, hook inside the first two seconds, caption carrying the joke so it lands muted), a cadence tied to the Sunday-night episode drop and the Emmy voting window rather than a fixed weekly slot, and a strict voice rule that the caption sounds like Henry and never like a studio. I sourced and cut short-form from press appearances we were already producing — Access Hollywood, Rich Eisen, Sunday Today — so a single booking generated a press hit and three platform-native posts. I also ran community management: replying in-voice to the top comments in the first hour, and a clear line on what we do not engage with (finale spoilers, politics, anything about the character's darker turns being read as the man).",
+    impact: "The channel finished the Barry campaign as a genuine owned audience — 1.3M followers and 6.1M lifetime likes — that HBO did not have to buy access to. Repurposing press into short form meant every booking returned multiple platform-native assets at no incremental production cost. Short-form comment sentiment fed directly back into press prep: the questions fans kept asking in the comments became the beats we placed in the talking points for the next appearance. Barry Season 4 went on to average 3.4M viewers per episode and 11 Emmy nominations at the 75th Emmy Awards.",
+    press: "Henry Winkler's TikTok account (@henry.winkler) has 1.3M followers and 6.1M likes. Business Insider (January 2022) reported his first six videos had accumulated 33 million views. HBO's Barry Season 4 premiered April 16, 2023 and concluded May 28, 2023, earning 11 Emmy nominations at the 75th Annual Emmy Awards.",
+    links: [
+      { text: "@henry.winkler on TikTok", url: "https://www.tiktok.com/@henry.winkler" },
+      { text: "Business Insider on the account's organic reach", url: "https://www.businessinsider.com/henry-winkler-tiktok-viral-dances-grandchildren-2022-1" },
+    ],
+    sections: [
+      { label: "Context", content: "Henry Winkler joined TikTok in November 2020 at his granddaughter's urging and — with only a handful of posts — became one of the platform's most unlikely organic successes, with his early dance videos alone reaching tens of millions of views. By the time HBO's Barry entered its fourth and final season in 2023, the account sat at 1.3M followers and 6.1M likes: a Gen Z audience that had found him through TikTok, not Happy Days or Barry. The opportunity was to convert that audience into viewers for the final season without turning a beloved personal channel into an ad unit." },
+      { label: "My Role", content: "I treated the account as an owned channel with its own editorial rules rather than a distribution endpoint for HBO assets. The core call: never post a trailer cut. Everything shipped had to be something only Henry could make — grandkid dances, set moments, reactions to the show, and unguarded on-the-day footage from the press run." },
+      { label: "Format & Cadence", content: "The operating rules that made the channel repeatable:", items: [
+        "Vertical, face-forward, one idea per video; hook inside the first two seconds.",
+        "Caption carries the joke so the video lands with sound off.",
+        "Cadence tied to the Sunday-night episode drop and the Emmy voting window, not a fixed weekly slot.",
+        "Every press booking cut into three platform-native posts — one press hit, three assets, no incremental production cost.",
+        "Voice rule: the caption sounds like Henry, never like a studio.",
+      ]},
+      { label: "Judgment Calls", content: "A warm personal account promoting a show about a hitman is a tonal minefield. I kept the channel's charm intact by refusing studio-supplied promo cuts and keeping the darker Barry material in press, not on TikTok. Community management ran on a clear line: reply in-voice to top comments in the first hour, never engage on finale spoilers, politics, or comments conflating the character's violence with the man." },
+      { label: "Impact", content: "The channel finished the Barry campaign as a genuine owned audience — 1.3M followers and 6.1M lifetime likes — that HBO did not have to buy access to. Short-form comment sentiment fed directly back into press prep: the questions fans kept asking became the beats placed in talking points for the next appearance. Barry Season 4 averaged 3.4M viewers per episode and earned 11 Emmy nominations at the 75th Emmy Awards." },
+      { label: "Press & Recognition", content: "Henry Winkler's TikTok account (@henry.winkler) has 1.3M followers and 6.1M likes. Business Insider (January 2022) reported his first six videos had accumulated 33 million views. HBO's Barry Season 4 premiered April 16, 2023 and concluded May 28, 2023, earning 11 Emmy nominations at the 75th Annual Emmy Awards." },
+    ],
+    gallery: [barryPeacockTheater, barryRichEisen, barrySundayToday, henryHelloSign],
+  },
   {
     id: "being-henry-book-tour",
     metric: "NYT Bestseller on launch · 15+ cities",
@@ -160,28 +192,4 @@ export const projects: Project[] = [
 ];
 
 export const filterTags = ["All", "Executive Comms", "Social Media", "Campaigns"] as const;
-
-/*
- * SCAFFOLD — short-form video / creator case study (highest-priority gap).
- * Fill in the real details, import a hero image, then move this object into
- * `projects` above (place it FIRST so it reads as the most recent work).
- *
- * {
- *   id: "shortform-creator-series",
- *   metric: "<your own number — e.g. 4.2M views · 38% avg retention · +18K followers>",
- *   brand: "<brand / channel>",
- *   title: "<series or campaign name>",
- *   description: "<one skimmable line: what it was and who it was for>",
- *   tag: "Social Media",
- *   image: heroImage,
- *   cardImage: heroImage,
- *   context: "<the channel's starting point, audience, and what needed to change>",
- *   role: "<the decisions YOU made: hook formula, format, posting cadence, " +
- *         "creator sourcing and briefs, budget, editing/thumbnail direction, " +
- *         "community management rules>",
- *   impact: "<views, avg watch time / retention, follower delta, engagement rate, " +
- *           "CPV or CPM, and what carried over into the next campaign>",
- *   gallery: [],
- * }
- */
 
