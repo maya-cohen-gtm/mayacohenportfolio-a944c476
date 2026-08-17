@@ -96,9 +96,20 @@ const ProjectDetail = () => {
 
   if (!project) {
     return (
-      <div className="min-h-screen bg-background flex items-center justify-center text-foreground">
-        Project not found.
-      </div>
+      <main className="min-h-screen bg-background flex flex-col items-center justify-center text-center px-8 accent-orange">
+        <span className="label-text mb-4 block">404</span>
+        <h1 className="text-5xl md:text-7xl font-semibold text-foreground tracking-tighter mb-6">
+          Project not found
+        </h1>
+        <button
+          onClick={() => navigate("/")}
+          className="group flex items-center gap-4 accent-text font-semibold tracking-widest uppercase text-sm cursor-pointer"
+        >
+          <ArrowLeft className="w-4 h-4" />
+          <span>All Projects</span>
+          <div className="h-px w-12 accent-fill transition-all duration-500 group-hover:w-20" />
+        </button>
+      </main>
     );
   }
 
