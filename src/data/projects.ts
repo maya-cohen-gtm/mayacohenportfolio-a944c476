@@ -160,3 +160,28 @@ export const projects: Project[] = [
 ];
 
 export const filterTags = ["All", "Executive Comms", "Social Media", "Campaigns"] as const;
+
+/*
+ * SCAFFOLD — short-form video / creator case study (highest-priority gap).
+ * Fill in the real details, import a hero image, then move this object into
+ * `projects` above (place it FIRST so it reads as the most recent work).
+ *
+ * {
+ *   id: "shortform-creator-series",
+ *   metric: "<your own number — e.g. 4.2M views · 38% avg retention · +18K followers>",
+ *   brand: "<brand / channel>",
+ *   title: "<series or campaign name>",
+ *   description: "<one skimmable line: what it was and who it was for>",
+ *   tag: "Social Media",
+ *   image: heroImage,
+ *   cardImage: heroImage,
+ *   context: "<the channel's starting point, audience, and what needed to change>",
+ *   role: "<the decisions YOU made: hook formula, format, posting cadence, " +
+ *         "creator sourcing and briefs, budget, editing/thumbnail direction, " +
+ *         "community management rules>",
+ *   impact: "<views, avg watch time / retention, follower delta, engagement rate, " +
+ *           "CPV or CPM, and what carried over into the next campaign>",
+ *   gallery: [],
+ * }
+ */
+
