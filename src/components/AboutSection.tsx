@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import headshotAsset from "@/assets/headshot.png.asset.json";
+import { accentFor } from "@/lib/accents";
 
 const AboutSection = () =>
-  <section id="about" className="py-32 px-8 md:px-16 grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-20 items-center border-t border-border">
+  <section id="about" className="py-32 px-8 md:px-16 grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-20 items-center border-t border-border accent-green">
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
@@ -41,7 +42,7 @@ const AboutSection = () =>
           href="https://medium.com/@marissacohen"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-primary font-semibold hover:underline underline-offset-4"
+          className="accent-text font-semibold hover:underline underline-offset-4"
         >
           writing about it on Medium
         </a>
@@ -49,8 +50,8 @@ const AboutSection = () =>
       </p>
       <div className="divider mb-8" />
       <div className="flex flex-wrap gap-2">
-        {["Content & IP Marketing", "Social-First Strategy", "Creator & Influencer Marketing", "Integrated Campaigns", "Paid Media Partnership", "Audience Growth", "PR & Publicity", "Executive Communications", "Marketing Analytics", "GTM Strategy"].map((skill) =>
-          <span key={skill} className="rounded-full bg-muted text-foreground/80 px-4 py-2 text-sm">
+        {["Content & IP Marketing", "Social-First Strategy", "Creator & Influencer Marketing", "Integrated Campaigns", "Paid Media Partnership", "Audience Growth", "PR & Publicity", "Executive Communications", "Marketing Analytics", "GTM Strategy"].map((skill, idx) =>
+          <span key={skill} className={`${accentFor(idx)} accent-chip rounded-full px-4 py-2 text-sm font-medium`}>
             {skill}
           </span>
         )}

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { projects, type ProjectLink, type ProjectSection } from "@/data/projects";
 import { ArrowLeft } from "lucide-react";
 import glamourLogo from "@/assets/glamour-logo.png";
+import { accentFor, accentForKey } from "@/lib/accents";
 import React from "react";
 
 const renderTextWithLinks = (text: string, links?: ProjectLink[]): React.ReactNode => {
@@ -39,7 +40,7 @@ const renderTextWithLinks = (text: string, links?: ProjectLink[]): React.ReactNo
         href={matchedLink.url}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-primary hover:underline"
+        className="accent-text font-medium hover:underline"
       >
         {matchedLink.text}
       </a>
@@ -89,7 +90,9 @@ const renderPressContent = (text: string, links?: ProjectLink[]): React.ReactNod
 const ProjectDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const project = projects.find((p) => p.id === id);
+  const projectIndex = projects.findIndex((p) => p.id === id);
+  const project = projects[projectIndex];
+  const pageAccent = projectIndex >= 0 ? accentFor(projectIndex) : accentForKey(id ?? "");
 
   if (!project) {
     return (
@@ -100,7 +103,7 @@ const ProjectDetail = () => {
   }
 
   return (
-    <main className="bg-background min-h-screen">
+    <main className={`bg-background min-h-screen ${pageAccent}`}>
       {/* Header image */}
       <div className="relative h-[60vh] w-full overflow-hidden">
         <img
@@ -111,7 +114,7 @@ const ProjectDetail = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
         <button
           onClick={() => navigate("/")}
-          className="absolute top-8 left-8 z-10 flex items-center gap-3 rounded-full bg-card/90 px-5 py-3 text-primary uppercase tracking-widest text-sm cursor-pointer hover:gap-4 transition-all"
+          className="absolute top-8 left-8 z-10 flex items-center gap-3 rounded-full bg-card/90 px-5 py-3 accent-text border-2 border-foreground uppercase tracking-widest text-sm cursor-pointer hover:gap-4 transition-all"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>Back</span>
@@ -141,14 +144,14 @@ const ProjectDetail = () => {
             { label: "My Role", content: project.role },
             { label: "Impact", content: project.impact },
             ...(project.press ? [{ label: "Press & Recognition", content: project.press }] : []),
-          ]).map((section) => (
+          ]).map((section, sIdx) => (
             <motion.div
               key={section.label}
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="border-t border-border pt-8"
+              className={`border-t border-border pt-8 ${accentFor(projectIndex + sIdx)}`}
             >
               <h2 className="label-text mb-6">{section.label}</h2>
               {section.content && (
@@ -166,7 +169,7 @@ const ProjectDetail = () => {
                 <ul className="space-y-4 max-w-3xl mt-4">
                   {section.items.map((item, idx) => (
                     <li key={idx} className="text-lg text-foreground/80 leading-relaxed flex gap-3">
-                      <span className="text-primary mt-1.5 shrink-0">•</span>
+                      <span className="accent-text mt-1.5 shrink-0 font-bold">•</span>
                       <span>{renderTextWithLinks(item, project.links)}</span>
                     </li>
                   ))}
@@ -194,7 +197,7 @@ const ProjectDetail = () => {
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className="overflow-hidden rounded-3xl bg-muted break-inside-avoid mb-4"
+                  className={`overflow-hidden rounded-3xl bg-muted break-inside-avoid mb-4 border-2 border-foreground accent-card ${accentFor(i)}`}
                 >
                   <img
                     src={img}
@@ -210,7 +213,7 @@ const ProjectDetail = () => {
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className={`overflow-hidden rounded-3xl bg-muted relative ${isBecoming ? "lg:col-span-4 h-[380px]" : isHumanitas ? "aspect-video" : "aspect-square"}`}
+                  className={`overflow-hidden rounded-3xl bg-muted relative border-2 border-foreground accent-card ${accentFor(i)} ${isBecoming ? "lg:col-span-4 h-[380px]" : isHumanitas ? "aspect-video" : "aspect-square"}`}
                 >
                   <img
                     src={img}
@@ -233,11 +236,11 @@ const ProjectDetail = () => {
       <div className="px-8 md:px-16 py-16 border-t border-border">
         <button
           onClick={() => navigate("/")}
-          className="group flex items-center gap-4 text-primary font-medium tracking-widest uppercase text-sm cursor-pointer"
+          className="group flex items-center gap-4 accent-text font-semibold tracking-widest uppercase text-sm cursor-pointer"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>All Projects</span>
-          <div className="h-px w-12 bg-primary transition-all duration-500 group-hover:w-20" />
+          <div className="h-px w-12 accent-fill transition-all duration-500 group-hover:w-20" />
         </button>
       </div>
     </main>

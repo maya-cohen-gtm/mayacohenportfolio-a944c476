@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { accentFor } from "@/lib/accents";
 
 const roles = [
   {
@@ -38,7 +39,7 @@ const roles = [
 
 
 const ExperienceSection = () => (
-  <section id="experience" className="px-8 md:px-16 py-24 border-t border-border">
+  <section id="experience" className="px-8 md:px-16 py-24 border-t border-border accent-blue">
     <h2 className="label-text mb-10">Experience</h2>
     <div className="space-y-6">
       {roles.map((role, i) => (
@@ -48,19 +49,19 @@ const ExperienceSection = () => (
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: i * 0.05 }}
-          className="surface-card p-8 md:p-10"
+          className={`surface-card accent-card p-8 md:p-10 ${accentFor(i + 4)}`}
         >
           <div className="flex flex-wrap items-baseline justify-between gap-2 mb-4">
             <div>
               <h3 className="text-2xl font-semibold">{role.company}</h3>
-              <p className="text-primary">{role.title}</p>
+              <p className="accent-text font-semibold">{role.title}</p>
             </div>
             <span className="text-sm text-muted-foreground">{role.period}</span>
           </div>
           <ul className="space-y-3">
             {role.points.map((point) => (
               <li key={point} className="flex gap-3 text-muted-foreground">
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full accent-fill" />
                 <span>{point}</span>
               </li>
             ))}

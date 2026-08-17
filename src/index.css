@@ -80,8 +80,10 @@
 
 @layer utilities {
   .label-text {
-    @apply text-xs uppercase tracking-[0.2em] text-primary font-semibold;
+    @apply text-xs uppercase tracking-[0.2em] font-semibold;
+    color: hsl(var(--section-accent-ink, var(--primary)));
   }
+
 
   .muted-text {
     @apply text-muted-foreground;
@@ -116,4 +118,54 @@
   .divider {
     @apply h-px w-full bg-border;
   }
+
+  /* --- Rotating brand accents ------------------------------------------- */
+  /* --section-accent: saturated fill (borders, shadows, dots, tints)        */
+  /* --section-accent-ink: darkened variant, always readable on cream/white  */
+  .accent-orange {
+    --section-accent: 16 99% 56%;
+    --section-accent-ink: 16 92% 40%;
+  }
+  .accent-pink {
+    --section-accent: 344 100% 74%;
+    --section-accent-ink: 344 68% 40%;
+  }
+  .accent-yellow {
+    --section-accent: 44 98% 53%;
+    --section-accent-ink: 36 92% 32%;
+  }
+  .accent-green {
+    --section-accent: 159 100% 32%;
+    --section-accent-ink: 159 100% 24%;
+  }
+  .accent-blue {
+    --section-accent: 207 55% 47%;
+    --section-accent-ink: 207 58% 34%;
+  }
+
+  .accent-text {
+    color: hsl(var(--section-accent-ink, var(--primary)));
+  }
+
+  .accent-fill {
+    background-color: hsl(var(--section-accent, var(--primary)));
+  }
+
+  .accent-tint {
+    background-color: hsl(var(--section-accent, var(--primary)) / 0.1);
+  }
+
+  .accent-card {
+    box-shadow: 6px 6px 0 0 hsl(var(--section-accent, var(--foreground)));
+  }
+
+  .accent-card:hover {
+    box-shadow: 10px 10px 0 0 hsl(var(--section-accent, var(--foreground)));
+  }
+
+  .accent-chip {
+    background-color: hsl(var(--section-accent, var(--primary)) / 0.16);
+    color: hsl(var(--section-accent-ink, var(--foreground)));
+  }
 }
+
