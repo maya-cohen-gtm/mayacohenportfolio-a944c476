@@ -197,7 +197,7 @@ const ProjectDetail = () => {
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className={`overflow-hidden rounded-3xl bg-muted break-inside-avoid mb-4 border-2 border-foreground ${accentFor(i)}`}
+                  className={`overflow-hidden rounded-3xl bg-muted break-inside-avoid mb-4 border-2 border-foreground accent-card ${accentFor(i)}`}
                 >
                   <img
                     src={img}
@@ -213,7 +213,7 @@ const ProjectDetail = () => {
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className={`overflow-hidden rounded-3xl bg-muted relative border-2 border-foreground ${accentFor(i)} ${isBecoming ? "lg:col-span-4 h-[380px]" : isHumanitas ? "aspect-video" : "aspect-square"}`}
+                  className={`overflow-hidden rounded-3xl bg-muted relative border-2 border-foreground accent-card ${accentFor(i)} ${isBecoming ? "lg:col-span-4 h-[380px]" : isHumanitas ? "aspect-video" : "aspect-square"}`}
                 >
                   <img
                     src={img}
