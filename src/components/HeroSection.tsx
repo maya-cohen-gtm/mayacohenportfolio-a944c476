@@ -78,7 +78,7 @@ const HeroSection = () => {
               href="https://www.linkedin.com/in/mayadcohen/"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full border-2 border-foreground bg-card text-foreground px-7 py-3.5 text-sm font-bold tracking-widest uppercase transition-transform hover:-translate-y-0.5"
+              className="rounded-full border-2 border-foreground bg-brand-blue text-primary-foreground px-7 py-3.5 text-sm font-bold tracking-widest uppercase transition-transform hover:-translate-y-0.5"
             >
               LinkedIn
             </a>
