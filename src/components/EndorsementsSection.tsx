@@ -14,7 +14,7 @@ const endorsements: Endorsement[] = [
   {
     quote: "Marissa is a natural public speaker, promoter and storyteller. She has a sharp understanding of how to position ideas, products, and narratives in a way that resonates with target audiences. Her instincts in marketing are both data-informed and culturally aware, allowing her to craft strategies that feel timely, relevant, and impactful. In high-pressure, fast-paced environments, Marissa takes initiative, brings clarity to ambiguity, and keeps the team aligned and motivated. She balances confidence with humility, always open to feedback while maintaining a strong point of view.",
     name: "Cian Nacar",
-    role: "Director Strategic Initiatives, Warner Music Group",
+    role: "Director Strategic Initiatives, Warner Music Group; Classmate, USC Marshall School of Business",
   },
   {
     quote: "Marissa transformed GWiB's social media presence from the ground up — she re-vamped our logo, campaigns, and posts, built a cohesive content schedule, and drove over 200% engagement growth. As a leader, she is someone I never need to worry about: the work gets done, and done well. She brings creative ideas, asks smart questions, supports the team, and collaborates with humility and confidence. Any team would be lucky to have her.",
