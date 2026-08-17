@@ -123,7 +123,7 @@ const ProjectDetail = () => {
         <img
           src={project.image}
           alt={project.title}
-          className={`w-full h-full object-cover object-center ${project.id === "becoming-memoir-launch" ? "object-[center_25%] md:object-[center_30%]" : project.id === "pipex-virtual-launch" ? "object-top" : project.id === "henry-winkler-tiktok" ? "object-[30%_20%] md:object-[center_30%]" : ""}`}
+          className={`w-full h-full object-cover object-center ${project.id === "becoming-memoir-launch" ? "object-[center_25%] md:object-[center_30%]" : project.id === "pipex-virtual-launch" ? "object-top" : project.id === "henry-winkler-tiktok" ? "object-[35%_30%] md:object-[center_30%]" : ""}`}
         />
 
 
