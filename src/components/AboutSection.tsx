@@ -58,7 +58,7 @@ const AboutSection = () =>
       <p className="text-lg text-foreground leading-relaxed mb-8">
         <strong>USC Marshall MBA</strong> (Dean's List, Forté Fellow),{" "}
         <strong>Swarthmore College</strong> Political Science. Based in Los Angeles.
-        Currently consulting on social and exec comms — and{" "}
+        Currently consulting on content marketing, social, and exec comms — and{" "}
         <a
           href="https://medium.com/@marissacohen"
           target="_blank"
@@ -71,7 +71,7 @@ const AboutSection = () =>
       </p>
       <div className="divider mb-8" />
       <div className="flex flex-wrap gap-2">
-        {["Social Media Strategy", "Executive Communications", "Content Strategy", "Internal Comms", "Event Production", "PR & Publicity", "Marketing Analytics", "GTM Strategy"].map((skill) =>
+        {["Content & IP Marketing", "Social-First Strategy", "Creator & Influencer Marketing", "Integrated Campaigns", "Paid Media Partnership", "Audience Growth", "PR & Publicity", "Executive Communications", "Marketing Analytics", "GTM Strategy"].map((skill) =>
           <span key={skill} className="rounded-full bg-muted text-foreground/80 px-4 py-2 text-sm">
             {skill}
           </span>
