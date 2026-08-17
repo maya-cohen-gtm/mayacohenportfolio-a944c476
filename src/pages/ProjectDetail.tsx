@@ -2,7 +2,6 @@ import { useParams, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { projects, type ProjectLink, type ProjectSection } from "@/data/projects";
 import { ArrowLeft } from "lucide-react";
-import glamourLogo from "@/assets/glamour-logo.png";
 import { accentFor, accentForKey } from "@/lib/accents";
 import React from "react";
 import { Starburst, Asterisk, Checker } from "@/components/GenZGraphics";
