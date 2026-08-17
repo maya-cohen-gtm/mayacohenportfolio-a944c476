@@ -21,7 +21,7 @@ const HeroSection = () => {
             transition={{ duration: 0.6 }}
             className="label-text mb-5 block"
           >
-            Social Media &amp; Executive Communications
+            Entertainment Marketing &middot; Social &amp; Creator Campaigns &middot; Executive Communications
           </motion.span>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -38,10 +38,11 @@ const HeroSection = () => {
             className="text-lg md:text-xl text-muted-foreground max-w-xl mb-8 leading-relaxed"
           >
             I grew up in a family of engineers, snuck into Hollywood anyway, and ended up
-            doing both: writing for the people in front of the camera and marketing the
-            technology behind it. Social strategy and executive communications, mostly in
-            somebody else&rsquo;s voice.
+            doing both: launching shows, books, and IP to Gen Z and Millennial audiences,
+            and marketing the technology behind the screen. Integrated campaigns across
+            social, creators, paid, and press &mdash; usually in somebody else&rsquo;s voice.
           </motion.p>
+
 
           <motion.div
             initial={{ opacity: 0 }}
