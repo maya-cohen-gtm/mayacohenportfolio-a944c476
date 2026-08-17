@@ -12,6 +12,7 @@ const ActivationGrid = () => {
 
   return (
     <section id="work" className="py-24 px-8 md:px-16 bg-background accent-pink">
+      <h2 className="label-text mb-10">Work</h2>
       <div className="flex flex-wrap gap-3 mb-16">
         {filterTags.map((tag, i) => (
           <button
