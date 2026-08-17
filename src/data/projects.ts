@@ -18,6 +18,7 @@ import henryFanexpo from "@/assets/henry-fanexpo.webp";
 import henrySeatedBook from "@/assets/henry-seated-book.jpg";
 import henryHodaJenna from "@/assets/henry-hoda-jenna.png";
 import barryFinalSeason from "@/assets/barry-final-season.jpg";
+import traceeMichelleInterview from "@/assets/tracee-michelle-interview.jpg";
 
 import barryPeacockTheater from "@/assets/barry-peacock-theater.webp";
 import barryRichEisen from "@/assets/barry-rich-eisen.jpg";
@@ -26,7 +27,7 @@ import humanitasBeverlyWilshire from "@/assets/humanitas-beverly-wilshire.webp";
 import humanitasDga from "@/assets/humanitas-dga.jpg";
 import humanitasWinners from "@/assets/humanitas-winners.webp";
 
-const traceeMichelleCaseStudy = traceeMichelleUsowAsset.url;
+const traceeMichelleCaseStudy = traceeMichelleInterview;
 
 export type ProjectLink = {
   text: string;

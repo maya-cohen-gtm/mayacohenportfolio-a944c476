@@ -6,7 +6,7 @@ import type { Project } from "@/data/projects";
 const CARD_FOCUS: Record<string, string> = {
   "henry-winkler-tiktok": "object-[center_40%]",
   "being-henry-book-tour": "object-[center_45%]",
-  "becoming-memoir-launch": "object-[center_30%]",
+  "becoming-memoir-launch": "object-[center_45%]",
   "humanitas-prize-42": "object-[center_35%]",
   "pipex-virtual-launch": "object-center",
 };
