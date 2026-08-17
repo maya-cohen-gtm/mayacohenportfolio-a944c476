@@ -28,7 +28,7 @@ const ContactSection = () => (
 
       <a
         href="mailto:marissadcohen@gmail.com"
-        className="rounded-full bg-primary text-primary-foreground px-8 py-4 uppercase tracking-widest text-sm font-semibold transition-transform hover:-translate-y-0.5"
+        className="rounded-full border-2 border-foreground bg-primary text-primary-foreground px-8 py-4 uppercase tracking-widest text-sm font-semibold transition-transform hover:-translate-y-0.5"
       >
         Email
       </a>
@@ -36,17 +36,18 @@ const ContactSection = () => (
         href="https://www.linkedin.com/in/mayadcohen/"
         target="_blank"
         rel="noopener noreferrer"
-        className="rounded-full bg-brand-blue text-primary-foreground px-8 py-4 uppercase tracking-widest text-sm font-semibold transition-transform hover:-translate-y-0.5"
+        className="rounded-full border-2 border-foreground bg-brand-blue text-primary-foreground px-8 py-4 uppercase tracking-widest text-sm font-semibold transition-transform hover:-translate-y-0.5"
       >
         LinkedIn
       </a>
       <a
         href={resumeAsset.url}
         download
-        className="rounded-full bg-brand-yellow text-foreground px-8 py-4 uppercase tracking-widest text-sm font-semibold transition-transform hover:-translate-y-0.5"
+        className="rounded-full border-2 border-foreground bg-brand-yellow text-foreground px-8 py-4 uppercase tracking-widest text-sm font-semibold transition-transform hover:-translate-y-0.5"
       >
         Résumé
       </a>
+
     </div>
   </footer>
 );
