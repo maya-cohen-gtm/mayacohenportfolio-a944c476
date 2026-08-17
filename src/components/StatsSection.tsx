@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: "3M+", label: "Social followers supported across talent channels" },
-  { value: "+42,425%", label: "YouTube view growth in two years" },
-  { value: "$8M+", label: "Annual influencer & social budget managed" },
-  { value: "$21M / 60 days", label: "Raised for the #MeToo Movement Fund campaign" },
+  { value: "3M+", label: "Audience reached across owned talent and entertainment channels" },
+  { value: "+42,425%", label: "YouTube view growth in two years on a video-first channel" },
+  { value: "$8M+", label: "Annual creator, influencer & paid social budget managed" },
+  { value: "$21M / 60 days", label: "Raised through an integrated celebrity-led campaign" },
 ];
+
 
 const StatsSection = () => (
   <section className="px-8 md:px-16 py-24">

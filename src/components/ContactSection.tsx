@@ -12,8 +12,10 @@ const ContactSection = () => (
       Let's talk.
     </motion.h2>
     <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-12">
-      Looking for a social media or executive communications role where the writing
-      matters. If that's the job you're hiring for, I'd love to hear about it.
+      Los Angeles based, and happiest launching content people actually talk about &mdash;
+      shows, IP, creators, streaming. If that&rsquo;s the campaign you&rsquo;re hiring for,
+      I&rsquo;d love to hear about it.
+
     </p>
     <div className="flex flex-wrap justify-center gap-4 md:gap-6">
       <a

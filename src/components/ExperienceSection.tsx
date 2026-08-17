@@ -6,10 +6,11 @@ const roles = [
     title: "Chief of Staff — Henry Winkler",
     period: "2022 – 2024",
     points: [
-      "Led executive communications and business operations across Social Media, Studio Marketing, and Primetime Network pillars.",
-      "Built social campaigns with talent, filmmakers, and influencers for HBO's Barry and Henry's memoir — 11 weeks on the NYT Bestsellers list.",
-      "Grew the digital network: Facebook likes +495%, YouTube views +42,425%, subscribers +4,035%.",
-      "Produced virtual, hybrid, and in-person all-hands, leadership summits, and Q&As.",
+      "Owned marketing strategy and execution across content launches, owned social channels, studio marketing, and primetime network partnerships.",
+      "Led integrated campaigns with talent, filmmakers, and creators for HBO's Barry and a memoir launch — 11 weeks on the NYT Bestsellers list.",
+      "Grew the owned digital network: Facebook likes +495%, YouTube views +42,425%, subscribers +4,035%, with a social-first content cadence built for younger audiences.",
+      "Managed an $8M+ creator, influencer, and paid social budget alongside agencies, publicists, and platform partners.",
+      "Reported campaign KPIs — reach, engagement, viewership, audience growth — directly to talent and partner leadership.",
     ],
   },
   {
@@ -17,22 +18,23 @@ const roles = [
     title: "Marketing Lead — PipelineX (Cloud Platform)",
     period: "2019 – 2022",
     points: [
-      "Launched the pipeline's first internal newsletter (22,000+ downloads) and a weekly campaign for 3,000+ employees.",
-      "Project managed a 70+ page corporate website redesign and the first crowdsourcing campaign (3x industry average in ideas).",
-      "Piloted internal social collaboration with 80%+ adoption; ran the OKR program behind 50%+ of infrastructure priorities.",
+      "Built go-to-market positioning and messaging for a platform launch serving 3,000+ creatives, including a newsletter with 22,000+ downloads.",
+      "Project managed a 70+ page website redesign and the studio's first crowdsourcing campaign (3x industry average in ideas submitted).",
+      "Piloted a social collaboration channel to 80%+ adoption; ran the OKR program behind 50%+ of infrastructure priorities.",
     ],
   },
   {
     company: "Joy Mill Entertainment",
-    title: "Marketing Manager — Executive Communications & Social Media",
+    title: "Marketing Manager — Content, Social & Executive Communications",
     period: "2017 – 2019",
     points: [
-      "Doubled followers in six months through campaigns with third-party studios and networks.",
+      "Doubled audience in six months through co-marketing campaigns with third-party studios, networks, and distribution partners.",
       "Built GTM launches for Michelle Obama's Becoming (100 weeks NYT Bestseller) and the #MeToo Movement Fund ($21M in 60 days).",
-      "Wrote executive keynote content for Glamour with 5M+ social views.",
+      "Wrote executive keynote content for Glamour that drove 5M+ social views.",
     ],
   },
 ];
+
 
 const ExperienceSection = () => (
   <section id="experience" className="px-8 md:px-16 py-24 border-t border-border">

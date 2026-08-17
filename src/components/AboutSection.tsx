@@ -33,26 +33,32 @@ const AboutSection = () =>
         Most of my best work has somebody else's name on it. That's the job. For two
         years I was Chief of Staff to Henry Winkler, which meant learning a
         seventy-something legend's cadence well enough that three million people
-        couldn't tell where he stopped and I started — and then keeping the channels,
-        the calendar, and an $8M+ influencer budget running underneath it.
+        couldn't tell where he stopped and I started — and then running the content
+        calendar, the owned channels, and an $8M+ creator and influencer budget
+        underneath it.
       </p>
       <p className="text-lg text-foreground leading-relaxed mb-6">
         The numbers were good (Facebook +495%, YouTube views up from a nearly dormant
         channel to +42,425%, subscribers +4,035%), but the part I'd actually tell you
-        about over coffee is the voice guide — one page, his rhythms, the words he'd
-        never say — and how much faster everything moved once the whole team had it.
+        about over coffee is what drove them: social-first cutdowns built for the way
+        younger audiences actually scroll, creator partnerships that carried a show
+        beyond its own fandom, and press timed to the platform moment instead of the
+        press release.
       </p>
       <p className="text-lg text-foreground leading-relaxed mb-6">
-        Before that I was at DreamWorks Animation, translating a cloud migration into
-        something 3,000 artists would willingly read on a Monday, and at Joy Mill
-        Entertainment, where I helped launch Michelle Obama's <em>Becoming</em> and the
-        #MeToo Movement Fund. Different rooms, same problem: find the true sentence,
-        then get it in front of the right people.
+        I've marketed television (HBO's <em>Barry</em>), a NYT-bestselling memoir across
+        15+ markets, and consumer brands with real fandoms. Before that I was at
+        DreamWorks Animation, translating a cloud migration into something 3,000 artists
+        would willingly read on a Monday, and at Joy Mill Entertainment, where I helped
+        launch Michelle Obama's <em>Becoming</em> and the #MeToo Movement Fund.
+        Different rooms, same problem: find the true sentence, then get it in front of
+        the right audience — and prove it moved something.
       </p>
+
       <p className="text-lg text-foreground leading-relaxed mb-8">
         <strong>USC Marshall MBA</strong> (Dean's List, Forté Fellow),{" "}
         <strong>Swarthmore College</strong> Political Science. Based in Los Angeles.
-        Currently consulting on social and exec comms — and{" "}
+        Currently consulting on content marketing, social, and exec comms — and{" "}
         <a
           href="https://medium.com/@marissacohen"
           target="_blank"
@@ -65,7 +71,7 @@ const AboutSection = () =>
       </p>
       <div className="divider mb-8" />
       <div className="flex flex-wrap gap-2">
-        {["Social Media Strategy", "Executive Communications", "Content Strategy", "Internal Comms", "Event Production", "PR & Publicity", "Marketing Analytics", "GTM Strategy"].map((skill) =>
+        {["Content & IP Marketing", "Social-First Strategy", "Creator & Influencer Marketing", "Integrated Campaigns", "Paid Media Partnership", "Audience Growth", "PR & Publicity", "Executive Communications", "Marketing Analytics", "GTM Strategy"].map((skill) =>
           <span key={skill} className="rounded-full bg-muted text-foreground/80 px-4 py-2 text-sm">
             {skill}
           </span>
