@@ -228,18 +228,14 @@ const ProjectDetail = () => {
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className={`overflow-hidden rounded-3xl bg-muted relative border-2 border-foreground accent-card ${accentFor(i)} ${isBecoming ? "lg:col-span-4 h-[380px]" : isHumanitas ? "aspect-video" : "aspect-square"}`}
+                  className={`overflow-hidden rounded-3xl bg-muted relative border-2 border-foreground accent-card ${accentFor(i)} ${isBecoming ? `${i === 1 || i === 3 ? "lg:col-span-8" : "lg:col-span-4"} h-[380px]` : isHumanitas ? "aspect-video" : "aspect-square"}`}
                 >
                   <img
                     src={img}
                     alt={`${project.title} gallery ${i + 1}`}
-                    className={`w-full h-full ${isHumanitas ? "object-contain bg-muted" : isBecoming ? "object-cover object-center" : "object-cover"}`}
-                    style={(isBecoming && i === 4) ? { objectPosition: '60% center' } : undefined}
+                    className={`w-full h-full ${isHumanitas ? "object-contain bg-muted" : isBecoming ? (i === 3 ? "object-contain p-4 bg-background" : i === 1 ? "object-cover object-[center_45%]" : "object-cover object-center") : "object-cover"}`}
                     loading="lazy"
                     />
-                    {isBecoming && i === 0 && (
-                      <img src={glamourLogo} alt="Glamour logo" className="absolute top-3 left-3 w-20 pointer-events-none" />
-                    )}
                   </motion.div>
               );
             })}
