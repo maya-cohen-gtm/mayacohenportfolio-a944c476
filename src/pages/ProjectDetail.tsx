@@ -228,12 +228,12 @@ const ProjectDetail = () => {
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className={`overflow-hidden rounded-3xl bg-muted relative border-2 border-foreground accent-card ${accentFor(i)} ${isBecoming ? `${i === 1 || i === 3 ? "lg:col-span-8" : "lg:col-span-4"} h-[380px]` : isHumanitas ? "aspect-video" : isBarryVertical ? "aspect-[9/16]" : "aspect-square"}`}
+                  className={`overflow-hidden rounded-3xl bg-muted relative border-2 border-foreground accent-card ${accentFor(i)} ${isBecoming ? `${i === 1 || i === 3 ? "lg:col-span-8" : "lg:col-span-4"} h-[380px]` : isHumanitas ? "aspect-video" : isBarryVertical ? "aspect-[3/4]" : "aspect-square"}`}
                 >
                   <img
                     src={img}
                     alt={`${project.title} gallery ${i + 1}`}
-                    className={`w-full h-full ${isHumanitas ? "object-contain bg-muted" : isBecoming ? (i === 3 ? "object-contain p-4 bg-background" : i === 1 ? "object-cover object-[center_45%]" : "object-cover object-center") : isBarryVertical ? "object-contain bg-foreground/5" : "object-cover"}`}
+                    className={`w-full h-full ${isHumanitas ? "object-contain bg-muted" : isBecoming ? (i === 3 ? "object-contain p-4 bg-background" : i === 1 ? "object-cover object-[center_45%]" : "object-cover object-center") : isBarryVertical ? "object-cover object-center" : "object-cover"}`}
                     loading="lazy"
                     />
                   </motion.div>
