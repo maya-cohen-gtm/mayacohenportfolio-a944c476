@@ -37,12 +37,11 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.12, ease: [0.2, 0, 0, 1] }}
             className="text-lg md:text-xl text-muted-foreground max-w-xl mb-8 leading-relaxed"
           >
-            I&rsquo;ve worked overseas in India and across Southeast Asia, so I tend to look at
-            campaigns from more than one angle &mdash; local platform behavior, creator culture,
-            and what actually makes someone stop scrolling. That perspective pairs with the
-            work: launching shows, books, and IP to Gen Z and Millennial audiences, and
-            marketing the technology behind the screen. Integrated campaigns across social,
-            creators, paid, and press &mdash; usually in somebody else&rsquo;s voice.
+            I&rsquo;ve worked in India and across Southeast Asia, so I look at campaigns through
+            local platform behavior, creator culture, and what makes someone stop scrolling.
+            I launch shows, books, and IP to Gen Z and Millennial audiences &mdash; and build
+            integrated campaigns across social, creators, paid, and press, often in someone
+            else&rsquo;s voice.
           </motion.p>
 
 
