@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import type { Project } from "@/data/projects";
 
-const ActivationCard = ({ project }: { project: Project }) => {
+const ActivationCard = ({ project, accentClass = "accent-orange" }: { project: Project; accentClass?: string }) => {
   const navigate = useNavigate();
 
   return (
@@ -12,7 +12,7 @@ const ActivationCard = ({ project }: { project: Project }) => {
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.6, ease: [0.2, 0, 0, 1] }}
       whileHover={{ y: -8 }}
-      className="group cursor-pointer surface-card overflow-hidden"
+      className={`group cursor-pointer surface-card accent-card overflow-hidden ${accentClass}`}
       onClick={() => navigate(`/project/${project.id}`)}
     >
       <div className="aspect-[16/9] overflow-hidden bg-muted relative">
@@ -28,7 +28,7 @@ const ActivationCard = ({ project }: { project: Project }) => {
         <h3 className="text-2xl text-foreground font-semibold">{project.title}</h3>
         <p className="text-muted-foreground mt-3 text-lg">{project.description}</p>
         {project.metric && (
-          <p className="mt-4 pt-4 border-t border-border text-sm font-semibold text-primary">
+          <p className="mt-4 pt-4 border-t border-border text-sm font-semibold accent-text">
             {project.metric}
           </p>
         )}

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { accentFor } from "@/lib/accents";
 
 // NOTE: The `excerpt` fields below are drafted placeholders in Marissa's voice.
 // Swap in the real (or lightly redacted) copy before sharing with recruiters.
@@ -50,14 +51,14 @@ const samples = [
 ];
 
 const WritingSection = () => (
-  <section id="writing" className="px-8 md:px-16 py-24 border-t border-border">
+  <section id="writing" className="px-8 md:px-16 py-24 border-t border-border accent-yellow">
     <div className="flex flex-wrap items-end justify-between gap-4 mb-4">
       <h2 className="label-text">Words</h2>
       <a
         href="https://medium.com/@marissacohen"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-sm text-primary font-semibold hover:underline underline-offset-4"
+        className="text-sm accent-text font-semibold hover:underline underline-offset-4"
       >
         Read more on Medium &rarr;
       </a>
@@ -75,7 +76,7 @@ const WritingSection = () => (
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: i * 0.05 }}
-          className="surface-card p-8 md:p-10 flex flex-col"
+          className={`surface-card accent-card p-8 md:p-10 flex flex-col ${accentFor(i + 2)}`}
         >
           <span className="label-text mb-3">{sample.kind}</span>
           <h3 className="text-2xl font-semibold mb-6">{sample.title}</h3>
@@ -96,12 +97,12 @@ const WritingSection = () => (
           </div>
 
           <blockquote
-            className="pastel-bg rounded-2xl p-6 text-lg italic text-foreground mb-6 mt-auto"
+            className="accent-tint rounded-2xl p-6 text-lg italic text-foreground mb-6 mt-auto"
           >
             &ldquo;{sample.excerpt}&rdquo;
           </blockquote>
 
-          <p className="text-sm font-semibold text-primary">{sample.result}</p>
+          <p className="text-sm font-semibold accent-text">{sample.result}</p>
         </motion.article>
       ))}
     </div>

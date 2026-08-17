@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { accentFor } from "@/lib/accents";
 
 const operatingModel = [
   {
@@ -31,7 +32,7 @@ const principles = [
 ];
 
 const HowIWorkSection = () => (
-  <section id="how-i-work" className="px-8 md:px-16 py-24 border-t border-border">
+  <section id="how-i-work" className="px-8 md:px-16 py-24 border-t border-border accent-green">
     <h2 className="label-text mb-4">How I Work</h2>
     <p className="text-lg text-muted-foreground max-w-2xl mb-12">
       The operating model behind the campaigns — what I own, how fast we move, and
@@ -46,7 +47,7 @@ const HowIWorkSection = () => (
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: i * 0.05 }}
-          className="surface-card p-8"
+          className={`surface-card accent-card p-8 ${accentFor(i + 3)}`}
         >
           <span className="label-text mb-3 block">{item.label}</span>
           <div className="text-xl font-semibold text-foreground mb-3">{item.value}</div>
@@ -60,11 +61,11 @@ const HowIWorkSection = () => (
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="surface-card p-8 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-4"
+      className="surface-card accent-card p-8 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-4"
     >
       {principles.map((line) => (
         <li key={line} className="flex gap-3 text-foreground/80 leading-relaxed">
-          <span className="text-primary font-semibold">&mdash;</span>
+          <span className="accent-text font-semibold">&mdash;</span>
           <span>{line}</span>
         </li>
       ))}
