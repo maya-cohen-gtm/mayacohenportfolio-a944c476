@@ -80,8 +80,10 @@
 
 @layer utilities {
   .label-text {
-    @apply text-xs uppercase tracking-[0.2em] text-primary font-semibold;
+    @apply text-xs uppercase tracking-[0.2em] font-semibold;
+    color: hsl(var(--section-accent-ink, var(--primary)));
   }
+
 
   .muted-text {
     @apply text-muted-foreground;
