@@ -179,15 +179,14 @@ const ProjectDetail = () => {
         {/* Gallery */}
         <div className="mt-24">
           <h2 className="label-text mb-8">Gallery</h2>
-          <div className={project.id === "pipex-virtual-launch" || project.id === "being-henry-book-tour" || project.id === "hbo-barry-emmys" || project.id === "executive-brand-activations" ? "columns-1 md:columns-2 lg:columns-3" : project.id === "becoming-memoir-launch" ? "grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-12" : `grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3`}>
+          <div className={project.id === "pipex-virtual-launch" || project.id === "being-henry-book-tour" || project.id === "hbo-barry-emmys" ? "columns-1 md:columns-2 lg:columns-3" : project.id === "becoming-memoir-launch" ? "grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-12" : `grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3`}>
             {project.gallery.map((img, i) => {
               const isPipex = project.id === "pipex-virtual-launch";
               const isHenry = project.id === "being-henry-book-tour";
               const isBarry = project.id === "hbo-barry-emmys";
               const isBecoming = project.id === "becoming-memoir-launch";
               const isHumanitas = project.id === "humanitas-prize-42";
-              const isTSR = project.id === "executive-brand-activations";
-              const isMasonry = isPipex || isHenry || isBarry || isTSR;
+              const isMasonry = isPipex || isHenry || isBarry;
               return isMasonry ? (
                 <motion.div
                   key={i}
