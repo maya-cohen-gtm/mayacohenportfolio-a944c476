@@ -149,7 +149,7 @@ export const projects: Project[] = [
     id: "humanitas-awards-show",
     metric: "Live social from the floor · annual ceremony",
     brand: "The Humanitas Prize",
-    title: "Annual Humanitas Awards Show",
+    title: "Social Media for Annual Awards Show",
     description: "Owned the live social feed for a Hollywood awards ceremony, in real time from the floor.",
     tag: "Social Media",
     image: humanitasBeverlyWilshire,
