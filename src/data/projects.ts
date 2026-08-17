@@ -28,6 +28,7 @@ import barrySundayToday from "@/assets/barry-sunday-today.png";
 import humanitasBeverlyWilshire from "@/assets/humanitas-beverly-wilshire.webp";
 import humanitasDga from "@/assets/humanitas-dga.jpg";
 import humanitasWinners from "@/assets/humanitas-winners.webp";
+import humanitasAva from "@/assets/humanitas-ava-duvernay.webp";
 
 const traceeMichelleCaseStudy = traceeMichelleInterview;
 
@@ -156,7 +157,7 @@ export const projects: Project[] = [
     role: "As Marketing Manager, I owned multiple workstreams simultaneously across the full event lifecycle. Pre-event I managed social media strategy, content creation, copy, and scheduling across platforms. During the live event I coordinated directly with vendors on the ground, resolved live technical and IT issues in real time, executed live social media coverage on X, and contributed to red carpet photography at the step and repeat.",
     impact: "Successfully produced a full-scale Hollywood awards ceremony activation end to end, managing the intersection of live event operations and real-time digital brand presence simultaneously. The dual responsibility of floor production and live social coverage is a skill set directly transferable to any brand activation requiring both physical and digital execution.",
     press: "42nd Annual Humanitas Prizes Awards Show and Toast, Four Seasons Beverly Hills. Winning projects at the ceremony included Hidden Figures, Hacksaw Ridge, Ava DuVernay's 13th, Black-ish, and This Is Us. The Humanitas Prize has been covered annually by Variety, The Hollywood Reporter, Los Angeles Times, Deadline, and The Wrap. The organization has dispensed over 1.8 million dollars in prize money to television and film writers since 1974.",
-    gallery: [humanitasDga, humanitasWinners],
+    gallery: [humanitasAva, humanitasDga, humanitasWinners],
   },
   {
     id: "pipex-virtual-launch",
