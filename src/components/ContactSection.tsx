@@ -26,14 +26,6 @@ const ContactSection = () => (
       >
         LinkedIn
       </a>
-      <a
-        href="https://medium.com/@marissacohen"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="rounded-full border border-primary text-primary px-8 py-4 uppercase tracking-widest text-sm font-semibold transition-transform hover:-translate-y-0.5"
-      >
-        Medium
-      </a>
     </div>
   </footer>
 );
