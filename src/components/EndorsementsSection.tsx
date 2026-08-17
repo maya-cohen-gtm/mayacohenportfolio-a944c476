@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { accentFor } from "@/lib/accents";
+import { Starburst, Asterisk } from "@/components/GenZGraphics";
 
 // Add real endorsements here (name + role required). The section stays hidden
 // until at least one quote exists — never ship invented praise.
@@ -26,7 +27,9 @@ const EndorsementsSection = () => {
   if (endorsements.length === 0) return null;
 
   return (
-    <section id="endorsements" className="px-8 md:px-16 py-24 border-t border-border accent-pink">
+    <section id="endorsements" className="relative overflow-hidden px-8 md:px-16 py-24 border-t border-border accent-pink">
+      <Starburst className="pointer-events-none absolute -bottom-16 left-[-3rem] w-56 h-56 text-secondary/70" />
+      <Asterisk className="pointer-events-none absolute top-10 right-8 w-20 h-20 text-primary/60 -rotate-12" />
       <h2 className="label-text mb-10">What People Say</h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {endorsements.map((item, i) => (

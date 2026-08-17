@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { accentFor } from "@/lib/accents";
+import { Starburst, Bolt } from "@/components/GenZGraphics";
 
 const stats = [
   { value: "3M+", label: "Audience reached across owned talent and entertainment channels" },
@@ -10,7 +11,9 @@ const stats = [
 
 
 const StatsSection = () => (
-  <section className="px-8 md:px-16 py-24 accent-orange">
+  <section className="relative overflow-hidden px-8 md:px-16 py-24 accent-orange">
+    <Starburst className="pointer-events-none absolute -top-16 right-[-3rem] w-56 h-56 text-brand-yellow/70" />
+    <Bolt className="pointer-events-none absolute bottom-6 left-[-1rem] w-14 h-24 text-primary/60 rotate-12" />
     <h2 className="label-text mb-10">By the Numbers</h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       {stats.map((stat, i) => (

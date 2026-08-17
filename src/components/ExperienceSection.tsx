@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { accentFor } from "@/lib/accents";
+import { Asterisk, Arrow } from "@/components/GenZGraphics";
 
 const roles = [
   {
@@ -39,7 +40,9 @@ const roles = [
 
 
 const ExperienceSection = () => (
-  <section id="experience" className="px-8 md:px-16 py-24 border-t border-border accent-blue">
+  <section id="experience" className="relative overflow-hidden px-8 md:px-16 py-24 border-t border-border accent-blue">
+    <Asterisk className="pointer-events-none absolute top-12 right-10 w-24 h-24 text-brand-blue/60 rotate-12" />
+    <Arrow className="pointer-events-none absolute bottom-12 right-[-2rem] w-40 h-24 text-secondary/70" />
     <h2 className="label-text mb-10">Experience</h2>
     <div className="space-y-6">
       {roles.map((role, i) => (

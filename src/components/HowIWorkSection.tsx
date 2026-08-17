@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { accentFor } from "@/lib/accents";
+import { Flower, Eye } from "@/components/GenZGraphics";
 
 const operatingModel = [
   {
@@ -32,7 +33,9 @@ const principles = [
 ];
 
 const HowIWorkSection = () => (
-  <section id="how-i-work" className="px-8 md:px-16 py-24 border-t border-border accent-green">
+  <section id="how-i-work" className="relative overflow-hidden px-8 md:px-16 py-24 border-t border-border accent-green">
+    <Flower className="pointer-events-none absolute -top-10 left-[-3rem] w-48 h-48 text-brand-green/50" />
+    <Eye className="pointer-events-none absolute top-16 right-12 w-24 h-14 text-primary/70" />
     <h2 className="label-text mb-4">How I Work</h2>
     <p className="text-lg text-muted-foreground max-w-2xl mb-12">
       The operating model behind the campaigns — what I own, how fast we move, and
