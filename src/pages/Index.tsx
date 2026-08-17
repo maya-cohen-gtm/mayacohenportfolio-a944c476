@@ -15,7 +15,6 @@ const Index = () => (
     <LogoStrip />
     <StatsSection />
     <ActivationGrid />
-    <WritingSection />
     <HowIWorkSection />
     <ExperienceSection />
     <EndorsementsSection />
