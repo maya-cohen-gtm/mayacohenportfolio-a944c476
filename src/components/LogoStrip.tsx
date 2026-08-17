@@ -10,7 +10,7 @@ const clients = [
 ];
 
 const LogoStrip = () => (
-  <section className="px-8 md:px-16 py-10 border-y border-border bg-background accent-blue">
+  <section className="px-8 md:px-16 py-10 accent-blue band-cream border-b-2 border-foreground">
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}

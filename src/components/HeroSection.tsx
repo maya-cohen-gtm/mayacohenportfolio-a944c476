@@ -9,55 +9,59 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative w-full min-h-[80svh] flex items-center px-8 md:px-16 pt-28 pb-16 overflow-hidden pastel-bg">
-      {/* Gen Z graphic set — hard-edged flat shapes, no dots */}
-      <Starburst className="absolute -top-12 -left-12 w-40 h-40 md:-top-24 md:-left-20 md:w-[22rem] md:h-[22rem] text-secondary" />
-      <Asterisk className="absolute top-10 left-[16rem] w-28 h-28 text-primary hidden md:block rotate-12" />
-      <Checker className="absolute top-24 right-8 w-32 h-32 text-brand-blue hidden lg:block" />
-      <Bolt className="absolute top-[45%] right-[3rem] w-16 h-28 text-brand-yellow hidden lg:block -rotate-12" />
-      <Flower className="absolute bottom-[-3rem] right-[-2.5rem] w-40 h-40 md:bottom-[-6rem] md:right-[-4rem] md:w-[20rem] md:h-[20rem] text-brand-yellow" />
-      <ZigZag className="absolute bottom-24 left-[8%] w-56 h-16 text-brand-green hidden md:block" />
-      <Eye className="absolute bottom-8 right-[30%] w-24 h-14 text-primary hidden lg:block" />
-      <div className="absolute inset-x-0 bottom-0 h-3 stripe-bar" />
+    <section className="relative w-full overflow-hidden pastel-bg pt-24 lg:pt-28">
+      <div className="relative grid grid-cols-1 lg:grid-cols-[minmax(0,1.25fr)_minmax(0,0.75fr)]">
+        {/* ---------------- Left: editorial type block ---------------- */}
+        <div className="relative px-6 sm:px-8 md:px-16 pb-14 lg:pb-24 pt-6 lg:pt-10">
+          <Starburst className="pointer-events-none absolute -top-10 -left-14 w-36 h-36 md:w-56 md:h-56 text-brand-yellow" />
+          <Asterisk className="pointer-events-none absolute top-2 right-4 w-14 h-14 md:w-24 md:h-24 text-secondary rotate-12 lg:hidden" />
 
-      <div className="relative z-10 w-full grid grid-cols-1 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] gap-12 lg:gap-16 items-center">
-        <div>
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
-            className="label-text mb-5 block uppercase"
+            className="relative z-10 label-text mb-4 inline-block border-2 border-foreground bg-card px-3 py-1.5 uppercase"
           >
-            Entertainment Marketing &middot; Social &amp; Creator Campaigns
+            Entertainment &middot; Social &middot; Creator Campaigns
           </motion.span>
+
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.2, 0, 0, 1] }}
-            className="text-[clamp(2.5rem,5.5vw,4.5rem)] leading-[1.02] font-bold tracking-[-0.03em] text-foreground mb-6"
+            className="relative z-10 font-bold uppercase tracking-[-0.045em] leading-[0.82] mb-6"
           >
-            Marissa Cohen
+            <span className="block text-[clamp(3.5rem,13vw,10rem)] text-foreground">
+              Marissa
+            </span>
+            <span className="block text-[clamp(3.5rem,13vw,10rem)] text-primary">
+              Cohen
+            </span>
+            <span className="mt-3 block text-[clamp(1rem,2.4vw,1.75rem)] tracking-[0.06em] leading-tight text-brand-green">
+              Social &amp; Executive Communications
+            </span>
           </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.12, ease: [0.2, 0, 0, 1] }}
-            className="text-lg md:text-xl text-muted-foreground max-w-xl mb-8 leading-relaxed"
-          >
-            Over six years in entertainment and digital marketing, I&rsquo;ve scaled content 
-            from launch to millions of views.{" "}
-            <br className="hidden sm:block" />
-            I bridge creative storytelling and business rigor&mdash;brand narrative and influencer 
-            strategy, backed by performance attribution, budget optimization, and ROI tracking. 
-            MBA from USC Marshall; based in Los Angeles.
-          </motion.p>
 
+          <div className="relative z-10 flex items-stretch gap-4 mb-8">
+            <div className="w-2 shrink-0 stripe-bar rounded-full" />
+            <motion.p
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.12, ease: [0.2, 0, 0, 1] }}
+              className="text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed"
+            >
+              Six-plus years in entertainment and digital marketing, scaling content from launch
+              to millions of views. I bridge creative storytelling and business rigor&mdash;brand
+              narrative and influencer strategy, backed by performance attribution, budget
+              optimization, and ROI tracking. MBA from USC Marshall; based in Los Angeles.
+            </motion.p>
+          </div>
 
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.25 }}
-            className="flex flex-wrap items-center gap-3"
+            className="relative z-10 flex flex-wrap items-center gap-3"
           >
             <button
               onClick={scrollToWork}
@@ -83,23 +87,31 @@ const HeroSection = () => {
               LinkedIn
             </a>
           </motion.div>
+
+          <ZigZag className="pointer-events-none absolute bottom-6 left-[40%] w-40 h-10 md:w-64 md:h-14 text-brand-blue hidden md:block" />
         </div>
 
+        {/* ---------------- Right: solid color block + portrait ---------------- */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.9, delay: 0.15, ease: [0.2, 0, 0, 1] }}
-          className="justify-self-center lg:justify-self-end w-full max-w-sm"
+          className="relative flex items-end justify-center bg-brand-green border-t-2 lg:border-t-0 lg:border-l-2 border-foreground overflow-hidden min-h-[24rem]"
         >
-          <div className="relative rounded-[2rem] overflow-hidden surface-card p-0">
+          <Checker className="pointer-events-none absolute top-4 left-4 w-16 h-16 md:w-28 md:h-28 text-brand-yellow" />
+          <Bolt className="pointer-events-none absolute top-8 right-6 w-10 h-20 md:w-16 md:h-28 text-brand-yellow -rotate-12" />
+          <Flower className="pointer-events-none absolute -bottom-10 -left-10 w-32 h-32 md:w-48 md:h-48 text-secondary" />
+          <Eye className="pointer-events-none absolute bottom-6 right-4 w-16 h-9 md:w-24 md:h-14 text-card" />
+
           <img
             src={headshot}
             alt="Marissa Cohen, social media and executive communications marketer"
-            className="w-full h-[22rem] md:h-[26rem] object-cover object-[center_20%]"
+            className="relative z-10 w-[85%] max-w-sm h-[22rem] md:h-[28rem] object-cover object-[center_18%] border-2 border-foreground rounded-t-[3rem]"
           />
-          </div>
         </motion.div>
       </div>
+
+      <div className="h-3 stripe-bar border-t-2 border-foreground" />
     </section>
   );
 };

@@ -11,7 +11,7 @@ const stats = [
 
 
 const StatsSection = () => (
-  <section className="relative overflow-hidden px-8 md:px-16 py-24 accent-orange">
+  <section className="relative overflow-hidden px-8 md:px-16 py-24 accent-orange band">
     <Starburst className="pointer-events-none absolute -top-8 right-[-2rem] w-32 h-32 md:-top-16 md:right-[-3rem] md:w-56 md:h-56 text-brand-yellow/70" />
     <Bolt className="pointer-events-none absolute bottom-6 left-[-1rem] w-14 h-24 text-primary/60 rotate-12" />
     <h2 className="label-text mb-10">By the Numbers</h2>

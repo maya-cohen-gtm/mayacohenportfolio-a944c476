@@ -167,5 +167,22 @@
     background-color: hsl(var(--section-accent, var(--primary)) / 0.16);
     color: hsl(var(--section-accent-ink, var(--foreground)));
   }
+
+  /* --- Color-blocked section bands -------------------------------------- */
+  .band {
+    background-color: hsl(var(--section-accent, var(--background)) / 0.16);
+    border-top: 2px solid hsl(var(--foreground));
+  }
+
+  .band-solid {
+    background-color: hsl(var(--section-accent, var(--primary)));
+    border-top: 2px solid hsl(var(--foreground));
+  }
+
+  .band-cream {
+    background-color: hsl(var(--background));
+    border-top: 2px solid hsl(var(--foreground));
+  }
 }
+
 
