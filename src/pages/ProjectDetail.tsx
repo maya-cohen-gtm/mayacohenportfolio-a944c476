@@ -114,7 +114,10 @@ const ProjectDetail = () => {
   }
 
   return (
-    <main className={`bg-background min-h-screen ${pageAccent}`}>
+    <main className={`relative bg-background min-h-screen overflow-hidden ${pageAccent}`}>
+      <Starburst className="pointer-events-none absolute top-[55vh] right-[-4rem] w-56 h-56 text-secondary/70" />
+      <Asterisk className="pointer-events-none absolute top-[120vh] left-[-2rem] w-28 h-28 text-primary/50 rotate-12 hidden md:block" />
+      <Checker className="pointer-events-none absolute bottom-24 right-8 w-28 h-28 text-brand-blue/60 hidden md:block" />
       {/* Header image */}
       <div className="relative h-[60vh] w-full overflow-hidden">
         <img
