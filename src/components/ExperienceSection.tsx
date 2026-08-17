@@ -40,7 +40,7 @@ const roles = [
 
 
 const ExperienceSection = () => (
-  <section id="experience" className="relative overflow-hidden px-8 md:px-16 py-24 accent-blue band">
+  <section id="experience" className="relative overflow-hidden px-8 md:px-16 py-24 border-t border-border accent-blue">
     <Asterisk className="pointer-events-none absolute top-12 right-6 w-14 h-14 md:right-10 md:w-24 md:h-24 text-brand-blue/60 rotate-12" />
     <Arrow className="pointer-events-none absolute bottom-12 right-[-1rem] w-24 h-14 md:right-[-2rem] md:w-40 md:h-24 text-secondary/70" />
     <h2 className="label-text mb-10">Experience</h2>
