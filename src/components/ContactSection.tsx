@@ -45,7 +45,7 @@ const ContactSection = () => (
         download
         className="rounded-full bg-brand-yellow text-foreground px-8 py-4 uppercase tracking-widest text-sm font-semibold transition-transform hover:-translate-y-0.5"
       >
-        Resume
+        Résumé
       </a>
     </div>
   </footer>
