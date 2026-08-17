@@ -3,7 +3,6 @@ import HeroSection from "@/components/HeroSection";
 import LogoStrip from "@/components/LogoStrip";
 import StatsSection from "@/components/StatsSection";
 import ActivationGrid from "@/components/ActivationGrid";
-import WritingSection from "@/components/WritingSection";
 import HowIWorkSection from "@/components/HowIWorkSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import EndorsementsSection from "@/components/EndorsementsSection";
@@ -16,7 +15,6 @@ const Index = () => (
     <LogoStrip />
     <StatsSection />
     <ActivationGrid />
-    <WritingSection />
     <HowIWorkSection />
     <ExperienceSection />
     <EndorsementsSection />
