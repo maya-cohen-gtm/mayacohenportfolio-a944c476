@@ -37,7 +37,7 @@ const NavBar = () => {
           <button
             key={link.id}
             onClick={() => scrollTo(link.id)}
-            className="text-xs uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+            className="text-[10px] sm:text-xs uppercase tracking-[0.12em] sm:tracking-[0.2em] whitespace-nowrap text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
           >
             {link.label}
           </button>
