@@ -19,7 +19,7 @@ const endorsements: Endorsement[] = [
   {
     quote: "Marissa transformed GWiB's social media presence from the ground up — she re-vamped our logo, campaigns, and posts, built a cohesive content schedule, and drove over 200% engagement growth. As a leader, she is someone I never need to worry about: the work gets done, and done well. She brings creative ideas, asks smart questions, supports the team, and collaborates with humility and confidence. Any team would be lucky to have her.",
     name: "Jasmine Kaur",
-    role: "Senior Consultant, EY; President of Graduate Women in Business",
+    role: "Senior Consultant, EY; President of Graduate Women in Business (GWiB)",
   },
 ];
 
