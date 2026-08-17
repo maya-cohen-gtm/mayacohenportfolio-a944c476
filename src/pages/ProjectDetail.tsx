@@ -201,7 +201,7 @@ const ProjectDetail = () => {
               const isPipex = project.id === "pipex-virtual-launch";
               const isHenry = project.id === "multiplatform-memoir-launch";
               const isBecoming = project.id === "becoming-memoir-launch";
-              const isHumanitas = project.id === "humanitas-prize-42";
+              const isHumanitas = project.id === "humanitas-awards-show";
               const isBarryVertical = project.id === "henry-winkler-tiktok" && i < 3;
               const isMasonry = isPipex || isHenry;
 
