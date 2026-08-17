@@ -229,7 +229,7 @@ const ProjectDetail = () => {
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className={`overflow-hidden rounded-3xl bg-muted relative border-2 border-foreground accent-card ${accentFor(i)} ${isBecoming ? `${i === 1 || i === 3 ? "lg:col-span-8" : "lg:col-span-4"} h-[380px]` : isHumanitas ? "aspect-video" : isBarryVertical ? "aspect-[3/4]" : "aspect-square"}`}
+                  className={`overflow-hidden rounded-3xl bg-muted relative border-2 border-foreground accent-card ${accentFor(i)} ${isBecoming ? `${i === 1 || i === 3 ? "lg:col-span-8" : "lg:col-span-4"} aspect-[4/3] md:aspect-auto md:h-[380px]` : isHumanitas ? "aspect-video" : isBarryVertical ? "aspect-[3/4]" : "aspect-square"}`}
                 >
                   <img
                     src={img}
