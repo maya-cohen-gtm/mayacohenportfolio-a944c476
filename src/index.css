@@ -24,8 +24,13 @@
     --muted: 44 60% 94%;
     --muted-foreground: 207 20% 40%;
 
-    --accent: 159 100% 32%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 44 95% 86%;
+    --accent-foreground: 30 60% 20%;
+
+    --brand-green: 159 100% 32%;
+    --brand-blue: 207 45% 49%;
+    --brand-yellow: 44 98% 53%;
+    --brand-pink: 344 100% 82%;
 
     --destructive: 0 78% 52%;
     --destructive-foreground: 0 0% 100%;
