@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import resumeAsset from "@/assets/Marissa-Cohen-Resume.pdf.asset.json";
 import headshot from "@/assets/headshot.jpg";
-import Scribbles from "@/components/Scribbles";
 
 const HeroSection = () => {
   const scrollToWork = () => {
@@ -10,8 +9,12 @@ const HeroSection = () => {
 
   return (
     <section className="relative w-full min-h-[80svh] flex items-center px-8 md:px-16 pt-28 pb-16 overflow-hidden pastel-bg">
-      {/* Hand-drawn scribble shapes */}
-      <Scribbles />
+      {/* Flat graphic shapes */}
+      <div className="absolute -top-32 -left-28 w-[24rem] h-[24rem] rounded-full bg-secondary" />
+      <div className="absolute -top-24 left-[14rem] w-52 h-52 rounded-full bg-primary hidden md:block" />
+      <div className="absolute bottom-[-9rem] right-[-5rem] w-[24rem] h-[24rem] rounded-full bg-brand-yellow" />
+      <div className="absolute bottom-[-10rem] left-1/4 w-64 h-64 rounded-full bg-brand-green hidden md:block" />
+      <div className="absolute top-6 right-[-9rem] w-72 h-72 rounded-full bg-brand-blue hidden lg:block" />
       <div className="absolute inset-x-0 bottom-0 h-3 stripe-bar" />
 
       <div className="relative z-10 w-full grid grid-cols-1 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] gap-12 lg:gap-16 items-center">
