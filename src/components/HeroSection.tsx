@@ -70,7 +70,7 @@ const HeroSection = () => {
             <a
               href={resumeAsset.url}
               download
-              className="rounded-full border-2 border-foreground bg-brand-yellow text-foreground px-7 py-3.5 text-sm font-bold tracking-widest uppercase transition-transform hover:-translate-y-0.5"
+              className="rounded-full border-2 border-foreground bg-brand-yellow text-primary-foreground px-7 py-3.5 text-sm font-bold tracking-widest uppercase transition-transform hover:-translate-y-0.5"
             >
               Résumé
             </a>
