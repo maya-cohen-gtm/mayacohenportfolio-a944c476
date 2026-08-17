@@ -9,7 +9,6 @@ import pipexCardCover from "@/assets/pipex-card-cover.webp";
 import becomingBookDisplay from "@/assets/becoming-book-display.jpg";
 import becomingTimesup from "@/assets/becoming-timesup.webp";
 import traceeMichelleInterview from "@/assets/tracee-michelle-interview.jpg";
-import traceeMichelleUsowAsset from "@/assets/tracee-michelle-usow.jpg.asset.json";
 import becomingGlamourWoty from "@/assets/becoming-glamour-woty.jpg";
 import henryTourBanner from "@/assets/henry-tour-banner.gif";
 import henryHelloSign from "@/assets/henry-hello-sign.png";
@@ -18,7 +17,6 @@ import henryFanexpo from "@/assets/henry-fanexpo.webp";
 import henrySeatedBook from "@/assets/henry-seated-book.jpg";
 import henryHodaJenna from "@/assets/henry-hoda-jenna.png";
 import barryFinalSeason from "@/assets/barry-final-season.jpg";
-import traceeMichelleInterview from "@/assets/tracee-michelle-interview.jpg";
 
 import barryPeacockTheater from "@/assets/barry-peacock-theater.webp";
 import barryRichEisen from "@/assets/barry-rich-eisen.jpg";
