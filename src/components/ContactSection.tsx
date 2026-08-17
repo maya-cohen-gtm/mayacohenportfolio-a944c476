@@ -17,13 +17,14 @@ const ContactSection = () => (
       Contact
     </motion.h2>
 
-    <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-12">
+    <p className="relative z-10 text-lg text-muted-foreground max-w-xl mx-auto mb-12">
       Los Angeles based, and happiest launching content people actually talk about &mdash;
       shows, IP, creators, streaming. If that&rsquo;s the campaign you&rsquo;re hiring for,
       I&rsquo;d love to hear about it.
 
     </p>
-    <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+    <div className="relative z-10 flex flex-wrap justify-center gap-4 md:gap-6">
+
       <a
         href="mailto:marissadcohen@gmail.com"
         className="rounded-full bg-primary text-primary-foreground px-8 py-4 uppercase tracking-widest text-sm font-semibold transition-transform hover:-translate-y-0.5"
