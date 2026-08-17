@@ -9,7 +9,6 @@ import pipexCardCover from "@/assets/pipex-card-cover.webp";
 import becomingBookDisplay from "@/assets/becoming-book-display.jpg";
 import becomingTimesup from "@/assets/becoming-timesup.webp";
 import traceeMichelleInterview from "@/assets/tracee-michelle-interview.jpg";
-import traceeMichelleUsowAsset from "@/assets/tracee-michelle-usow.jpg.asset.json";
 import becomingGlamourWoty from "@/assets/becoming-glamour-woty.jpg";
 import henryTourBanner from "@/assets/henry-tour-banner.gif";
 import henryHelloSign from "@/assets/henry-hello-sign.png";
@@ -26,7 +25,7 @@ import humanitasBeverlyWilshire from "@/assets/humanitas-beverly-wilshire.webp";
 import humanitasDga from "@/assets/humanitas-dga.jpg";
 import humanitasWinners from "@/assets/humanitas-winners.webp";
 
-const traceeMichelleCaseStudy = traceeMichelleUsowAsset.url;
+const traceeMichelleCaseStudy = traceeMichelleInterview;
 
 export type ProjectLink = {
   text: string;
