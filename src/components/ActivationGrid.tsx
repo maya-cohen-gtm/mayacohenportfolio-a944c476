@@ -13,8 +13,8 @@ const ActivationGrid = () => {
 
   return (
     <section id="work" className="relative overflow-hidden py-24 px-8 md:px-16 bg-background accent-pink">
-      <Checker className="pointer-events-none absolute top-10 right-6 w-28 h-28 text-secondary" />
-      <ZigZag className="pointer-events-none absolute bottom-10 left-[-2rem] w-64 h-16 text-brand-green/70" />
+      <Checker className="pointer-events-none absolute top-10 right-6 w-16 h-16 md:w-28 md:h-28 text-secondary" />
+      <ZigZag className="pointer-events-none absolute bottom-10 left-[-2rem] w-40 h-10 md:w-64 md:h-16 text-brand-green/70" />
       <h2 className="label-text mb-10">Work</h2>
       <div className="flex flex-wrap gap-3 mb-16">
         {filterTags.map((tag, i) => (

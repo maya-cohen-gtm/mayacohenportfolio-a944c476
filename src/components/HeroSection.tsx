@@ -11,11 +11,11 @@ const HeroSection = () => {
   return (
     <section className="relative w-full min-h-[80svh] flex items-center px-8 md:px-16 pt-28 pb-16 overflow-hidden pastel-bg">
       {/* Gen Z graphic set — hard-edged flat shapes, no dots */}
-      <Starburst className="absolute -top-24 -left-20 w-[22rem] h-[22rem] text-secondary" />
+      <Starburst className="absolute -top-12 -left-12 w-40 h-40 md:-top-24 md:-left-20 md:w-[22rem] md:h-[22rem] text-secondary" />
       <Asterisk className="absolute top-10 left-[16rem] w-28 h-28 text-primary hidden md:block rotate-12" />
       <Checker className="absolute top-24 right-8 w-32 h-32 text-brand-blue hidden lg:block" />
       <Bolt className="absolute top-[45%] right-[3rem] w-16 h-28 text-brand-yellow hidden lg:block -rotate-12" />
-      <Flower className="absolute bottom-[-6rem] right-[-4rem] w-[20rem] h-[20rem] text-brand-yellow" />
+      <Flower className="absolute bottom-[-3rem] right-[-2.5rem] w-40 h-40 md:bottom-[-6rem] md:right-[-4rem] md:w-[20rem] md:h-[20rem] text-brand-yellow" />
       <ZigZag className="absolute bottom-24 left-[8%] w-56 h-16 text-brand-green hidden md:block" />
       <Eye className="absolute bottom-8 right-[30%] w-24 h-14 text-primary hidden lg:block" />
       <div className="absolute inset-x-0 bottom-0 h-3 stripe-bar" />
