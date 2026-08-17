@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Starburst, Checker, Bolt, Flower } from "@/components/GenZGraphics";
+import resumeAsset from "@/assets/Marissa-Cohen-Resume.pdf.asset.json";
 
 const ContactSection = () => (
   <footer id="contact" className="relative overflow-hidden py-24 md:py-32 px-6 md:px-16 text-center border-t border-border pastel-bg accent-orange">
@@ -38,6 +39,13 @@ const ContactSection = () => (
         className="rounded-full border border-primary text-primary px-8 py-4 uppercase tracking-widest text-sm font-semibold transition-transform hover:-translate-y-0.5"
       >
         LinkedIn
+      </a>
+      <a
+        href={resumeAsset.url}
+        download
+        className="rounded-full bg-brand-yellow text-foreground px-8 py-4 uppercase tracking-widest text-sm font-semibold transition-transform hover:-translate-y-0.5"
+      >
+        Resume
       </a>
     </div>
   </footer>
