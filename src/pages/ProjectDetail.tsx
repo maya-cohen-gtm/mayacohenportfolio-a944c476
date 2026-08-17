@@ -119,12 +119,14 @@ const ProjectDetail = () => {
       <Asterisk className="pointer-events-none absolute top-[120vh] left-[-2rem] w-28 h-28 text-primary/50 rotate-12 hidden md:block" />
       <Checker className="pointer-events-none absolute bottom-24 right-8 w-28 h-28 text-brand-blue/60 hidden md:block" />
       {/* Header image */}
-      <div className="relative h-[60vh] w-full overflow-hidden">
+      <div className="relative aspect-[16/9] md:aspect-auto md:h-[60vh] w-full overflow-hidden">
         <img
           src={project.image}
           alt={project.title}
-          className={`w-full h-full object-cover ${project.id === "becoming-memoir-launch" ? "object-[center_30%]" : project.id === "pipex-virtual-launch" ? "object-top" : project.id === "henry-winkler-tiktok" ? "object-[center_30%]" : ""}`}
+          className={`w-full h-full object-cover object-center ${project.id === "becoming-memoir-launch" ? "object-[center_25%] md:object-[center_30%]" : project.id === "pipex-virtual-launch" ? "object-top" : project.id === "henry-winkler-tiktok" ? "object-[35%_30%] md:object-[center_30%]" : ""}`}
         />
+
+
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
         <button
           onClick={() => navigate("/")}
@@ -228,7 +230,7 @@ const ProjectDetail = () => {
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className={`overflow-hidden rounded-3xl bg-muted relative border-2 border-foreground accent-card ${accentFor(i)} ${isBecoming ? `${i === 1 || i === 3 ? "lg:col-span-8" : "lg:col-span-4"} h-[380px]` : isHumanitas ? "aspect-video" : isBarryVertical ? "aspect-[3/4]" : "aspect-square"}`}
+                  className={`overflow-hidden rounded-3xl bg-muted relative border-2 border-foreground accent-card ${accentFor(i)} ${isBecoming ? `${i === 1 || i === 3 ? "lg:col-span-8" : "lg:col-span-4"} aspect-[4/3] md:aspect-auto md:h-[380px]` : isHumanitas ? "aspect-video" : isBarryVertical ? "aspect-[3/4]" : "aspect-square"}`}
                 >
                   <img
                     src={img}
