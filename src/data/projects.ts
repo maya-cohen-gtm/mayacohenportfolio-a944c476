@@ -95,10 +95,10 @@ export const projects: Project[] = [
     gallery: [henryTiktok127m, henryTiktok24m, henryTiktok6m],
   },
   {
-    id: "being-henry-book-tour",
+    id: "multiplatform-memoir-launch",
     metric: "11 weeks on NYT Bestsellers list · 15+ cities",
     brand: "Henry Winkler x Celadon Books",
-    title: "Being Henry Book Tour",
+    title: "Multiplatform Campaign for Memoir Launch",
     description: "National launch campaign for a NYT bestselling memoir across 15+ cities.",
     tag: "Campaigns",
     image: henryTourBanner,

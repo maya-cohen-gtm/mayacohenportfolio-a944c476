@@ -196,10 +196,10 @@ const ProjectDetail = () => {
         {/* Gallery */}
         <div className="mt-24">
           <h2 className="label-text mb-8">Gallery</h2>
-          <div className={project.id === "pipex-virtual-launch" || project.id === "being-henry-book-tour" ? "columns-1 md:columns-2 lg:columns-3" : project.id === "becoming-memoir-launch" ? "grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-12" : `grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3`}>
+          <div className={project.id === "pipex-virtual-launch" || project.id === "multiplatform-memoir-launch" ? "columns-1 md:columns-2 lg:columns-3" : project.id === "becoming-memoir-launch" ? "grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-12" : `grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3`}>
             {project.gallery.map((img, i) => {
               const isPipex = project.id === "pipex-virtual-launch";
-              const isHenry = project.id === "being-henry-book-tour";
+              const isHenry = project.id === "multiplatform-memoir-launch";
               const isBecoming = project.id === "becoming-memoir-launch";
               const isHumanitas = project.id === "humanitas-prize-42";
               const isBarryVertical = project.id === "henry-winkler-tiktok" && i < 3;
