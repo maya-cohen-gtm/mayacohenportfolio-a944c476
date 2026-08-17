@@ -6,7 +6,6 @@ import pipexLaunchLetter from "@/assets/pipex-launch-letter.png";
 import pipexHappyHour from "@/assets/pipex-happy-hour.png";
 import pipexTrollsHoliday from "@/assets/pipex-trolls-holiday.jpg";
 import pipexCardCover from "@/assets/pipex-card-cover.webp";
-import infosysCover from "@/assets/infosys-cover.jpeg";
 import patternMacysHero from "@/assets/pattern-beauty-hero.png";
 import becomingBookDisplay from "@/assets/becoming-book-display.jpg";
 import becomingTimesup from "@/assets/becoming-timesup.webp";
@@ -14,11 +13,6 @@ import traceeMichelleInterview from "@/assets/tracee-michelle-interview.jpg";
 import becomingGlamourTracee from "@/assets/becoming-glamour-tracee.jpg";
 import patternProducts from "@/assets/pattern-products.png";
 import traceePatternBeauty from "@/assets/tracee-pattern-beauty.jpg";
-import infosysGallery1 from "@/assets/infosys-gallery-1.jpeg";
-import infosysGallery3 from "@/assets/infosys-gallery-3.jpeg";
-import infosysGallery4 from "@/assets/infosys-gallery-4.jpeg";
-import infosysGallery5 from "@/assets/infosys-gallery-5.jpeg";
-import infosysGallery6 from "@/assets/infosys-gallery-6.jpeg";
 import henryTourBanner from "@/assets/henry-tour-banner.gif";
 import henryHelloSign from "@/assets/henry-hello-sign.png";
 import henrySethMeyers from "@/assets/henry-seth-meyers.png";
@@ -33,13 +27,6 @@ import barrySundayToday from "@/assets/barry-sunday-today.png";
 import humanitasBeverlyWilshire from "@/assets/humanitas-beverly-wilshire.webp";
 import humanitasDga from "@/assets/humanitas-dga.jpg";
 import humanitasWinners from "@/assets/humanitas-winners.webp";
-import tsrComplexconFloor from "@/assets/tsr-complexcon-floor.webp";
-import tsrLogo from "@/assets/tsr-logo.jpg";
-import tsrSxsw from "@/assets/tsr-sxsw.jpg";
-import tsrTechcrunch from "@/assets/tsr-techcrunch.jpg";
-import tsrAfrotech from "@/assets/tsr-afrotech.webp";
-import tsrBeautycon from "@/assets/tsr-beautycon.jpg";
-import tsrComplexconLogo from "@/assets/tsr-complexcon-logo.png";
 
 export type ProjectLink = {
   text: string;
@@ -109,27 +96,6 @@ export const projects: Project[] = [
     gallery: [becomingGlamourTracee, becomingBookDisplay, patternProducts, becomingTimesup, traceeMichelleInterview, traceePatternBeauty],
   },
   {
-    id: "executive-brand-activations",
-    metric: "6+ conferences · 0 walk-backs",
-    brand: "The Shade Room",
-    title: "CEO Conference Circuit",
-    description: "Executive appearances at SXSW, TechCrunch, AfroTech, Beautycon, and ComplexCon.",
-    tag: "Executive Comms",
-    image: tsrComplexconFloor,
-    context: "The Shade Room is one of the most influential multimedia brands in Black culture, reaching 40 million people weekly with 1.5 billion impressions, described by Refinery29 as the Oprah of our generation. As the brand expanded its executive presence across the tech and culture conference circuit, its founder & CEO required a strategic operational partner to manage high-stakes appearances across some of the most competitive stages in the industry.",
-    role: "As Chief of Staff to the Founder & CEO of The Shade Room, I coordinated executive appearances across a portfolio of major tech and culture conventions including SXSW, TechCrunch Disrupt, AfroTech, Beautycon, and ComplexCon. I owned end-to-end vendor coordination and event logistics for each appearance, and contributed to messaging and positioning work including talking points developed for the CEO's on-stage presence. Each activation required translating the TSR brand voice into a professional conference context while maintaining the cultural authenticity the brand is known for.",
-    impact: "Successfully managed a multi-event executive activation calendar spanning tech, media, and culture verticals simultaneously. Supported the CEO's visibility across both the mainstream tech conference circuit and culturally specific platforms, reinforcing The Shade Room's positioning as a serious media business operating at eight-figure revenue scale, not just a social media account.",
-    press: "The Shade Room, 28M+ Instagram followers, 40 million weekly reach, 1.5 billion weekly impressions. Named the TMZ of Instagram by the New York Times. Eight-figure annual revenue per investor disclosure. Second most popular publisher on Instagram by likes and comments. Founder Angie Nwandu named to Campaign's 2023 Inspiring Women list. Conferences include SXSW, TechCrunch Disrupt, AfroTech, Beautycon, and ComplexCon.",
-    sections: [
-      { label: "Context", content: "The Shade Room is one of the most influential multimedia brands in Black culture, reaching 40 million people weekly with 1.5 billion impressions, described by Refinery29 as the Oprah of our generation. As the brand expanded its executive presence across the tech and culture conference circuit, its founder & CEO required a strategic operational partner to manage high-stakes appearances across some of the most competitive stages in the industry." },
-      { label: "My Role", content: "As Chief of Staff to the Founder & CEO of The Shade Room, I coordinated executive appearances across a portfolio of major tech and culture conventions including SXSW, TechCrunch Disrupt, AfroTech, Beautycon, and ComplexCon. I owned end-to-end vendor coordination and event logistics for each appearance, and contributed to messaging and positioning work including talking points developed for the CEO's on-stage presence. Each activation required translating the TSR brand voice into a professional conference context while maintaining the cultural authenticity the brand is known for." },
-      { label: "Risk & Reputation", content: "Putting the CEO of a culture-first media brand on a tech-industry main stage carries real reputational risk in both directions. For each appearance I pressure-tested the likely hostile questions — monetization ethics, sourcing, the brand's relationship with the celebrities it covers — and prepared direct answers rather than avoidance. I set an escalation path for anything that broke wrong on stage or online, so a bad moment had a response plan before it happened, not after." },
-      { label: "Impact", content: "Successfully managed a multi-event executive activation calendar spanning tech, media, and culture verticals simultaneously. Supported the CEO's visibility across both the mainstream tech conference circuit and culturally specific platforms, reinforcing The Shade Room's positioning as a serious media business operating at eight-figure revenue scale, not just a social media account." },
-      { label: "Press & Recognition", content: "The Shade Room, 28M+ Instagram followers, 40 million weekly reach, 1.5 billion weekly impressions. Named the TMZ of Instagram by the New York Times. Eight-figure annual revenue per investor disclosure. Second most popular publisher on Instagram by likes and comments. Founder Angie Nwandu named to Campaign's 2023 Inspiring Women list. Conferences include SXSW, TechCrunch Disrupt, AfroTech, Beautycon, and ComplexCon." },
-    ],
-    gallery: [tsrLogo, tsrSxsw, tsrTechcrunch, tsrAfrotech, tsrBeautycon, tsrComplexconLogo],
-  },
-  {
     id: "hbo-barry-emmys",
     metric: "3.4M viewers/episode · 11 Emmy noms",
     brand: "Henry Winkler x HBO",
@@ -152,20 +118,6 @@ export const projects: Project[] = [
     gallery: [barryEmmys75, barryPeacockTheater, barryRichEisen, barrySundayToday],
   },
   {
-    id: "infosys-instep-25",
-    metric: "25-year milestone · Fortune 500 internal launch",
-    brand: "Infosys",
-    title: "InStep 25th Anniversary",
-    description: "AI demos and main-stage keynote content for a Fortune 500 milestone event.",
-    tag: "Executive Comms",
-    image: infosysCover,
-    context: "In 2025, Infosys celebrated the 25th anniversary of its InStep global internship program, one of the largest and most recognized internship programs in enterprise technology. The milestone required internal activations that could communicate the program's legacy and future direction across a diverse employee audience ranging from associates to C-suite executives.",
-    role: "As MBA Intern directly supporting the Global Head of Brand at Infosys, I contributed to the anniversary activation across multiple workstreams. I created live product demos showcasing Azure-native AI agent capabilities, developed sales enablement decks used across the event, presented to internal audiences spanning associates through C-suite, and wrote live keynote content for the main stage presentation at the celebration.",
-    impact: "Contributed to a flagship internal brand activation marking a 25-year program milestone at a Fortune 500 enterprise technology company. Keynote content and demo materials reached the full internal InStep audience across seniority levels.",
-    press: "Infosys InStep 25th Anniversary, 2025. Infosys is a global enterprise technology leader with 300,000+ employees and considered one of the Big Six Indian IT companies.",
-    gallery: [infosysGallery1, infosysCover, infosysGallery3, infosysGallery4, infosysGallery6, infosysGallery5],
-  },
-  {
     id: "humanitas-prize-42",
     metric: "Live social from the floor · 42nd annual",
     brand: "The Humanitas Prize",
@@ -181,17 +133,28 @@ export const projects: Project[] = [
   },
   {
     id: "pipex-virtual-launch",
-    metric: "3,000+ employees · 80%+ tool adoption",
+    metric: "22,000+ newsletter downloads · 80%+ tool adoption",
     brand: "DreamWorks Animation",
-    title: "PipelineX Virtual Launch",
-    description: "Live virtual activations that launched the first cloud-native animation pipeline.",
+    title: "Marketing Lead — PipelineX (Cloud Platform)",
+    description: "Internal marketing and employee communications for a cloud-native production platform.",
     tag: "Campaigns",
     image: pipexTrollsHoliday,
     cardImage: pipexCardCover,
-    context: "During the pandemic era production shutdown, DreamWorks Animation undertook a major infrastructure transformation, migrating its film pipeline to the industry-defining PipelineX, a proprietary cloud-native production infrastructure. GTMs included PipelineX itself and Trolls: Holiday in Harmony, the first production to run fully on the new system. With in-person events off the table entirely, the studio needed to build internal excitement, drive adoption, and mark key milestones through virtual experiences that could actually cut through widespread Zoom fatigue.",
-    role: "As Product Marketing Lead on the PipelineX launch team, I led live product launch activations, owning run-of-show and original content for 150+ studio-wide audiences. I led two flagship virtual brand activations tied directly to the pipeline's rollout: a milestone launch celebration marking Trolls' migration onto PipelineX, and a completed film demo showcasing the finished production running fully on the new system. Beyond launch events, I drove studio-wide adoption of cloud-native products, owning end-to-end training and onboarding during active studio production. I delivered live workshops, written documentation, video trainings, and one-on-one sessions across animators, technical directors, producers, and studio executives to hit production milestones on schedule.",
-    impact: "Successfully drove studio-wide adoption and enthusiasm around a complex cloud-native product launch during one of the most challenging periods for live engagement in the industry. The activations served as proof of concept that PipelineX could support not just production workflows but the cultural moments that matter to a creative studio. Training and onboarding efforts ensured production milestones were met on schedule across departments. Shipped the world's first cloud-based animation pipeline.",
-    press: "PipelineX powered production on Trolls: Holiday in Harmony, which premiered on NBC primetime November 26, 2021, featuring Anna Kendrick and Justin Timberlake. The underlying pipeline system, PipelineX, was published at ACM SIGGRAPH DigiPro 2017 and cited as a foundational industry reference at DigiPro 2022. DreamWorks presented the system's evolution at the 2022 SIGGRAPH Pipeline Conference. The collaboration was featured on UX Planet and covered in CIO Magazine as a model for cloud-native studio infrastructure. DreamWorks SVP-level representation of the work appeared at Web Summit 2021.",
+    context: "DreamWorks Animation's PipelineX was a proprietary cloud-native production infrastructure that powered the studio's first fully cloud-based productions. As the platform scaled across the organization, the launch team needed internal marketing and employee communications that could drive adoption, modernize the corporate web presence, and keep 3,000+ global employees aligned on a complex transformation.",
+    role: "As Marketing Lead for PipelineX, I ran internal communications and employee engagement campaigns that turned a technical infrastructure rollout into a studio-wide narrative.",
+    impact: "Drove 22,000+ newsletter downloads and elevated company narratives through employee recognition and knowledge sharing. Modernized 70+ corporate web pages. Generated 3x the industry average in actionable ideas through the studio's first crowdsourcing campaign. Achieved 80%+ adoption for the internal social collaboration pilot among 3,000+ employees. Drove over 50% of infrastructure data center strategic priorities through the OKR program. Supported leadership in scaling a global program from $11B to $40B while unifying tools and resources across Marketing teams.",
+    sections: [
+      { label: "Context", content: "DreamWorks Animation's PipelineX was a proprietary cloud-native production infrastructure that powered the studio's first fully cloud-based productions. As the platform scaled across the organization, the launch team needed internal marketing and employee communications that could drive adoption, modernize the corporate web presence, and keep 3,000+ global employees aligned on a complex transformation." },
+      { label: "My Role", content: "As Marketing Lead for PipelineX, I ran internal communications and employee engagement campaigns that turned a technical infrastructure rollout into a studio-wide narrative.", items: [
+        "Produced internal newsletter and weekly email campaigns for 3,000+ employees; drove 22,000+ newsletter downloads and elevated company narratives through employee recognition and knowledge sharing.",
+        "Project managed the corporate website redesign, modernizing 70+ web pages, and led the first crowdsourcing campaign, generating 3x the industry average in actionable ideas.",
+        "Implemented an internal social collaboration pilot, achieving over 80% adoption among 3,000+ employees.",
+        "Managed the Objectives and Key Results (OKR) program, driving over 50% of infrastructure data center strategic priorities.",
+        "Delivered communications and operations support for leadership, helping scale a global program from $11B to $40B with 3,000+ employees. Unified all tools & resources, and solved cross-functional workflow challenges for all Marketing teams.",
+        "Identified and initiated cross-functional collaboration opportunities internally and with external partners and platforms.",
+      ]},
+      { label: "Impact", content: "Drove 22,000+ newsletter downloads and elevated company narratives through employee recognition and knowledge sharing. Modernized 70+ corporate web pages. Generated 3x the industry average in actionable ideas through the studio's first crowdsourcing campaign. Achieved 80%+ adoption for the internal social collaboration pilot among 3,000+ employees. Drove over 50% of infrastructure data center strategic priorities through the OKR program. Supported leadership in scaling a global program from $11B to $40B while unifying tools and resources across Marketing teams." },
+    ],
     gallery: [pipexPersonas, pipexTimeline, pipexRoadmap, pipexTrollsEmail, pipexTrollsHoliday, pipexLaunchLetter, pipexHappyHour],
   },
 ];
