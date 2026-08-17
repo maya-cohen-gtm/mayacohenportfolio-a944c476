@@ -26,7 +26,7 @@ import humanitasBeverlyWilshire from "@/assets/humanitas-beverly-wilshire.webp";
 import humanitasDga from "@/assets/humanitas-dga.jpg";
 import humanitasWinners from "@/assets/humanitas-winners.webp";
 
-const traceeMichelleCaseStudy = traceeMichelleAsset.url;
+const traceeMichelleCaseStudy = traceeMichelleUsowAsset.url;
 
 export type ProjectLink = {
   text: string;
