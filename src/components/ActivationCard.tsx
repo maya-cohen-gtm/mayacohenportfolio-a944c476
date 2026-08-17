@@ -2,6 +2,15 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import type { Project } from "@/data/projects";
 
+// Per-project crop focus so faces and key text stay in frame when filling the block
+const CARD_FOCUS: Record<string, string> = {
+  "henry-winkler-tiktok": "object-[center_40%]",
+  "being-henry-book-tour": "object-[center_45%]",
+  "becoming-memoir-launch": "object-[center_30%]",
+  "humanitas-prize-42": "object-[center_35%]",
+  "pipex-virtual-launch": "object-center",
+};
+
 const ActivationCard = ({ project, accentClass = "accent-orange" }: { project: Project; accentClass?: string }) => {
   const navigate = useNavigate();
 
@@ -19,7 +28,7 @@ const ActivationCard = ({ project, accentClass = "accent-orange" }: { project: P
         <img
           src={project.cardImage || project.image}
           alt={project.title}
-          className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${project.cardImage ? "object-contain bg-muted" : project.id === "becoming-memoir-launch" ? "object-cover object-[center_35%]" : "object-cover"}`}
+          className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 ${CARD_FOCUS[project.id] ?? "object-center"}`}
           loading="lazy"
         />
       </div>
