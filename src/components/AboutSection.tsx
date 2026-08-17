@@ -29,36 +29,13 @@ const AboutSection = () =>
       transition={{ duration: 0.8, delay: 0.1 }}>
 
       <h2 className="label-text mb-8">About</h2>
-      <p className="text-lg text-foreground leading-relaxed mb-6">
-        Most of my best work has somebody else's name on it. That's the job. For two
-        years I was Chief of Staff to Henry Winkler, which meant learning a
-        seventy-something legend's cadence well enough that three million people
-        couldn't tell where he stopped and I started — and then running the content
-        calendar, the owned channels, and an $8M+ creator and influencer budget
-        underneath it.
-      </p>
-      <p className="text-lg text-foreground leading-relaxed mb-6">
-        The numbers were good (Facebook +495%, YouTube views up from a nearly dormant
-        channel to +42,425%, subscribers +4,035%), but the part I'd actually tell you
-        about over coffee is what drove them: social-first cutdowns built for the way
-        younger audiences actually scroll, creator partnerships that carried a show
-        beyond its own fandom, and press timed to the platform moment instead of the
-        press release.
-      </p>
-      <p className="text-lg text-foreground leading-relaxed mb-6">
-        I've marketed television (HBO's <em>Barry</em>), a NYT-bestselling memoir across
-        15+ markets, and consumer brands with real fandoms. Before that I was at
-        DreamWorks Animation, translating a cloud migration into something 3,000 artists
-        would willingly read on a Monday, and at Joy Mill Entertainment, where I helped
-        launch Michelle Obama's <em>Becoming</em> and the #MeToo Movement Fund.
-        Different rooms, same problem: find the true sentence, then get it in front of
-        the right audience — and prove it moved something.
-      </p>
-
       <p className="text-lg text-foreground leading-relaxed mb-8">
-        <strong>USC Marshall MBA</strong> (Dean's List, Forté Fellow),{" "}
-        <strong>Swarthmore College</strong> Political Science. Based in Los Angeles.
-        Currently consulting on content marketing, social, and exec comms — and{" "}
+        Over six years in entertainment and digital marketing, I&rsquo;ve scaled content
+        from launch to millions of views. I bridge creative storytelling and business
+        rigor &mdash; brand narrative and influencer strategy, backed by performance
+        attribution, budget optimization, and ROI tracking. MBA from USC Marshall;
+        based in Los Angeles. Currently consulting on content marketing, social, and
+        exec comms &mdash; and{" "}
         <a
           href="https://medium.com/@marissacohen"
           target="_blank"
