@@ -18,6 +18,9 @@ import henryFanexpo from "@/assets/henry-fanexpo.webp";
 import henrySeatedBook from "@/assets/henry-seated-book.jpg";
 import henryHodaJenna from "@/assets/henry-hoda-jenna.png";
 import barryFinalSeason from "@/assets/barry-final-season.jpg";
+import henryTiktok24m from "@/assets/henry-tiktok-24m.png.asset.json";
+import henryTiktok127m from "@/assets/henry-tiktok-127m.png.asset.json";
+import henryTiktok6m from "@/assets/henry-tiktok-6m.png.asset.json";
 
 import barryPeacockTheater from "@/assets/barry-peacock-theater.webp";
 import barryRichEisen from "@/assets/barry-rich-eisen.jpg";
@@ -88,7 +91,7 @@ export const projects: Project[] = [
       { label: "Impact", content: "The channel finished the Barry campaign as a genuine owned audience — 1.3M followers and 6.1M lifetime likes — that HBO did not have to buy access to. Short-form comment sentiment fed directly back into press prep: the questions fans kept asking became the beats placed in talking points for the next appearance. Barry Season 4 averaged 3.4M viewers per episode and earned 11 Emmy nominations at the 75th Emmy Awards." },
       { label: "Press & Recognition", content: "Henry Winkler's TikTok account (@henry.winkler) has 1.3M followers and 6.1M likes. Business Insider (January 2022) reported his first six videos had accumulated 33 million views. HBO's Barry Season 4 premiered April 16, 2023 and concluded May 28, 2023, earning 11 Emmy nominations at the 75th Annual Emmy Awards." },
     ],
-    gallery: [barryPeacockTheater, barryRichEisen, barrySundayToday, henryHelloSign],
+    gallery: [henryTiktok127m.url, henryTiktok24m.url, henryTiktok6m.url, henryHelloSign],
   },
   {
     id: "being-henry-book-tour",
