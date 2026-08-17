@@ -11,6 +11,7 @@ import becomingTimesup from "@/assets/becoming-timesup.webp";
 import traceeMichelleInterview from "@/assets/tracee-michelle-interview.jpg";
 import becomingGlamourWoty from "@/assets/becoming-glamour-woty.jpg";
 import henryTourBanner from "@/assets/henry-tour-banner.gif";
+import henryTamronHall from "@/assets/henry-tamron-hall.jpg.asset.json";
 import henryHelloSign from "@/assets/henry-hello-sign.png";
 import henrySethMeyers from "@/assets/henry-seth-meyers.png";
 import henryFanexpo from "@/assets/henry-fanexpo.webp";
@@ -97,7 +98,7 @@ export const projects: Project[] = [
     description: "National launch campaign for a NYT bestselling memoir across 15+ cities.",
     tag: "Campaigns",
     image: henryTourBanner,
-    cardImage: henryTourBanner,
+    cardImage: henryTamronHall.url,
     context: "In 2023, Emmy Award-winning actor Henry Winkler launched his memoir \"Being Henry: The Fonz...and Beyond\" through Celadon Books as a national hardcover tour, followed by a paperback tour in 2024. The campaign required coordinating a multi-city live event series across major US markets, managing a high-profile talent with significant public and media demand, and translating a publishing GTM strategy into flawless on-the-ground execution.",
     role: "As Chief of Staff to Henry Winkler, I served as the operational and strategic lead for the national GTM launch of Being Henry across 15+ US markets. I built and ran the execution infrastructure behind a multi-channel campaign spanning live experiential activations, press, digital content, and fan community integrations. I owned market-by-market launch operations across 15+ cities ensuring brand consistency and talent readiness at every activation. I developed messaging frameworks and media talking points deployed across primetime, syndicated, and podcast press appearances. I supported integrated marketing campaigns across social and digital channels, coordinating content timing and messaging across platforms to amplify key launch moments including the NYT Bestseller debut and tour stop announcements. I led PR coordination and experiential marketing integrations across 7+ fan conventions. I produced launch content including video announcements and digital activations supporting the book's consumer marketing campaign, including a live virtual appearance for Access Hollywood and a live video on X celebrating 7,000 signed memoir copies. I also contributed to brand voice and editorial positioning for supporting campaign materials.",
     impact: "Being Henry debuted as a New York Times Bestseller and held the list for 11 weeks. The national tour spanned 15+ cities and 20+ regional markets with multiple sold-out stops including The Town Hall NYC, Harvard Bookstore Cambridge MA, and the Smithsonian Institution Washington DC. Project managed 7+ fan conventions and 15 speaker appearances reaching 10,000+ attendees. Press campaign spanned primetime, syndicated, and podcast appearances with direct producer responsibilities. The paperback release in 2024 generated a full second tour leg, anchoring the book's sustained market presence across two consecutive years.",
