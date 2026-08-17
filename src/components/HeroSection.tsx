@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import resumeAsset from "@/assets/Marissa-Cohen-Resume.pdf.asset.json";
-import headshotAsset from "@/assets/headshot.png.asset.json";
+import headshot from "@/assets/headshot.jpg";
 
 const HeroSection = () => {
   const scrollToWork = () => {
@@ -90,7 +90,7 @@ const HeroSection = () => {
         >
           <div className="relative rounded-[2rem] overflow-hidden surface-card p-0">
           <img
-            src={headshotAsset.url}
+            src={headshot}
             alt="Marissa Cohen, social media and executive communications marketer"
             className="w-full h-[22rem] md:h-[26rem] object-cover object-[center_20%]"
           />
