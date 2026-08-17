@@ -5,6 +5,7 @@ import { ArrowLeft } from "lucide-react";
 import glamourLogo from "@/assets/glamour-logo.png";
 import { accentFor, accentForKey } from "@/lib/accents";
 import React from "react";
+import { Starburst, Asterisk, Checker } from "@/components/GenZGraphics";
 
 const renderTextWithLinks = (text: string, links?: ProjectLink[]): React.ReactNode => {
   if (!links || links.length === 0) return text;
