@@ -33,7 +33,6 @@ const NavBar = () => {
           { label: "Work", id: "work" },
           { label: "Words", id: "writing" },
           { label: "Experience", id: "experience" },
-          { label: "About", id: "about" },
           { label: "Contact", id: "contact" },
         ].map((link) => (
           <button
