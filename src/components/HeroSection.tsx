@@ -37,11 +37,10 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.12, ease: [0.2, 0, 0, 1] }}
             className="text-lg md:text-xl text-muted-foreground max-w-xl mb-8 leading-relaxed"
           >
-            I&rsquo;ve worked in India and across Southeast Asia, so I look at campaigns through
-            local platform behavior, creator culture, and what makes someone stop scrolling.
-            I launch shows, books, and IP to Gen Z and Millennial audiences &mdash; and build
-            integrated campaigns across social, creators, paid, and press, often in someone
-            else&rsquo;s voice.
+            Over six years in entertainment and digital marketing, I&rsquo;ve scaled content 
+            from launch to millions of views. I bridge creative storytelling and business 
+            rigor&mdash;brand narrative and influencer strategy, backed by performance attribution, 
+            budget optimization, and ROI tracking. MBA from USC Marshall; based in Los Angeles.
           </motion.p>
 
 
