@@ -7,14 +7,13 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative w-full min-h-[85svh] flex items-center px-8 md:px-16 pt-28 pb-16 overflow-hidden pastel-bg">
+    <section className="relative w-full min-h-[80svh] flex items-center px-8 md:px-16 pt-28 pb-16 overflow-hidden pastel-bg">
       {/* Flat graphic shapes */}
-      <div className="absolute -top-28 -left-24 w-[26rem] h-[26rem] rounded-full bg-secondary" />
-      <div className="absolute -top-16 left-[18rem] w-56 h-56 rounded-full bg-primary hidden md:block" />
-      <div className="absolute bottom-[-8rem] right-[-4rem] w-[26rem] h-[26rem] rounded-full bg-brand-yellow" />
-      <div className="absolute bottom-[-6rem] left-1/3 w-72 h-72 rounded-full bg-brand-green hidden md:block" />
-      <div className="absolute top-1/4 right-[-8rem] w-80 h-80 rounded-full bg-brand-blue hidden lg:block" />
-      <div className="absolute inset-x-6 md:inset-x-12 top-20 bottom-10 rounded-[3rem] bg-background border-2 border-foreground" />
+      <div className="absolute -top-32 -left-28 w-[24rem] h-[24rem] rounded-full bg-secondary" />
+      <div className="absolute -top-24 left-[14rem] w-52 h-52 rounded-full bg-primary hidden md:block" />
+      <div className="absolute bottom-[-9rem] right-[-5rem] w-[24rem] h-[24rem] rounded-full bg-brand-yellow" />
+      <div className="absolute bottom-[-10rem] left-1/4 w-64 h-64 rounded-full bg-brand-green hidden md:block" />
+      <div className="absolute top-6 right-[-9rem] w-72 h-72 rounded-full bg-brand-blue hidden lg:block" />
       <div className="absolute inset-x-0 bottom-0 h-3 stripe-bar" />
 
       <div className="relative z-10 w-full grid grid-cols-1 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] gap-12 lg:gap-16 items-center">
