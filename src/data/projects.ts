@@ -91,7 +91,7 @@ export const projects: Project[] = [
       { label: "Impact", content: "The channel finished the Barry campaign as a genuine owned audience — 1.3M followers and 6.1M lifetime likes — that HBO did not have to buy access to. Short-form comment sentiment fed directly back into press prep: the questions fans kept asking became the beats placed in talking points for the next appearance. Barry Season 4 averaged 3.4M viewers per episode and earned 11 Emmy nominations at the 75th Emmy Awards." },
       { label: "Press & Recognition", content: "Henry Winkler's TikTok account (@henry.winkler) has 1.3M followers and 6.1M likes. Business Insider (January 2022) reported his first six videos had accumulated 33 million views. HBO's Barry Season 4 premiered April 16, 2023 and concluded May 28, 2023, earning 11 Emmy nominations at the 75th Annual Emmy Awards." },
     ],
-    gallery: [henryTiktok127m, henryTiktok24m, henryTiktok6m, henryHelloSign],
+    gallery: [henryTiktok127m, henryTiktok24m, henryTiktok6m],
   },
   {
     id: "being-henry-book-tour",
