@@ -31,6 +31,7 @@ const roles = [
       "Doubled audience in six months through co-marketing campaigns with third-party studios, networks, and distribution partners.",
       "Built GTM launches for Michelle Obama's Becoming (100 weeks NYT Bestseller) and the #MeToo Movement Fund ($21M in 60 days).",
       "Wrote executive keynote content for Glamour that drove 5M+ social views.",
+      "Led messaging and the launch playbook for two national product launches across paid, earned, and owned channels — 2M+ units sold in four months.",
     ],
   },
 ];

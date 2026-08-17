@@ -6,13 +6,11 @@ import pipexLaunchLetter from "@/assets/pipex-launch-letter.png";
 import pipexHappyHour from "@/assets/pipex-happy-hour.png";
 import pipexTrollsHoliday from "@/assets/pipex-trolls-holiday.jpg";
 import pipexCardCover from "@/assets/pipex-card-cover.webp";
-import patternMacysHero from "@/assets/pattern-beauty-hero.png";
 import becomingBookDisplay from "@/assets/becoming-book-display.jpg";
 import becomingTimesup from "@/assets/becoming-timesup.webp";
 import traceeMichelleInterview from "@/assets/tracee-michelle-interview.jpg";
 import becomingGlamourTracee from "@/assets/becoming-glamour-tracee.jpg";
-import patternProducts from "@/assets/pattern-products.png";
-import traceePatternBeauty from "@/assets/tracee-pattern-beauty.jpg";
+import becomingGlamourWoty from "@/assets/becoming-glamour-woty.jpg";
 import henryTourBanner from "@/assets/henry-tour-banner.gif";
 import henryHelloSign from "@/assets/henry-hello-sign.png";
 import henrySethMeyers from "@/assets/henry-seth-meyers.png";
@@ -116,17 +114,31 @@ export const projects: Project[] = [
   {
     id: "becoming-memoir-launch",
     metric: "$21M in 60 days · 5M+ views on keynote content",
-    brand: "Tracee Ellis Ross",
-    title: "Becoming & PATTERN Beauty GTM",
-    description: "Messaging and media training that supported a cultural book launch and a beauty brand debut.",
-    tag: "Executive Comms",
-    image: patternMacysHero,
-    context: "In 2018, Michelle Obama launched Becoming, a New York Times Bestseller that held the list for 100 weeks and one of the best-selling memoirs in publishing history. Tracee Ellis Ross, coming off a viral Glamour Women of the Year speech, was selected as a key press figure in the Becoming campaign, including a high-profile New York Times interview with Obama herself. In 2019, Tracee launched PATTERN Beauty, a curly haircare line built around Tracee's personal brand. To prepare for this launch, Ross needed a strategic creative partner to help shape her approach to the material.",
-    role: "Leading executive communications for Tracee Ellis Ross, I built the positioning and messaging frameworks that anchored her role as a key press figure in the GTM campaign for one of the most culturally significant book launches of the decade: Becoming by Michelle Obama. This included selecting and synthesizing thematic content from the memoir, structuring talking points, and developing media training materials used directly in her New York Times interview with Michelle Obama. I also advised on strategy and content for her Glamour Women of the Year speech, which went viral and led directly to her TED2018 invitation. Working sessions took place across Los Angeles including on the set of Black-ish. In parallel I supported the Time's Up movement at the C-suite level, converting live executive meeting notes into messaging and positioning frameworks for the GTM launch of their legal defense fund.",
-    impact: "Built and delivered the messaging frameworks, talking points, and media training materials that directly powered Tracee Ellis Ross's press appearances in the Becoming campaign, including her New York Times interview with Michelle Obama. Contributed to the brand voice and positioning work that preceded and enabled the 2019 PATTERN Beauty GTM launch — a cult-favorite curly haircare brand that achieved rapid success by selling out within hours of launch at Ulta Beauty, rapidly expanding to over 50 products and 11+ retailers. Supported Time's Up C-suite messaging that mobilized $21M in 60 days. Influencer briefings, content approvals, and ongoing relations delivered 5M+ social views on the Glamour keynote content, and the speech itself led to TED2018. The Becoming LA Forum stop sold out 17,500 seats. Becoming sold 14M copies worldwide.",
-    press: "Becoming sold 2 million copies in its first 15 days and 14 million worldwide. The Becoming tour sold out venues nationwide. Tracee Ellis Ross's Glamour Women of the Year speech received national coverage from The Washington Post, HuffPost, and Upworthy, directly leading to her TED2018 invitation. The Time's Up Legal Defense Fund raised $21 million within 60 days, supporting over 1,700 women across 60+ industries. PATTERN Beauty launched in 2019 as the next expression of the brand identity and positioning work developed across this period.",
-    gallery: [becomingGlamourTracee, becomingBookDisplay, patternProducts, becomingTimesup, traceeMichelleInterview, traceePatternBeauty],
+    brand: "Michelle Obama's Becoming x Time's Up",
+    title: "Influencer & Partnership Campaigns",
+    description: "Influencer outreach and partnership management behind two high-impact GTM campaigns.",
+    tag: "Campaigns",
+    image: becomingGlamourTracee,
+    cardImage: becomingGlamourTracee,
+    context: "In 2018, Michelle Obama launched Becoming, a New York Times Bestseller that held the list for 100 weeks and became one of the best-selling memoirs in publishing history. In the same window, the #MeToo movement launched the Time's Up Legal Defense Fund. Both campaigns needed high-profile voices — talent, creators, and cultural figures like Tracee Ellis Ross — brought in credibly and at speed, with the briefing, approval, and relationship infrastructure to keep the messaging consistent across every channel they touched.",
+    role: "As Marketing Manager for executive communications and social media, I led influencer outreach, identification, and partnership management for both GTM campaigns. I built the influencer briefing packets, ran content approvals, and owned ongoing relations with talent and their teams so that each partner had a clear point of view, on-brand assets, and a channel plan before anything went live. I ran channel monitoring for growth, trends, and insights across all owned accounts and adjusted the social strategy accordingly, and I led strategy development for every account — covering diversity and inclusion, accessibility, audience engagement, and moderation guidelines. In parallel I led messaging and the launch playbook for two national product launches, coordinating paid, earned, and owned channels and documenting a repeatable launch process for future teams.",
+    impact: "Influencer briefings, content approvals, and ongoing relations delivered 5M+ social views on the Glamour keynote content. The Time's Up Legal Defense Fund raised $21M in 60 days. Becoming spent 100 weeks on the New York Times Bestsellers list. Across the same period, co-marketing campaigns with third-party studios and networks doubled our social following in six months, and the two national product launches I led sold 2M+ units in four months.",
+    press: "Becoming spent 100 weeks on the New York Times Bestsellers list and sold 2 million copies in its first 15 days. The Becoming tour sold out venues nationwide, including 17,500 seats at the LA Forum. Tracee Ellis Ross's Glamour Women of the Year speech received national coverage from The Washington Post, HuffPost, and Upworthy, leading to her TED2018 invitation. The Time's Up Legal Defense Fund raised $21 million within 60 days, supporting over 1,700 women across 60+ industries.",
+    sections: [
+      { label: "Context", content: "In 2018, Michelle Obama launched Becoming, a New York Times Bestseller that held the list for 100 weeks. In the same window, the #MeToo movement launched the Time's Up Legal Defense Fund. Both campaigns needed high-profile voices — talent, creators, and cultural figures like Tracee Ellis Ross — brought in credibly and at speed, with the briefing, approval, and relationship infrastructure to keep messaging consistent across every channel they touched." },
+      { label: "My Role", content: "I led influencer outreach, identification, and partnership management across both campaigns:", items: [
+        "Identified and recruited influencers and talent partners aligned with each campaign's brand equity.",
+        "Built influencer briefings, ran content approvals, and owned day-to-day relations with partners and their teams.",
+        "Ran channel monitoring for growth, trends, and insights, adjusting social strategy accordingly.",
+        "Led strategy for all social accounts, covering diversity and inclusion, accessibility, engagement, and moderation guidelines.",
+        "Led messaging and the launch playbook for two national product launches across paid, earned, and owned channels.",
+      ]},
+      { label: "Impact", content: "5M+ social views on the Glamour keynote content. $21M raised for the Time's Up Legal Defense Fund in 60 days. Becoming held the NYT Bestsellers list for 100 weeks. Co-marketing campaigns with third-party studios and networks doubled our following in six months, and the two national product launches sold 2M+ units in four months, with a documented, repeatable launch process left behind for future teams." },
+      { label: "Press & Recognition", content: "Becoming spent 100 weeks on the New York Times Bestsellers list and sold 2 million copies in its first 15 days. The Becoming tour sold out venues nationwide, including 17,500 seats at the LA Forum. Tracee Ellis Ross's Glamour Women of the Year speech received national coverage from The Washington Post, HuffPost, and Upworthy, leading to her TED2018 invitation. The Time's Up Legal Defense Fund raised $21 million within 60 days, supporting over 1,700 women across 60+ industries." },
+    ],
+    gallery: [becomingBookDisplay, traceeMichelleInterview, becomingTimesup, becomingGlamourWoty],
   },
+
   {
     id: "humanitas-prize-42",
     metric: "Live social from the floor · 42nd annual",
