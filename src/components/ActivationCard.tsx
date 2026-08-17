@@ -7,7 +7,7 @@ const CARD_FOCUS: Record<string, string> = {
   "henry-winkler-tiktok": "object-[center_40%]",
   "multiplatform-memoir-launch": "object-center",
   "becoming-memoir-launch": "object-[center_45%]",
-  "humanitas-prize-42": "object-[center_35%]",
+  "humanitas-awards-show": "object-[center_35%]",
   "pipex-virtual-launch": "object-center",
 };
 
