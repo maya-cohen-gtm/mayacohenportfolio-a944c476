@@ -9,7 +9,7 @@ const ContactSection = () => (
       transition={{ duration: 0.8 }}
       className="text-5xl md:text-7xl font-semibold text-foreground mb-12 tracking-tighter"
     >
-      Let's talk.
+      Contact
     </motion.h2>
     <p className="text-lg text-muted-foreground max-w-xl mx-auto mb-12">
       Los Angeles based, and happiest launching content people actually talk about &mdash;
