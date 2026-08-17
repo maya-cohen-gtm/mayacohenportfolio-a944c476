@@ -81,7 +81,7 @@
 @layer utilities {
   .label-text {
     @apply text-xs uppercase tracking-[0.2em] font-semibold;
-    color: hsl(var(--section-accent-ink, var(--primary)));
+    color: hsl(var(--foreground));
   }
 
 
