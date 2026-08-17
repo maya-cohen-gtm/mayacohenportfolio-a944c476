@@ -32,7 +32,7 @@ const NavBar = () => {
         {[
           { label: "Work", id: "work" },
           { label: "Experience", id: "experience" },
-          { label: "Contact", id: "contact" },
+          { label: "Let's Talk", id: "contact" },
         ].map((link) => (
           <button
             key={link.id}
