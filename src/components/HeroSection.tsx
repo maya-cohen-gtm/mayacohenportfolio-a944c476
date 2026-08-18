@@ -45,8 +45,8 @@ const HeroSection = () => {
             className="text-lg md:text-xl text-muted-foreground max-w-xl mb-8 leading-relaxed"
           >
             Over six years in entertainment and digital marketing, I&rsquo;ve scaled content 
-            from launch to millions of views.{" "}
-            <br className="hidden sm:block" />
+            from launch to millions of views.
+            <br /><br />
             I bridge creative storytelling and business rigor&mdash;brand narrative and influencer 
             strategy, backed by performance attribution, budget optimization, and ROI tracking. 
             MBA from USC Marshall; based in Los Angeles.
