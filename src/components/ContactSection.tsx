@@ -47,6 +47,14 @@ const ContactSection = () => (
       >
         Résumé
       </a>
+      <a
+        href="https://medium.com/@marissacohen"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="rounded-full border-2 border-foreground bg-brand-green text-primary-foreground px-8 py-4 uppercase tracking-widest text-sm font-semibold transition-transform hover:-translate-y-0.5"
+      >
+        Blog
+      </a>
 
     </div>
   </footer>

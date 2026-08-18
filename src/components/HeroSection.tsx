@@ -74,6 +74,14 @@ const HeroSection = () => {
             >
               Résumé
             </a>
+            <a
+              href="https://medium.com/@marissacohen"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border-2 border-foreground bg-brand-green text-primary-foreground px-7 py-3.5 text-sm font-bold tracking-widest uppercase transition-transform hover:-translate-y-0.5"
+            >
+              Blog
+            </a>
           </motion.div>
         </div>
 
