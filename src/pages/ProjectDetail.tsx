@@ -251,6 +251,12 @@ const ProjectDetail = () => {
               className={`scroll-mt-28 border-t border-border pt-8 ${accentFor(projectIndex + sIdx)}`}
             >
               <h2 className="type-kicker text-foreground mb-[clamp(1rem,2vw,1.5rem)]">{section.label}</h2>
+              {section.label === "Impact" && project.outcome && (
+                <div className="mb-6 max-w-3xl rounded-2xl border-2 border-foreground accent-soft p-5 md:p-6">
+                  <span className="type-tag text-muted-foreground block mb-2">Why it mattered to the business</span>
+                  <p className="type-lead font-semibold text-foreground text-pretty">{project.outcome}</p>
+                </div>
+              )}
               {section.content && (
                 section.label === "Press & Recognition" ? (
                   <div className="type-lead text-foreground/80 max-w-3xl whitespace-pre-line text-pretty">
