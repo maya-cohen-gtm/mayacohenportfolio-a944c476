@@ -202,11 +202,12 @@ const ProjectDetail = () => {
 
             <motion.div
               key={section.label}
+              id={slugify(section.label)}
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className={`border-t border-border pt-8 ${accentFor(projectIndex + sIdx)}`}
+              className={`scroll-mt-28 border-t border-border pt-8 ${accentFor(projectIndex + sIdx)}`}
             >
               <h2 className="type-kicker text-foreground mb-[clamp(1rem,2vw,1.5rem)]">{section.label}</h2>
               {section.content && (
