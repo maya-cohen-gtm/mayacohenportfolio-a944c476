@@ -218,9 +218,19 @@ const ProjectDetail = () => {
           <h1 className="type-h1 text-foreground mb-4">
             {project.title}
           </h1>
-          <p className="type-lead text-muted-foreground mb-16 max-w-2xl text-pretty">
+          <p className="type-lead text-muted-foreground mb-8 max-w-2xl text-pretty">
             {project.description}
           </p>
+          {project.scope && project.scope.length > 0 && (
+            <dl className="mb-16 grid grid-cols-2 gap-x-6 gap-y-5 border-y-2 border-foreground py-6 sm:grid-cols-4 max-w-4xl">
+              {project.scope.map((s) => (
+                <div key={s.label}>
+                  <dt className="type-tag text-muted-foreground">{s.label}</dt>
+                  <dd className="type-meta mt-1 font-semibold text-foreground text-pretty">{s.value}</dd>
+                </div>
+              ))}
+            </dl>
+          )}
         </motion.div>
 
         <div className="lg:flex lg:gap-14 lg:items-start">
