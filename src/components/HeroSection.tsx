@@ -44,7 +44,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.12, ease: [0.2, 0, 0, 1] }}
             className="text-lg md:text-xl text-muted-foreground max-w-xl mb-8 leading-relaxed"
           >
-            Over six years in entertainment and digital marketing, I&rsquo;ve scaled content 
+            Over nine years in entertainment and digital marketing, I&rsquo;ve scaled content 
             from launch to millions of views.
             <br /><br />
             I bridge creative storytelling and business rigor&mdash;brand narrative and influencer 
