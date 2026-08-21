@@ -55,8 +55,7 @@ const HeroSection = () => {
             from launch to millions of views.
             <br /><br />
             I bridge creative storytelling and business rigor&mdash;brand narrative and influencer 
-            strategy, backed by performance attribution, budget optimization, and ROI tracking. 
-            MBA from USC Marshall; based in Los Angeles.
+            strategy, backed by performance attribution, budget optimization, and ROI tracking.
           </motion.p>
 
 
