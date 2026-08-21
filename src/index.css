@@ -79,10 +79,85 @@
 }
 
 @layer utilities {
+  /* ---- Global editorial typography scale ---- */
+  /* Display: hero name / page-defining statements */
+  .type-display {
+    font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+    @apply font-bold;
+  }
+
+  /* H1: page titles (case studies, 404) */
+  .type-h1 {
+    font-size: clamp(2.25rem, 4.8vw, 4rem);
+    line-height: 1.06;
+    letter-spacing: -0.028em;
+    @apply font-semibold;
+  }
+
+  /* H2: section headlines */
+  .type-h2 {
+    font-size: clamp(1.75rem, 3.2vw, 2.75rem);
+    line-height: 1.12;
+    letter-spacing: -0.022em;
+    @apply font-semibold;
+  }
+
+  /* H3: card + entry titles */
+  .type-h3 {
+    font-size: clamp(1.25rem, 1.6vw, 1.5rem);
+    line-height: 1.25;
+    letter-spacing: -0.015em;
+    @apply font-semibold;
+  }
+
+  /* Stat numerals */
+  .type-stat {
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    @apply font-semibold;
+  }
+
+  /* Kicker: small uppercase line under a display heading */
+  .type-kicker {
+    font-size: clamp(0.6875rem, 1vw, 0.875rem);
+    line-height: 1.5;
+    letter-spacing: 0.12em;
+    @apply font-semibold uppercase;
+  }
+
+  @media (min-width: 768px) {
+    .type-kicker {
+      letter-spacing: 0.18em;
+    }
+  }
+
+  /* Lead paragraph under a display heading */
+  .type-lead {
+    font-size: clamp(1.0625rem, 1.4vw, 1.25rem);
+    line-height: 1.7;
+  }
+
+  /* Body copy */
+  .type-body {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .type-meta {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+  }
+
   .label-text {
     @apply text-xs uppercase tracking-[0.2em] font-semibold;
+    line-height: 1.4;
     color: hsl(var(--foreground));
   }
+
 
 
   .muted-text {
