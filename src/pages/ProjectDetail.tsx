@@ -113,7 +113,21 @@ const ProjectDetail = () => {
     );
   }
 
+  const sectionList: ProjectSection[] = project.sections || [
+    { label: "Context", content: project.context },
+    { label: "My Role", content: project.role },
+    { label: "Impact", content: project.impact },
+    ...(project.press ? [{ label: "Press & Recognition", content: project.press }] : []),
+  ];
+
+  const tocItems = [
+    ...sectionList.map((s) => ({ id: slugify(s.label), label: s.label })),
+    ...(project.video ? [{ id: "video", label: project.video.label ?? "Trailer" }] : []),
+    ...(project.gallery && project.gallery.length > 0 ? [{ id: "gallery", label: "Gallery" }] : []),
+  ];
+
   return (
+
     <main className={`relative bg-background min-h-screen overflow-hidden ${pageAccent}`}>
       <Starburst className="pointer-events-none absolute top-[55vh] right-[-2rem] w-32 h-32 md:right-[-4rem] md:w-56 md:h-56 text-secondary/70" />
       <Asterisk className="pointer-events-none absolute top-[120vh] left-[-2rem] w-28 h-28 text-primary/50 rotate-12 hidden md:block" />
