@@ -41,7 +41,7 @@ const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.08 }}
-            className="text-sm md:text-base font-medium tracking-wide text-muted-foreground/80 mb-6 -mt-3"
+            className="text-[0.8125rem] md:text-sm font-semibold uppercase tracking-[0.18em] leading-relaxed text-muted-foreground mb-7"
           >
             MBA, University of Southern California
           </motion.p>
