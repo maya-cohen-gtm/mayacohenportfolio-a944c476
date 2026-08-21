@@ -21,7 +21,7 @@ const ActivationGrid = () => {
           <button
             key={tag}
             onClick={() => setActiveTag(tag)}
-            className={`${accentFor(i)} rounded-full px-5 py-2 text-xs uppercase tracking-[0.2em] transition-colors cursor-pointer ${
+            className={`${accentFor(i)} rounded-full px-5 py-2 type-tag transition-colors cursor-pointer ${
               activeTag === tag
                 ? "bg-primary text-primary-foreground border-2 border-foreground"
                 : "accent-chip border-2 border-transparent hover:border-foreground"
