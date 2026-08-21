@@ -51,7 +51,7 @@ const HeroSection = () => {
   return (
     <section className="relative w-full min-h-[80svh] flex items-center section-x hero-y overflow-hidden pastel-bg">
       {/* Gen Z graphic set — hard-edged flat shapes, no dots */}
-      <Starburst className="absolute -top-12 -left-12 w-40 h-40 md:-top-24 md:-left-20 md:w-[22rem] md:h-[22rem] text-secondary" />
+      <Starburst className="absolute -top-16 -left-16 w-32 h-32 md:-top-24 md:-left-20 md:w-[22rem] md:h-[22rem] text-secondary" />
       <Asterisk className="absolute top-10 left-[16rem] w-28 h-28 text-primary hidden md:block rotate-12" />
       <Checker className="absolute top-24 right-8 w-32 h-32 text-brand-blue hidden lg:block" />
       <Bolt className="absolute top-[45%] right-[3rem] w-16 h-28 text-brand-yellow hidden lg:block -rotate-12" />
@@ -92,7 +92,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.12, ease: [0.2, 0, 0, 1] }}
             className="text-foreground space-lead hero-bio text-[clamp(1.25rem,2.2vw,1.75rem)] font-medium leading-[1.6]"
           >
-            <p className="flex flex-wrap items-baseline gap-x-2 gap-y-3">
+            <p className="flex flex-wrap items-baseline gap-x-2 gap-y-4">
               <span>Let&rsquo;s</span>
               <span className="relative inline-block align-baseline min-w-0">
                 <AnimatePresence mode="wait" initial={false}>
