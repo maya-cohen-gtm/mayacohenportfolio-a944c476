@@ -52,7 +52,7 @@ const ActivationGrid = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {filtered.map((project, i) => (
-          <ActivationCard key={project.id} project={project} accentClass={accentFor(i)} />
+          <ActivationCard key={project.id} project={project} accentClass={accentFor(i)} filterTag={activeTag} />
         ))}
       </div>
     </section>
