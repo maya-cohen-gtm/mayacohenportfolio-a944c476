@@ -177,9 +177,11 @@ const ProjectDetail = () => {
   ];
 
   const tocItems = [
+    ...(project.problem ? [{ id: "the-challenge", label: "The Challenge" }] : []),
     ...sectionList.map((s) => ({ id: slugify(s.label), label: s.label })),
     ...(project.video ? [{ id: "video", label: project.video.label ?? "Trailer" }] : []),
     ...(project.gallery && project.gallery.length > 0 ? [{ id: "gallery", label: "Gallery" }] : []),
+    ...(project.reflection ? [{ id: "reflection", label: "What I'd Do Differently" }] : []),
   ];
 
   return (
