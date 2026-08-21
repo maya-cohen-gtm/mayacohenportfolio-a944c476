@@ -1,11 +1,52 @@
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import headshot from "@/assets/headshot.jpg";
 import { Starburst, Asterisk, Checker, Bolt, Flower, ZigZag, Eye } from "@/components/GenZGraphics";
 
+const BIO_SLOTS = [
+  {
+    verb: "engage global audiences",
+    verbClass: "bg-brand-yellow",
+    noun: "premium IP",
+    nounClass: "bg-secondary",
+  },
+  {
+    verb: "turn fandom into reach",
+    verbClass: "bg-secondary",
+    noun: "talent-led social",
+    nounClass: "bg-brand-blue text-primary-foreground",
+  },
+  {
+    verb: "drive measurable growth",
+    verbClass: "bg-brand-green text-primary-foreground",
+    noun: "streaming launches",
+    nounClass: "bg-brand-yellow",
+  },
+  {
+    verb: "build story-first campaigns",
+    verbClass: "bg-primary text-primary-foreground",
+    noun: "creators & studios",
+    nounClass: "bg-brand-green text-primary-foreground",
+  },
+];
+
 const HeroSection = () => {
+  const [slotIndex, setSlotIndex] = useState(0);
+  const slot = BIO_SLOTS[slotIndex];
+
+  useEffect(() => {
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce) return;
+    const id = window.setInterval(() => {
+      setSlotIndex((i) => (i + 1) % BIO_SLOTS.length);
+    }, 3200);
+    return () => window.clearInterval(id);
+  }, []);
+
   const scrollToWork = () => {
     document.getElementById("work")?.scrollIntoView({ behavior: "smooth" });
   };
+
 
   return (
     <section className="relative w-full min-h-[80svh] flex items-center section-x hero-y overflow-hidden pastel-bg">
