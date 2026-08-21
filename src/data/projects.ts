@@ -151,9 +151,9 @@ export const projects: Project[] = [
     ],
     video: {
       url: "https://www.youtube.com/embed/cQMml1-dnFs",
-      title: "Tracee Ellis Ross — Glamour Women of the Year Keynote",
+      title: "Tracee Ellis Ross — Glamour Women of the Year Opening Monologue",
       label: "Keynote",
-      caption: "Tracee Ellis Ross's Glamour Women of the Year keynote — the talent moment that drove national coverage from The Washington Post, HuffPost, and Upworthy, and led to her TED2018 invitation.",
+      caption: "Tracee Ellis Ross on the Glamour Women of the Year stage — the keynote platform whose speech content drove 5M+ social views and national coverage from The Washington Post, HuffPost, and Upworthy.",
     },
     gallery: [becomingBookDisplay, traceeMichelleInterview, becomingTimesup, becomingGlamourWoty],
   },
