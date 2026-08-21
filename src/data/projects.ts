@@ -143,6 +143,11 @@ export const projects: Project[] = [
       { label: "Impact", content: "5M+ social views on the Glamour keynote content. $21M raised for the Time's Up Legal Defense Fund in 60 days. Becoming held the NYT Bestsellers list for 100 weeks. Co-marketing campaigns with third-party studios and networks doubled our following in six months, and the two national product launches sold 2M+ units in four months, with a documented, repeatable launch process left behind for future teams." },
       { label: "Press & Recognition", content: "Becoming spent 100 weeks on the New York Times Bestsellers list and sold 2 million copies in its first 15 days. The Becoming tour sold out venues nationwide, including 17,500 seats at the LA Forum. Tracee Ellis Ross's Glamour Women of the Year speech received national coverage from The Washington Post, HuffPost, and Upworthy, leading to her TED2018 invitation. The Time's Up Legal Defense Fund raised $21 million within 60 days, supporting over 1,700 women across 60+ industries." },
     ],
+    video: {
+      url: "https://www.youtube.com/embed/cQMml1-dnFs",
+      title: "Tracee Ellis Ross — Glamour Women of the Year Keynote",
+      caption: "Tracee Ellis Ross's Glamour Women of the Year keynote — the talent moment that drove national coverage from The Washington Post, HuffPost, and Upworthy, and led to her TED2018 invitation.",
+    },
     gallery: [becomingBookDisplay, traceeMichelleInterview, becomingTimesup, becomingGlamourWoty],
   },
 
