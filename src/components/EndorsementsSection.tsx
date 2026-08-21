@@ -36,26 +36,44 @@ const EndorsementsSection = () => {
       <Starburst className="pointer-events-none absolute -bottom-10 left-[-2rem] w-32 h-32 md:-bottom-16 md:left-[-3rem] md:w-56 md:h-56 text-secondary/70" />
       <Asterisk className="pointer-events-none absolute top-10 right-5 w-12 h-12 md:right-8 md:w-20 md:h-20 text-primary/60 -rotate-12" />
       <h2 className="label-text mb-10">What People Say</h2>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {endorsements.map((item, i) => (
-          <motion.figure
-            key={item.name}
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: i * 0.05 }}
-            className={`surface-card accent-card p-8 md:p-10 ${accentFor(i + 1)}`}
-          >
-            <blockquote className="text-xl leading-relaxed text-foreground/85">
-              &ldquo;{item.quote}&rdquo;
-            </blockquote>
-            <figcaption className="mt-6 text-sm">
-              <span className="font-semibold text-foreground">{item.name}</span>
-              <span className="text-muted-foreground"> — {item.role}</span>
-            </figcaption>
-          </motion.figure>
-        ))}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
+        {endorsements.map((item, i) => {
+          const isWide = i === endorsements.length - 1 && endorsements.length % 2 === 1;
+          return (
+            <motion.figure
+              key={item.name}
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: i * 0.05 }}
+              className={`surface-card accent-card p-8 md:p-10 ${accentFor(i + 1)} ${
+                isWide
+                  ? "lg:col-span-2 lg:flex lg:items-center lg:gap-10"
+                  : ""
+              }`}
+            >
+              <blockquote
+                className={`text-xl leading-relaxed text-foreground/85 ${
+                  isWide ? "lg:flex-1" : ""
+                }`}
+              >
+                &ldquo;{item.quote}&rdquo;
+              </blockquote>
+              <figcaption
+                className={`text-sm ${
+                  isWide
+                    ? "mt-6 lg:mt-0 lg:w-56 lg:shrink-0 lg:border-l-2 lg:border-foreground/20 lg:pl-8"
+                    : "mt-6"
+                }`}
+              >
+                <span className="font-semibold text-foreground block">{item.name}</span>
+                <span className="text-muted-foreground">{isWide ? "" : " — "}{item.role}</span>
+              </figcaption>
+            </motion.figure>
+          );
+        })}
       </div>
+
     </section>
   );
 };
