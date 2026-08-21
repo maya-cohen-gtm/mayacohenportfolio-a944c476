@@ -144,6 +144,7 @@ export const projects: Project[] = [
       { label: "Context", content: "In 2018, Michelle Obama launched Becoming, a New York Times Bestseller that held the list for 100 weeks. In the same window, the #MeToo movement launched the Time's Up Legal Defense Fund. Both campaigns needed high-profile voices — talent, creators, and cultural figures like Tracee Ellis Ross — brought in credibly and at speed, with the briefing, approval, and relationship infrastructure to keep messaging consistent across every channel they touched." },
       { label: "My Role", content: "I led influencer outreach, identification, and partnership management across both campaigns:", items: [
         "Identified and recruited influencers and talent partners aligned with each campaign's brand equity.",
+        "Collaborated with C-suite leadership at SAG-AFTRA alongside Tracee Ellis Ross, Natalie Portman, Tessa Thompson, Brie Larson, and Laura Dern.",
         "Built influencer briefings, ran content approvals, and owned day-to-day relations with partners and their teams.",
         "Ran channel monitoring for growth, trends, and insights, adjusting social strategy accordingly.",
         "Led strategy for all social accounts, covering diversity and inclusion, accessibility, engagement, and moderation guidelines.",
