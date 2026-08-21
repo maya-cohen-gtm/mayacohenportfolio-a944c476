@@ -36,6 +36,18 @@ const ActivationCard = ({ project, accentClass = "accent-orange" }: { project: P
         <span className="label-text mb-2 block">{project.brand}</span>
         <h3 className="type-h3 text-foreground">{project.title}</h3>
         <p className="text-muted-foreground mt-3 text-lg">{project.description}</p>
+        {project.scope && project.scope.length > 0 && (
+          <ul className="mt-5 flex flex-wrap gap-2">
+            {project.scope.slice(0, 3).map((s) => (
+              <li
+                key={s.label}
+                className="type-tag rounded-full border-2 border-foreground bg-card px-3 py-1 text-foreground"
+              >
+                <span className="text-muted-foreground">{s.label}:</span> {s.value}
+              </li>
+            ))}
+          </ul>
+        )}
         {project.metric && (
           <p className="mt-4 pt-4 border-t border-border text-sm font-semibold accent-text">
             {project.metric}
