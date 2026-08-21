@@ -237,6 +237,19 @@ const ProjectDetail = () => {
           <CaseStudyToc items={tocItems} />
 
           <div className="min-w-0 flex-1">
+        {project.problem && (
+          <motion.div
+            id="the-challenge"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className={`scroll-mt-28 mb-16 rounded-2xl border-2 border-foreground accent-tint p-5 md:p-6 max-w-3xl ${accentFor(projectIndex)}`}
+          >
+            <h2 className="type-tag text-muted-foreground mb-2">The Challenge</h2>
+            <p className="type-lead font-semibold text-foreground text-pretty">{project.problem}</p>
+          </motion.div>
+        )}
         {/* Sections */}
         <div className="space-y-16">
           {sectionList.map((section, sIdx) => (
