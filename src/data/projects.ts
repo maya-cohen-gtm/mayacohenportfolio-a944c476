@@ -127,7 +127,7 @@ export const projects: Project[] = [
   {
     id: "becoming-memoir-launch",
     metric: "$21M in 60 days · 5M+ views on keynote content",
-    brand: "Michelle Obama's Becoming x Time's Up",
+    brand: "Joy Mill Entertainment (ABC Signature)",
     title: "Influencer & Partnership Campaigns",
     description: "Influencer outreach and partnership management behind two high-impact GTM campaigns.",
     tag: "Campaigns",
