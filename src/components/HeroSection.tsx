@@ -7,25 +7,25 @@ const BIO_SLOTS = [
   {
     verb: "engage global audiences",
     verbClass: "bg-brand-yellow",
-    noun: "premium IP",
+    noun: "premium IP.",
     nounClass: "bg-secondary",
   },
   {
     verb: "turn fandom into reach",
     verbClass: "bg-secondary",
-    noun: "talent-led social",
+    noun: "talent-led social.",
     nounClass: "bg-brand-blue text-primary-foreground",
   },
   {
     verb: "drive measurable growth",
     verbClass: "bg-brand-green text-primary-foreground",
-    noun: "streaming launches",
+    noun: "streaming launches.",
     nounClass: "bg-brand-yellow",
   },
   {
     verb: "build story-first campaigns",
     verbClass: "bg-primary text-primary-foreground",
-    noun: "creators & studios",
+    noun: "creators & studios.",
     nounClass: "bg-brand-green text-primary-foreground",
   },
 ];
