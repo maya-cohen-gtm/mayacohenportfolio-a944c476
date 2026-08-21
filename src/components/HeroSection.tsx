@@ -78,7 +78,7 @@ const HeroSection = () => {
           >
             <button
               onClick={scrollToWork}
-              className="group inline-flex items-center gap-3 rounded-full bg-primary text-primary-foreground px-7 py-3.5 text-sm font-bold tracking-widest uppercase cursor-pointer border-2 border-foreground transition-transform hover:-translate-y-0.5"
+              className="group inline-flex items-center gap-3 rounded-full bg-primary text-primary-foreground px-7 py-3.5 type-cta cursor-pointer border-2 border-foreground transition-transform hover:-translate-y-0.5"
               style={{ boxShadow: "var(--shadow-soft)" }}
             >
               <span>See My Work</span>
