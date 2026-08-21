@@ -40,21 +40,6 @@ const ContactSection = () => (
       >
         LinkedIn
       </a>
-      <a
-        href={resumeAsset.url}
-        download
-        className="rounded-full border-2 border-foreground bg-brand-yellow text-primary-foreground px-8 py-4 uppercase tracking-widest text-sm font-semibold transition-transform hover:-translate-y-0.5"
-      >
-        Résumé
-      </a>
-      <a
-        href="https://medium.com/@marissacohen"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="rounded-full border-2 border-foreground bg-brand-green text-primary-foreground px-8 py-4 uppercase tracking-widest text-sm font-semibold transition-transform hover:-translate-y-0.5"
-      >
-        Blog
-      </a>
 
     </div>
   </footer>
