@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { projects, type ProjectLink, type ProjectSection } from "@/data/projects";
 import { ArrowLeft } from "lucide-react";
@@ -146,6 +146,9 @@ const renderPressContent = (text: string, links?: ProjectLink[]): React.ReactNod
 const ProjectDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+  const fromTag = searchParams.get("from");
+  const backTo = fromTag ? `/?tag=${encodeURIComponent(fromTag)}#work` : "/#work";
   const projectIndex = projects.findIndex((p) => p.id === id);
   const project = projects[projectIndex];
   const pageAccent = projectIndex >= 0 ? accentFor(projectIndex) : accentForKey(id ?? "");
@@ -158,7 +161,7 @@ const ProjectDetail = () => {
           Project not found
         </h1>
         <button
-          onClick={() => navigate("/")}
+          onClick={() => navigate(backTo)}
           className="group flex items-center gap-4 accent-text type-cta cursor-pointer"
         >
           <ArrowLeft className="w-4 h-4" />
@@ -201,7 +204,7 @@ const ProjectDetail = () => {
 
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
         <button
-          onClick={() => navigate("/")}
+          onClick={() => navigate(backTo)}
           className="absolute top-8 left-8 z-10 flex items-center gap-3 rounded-full bg-card/90 px-5 py-3 accent-text border-2 border-foreground type-cta cursor-pointer hover:gap-4 transition-all"
         >
           <ArrowLeft className="w-4 h-4" />
@@ -394,7 +397,7 @@ const ProjectDetail = () => {
       {/* Back to work */}
       <div className="px-8 md:px-16 py-16 border-t border-border">
         <button
-          onClick={() => navigate("/")}
+          onClick={() => navigate(backTo)}
           className="group flex items-center gap-4 accent-text type-cta cursor-pointer"
         >
           <ArrowLeft className="w-4 h-4" />
