@@ -5,6 +5,7 @@ import StatsSection from "@/components/StatsSection";
 import ActivationGrid from "@/components/ActivationGrid";
 import HowIWorkSection from "@/components/HowIWorkSection";
 import PointOfViewSection from "@/components/PointOfViewSection";
+import PressStrip from "@/components/PressStrip";
 import ExperienceSection from "@/components/ExperienceSection";
 import EndorsementsSection from "@/components/EndorsementsSection";
 import ContactSection from "@/components/ContactSection";
@@ -18,6 +19,7 @@ const Index = () => (
     <ActivationGrid />
     <HowIWorkSection />
     <PointOfViewSection />
+    <PressStrip />
     <ExperienceSection />
     <EndorsementsSection />
     <ContactSection />
