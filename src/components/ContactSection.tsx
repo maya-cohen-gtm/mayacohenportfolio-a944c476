@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Starburst, Checker, Bolt, Flower } from "@/components/GenZGraphics";
 
 const ContactSection = () => (
-  <footer id="contact" className="relative overflow-hidden py-24 md:py-32 px-6 md:px-16 text-center border-t border-border pastel-bg accent-orange">
+  <footer id="contact" className="relative overflow-hidden section-y-lg section-x text-center border-t border-border pastel-bg accent-orange">
     <Flower className="pointer-events-none absolute -top-10 -left-10 w-32 h-32 md:w-64 md:h-64 text-secondary" />
     <Checker className="pointer-events-none absolute bottom-10 right-10 w-28 h-28 text-brand-blue hidden md:block" />
     <Starburst className="pointer-events-none absolute -bottom-12 -right-10 w-36 h-36 md:w-64 md:h-64 text-brand-yellow" />
@@ -12,18 +12,18 @@ const ContactSection = () => (
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
-      className="relative z-10 type-h1 text-foreground mb-12"
+      className="relative z-10 type-h1 text-foreground space-heading"
     >
       Let's Connect
     </motion.h2>
 
-    <p className="relative z-10 text-lg text-muted-foreground max-w-xl mx-auto mb-12">
+    <p className="relative z-10 type-lead text-muted-foreground max-w-xl mx-auto space-lead text-pretty">
       Los Angeles based, and happiest launching content people actually talk about &mdash;
       shows, IP, creators, streaming. If that&rsquo;s the campaign you&rsquo;re hiring for,
       I&rsquo;d love to hear about it.
 
     </p>
-    <div className="relative z-10 flex flex-wrap justify-center gap-4 md:gap-6">
+    <div className="relative z-10 flex flex-wrap justify-center stack-grid">
 
       <a
         href="mailto:marissadcohen@gmail.com"
