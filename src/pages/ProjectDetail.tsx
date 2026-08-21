@@ -31,6 +31,37 @@ const useActiveSection = (ids: string[]) => {
   return active;
 };
 
+const CaseStudyToc = ({ items }: { items: { id: string; label: string }[] }) => {
+  const active = useActiveSection(items.map((i) => i.id));
+  if (items.length === 0) return null;
+
+  return (
+    <nav
+      aria-label="On this page"
+      className="hidden lg:block lg:sticky lg:top-24 w-48 shrink-0 self-start"
+    >
+      <span className="type-kicker text-foreground mb-4 block">On This Page</span>
+      <ul className="space-y-3 border-l-2 border-foreground/20 pl-4">
+        {items.map((item) => (
+          <li key={item.id}>
+            <a
+              href={`#${item.id}`}
+              className={`type-tag block transition-colors ${
+                active === item.id
+                  ? "accent-text font-bold"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+};
+
+
 const renderTextWithLinks = (text: string, links?: ProjectLink[]): React.ReactNode => {
   if (!links || links.length === 0) return text;
 
