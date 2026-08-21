@@ -7,6 +7,7 @@ const clients = [
   "Celadon Books",
   "ABC Signature",
   "SAG-AFTRA",
+  "Glamour Magazine",
   "Humanitas Prize",
 ];
 
