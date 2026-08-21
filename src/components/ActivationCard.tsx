@@ -66,7 +66,7 @@ const ActivationCard = ({
           </p>
         )}
       </div>
-    </motion.div>
+    </MotionLink>
   );
 };
 
