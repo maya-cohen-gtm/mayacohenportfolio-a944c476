@@ -252,7 +252,7 @@ const ProjectDetail = () => {
             >
               <h2 className="type-kicker text-foreground mb-[clamp(1rem,2vw,1.5rem)]">{section.label}</h2>
               {section.label === "Impact" && project.outcome && (
-                <div className="mb-6 max-w-3xl rounded-2xl border-2 border-foreground accent-soft p-5 md:p-6">
+                <div className="mb-6 max-w-3xl rounded-2xl border-2 border-foreground accent-tint p-5 md:p-6">
                   <span className="type-tag text-muted-foreground block mb-2">Why it mattered to the business</span>
                   <p className="type-lead font-semibold text-foreground text-pretty">{project.outcome}</p>
                 </div>
