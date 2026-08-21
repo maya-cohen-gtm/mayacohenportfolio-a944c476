@@ -195,6 +195,32 @@ const ProjectDetail = () => {
           ))}
         </div>
 
+        {/* Trailer */}
+        {project.video && (
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className={`mt-24 ${accentFor(projectIndex + 1)}`}
+          >
+            <h2 className="label-text mb-8">Trailer</h2>
+            <div className="overflow-hidden rounded-3xl border-2 border-foreground accent-card bg-muted aspect-video">
+              <iframe
+                src={project.video.url}
+                title={project.video.title}
+                className="w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                loading="lazy"
+              />
+            </div>
+            {project.video.caption && (
+              <p className="mt-4 text-base text-muted-foreground max-w-3xl">{project.video.caption}</p>
+            )}
+          </motion.div>
+        )}
+
         {/* Gallery */}
         <div className="mt-24">
           <h2 className="label-text mb-8">Gallery</h2>
