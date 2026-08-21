@@ -5,7 +5,7 @@ const clients = [
   "HBO",
   "DreamWorks Animation",
   "Celadon Books",
-  "Michelle Obama",
+  "ABC Signature",
   "Humanitas Prize",
 ];
 
