@@ -73,6 +73,13 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: "henry-winkler-tiktok",
+    scope: [
+      { label: "Ownership", value: "Owned channel lead" },
+      { label: "Stakeholders", value: "Talent + HBO marketing" },
+      { label: "Scope", value: "Editorial, community & press-to-social" },
+      { label: "Timeline", value: "Barry S4 run + Emmy window, 2023" },
+    ],
+    outcome: "Turned a personal account into a 1.3M-follower owned audience HBO never had to buy access to — and made every press booking return three platform-native assets at zero incremental production cost.",
     metric: "1.3M followers · 6.1M likes · talent-led short-form",
     brand: "Henry Winkler x TikTok",
     title: "Talent-Led Short-Form for Barry's Final Season",
@@ -112,6 +119,13 @@ export const projects: Project[] = [
   },
   {
     id: "multiplatform-memoir-launch",
+    scope: [
+      { label: "Ownership", value: "Chief of Staff, GTM lead" },
+      { label: "Scope", value: "15+ cities · 20+ regional markets" },
+      { label: "Stakeholders", value: "Talent, publisher, national press" },
+      { label: "Timeline", value: "2023 hardcover — 2024 paperback" },
+    ],
+    outcome: "A New York Times Bestseller that held the list for 11 weeks and earned a second commercial tour leg, extending revenue into a second consecutive year.",
     metric: "11 weeks on NYT Bestsellers list · 15+ cities",
     brand: "Henry Winkler x Celadon Books",
     title: "Multiplatform Campaign for Memoir Launch",
@@ -135,6 +149,13 @@ export const projects: Project[] = [
   },
   {
     id: "becoming-memoir-launch",
+    scope: [
+      { label: "Ownership", value: "Influencer & partnership lead" },
+      { label: "Stakeholders", value: "SAG-AFTRA C-suite + A-list talent" },
+      { label: "Scope", value: "Two national product launches" },
+      { label: "Timeline", value: "2018 campaign cycle" },
+    ],
+    outcome: "$21M raised in 60 days and 2M+ units sold across two national launches, with a documented launch playbook left behind for future teams.",
     metric: "$21M in 60 days · 5M+ views on keynote content",
     brand: "Joy Mill Entertainment (ABC Signature)",
     title: "Influencer & Partnership Campaigns",
@@ -173,6 +194,13 @@ export const projects: Project[] = [
 
   {
     id: "humanitas-awards-show",
+    scope: [
+      { label: "Ownership", value: "Marketing Manager" },
+      { label: "Scope", value: "300–400 content creators" },
+      { label: "Stakeholders", value: "Studio & network executives" },
+      { label: "Timeline", value: "Annual ceremony cycle" },
+    ],
+    outcome: "Delivered a full Hollywood awards activation end to end — live floor production plus real-time brand presence — with SEO and analytics feeding directly into Brand Marketing strategy.",
     metric: "Live social from the floor · annual ceremony",
     brand: "The Humanitas Prize",
     title: "Specialty Social Media Management",
@@ -187,6 +215,13 @@ export const projects: Project[] = [
   },
   {
     id: "pipex-virtual-launch",
+    scope: [
+      { label: "Ownership", value: "Marketing Lead" },
+      { label: "Audience", value: "3,000+ global employees" },
+      { label: "Program scale", value: "$11B → $40B" },
+      { label: "Stakeholders", value: "Infrastructure & studio leadership" },
+    ],
+    outcome: "80%+ tool adoption across 3,000+ employees and over 50% of data center strategic priorities delivered, supporting a program that scaled from $11B to $40B.",
     metric: "22,000+ newsletter downloads · 80%+ tool adoption",
     brand: "DreamWorks Animation",
     title: "Trolls: Holiday in Harmony — PipelineX",
