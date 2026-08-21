@@ -90,7 +90,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.12, ease: [0.2, 0, 0, 1] }}
-            className="type-lead text-foreground space-lead text-pretty hero-bio"
+            className="text-foreground space-lead hero-bio text-[clamp(1.25rem,2.2vw,1.75rem)] font-medium leading-[1.6]"
           >
             <p className="flex flex-wrap items-baseline gap-x-2 gap-y-3">
               <span>I</span>
