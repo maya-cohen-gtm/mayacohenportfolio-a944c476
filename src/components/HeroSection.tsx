@@ -49,7 +49,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.12, ease: [0.2, 0, 0, 1] }}
-            className="type-lead text-muted-foreground stack-prose space-lead text-pretty leading-[2]"
+            className="type-lead text-muted-foreground stack-prose space-lead text-pretty hero-bio max-w-[38ch] sm:max-w-none"
           >
             <p>
               Nine years in, I&rsquo;ve built <span className="swipe bg-brand-yellow">engaged audiences</span>{" "}

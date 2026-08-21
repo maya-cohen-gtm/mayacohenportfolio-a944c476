@@ -243,10 +243,31 @@
   .swipe {
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
-    padding: 0.08em 0.35em;
-    border-radius: 0.4rem;
+    padding: 0.1em 0.3em;
+    margin-inline: -0.02em;
+    border-radius: 0.35em;
     font-weight: 600;
     color: hsl(var(--foreground));
+    /* keep phrases intact where there is room, but never overflow small screens */
+    overflow-wrap: break-word;
+  }
+
+  @media (min-width: 768px) {
+    .swipe {
+      padding: 0.12em 0.38em;
+      border-radius: 0.4rem;
+    }
+  }
+
+  /* Hero bio: extra leading so stacked swipes never collide */
+  .hero-bio {
+    line-height: 1.95;
+  }
+
+  @media (min-width: 768px) {
+    .hero-bio {
+      line-height: 2.05;
+    }
   }
 
 
