@@ -6,7 +6,7 @@ const clients = [
   "DreamWorks Animation",
   "ABC Signature",
   "SAG-AFTRA",
-  "Glamour Magazine",
+  "Glamour",
 ];
 
 const LogoStrip = () => (
