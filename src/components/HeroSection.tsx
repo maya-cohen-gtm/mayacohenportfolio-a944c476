@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import resumeAsset from "@/assets/Marissa-Cohen-Resume.pdf.asset.json";
 import headshot from "@/assets/headshot.jpg";
 import { Starburst, Asterisk, Checker, Bolt, Flower, ZigZag, Eye } from "@/components/GenZGraphics";
 
@@ -67,21 +66,6 @@ const HeroSection = () => {
               <span>See My Work</span>
               <div className="h-px w-8 bg-primary-foreground transition-all duration-500 group-hover:w-14" />
             </button>
-            <a
-              href={resumeAsset.url}
-              download
-              className="rounded-full border-2 border-foreground bg-brand-yellow text-primary-foreground px-7 py-3.5 text-sm font-bold tracking-widest uppercase transition-transform hover:-translate-y-0.5"
-            >
-              Résumé
-            </a>
-            <a
-              href="https://medium.com/@marissacohen"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-full border-2 border-foreground bg-brand-green text-primary-foreground px-7 py-3.5 text-sm font-bold tracking-widest uppercase transition-transform hover:-translate-y-0.5"
-            >
-              Blog
-            </a>
           </motion.div>
         </div>
 
