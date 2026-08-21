@@ -8,7 +8,7 @@ import { Checker, ZigZag } from "@/components/GenZGraphics";
 const ActivationGrid = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const tagParam = searchParams.get("tag");
-  const activeTag = tagParam && filterTags.includes(tagParam) ? tagParam : "All";
+  const activeTag = tagParam && (filterTags as readonly string[]).includes(tagParam) ? tagParam : "All";
 
   const setActiveTag = (tag: string) => {
     const next = new URLSearchParams(searchParams);
