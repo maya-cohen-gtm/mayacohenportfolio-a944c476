@@ -57,7 +57,7 @@ export type Project = {
   impact: string;
   press?: string;
   gallery: string[];
-  video?: { url: string; title: string; caption?: string };
+  video?: { url: string; title: string; caption?: string; label?: string };
   links?: ProjectLink[];
   sections?: ProjectSection[];
 };
@@ -146,6 +146,7 @@ export const projects: Project[] = [
     video: {
       url: "https://www.youtube.com/embed/cQMml1-dnFs",
       title: "Tracee Ellis Ross — Glamour Women of the Year Keynote",
+      label: "Keynote",
       caption: "Tracee Ellis Ross's Glamour Women of the Year keynote — the talent moment that drove national coverage from The Washington Post, HuffPost, and Upworthy, and led to her TED2018 invitation.",
     },
     gallery: [becomingBookDisplay, traceeMichelleInterview, becomingTimesup, becomingGlamourWoty],
