@@ -57,6 +57,7 @@ export type Project = {
   impact: string;
   press?: string;
   gallery: string[];
+  video?: { url: string; title: string; caption?: string };
   links?: ProjectLink[];
   sections?: ProjectSection[];
 };
@@ -183,6 +184,11 @@ export const projects: Project[] = [
       ]},
       { label: "Impact", content: "Drove 22,000+ newsletter downloads and elevated company narratives through employee recognition and knowledge sharing. Modernized 70+ corporate web pages. Generated 3x the industry average in actionable ideas through the studio's first crowdsourcing campaign. Achieved 80%+ adoption for the internal social collaboration pilot among 3,000+ employees. Drove over 50% of infrastructure data center strategic priorities through the OKR program. Supported leadership in scaling a global program from $11B to $40B while unifying tools and resources across Marketing teams." },
     ],
+    video: {
+      url: "https://www.youtube.com/embed/okb_--K7p14",
+      title: "Trolls Holiday in Harmony — Official Trailer",
+      caption: "Trolls Holiday in Harmony, one of the DreamWorks productions delivered on the cloud-native PipelineX pipeline.",
+    },
     gallery: [pipexPersonas, pipexTimeline, pipexRoadmap, pipexTrollsEmail, pipexTrollsHoliday, pipexLaunchLetter, pipexHappyHour],
   },
 ];
