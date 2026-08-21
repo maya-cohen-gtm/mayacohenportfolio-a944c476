@@ -5,8 +5,6 @@ import { ArrowLeft } from "lucide-react";
 import { accentFor, accentForKey } from "@/lib/accents";
 import React from "react";
 import { Starburst, Asterisk, Checker } from "@/components/GenZGraphics";
-import Lightbox, { type LightboxItem } from "@/components/Lightbox";
-
 
 const renderTextWithLinks = (text: string, links?: ProjectLink[]): React.ReactNode => {
   if (!links || links.length === 0) return text;
@@ -92,22 +90,9 @@ const renderPressContent = (text: string, links?: ProjectLink[]): React.ReactNod
 const ProjectDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const [lightboxIndex, setLightboxIndex] = React.useState<number | null>(null);
   const projectIndex = projects.findIndex((p) => p.id === id);
   const project = projects[projectIndex];
   const pageAccent = projectIndex >= 0 ? accentFor(projectIndex) : accentForKey(id ?? "");
-
-  const lightboxItems: LightboxItem[] = React.useMemo(
-    () =>
-      (project?.gallery ?? []).map((src, i) => ({
-        type: "image" as const,
-        src,
-        alt: `${project?.title ?? "Project"} gallery ${i + 1}`,
-      })),
-    [project]
-  );
-
-
 
   if (!project) {
     return (
@@ -249,16 +234,13 @@ const ProjectDetail = () => {
               const isMasonry = isPipex || isHenry;
 
               return isMasonry ? (
-                <motion.button
+                <motion.div
                   key={i}
-                  type="button"
-                  onClick={() => setLightboxIndex(i)}
-                  aria-label={`Open ${project.title} image ${i + 1} full screen`}
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className={`block w-full cursor-zoom-in overflow-hidden rounded-3xl bg-muted break-inside-avoid mb-4 border-2 border-foreground accent-card ${accentFor(i)} transition-transform hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-foreground/30`}
+                  className={`overflow-hidden rounded-3xl bg-muted break-inside-avoid mb-4 border-2 border-foreground accent-card ${accentFor(i)}`}
                 >
                   <img
                     src={img}
@@ -266,18 +248,15 @@ const ProjectDetail = () => {
                     className="w-full h-auto object-cover"
                     loading="lazy"
                   />
-                </motion.button>
+                </motion.div>
               ) : (
-                <motion.button
+                <motion.div
                   key={i}
-                  type="button"
-                  onClick={() => setLightboxIndex(i)}
-                  aria-label={`Open ${project.title} image ${i + 1} full screen`}
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className={`block w-full cursor-zoom-in overflow-hidden rounded-3xl bg-muted relative border-2 border-foreground accent-card transition-transform hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-foreground/30 ${accentFor(i)} ${isBecoming ? `${i === 1 || i === 3 ? "lg:col-span-8" : "lg:col-span-4"} aspect-[4/3] md:aspect-auto md:h-[380px]` : isHumanitas ? "aspect-video" : isBarryVertical ? "aspect-[3/4]" : "aspect-square"}`}
+                  className={`overflow-hidden rounded-3xl bg-muted relative border-2 border-foreground accent-card ${accentFor(i)} ${isBecoming ? `${i === 1 || i === 3 ? "lg:col-span-8" : "lg:col-span-4"} aspect-[4/3] md:aspect-auto md:h-[380px]` : isHumanitas ? "aspect-video" : isBarryVertical ? "aspect-[3/4]" : "aspect-square"}`}
                 >
                   <img
                     src={img}
@@ -285,19 +264,11 @@ const ProjectDetail = () => {
                     className={`w-full h-full ${isHumanitas ? "object-cover object-center" : isBecoming ? (i === 3 ? "object-contain p-4 bg-background" : "object-cover object-center") : isBarryVertical ? "object-cover object-center" : "object-cover"}`}
                     loading="lazy"
                     />
-                  </motion.button>
+                  </motion.div>
               );
             })}
           </div>
         </div>
-
-        <Lightbox
-          items={lightboxItems}
-          index={lightboxIndex}
-          onClose={() => setLightboxIndex(null)}
-          onIndexChange={setLightboxIndex}
-        />
-
       </div>
 
       {/* Back to work */}
