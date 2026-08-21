@@ -179,7 +179,7 @@ export const projects: Project[] = [
     id: "pipex-virtual-launch",
     metric: "22,000+ newsletter downloads · 80%+ tool adoption",
     brand: "DreamWorks Animation",
-    title: "DreamWorks Technology — PipelineX (Cloud Platform)",
+    title: "Trolls: Holiday in Harmony — PipelineX",
     description: "Internal marketing and employee communications for a cloud-native production platform.",
     tag: "Campaigns",
     image: pipexTrollsHoliday,
