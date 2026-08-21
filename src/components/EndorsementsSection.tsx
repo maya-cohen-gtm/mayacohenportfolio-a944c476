@@ -66,7 +66,7 @@ const EndorsementsSection = () => {
                     : "mt-6"
                 }`}
               >
-                <span className="font-semibold text-foreground block">{item.name}</span>
+                <span className={`font-semibold text-foreground ${isWide ? "block" : ""}`}>{item.name}</span>
                 <span className="text-muted-foreground">{isWide ? "" : " — "}{item.role}</span>
               </figcaption>
             </motion.figure>
