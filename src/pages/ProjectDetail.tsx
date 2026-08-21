@@ -6,6 +6,31 @@ import { accentFor, accentForKey } from "@/lib/accents";
 import React from "react";
 import { Starburst, Asterisk, Checker } from "@/components/GenZGraphics";
 
+const slugify = (label: string) =>
+  label.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
+const useActiveSection = (ids: string[]) => {
+  const [active, setActive] = React.useState<string>(ids[0] ?? "");
+  React.useEffect(() => {
+    if (ids.length === 0) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+        if (visible) setActive(visible.target.id);
+      },
+      { rootMargin: "-20% 0px -65% 0px", threshold: 0 }
+    );
+    ids.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+    return () => observer.disconnect();
+  }, [ids.join("|")]);
+  return active;
+};
+
 const renderTextWithLinks = (text: string, links?: ProjectLink[]): React.ReactNode => {
   if (!links || links.length === 0) return text;
 
