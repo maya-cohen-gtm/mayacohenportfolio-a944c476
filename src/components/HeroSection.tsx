@@ -38,6 +38,14 @@ const HeroSection = () => {
             Marissa Cohen
           </motion.h1>
           <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.08 }}
+            className="text-sm md:text-base font-medium tracking-wide text-muted-foreground/80 mb-6 -mt-3"
+          >
+            MBA, University of Southern California
+          </motion.p>
+          <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.12, ease: [0.2, 0, 0, 1] }}
