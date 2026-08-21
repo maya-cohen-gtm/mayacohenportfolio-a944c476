@@ -205,11 +205,11 @@ const ProjectDetail = () => {
             className={`mt-24 ${accentFor(projectIndex + 1)}`}
           >
             <h2 className="label-text mb-8">{project.video.label ?? "Trailer"}</h2>
-            <div className="overflow-hidden rounded-3xl border-2 border-foreground accent-card bg-muted aspect-video">
+            <div className="w-full max-w-full overflow-hidden rounded-2xl md:rounded-3xl border-2 border-foreground accent-card bg-muted aspect-video">
               <iframe
                 src={project.video.url}
                 title={project.video.title}
-                className="w-full h-full"
+                className="block w-full h-full border-0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
                 loading="lazy"
