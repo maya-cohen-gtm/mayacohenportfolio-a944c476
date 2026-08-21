@@ -5,23 +5,24 @@ import { Starburst, ZigZag } from "@/components/GenZGraphics";
 const takes = [
   {
     number: "01",
-    title: "Research is the creative brief",
+    title: "Research makes creative braver",
     body:
-      "The best creative I've shipped didn't start in a brainstorm — it started in a comment section, a search trend, or a sentiment read. Analytical rigor isn't the opposite of brand magic; it's the thing that tells you which magic will land. Teams that treat insight as a pre-step to creativity keep making work that tests well and travels nowhere.",
+      "Some of my favorite work started in a comment section, a search trend, or a sentiment read. Insight doesn't box creative in — it gives the team the confidence to go bigger, because you already know what your audience is hungry for. When research and creative sit at the same table from day one, everybody gets to take smarter swings.",
   },
   {
     number: "02",
-    title: "The viewer is the stakeholder in the room",
+    title: "The viewer gets a seat at the table",
     body:
-      "Every campaign has a table full of people with opinions, and none of them are the audience. My job is to hold that empty seat — to ask what the person scrolling at 11pm actually wants from this, and to kill the asset that only exists to satisfy an internal note. Viewer obsession is a decision-making rule, not a value on a slide.",
+      "Every campaign has a room full of smart people with great opinions — and the audience isn't in it. I like holding that seat: asking what the person scrolling at 11pm actually wants from us, and letting that answer settle debates. It's a generous way to work, and it makes the whole team's decisions easier.",
   },
   {
     number: "03",
-    title: "Talent voice is an asset, not a channel",
+    title: "Talent voice is worth protecting",
     body:
-      "The fastest way to burn a talent-led channel is to treat it as free distribution for studio assets. Audiences can tell instantly. The durable play is to protect the voice that built the audience and let the campaign borrow its credibility — which means saying no to the trailer cut and yes to the thing only that person could make.",
+      "Audiences show up for a person, not a distribution channel. The most rewarding campaigns I've run gave talent room to make the thing only they could make — and the campaign borrowed that trust. Protecting someone's voice isn't precious; it's the surest way to make work people actually want to share.",
   },
 ];
+
 
 const PointOfViewSection = () => (
   <section
