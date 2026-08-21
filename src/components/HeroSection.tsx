@@ -49,19 +49,19 @@ const HeroSection = () => {
 
 
   return (
-    <section className="relative w-full min-h-[80svh] flex items-center section-x hero-y overflow-hidden pastel-bg">
+    <section className="relative w-full min-h-[80svh] lg:min-h-[88svh] flex items-center section-x hero-y overflow-hidden pastel-bg">
       {/* Gen Z graphic set — hard-edged flat shapes, no dots */}
       <Starburst className="absolute -top-16 -left-16 w-32 h-32 md:-top-24 md:-left-20 md:w-[22rem] md:h-[22rem] text-secondary" />
-      <Asterisk className="absolute top-10 left-[16rem] w-28 h-28 text-primary hidden md:block rotate-12" />
+      <Asterisk className="absolute top-6 left-[21rem] w-24 h-24 text-primary hidden md:block rotate-12" />
       <Checker className="absolute top-24 right-8 w-32 h-32 text-brand-blue hidden lg:block" />
       <Bolt className="absolute top-[45%] right-[3rem] w-16 h-28 text-brand-yellow hidden lg:block -rotate-12" />
       <Flower className="absolute bottom-[-3rem] right-[-2.5rem] w-40 h-40 md:bottom-[-6rem] md:right-[-4rem] md:w-[20rem] md:h-[20rem] text-brand-yellow" />
-      <ZigZag className="absolute bottom-24 left-[8%] w-56 h-16 text-brand-green hidden md:block" />
-      <Eye className="absolute bottom-8 right-[30%] w-24 h-14 text-primary hidden lg:block" />
+      <ZigZag className="absolute bottom-12 left-[4%] w-48 h-14 text-brand-green hidden md:block" />
+      <Eye className="absolute bottom-10 right-[36%] w-20 h-12 text-primary hidden lg:block" />
       <div className="absolute inset-x-0 bottom-0 h-3 stripe-bar" />
 
       <div className="relative z-10 w-full grid grid-cols-1 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] stack-columns items-center">
-        <div className="max-w-xl">
+        <div className="max-w-xl lg:max-w-2xl">
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
