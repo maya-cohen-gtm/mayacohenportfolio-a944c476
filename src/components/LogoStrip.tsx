@@ -4,11 +4,9 @@ import { accentFor } from "@/lib/accents";
 const clients = [
   "HBO",
   "DreamWorks Animation",
-  "Celadon Books",
   "ABC Signature",
   "SAG-AFTRA",
   "Glamour Magazine",
-  "Humanitas Prize",
 ];
 
 const LogoStrip = () => (
