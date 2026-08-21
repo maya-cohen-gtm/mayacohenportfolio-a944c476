@@ -308,7 +308,10 @@ const ProjectDetail = () => {
             })}
           </div>
         </div>
+          </div>
+        </div>
       </div>
+
 
       {/* Back to work */}
       <div className="px-8 md:px-16 py-16 border-t border-border">
