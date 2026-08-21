@@ -4,6 +4,7 @@ import LogoStrip from "@/components/LogoStrip";
 import StatsSection from "@/components/StatsSection";
 import ActivationGrid from "@/components/ActivationGrid";
 import HowIWorkSection from "@/components/HowIWorkSection";
+import PointOfViewSection from "@/components/PointOfViewSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import EndorsementsSection from "@/components/EndorsementsSection";
 import ContactSection from "@/components/ContactSection";
@@ -16,6 +17,7 @@ const Index = () => (
     <StatsSection />
     <ActivationGrid />
     <HowIWorkSection />
+    <PointOfViewSection />
     <ExperienceSection />
     <EndorsementsSection />
     <ContactSection />

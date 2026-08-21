@@ -177,9 +177,11 @@ const ProjectDetail = () => {
   ];
 
   const tocItems = [
+    ...(project.problem ? [{ id: "the-challenge", label: "The Challenge" }] : []),
     ...sectionList.map((s) => ({ id: slugify(s.label), label: s.label })),
     ...(project.video ? [{ id: "video", label: project.video.label ?? "Trailer" }] : []),
     ...(project.gallery && project.gallery.length > 0 ? [{ id: "gallery", label: "Gallery" }] : []),
+    ...(project.reflection ? [{ id: "reflection", label: "What I'd Do Differently" }] : []),
   ];
 
   return (
@@ -237,6 +239,19 @@ const ProjectDetail = () => {
           <CaseStudyToc items={tocItems} />
 
           <div className="min-w-0 flex-1">
+        {project.problem && (
+          <motion.div
+            id="the-challenge"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className={`scroll-mt-28 mb-16 rounded-2xl border-2 border-foreground accent-tint p-5 md:p-6 max-w-3xl ${accentFor(projectIndex)}`}
+          >
+            <h2 className="type-tag text-muted-foreground mb-2">The Challenge</h2>
+            <p className="type-lead font-semibold text-foreground text-pretty">{project.problem}</p>
+          </motion.div>
+        )}
         {/* Sections */}
         <div className="space-y-16">
           {sectionList.map((section, sIdx) => (
@@ -357,6 +372,20 @@ const ProjectDetail = () => {
             })}
           </div>
         </div>
+
+        {project.reflection && (
+          <motion.div
+            id="reflection"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className={`scroll-mt-28 mt-24 border-t-2 border-foreground pt-8 max-w-3xl ${accentFor(projectIndex + 2)}`}
+          >
+            <h2 className="type-kicker text-foreground mb-[clamp(1rem,2vw,1.5rem)]">What I'd Do Differently</h2>
+            <p className="type-lead text-foreground/80 text-pretty">{project.reflection}</p>
+          </motion.div>
+        )}
           </div>
         </div>
       </div>

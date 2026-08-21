@@ -61,6 +61,10 @@ export type Project = {
   scope?: ProjectScope[];
   /** One-line business outcome shown at the top of the Impact section */
   outcome?: string;
+  /** One-line framing of the challenge, shown above Context */
+  problem?: string;
+  /** Senior self-awareness: what I'd do differently, shown at the end */
+  reflection?: string;
   context: string;
   role: string;
   impact: string;
@@ -73,6 +77,8 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: "henry-winkler-tiktok",
+    problem: "A beloved personal account with a Gen Z audience had to sell a prestige show about a hitman — without becoming an ad unit or losing the charm that built it.",
+    reflection: "I'd have instrumented the account earlier. We read sentiment qualitatively from comments, which worked, but a lightweight tagging system from day one would have let me prove the press-to-short-form loop's contribution to tune-in rather than argue it anecdotally.",
     scope: [
       { label: "Ownership", value: "Owned channel lead" },
       { label: "Stakeholders", value: "Talent + HBO marketing" },
@@ -119,6 +125,8 @@ export const projects: Project[] = [
   },
   {
     id: "multiplatform-memoir-launch",
+    problem: "A 15-city national tour for a high-demand talent, where a single misfired press moment or logistics gap could cost the launch window.",
+    reflection: "I'd have built the digital layer in parallel with the tour rather than in service of it. We captured extraordinary on-the-road content, but a pre-planned always-on content engine would have compounded the tour's reach between stops instead of only around them.",
     scope: [
       { label: "Ownership", value: "Chief of Staff, GTM lead" },
       { label: "Scope", value: "15+ cities · 20+ regional markets" },
@@ -149,6 +157,8 @@ export const projects: Project[] = [
   },
   {
     id: "becoming-memoir-launch",
+    problem: "Two culturally sensitive campaigns needed A-list voices activated credibly and fast, with consistent messaging across partners we did not directly control.",
+    reflection: "I'd have set shared measurement with partners up front. Briefing and approvals were tight, but each partner reported differently, so proving aggregate campaign lift took longer than it should have.",
     scope: [
       { label: "Ownership", value: "Influencer & partnership lead" },
       { label: "Stakeholders", value: "SAG-AFTRA C-suite + A-list talent" },
@@ -194,6 +204,8 @@ export const projects: Project[] = [
 
   {
     id: "humanitas-awards-show",
+    problem: "A live Hollywood awards show required floor production and real-time social coverage at once, with no margin for a delayed or off-brand post.",
+    reflection: "I'd have staffed a second person for live coverage. Shooting, captioning, and publishing solo from the step and repeat worked, but it capped how much we could cover — a two-person floor team would have doubled output at marginal cost.",
     scope: [
       { label: "Ownership", value: "Marketing Manager" },
       { label: "Scope", value: "300–400 content creators" },
@@ -215,6 +227,8 @@ export const projects: Project[] = [
   },
   {
     id: "pipex-virtual-launch",
+    problem: "A complex cloud infrastructure rollout had to land with 3,000+ global employees who had no reason to care about the underlying technology.",
+    reflection: "I'd have led with the productions, not the platform. Adoption climbed fastest once employees saw PipelineX tied to films they were proud of — that story should have opened the campaign rather than emerging midway through it.",
     scope: [
       { label: "Ownership", value: "Marketing Lead" },
       { label: "Audience", value: "3,000+ global employees" },
