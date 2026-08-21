@@ -372,6 +372,20 @@ const ProjectDetail = () => {
             })}
           </div>
         </div>
+
+        {project.reflection && (
+          <motion.div
+            id="reflection"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className={`scroll-mt-28 mt-24 border-t-2 border-foreground pt-8 max-w-3xl ${accentFor(projectIndex + 2)}`}
+          >
+            <h2 className="type-kicker text-foreground mb-[clamp(1rem,2vw,1.5rem)]">What I'd Do Differently</h2>
+            <p className="type-lead text-foreground/80 text-pretty">{project.reflection}</p>
+          </motion.div>
+        )}
           </div>
         </div>
       </div>
