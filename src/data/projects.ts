@@ -227,7 +227,7 @@ export const projects: Project[] = [
   },
   {
     id: "pipex-virtual-launch",
-    problem: "A multi-billion-dollar infrastructure transformation had to be understood, believed, and acted on by 3,000+ employees across a global studio — most of whom had no reason to care about the technology itself.",
+    problem: "An enterprise-wide infrastructure transformation had to be understood, believed, and acted on by 3,000+ employees across a global studio — most of whom had no reason to care about the technology itself.",
     reflection: "I'd have led with the business story, not the platform. Engagement climbed fastest once employees saw the transformation tied to films they were proud of — that narrative should have opened the program rather than emerging midway through it.",
     scope: [
       { label: "Ownership", value: "Business Communications Lead" },
@@ -239,15 +239,15 @@ export const projects: Project[] = [
     metric: "3,000+ employees reached · 22,000+ newsletter downloads",
     brand: "DreamWorks Animation",
     title: "Business Communications at Scale — PipelineX",
-    description: "Enterprise communications program aligning 3,000+ global employees behind a multi-billion-dollar transformation.",
+    description: "Enterprise communications program aligning 3,000+ global employees behind an enterprise-wide transformation.",
     tag: "Executive Comms",
     image: pipexTrollsHoliday,
     cardImage: pipexCardCover,
-    context: "DreamWorks Animation's PipelineX was a proprietary cloud-native production infrastructure powering the studio's first fully cloud-based films. The technology was only half the problem: a transformation of that size only works if the business understands it. Leadership needed a communications program that could translate a highly technical, multi-billion-dollar initiative into a story 3,000+ global employees could follow, believe, and act on — across email, the corporate web presence, internal social, and executive channels.",
+    context: "DreamWorks Animation's PipelineX was a proprietary cloud-native production infrastructure powering the studio's first fully cloud-based films. The technology was only half the problem: a transformation of that size only works if the business understands it. Leadership needed a communications program that could translate a highly technical, enterprise-scale initiative into a story 3,000+ global employees could follow, believe, and act on — across email, the corporate web presence, internal social, and executive channels.",
     role: "I built and ran the business communications program behind the transformation — the operating system that kept a global workforce, studio leadership, and infrastructure teams telling the same story. That meant owning the channel mix end to end (enterprise newsletter, weekly executive email, corporate web, internal social), setting the narrative that connected an infrastructure investment to the films the studio was making, and building feedback loops so leadership could hear the organization back.",
     impact: "Reached 3,000+ employees across a global studio with a single, consistent business narrative: 22,000+ newsletter downloads, 80%+ adoption of the enterprise social collaboration channel, and 70+ modernized corporate web pages. The studio's first crowdsourcing campaign generated 3x the industry average in actionable ideas, turning communications into a two-way channel leadership could act on. Through the OKR program I drove over 50% of infrastructure data center strategic priorities, and supported leadership communications through a period of significant program growth.",
     sections: [
-      { label: "Context", content: "DreamWorks Animation's PipelineX was a proprietary cloud-native production infrastructure powering the studio's first fully cloud-based films. The technology was only half the problem: a transformation of that size only works if the business understands it. Leadership needed a communications program that could translate a highly technical, multi-billion-dollar initiative into a story 3,000+ global employees could follow, believe, and act on." },
+      { label: "Context", content: "DreamWorks Animation's PipelineX was a proprietary cloud-native production infrastructure powering the studio's first fully cloud-based films. The technology was only half the problem: a transformation of that size only works if the business understands it. Leadership needed a communications program that could translate a highly technical, enterprise-scale initiative into a story 3,000+ global employees could follow, believe, and act on." },
       { label: "My Role", content: "I built and ran the business communications program behind the transformation — the operating system that kept a global workforce, studio leadership, and infrastructure teams telling the same story.", items: [
         "Owned the enterprise communications channel mix: internal newsletter and weekly email campaigns to 3,000+ employees, driving 22,000+ downloads while elevating company narratives through employee recognition and knowledge sharing.",
         "Led the corporate website redesign as a communications surface, modernizing 70+ pages so the transformation story was consistent externally and internally.",
