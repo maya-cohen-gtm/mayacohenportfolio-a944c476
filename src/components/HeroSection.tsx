@@ -93,7 +93,7 @@ const HeroSection = () => {
             className="text-foreground space-lead hero-bio text-[clamp(1.25rem,2.2vw,1.75rem)] font-medium leading-[1.6]"
           >
             <p className="flex flex-wrap items-baseline gap-x-2 gap-y-3">
-              <span>I</span>
+              <span>Let&rsquo;s</span>
               <span className="relative inline-block align-baseline min-w-0">
                 <AnimatePresence mode="wait" initial={false}>
                   <motion.span
