@@ -8,7 +8,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative w-full min-h-[80svh] flex items-center px-8 md:px-16 pt-28 pb-16 overflow-hidden pastel-bg">
+    <section className="relative w-full min-h-[80svh] flex items-center px-[clamp(1.5rem,5vw,4rem)] pt-[clamp(6.5rem,10vw,8rem)] pb-[clamp(3.5rem,6vw,5rem)] overflow-hidden pastel-bg">
       {/* Gen Z graphic set — hard-edged flat shapes, no dots */}
       <Starburst className="absolute -top-12 -left-12 w-40 h-40 md:-top-24 md:-left-20 md:w-[22rem] md:h-[22rem] text-secondary" />
       <Asterisk className="absolute top-10 left-[16rem] w-28 h-28 text-primary hidden md:block rotate-12" />
