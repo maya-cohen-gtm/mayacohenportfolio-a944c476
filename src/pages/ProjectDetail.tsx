@@ -6,6 +6,62 @@ import { accentFor, accentForKey } from "@/lib/accents";
 import React from "react";
 import { Starburst, Asterisk, Checker } from "@/components/GenZGraphics";
 
+const slugify = (label: string) =>
+  label.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
+const useActiveSection = (ids: string[]) => {
+  const [active, setActive] = React.useState<string>(ids[0] ?? "");
+  React.useEffect(() => {
+    if (ids.length === 0) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+        if (visible) setActive(visible.target.id);
+      },
+      { rootMargin: "-20% 0px -65% 0px", threshold: 0 }
+    );
+    ids.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+    return () => observer.disconnect();
+  }, [ids.join("|")]);
+  return active;
+};
+
+const CaseStudyToc = ({ items }: { items: { id: string; label: string }[] }) => {
+  const active = useActiveSection(items.map((i) => i.id));
+  if (items.length === 0) return null;
+
+  return (
+    <nav
+      aria-label="On this page"
+      className="hidden lg:block lg:sticky lg:top-24 w-48 shrink-0 self-start"
+    >
+      <span className="type-kicker text-foreground mb-4 block">On This Page</span>
+      <ul className="space-y-3 border-l-2 border-foreground/20 pl-4">
+        {items.map((item) => (
+          <li key={item.id}>
+            <a
+              href={`#${item.id}`}
+              className={`type-tag block transition-colors ${
+                active === item.id
+                  ? "accent-text font-bold"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+};
+
+
 const renderTextWithLinks = (text: string, links?: ProjectLink[]): React.ReactNode => {
   if (!links || links.length === 0) return text;
 
@@ -113,8 +169,22 @@ const ProjectDetail = () => {
     );
   }
 
+  const sectionList: ProjectSection[] = project.sections || [
+    { label: "Context", content: project.context },
+    { label: "My Role", content: project.role },
+    { label: "Impact", content: project.impact },
+    ...(project.press ? [{ label: "Press & Recognition", content: project.press }] : []),
+  ];
+
+  const tocItems = [
+    ...sectionList.map((s) => ({ id: slugify(s.label), label: s.label })),
+    ...(project.video ? [{ id: "video", label: project.video.label ?? "Trailer" }] : []),
+    ...(project.gallery && project.gallery.length > 0 ? [{ id: "gallery", label: "Gallery" }] : []),
+  ];
+
   return (
-    <main className={`relative bg-background min-h-screen overflow-hidden ${pageAccent}`}>
+
+    <main className={`relative bg-background min-h-screen overflow-x-clip ${pageAccent}`}>
       <Starburst className="pointer-events-none absolute top-[55vh] right-[-2rem] w-32 h-32 md:right-[-4rem] md:w-56 md:h-56 text-secondary/70" />
       <Asterisk className="pointer-events-none absolute top-[120vh] left-[-2rem] w-28 h-28 text-primary/50 rotate-12 hidden md:block" />
       <Checker className="pointer-events-none absolute bottom-24 right-8 w-28 h-28 text-brand-blue/60 hidden md:block" />
@@ -138,7 +208,7 @@ const ProjectDetail = () => {
       </div>
 
       {/* Content */}
-      <div className="px-8 md:px-16 py-16 max-w-5xl">
+      <div className="px-8 md:px-16 py-16 max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -153,21 +223,22 @@ const ProjectDetail = () => {
           </p>
         </motion.div>
 
+        <div className="lg:flex lg:gap-14 lg:items-start">
+          <CaseStudyToc items={tocItems} />
+
+          <div className="min-w-0 flex-1">
         {/* Sections */}
         <div className="space-y-16">
-          {(project.sections || [
-            { label: "Context", content: project.context },
-            { label: "My Role", content: project.role },
-            { label: "Impact", content: project.impact },
-            ...(project.press ? [{ label: "Press & Recognition", content: project.press }] : []),
-          ]).map((section, sIdx) => (
+          {sectionList.map((section, sIdx) => (
+
             <motion.div
               key={section.label}
+              id={slugify(section.label)}
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className={`border-t border-border pt-8 ${accentFor(projectIndex + sIdx)}`}
+              className={`scroll-mt-28 border-t border-border pt-8 ${accentFor(projectIndex + sIdx)}`}
             >
               <h2 className="type-kicker text-foreground mb-[clamp(1rem,2vw,1.5rem)]">{section.label}</h2>
               {section.content && (
@@ -202,7 +273,8 @@ const ProjectDetail = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className={`mt-24 ${accentFor(projectIndex + 1)}`}
+            id="video"
+            className={`scroll-mt-28 mt-24 ${accentFor(projectIndex + 1)}`}
           >
             <h2 className="type-kicker text-foreground mb-[clamp(1.25rem,2.4vw,2rem)]">{project.video.label ?? "Trailer"}</h2>
             <div className="w-full max-w-full overflow-hidden rounded-2xl md:rounded-3xl border-2 border-foreground accent-card bg-muted aspect-video">
@@ -222,7 +294,7 @@ const ProjectDetail = () => {
         )}
 
         {/* Gallery */}
-        <div className="mt-24">
+        <div id="gallery" className="scroll-mt-28 mt-24">
           <h2 className="type-kicker text-foreground mb-[clamp(1.25rem,2.4vw,2rem)]">Gallery</h2>
           <div className={project.id === "pipex-virtual-launch" || project.id === "multiplatform-memoir-launch" ? "columns-1 md:columns-2 lg:columns-3" : project.id === "becoming-memoir-launch" ? "grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-12" : `grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3`}>
             {project.gallery.map((img, i) => {
@@ -269,7 +341,10 @@ const ProjectDetail = () => {
             })}
           </div>
         </div>
+          </div>
+        </div>
       </div>
+
 
       {/* Back to work */}
       <div className="px-8 md:px-16 py-16 border-t border-border">
