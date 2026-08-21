@@ -1,11 +1,52 @@
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import headshot from "@/assets/headshot.jpg";
 import { Starburst, Asterisk, Checker, Bolt, Flower, ZigZag, Eye } from "@/components/GenZGraphics";
 
+const BIO_SLOTS = [
+  {
+    verb: "engage global audiences",
+    verbClass: "bg-brand-yellow",
+    noun: "premium IP",
+    nounClass: "bg-secondary",
+  },
+  {
+    verb: "turn fandom into reach",
+    verbClass: "bg-secondary",
+    noun: "talent-led social",
+    nounClass: "bg-brand-blue text-primary-foreground",
+  },
+  {
+    verb: "drive measurable growth",
+    verbClass: "bg-brand-green text-primary-foreground",
+    noun: "streaming launches",
+    nounClass: "bg-brand-yellow",
+  },
+  {
+    verb: "build story-first campaigns",
+    verbClass: "bg-primary text-primary-foreground",
+    noun: "creators & studios",
+    nounClass: "bg-brand-green text-primary-foreground",
+  },
+];
+
 const HeroSection = () => {
+  const [slotIndex, setSlotIndex] = useState(0);
+  const slot = BIO_SLOTS[slotIndex];
+
+  useEffect(() => {
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce) return;
+    const id = window.setInterval(() => {
+      setSlotIndex((i) => (i + 1) % BIO_SLOTS.length);
+    }, 3200);
+    return () => window.clearInterval(id);
+  }, []);
+
   const scrollToWork = () => {
     document.getElementById("work")?.scrollIntoView({ behavior: "smooth" });
   };
+
 
   return (
     <section className="relative w-full min-h-[80svh] flex items-center section-x hero-y overflow-hidden pastel-bg">
@@ -49,24 +90,42 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.12, ease: [0.2, 0, 0, 1] }}
-            className="type-lead text-muted-foreground stack-prose space-lead text-pretty hero-bio max-w-[38ch] sm:max-w-none"
+            className="text-foreground space-lead hero-bio text-[clamp(1.25rem,2.2vw,1.75rem)] font-medium leading-[1.6]"
           >
-            <p>
-              Nine years in, I&rsquo;ve built <span className="swipe bg-brand-yellow">engaged audiences</span>{" "}
-              and scaled content <span className="swipe bg-secondary">from launch to millions of views</span>.
-            </p>
-            <p>
-              I speak <span className="swipe bg-primary text-primary-foreground">creative</span>{" "}
-              &mdash; positioning, brand narrative, influencer strategy &mdash; and{" "}
-              <span className="swipe bg-brand-blue text-primary-foreground">business</span>{" "}
-              &mdash; performance attribution, budget optimization, ROI.
-            </p>
-            <p>
-              Global brand and product work, all about connecting{" "}
-              <span className="swipe bg-brand-green text-primary-foreground">premium storytelling</span>{" "}
-              with audiences who lean in.
+            <p className="flex flex-wrap items-baseline gap-x-2 gap-y-3">
+              <span>I</span>
+              <span className="relative inline-block align-baseline min-w-0">
+                <AnimatePresence mode="wait" initial={false}>
+                  <motion.span
+                    key={slot.verb}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.4 }}
+                    className={`swipe inline-block ${slot.verbClass}`}
+                  >
+                    {slot.verb}
+                  </motion.span>
+                </AnimatePresence>
+              </span>
+              <span>for</span>
+              <span className="relative inline-block align-baseline min-w-0">
+                <AnimatePresence mode="wait" initial={false}>
+                  <motion.span
+                    key={slot.noun}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.4 }}
+                    className={`swipe inline-block ${slot.nounClass}`}
+                  >
+                    {slot.noun}
+                  </motion.span>
+                </AnimatePresence>
+              </span>
             </p>
           </motion.div>
+
 
 
 
