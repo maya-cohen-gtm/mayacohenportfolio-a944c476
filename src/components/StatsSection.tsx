@@ -25,7 +25,7 @@ const StatsSection = () => (
           transition={{ duration: 0.6, delay: i * 0.05 }}
           className={`surface-card accent-card p-8 ${accentFor(i)}`}
         >
-          <div className="text-3xl lg:text-4xl font-semibold accent-text mb-3">
+          <div className="type-stat accent-text mb-3">
             {stat.value}
           </div>
           <p className="text-muted-foreground">{stat.label}</p>

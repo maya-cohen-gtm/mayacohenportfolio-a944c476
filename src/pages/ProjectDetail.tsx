@@ -98,7 +98,7 @@ const ProjectDetail = () => {
     return (
       <main className="min-h-screen bg-background flex flex-col items-center justify-center text-center px-8 accent-orange">
         <span className="label-text mb-4 block">404</span>
-        <h1 className="text-5xl md:text-7xl font-semibold text-foreground tracking-tighter mb-6">
+        <h1 className="type-h1 text-foreground mb-6">
           Project not found
         </h1>
         <button
@@ -145,7 +145,7 @@ const ProjectDetail = () => {
           transition={{ duration: 0.6, ease: [0.2, 0, 0, 1] }}
         >
           <span className="label-text mb-4 block">{project.brand}</span>
-          <h1 className="text-5xl md:text-7xl font-semibold text-foreground tracking-tighter mb-4">
+          <h1 className="type-h1 text-foreground mb-4">
             {project.title}
           </h1>
           <p className="text-xl text-muted-foreground mb-16 max-w-2xl">
