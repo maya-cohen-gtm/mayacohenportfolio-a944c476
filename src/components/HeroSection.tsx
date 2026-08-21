@@ -33,7 +33,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.2, 0, 0, 1] }}
-            className="text-[clamp(2.5rem,5.5vw,4.5rem)] leading-[1.02] font-bold tracking-[-0.03em] text-foreground mb-6"
+            className="text-[clamp(2.5rem,5.5vw,4.5rem)] leading-[1.02] font-bold tracking-[-0.03em] text-foreground mb-3"
           >
             Marissa Cohen
           </motion.h1>
@@ -41,7 +41,7 @@ const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.08 }}
-            className="text-sm md:text-base font-medium tracking-wide text-muted-foreground/80 mb-6 -mt-3"
+            className="text-[0.8125rem] md:text-sm font-semibold uppercase tracking-[0.18em] leading-relaxed text-muted-foreground mb-7"
           >
             MBA, University of Southern California
           </motion.p>
