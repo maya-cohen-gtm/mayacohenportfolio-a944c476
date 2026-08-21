@@ -41,13 +41,14 @@ const PointOfViewSection = () => (
       transition={{ duration: 0.6 }}
       className="type-h2 text-foreground max-w-4xl space-title text-pretty"
     >
-      Attention is earned by understanding people, not by out-spending them.
+      Attention is earned by genuinely understanding people — and that's good news for everyone.
     </motion.p>
 
     <p className="type-lead text-muted-foreground max-w-2xl space-lead text-pretty">
-      Three things I believe about building audiences for premium IP — and act on
-      whether or not the room agrees.
+      Three things I believe about building audiences for premium IP — and the
+      ways they make teams better, not just campaigns bigger.
     </p>
+
 
     <div className="grid grid-cols-1 lg:grid-cols-3 stack-grid space-block">
       {takes.map((take, i) => (
