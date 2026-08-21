@@ -90,9 +90,22 @@ const renderPressContent = (text: string, links?: ProjectLink[]): React.ReactNod
 const ProjectDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+  const [lightboxIndex, setLightboxIndex] = React.useState<number | null>(null);
   const projectIndex = projects.findIndex((p) => p.id === id);
   const project = projects[projectIndex];
   const pageAccent = projectIndex >= 0 ? accentFor(projectIndex) : accentForKey(id ?? "");
+
+  const lightboxItems: LightboxItem[] = React.useMemo(
+    () =>
+      (project?.gallery ?? []).map((src, i) => ({
+        type: "image" as const,
+        src,
+        alt: `${project?.title ?? "Project"} gallery ${i + 1}`,
+      })),
+    [project]
+  );
+
+
 
   if (!project) {
     return (
