@@ -43,6 +43,11 @@ export type ProjectSection = {
   items?: string[];
 };
 
+export type ProjectScope = {
+  label: string;
+  value: string;
+};
+
 export type Project = {
   id: string;
   brand: string;
@@ -52,6 +57,10 @@ export type Project = {
   image: string;
   cardImage?: string;
   metric?: string;
+  /** Scope & ownership badges: budget, team, stakeholder level, timeline */
+  scope?: ProjectScope[];
+  /** One-line business outcome shown at the top of the Impact section */
+  outcome?: string;
   context: string;
   role: string;
   impact: string;
