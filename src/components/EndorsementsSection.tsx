@@ -21,6 +21,11 @@ const endorsements: Endorsement[] = [
     name: "Jasmine Kaur",
     role: "Senior Consultant, EY; President of Graduate Women in Business (GWiB)",
   },
+  {
+    quote: "Marissa's flavor of public speaking is unlike anything I've ever seen! I was blown away. She has all the makings of a confident and strategic thinker, but blends it with comedy. Marissa's presentations are an incredible portrayal of humor, persuasion, and strength.",
+    name: "John Shehan",
+    role: "Consultant, Deloitte",
+  },
 ];
 
 const EndorsementsSection = () => {
