@@ -152,6 +152,35 @@
     letter-spacing: 0.01em;
   }
 
+  /* Filter tags / pills */
+  .type-tag {
+    font-size: clamp(0.6875rem, 0.85vw, 0.8125rem);
+    line-height: 1.4;
+    letter-spacing: 0.14em;
+    @apply font-semibold uppercase;
+  }
+
+  @media (min-width: 768px) {
+    .type-tag {
+      letter-spacing: 0.18em;
+    }
+  }
+
+  /* Buttons + CTA labels */
+  .type-cta {
+    font-size: clamp(0.75rem, 0.95vw, 0.875rem);
+    line-height: 1.2;
+    letter-spacing: 0.14em;
+    @apply font-bold uppercase;
+  }
+
+  @media (min-width: 768px) {
+    .type-cta {
+      letter-spacing: 0.18em;
+    }
+  }
+
+
   /* Editorial marker-swipe highlight for key phrases */
   .swipe {
     box-decoration-break: clone;
