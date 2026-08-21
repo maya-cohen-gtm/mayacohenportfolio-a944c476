@@ -177,7 +177,7 @@ const ProjectDetail = () => {
       </div>
 
       {/* Content */}
-      <div className="px-8 md:px-16 py-16 max-w-5xl">
+      <div className="px-8 md:px-16 py-16 max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -192,14 +192,14 @@ const ProjectDetail = () => {
           </p>
         </motion.div>
 
+        <div className="lg:flex lg:gap-14 lg:items-start">
+          <CaseStudyToc items={tocItems} />
+
+          <div className="min-w-0 flex-1">
         {/* Sections */}
         <div className="space-y-16">
-          {(project.sections || [
-            { label: "Context", content: project.context },
-            { label: "My Role", content: project.role },
-            { label: "Impact", content: project.impact },
-            ...(project.press ? [{ label: "Press & Recognition", content: project.press }] : []),
-          ]).map((section, sIdx) => (
+          {sectionList.map((section, sIdx) => (
+
             <motion.div
               key={section.label}
               initial={{ opacity: 0, y: 16 }}
