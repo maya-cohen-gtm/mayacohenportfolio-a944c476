@@ -16,7 +16,7 @@ const NotFound = () => {
       <NavBar />
       <section className="min-h-screen flex flex-col items-center justify-center text-center px-8">
         <span className="label-text mb-4 block">404</span>
-        <h1 className="text-5xl md:text-7xl font-semibold text-foreground tracking-tighter mb-6">
+        <h1 className="type-h1 text-foreground mb-6">
           Page not found
         </h1>
         <p className="text-lg text-muted-foreground max-w-md mb-10">

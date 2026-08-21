@@ -60,7 +60,7 @@ const ExperienceSection = () => (
         >
           <div className="flex flex-wrap items-baseline justify-between gap-2 mb-4">
             <div>
-              <h3 className="text-2xl font-semibold">{role.company}</h3>
+              <h3 className="type-h3">{role.company}</h3>
               <p className="accent-text font-semibold">{role.title}</p>
             </div>
             <span className="text-sm text-muted-foreground">{role.period}</span>

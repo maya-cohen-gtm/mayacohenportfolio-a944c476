@@ -34,7 +34,7 @@ const ActivationCard = ({ project, accentClass = "accent-orange" }: { project: P
       </div>
       <div className="p-8">
         <span className="label-text mb-2 block">{project.brand}</span>
-        <h3 className="text-2xl text-foreground font-semibold">{project.title}</h3>
+        <h3 className="type-h3 text-foreground">{project.title}</h3>
         <p className="text-muted-foreground mt-3 text-lg">{project.description}</p>
         {project.metric && (
           <p className="mt-4 pt-4 border-t border-border text-sm font-semibold accent-text">

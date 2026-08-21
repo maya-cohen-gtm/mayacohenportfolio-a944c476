@@ -33,7 +33,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.2, 0, 0, 1] }}
-            className="text-[clamp(2.5rem,5.5vw,4.5rem)] leading-[1.02] font-bold tracking-[-0.03em] text-foreground mb-3"
+            className="type-display text-foreground mb-3"
           >
             Marissa Cohen
           </motion.h1>
@@ -41,7 +41,7 @@ const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.08 }}
-            className="text-[0.6875rem] sm:text-xs md:text-sm font-semibold uppercase tracking-[0.12em] sm:tracking-[0.15em] md:tracking-[0.18em] leading-[1.5] text-muted-foreground mb-5 sm:mb-6 md:mb-7"
+            className="type-kicker text-muted-foreground mb-5 sm:mb-6 md:mb-7"
           >
             MBA, University of Southern California
           </motion.p>
@@ -49,7 +49,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.12, ease: [0.2, 0, 0, 1] }}
-            className="text-lg md:text-xl text-muted-foreground max-w-xl mb-8 leading-relaxed"
+            className="type-lead text-muted-foreground max-w-xl mb-8"
           >
             Over nine years in entertainment and digital marketing, I&rsquo;ve scaled content 
             from launch to millions of views.
