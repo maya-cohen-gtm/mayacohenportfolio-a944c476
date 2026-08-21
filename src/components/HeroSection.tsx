@@ -33,7 +33,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.2, 0, 0, 1] }}
-            className="text-[clamp(2.5rem,5.5vw,4.5rem)] leading-[1.02] font-bold tracking-[-0.03em] text-foreground mb-6"
+            className="text-[clamp(2.5rem,5.5vw,4.5rem)] leading-[1.02] font-bold tracking-[-0.03em] text-foreground mb-3"
           >
             Marissa Cohen
           </motion.h1>
