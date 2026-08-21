@@ -198,17 +198,17 @@
   }
 
   .hero-y {
-    padding-top: clamp(6.5rem, 10vw, 8rem);
+    padding-top: clamp(6.5rem, 10vw, 9rem);
     padding-bottom: clamp(4.5rem, 6vw, 5rem);
   }
 
   /* Rhythm between typographic elements */
   .space-kicker {
-    margin-bottom: clamp(1.125rem, 1.8vw, 1.25rem);
+    margin-bottom: clamp(1.125rem, 1.6vw, 1.5rem);
   }
 
   .space-title {
-    margin-bottom: clamp(0.75rem, 0.9vw, 0.75rem);
+    margin-bottom: clamp(0.75rem, 1.1vw, 1.125rem);
   }
 
   .space-heading {
@@ -216,7 +216,7 @@
   }
 
   .space-lead {
-    margin-bottom: clamp(2.25rem, 3.2vw, 2.5rem);
+    margin-bottom: clamp(2.25rem, 3.6vw, 3.25rem);
   }
 
 
