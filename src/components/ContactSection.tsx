@@ -12,7 +12,7 @@ const ContactSection = () => (
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
-      className="relative z-10 type-h1 text-foreground space-title"
+      className="relative z-10 type-h1 text-foreground space-heading"
     >
       Let's Connect
     </motion.h2>

@@ -36,7 +36,7 @@ const HowIWorkSection = () => (
   <section id="how-i-work" className="relative overflow-hidden section-x section-y border-t border-border accent-green">
     <Flower className="pointer-events-none absolute -top-6 left-[-2rem] w-28 h-28 md:-top-10 md:left-[-3rem] md:w-48 md:h-48 text-brand-green/50" />
     <Eye className="pointer-events-none absolute top-16 right-6 w-16 h-9 md:right-12 md:w-24 md:h-14 text-primary/70" />
-    <h2 className="label-text space-title">How I Work</h2>
+    <h2 className="label-text space-kicker">How I Work</h2>
     <p className="type-lead text-muted-foreground max-w-2xl space-lead text-pretty">
       The operating model behind the campaigns — what I own, how fast we move, and
       how decisions get made.
