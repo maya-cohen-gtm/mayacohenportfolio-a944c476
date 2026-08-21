@@ -49,17 +49,25 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.12, ease: [0.2, 0, 0, 1] }}
-            className="type-lead text-muted-foreground space-y-[clamp(0.875rem,1.6vw,1.125rem)] mb-[clamp(1.75rem,3.2vw,2.5rem)] text-pretty"
+            className="type-lead text-muted-foreground space-y-[clamp(0.875rem,1.6vw,1.125rem)] mb-[clamp(1.75rem,3.2vw,2.5rem)] text-pretty leading-[2]"
           >
             <p>
-              Over nine years in entertainment and digital marketing, I&rsquo;ve scaled content
-              from launch to millions of views.
+              Nine years in, I&rsquo;ve built <span className="swipe bg-brand-yellow">engaged audiences</span>{" "}
+              and scaled content <span className="swipe bg-secondary">from launch to millions of views</span>.
             </p>
             <p>
-              I bridge creative storytelling and business rigor&mdash;brand narrative and influencer
-              strategy, backed by performance attribution, budget optimization, and ROI tracking.
+              I speak <span className="swipe bg-primary text-primary-foreground">creative</span>{" "}
+              &mdash; positioning, brand narrative, influencer strategy &mdash; and{" "}
+              <span className="swipe bg-brand-blue text-primary-foreground">business</span>{" "}
+              &mdash; performance attribution, budget optimization, ROI.
+            </p>
+            <p>
+              Global brand and product work, all about connecting{" "}
+              <span className="swipe bg-brand-green text-primary-foreground">premium storytelling</span>{" "}
+              with audiences who lean in.
             </p>
           </motion.div>
+
 
 
           <motion.div
