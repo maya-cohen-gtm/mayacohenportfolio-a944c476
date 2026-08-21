@@ -195,7 +195,7 @@ const ProjectDetail = () => {
           ))}
         </div>
 
-        {/* Trailer */}
+        {/* Video */}
         {project.video && (
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -204,7 +204,7 @@ const ProjectDetail = () => {
             transition={{ duration: 0.6 }}
             className={`mt-24 ${accentFor(projectIndex + 1)}`}
           >
-            <h2 className="label-text mb-8">Trailer</h2>
+            <h2 className="label-text mb-8">{project.video.label ?? "Trailer"}</h2>
             <div className="overflow-hidden rounded-3xl border-2 border-foreground accent-card bg-muted aspect-video">
               <iframe
                 src={project.video.url}
