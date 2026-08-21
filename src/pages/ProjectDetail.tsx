@@ -242,7 +242,8 @@ const ProjectDetail = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className={`mt-24 ${accentFor(projectIndex + 1)}`}
+            id="video"
+            className={`scroll-mt-28 mt-24 ${accentFor(projectIndex + 1)}`}
           >
             <h2 className="type-kicker text-foreground mb-[clamp(1.25rem,2.4vw,2rem)]">{project.video.label ?? "Trailer"}</h2>
             <div className="w-full max-w-full overflow-hidden rounded-2xl md:rounded-3xl border-2 border-foreground accent-card bg-muted aspect-video">
