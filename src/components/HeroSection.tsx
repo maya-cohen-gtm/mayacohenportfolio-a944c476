@@ -8,7 +8,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative w-full min-h-[80svh] flex items-center px-[clamp(1.5rem,5vw,4rem)] pt-[clamp(6.5rem,10vw,8rem)] pb-[clamp(3.5rem,6vw,5rem)] overflow-hidden pastel-bg">
+    <section className="relative w-full min-h-[80svh] flex items-center section-x hero-y overflow-hidden pastel-bg">
       {/* Gen Z graphic set — hard-edged flat shapes, no dots */}
       <Starburst className="absolute -top-12 -left-12 w-40 h-40 md:-top-24 md:-left-20 md:w-[22rem] md:h-[22rem] text-secondary" />
       <Asterisk className="absolute top-10 left-[16rem] w-28 h-28 text-primary hidden md:block rotate-12" />
@@ -19,13 +19,13 @@ const HeroSection = () => {
       <Eye className="absolute bottom-8 right-[30%] w-24 h-14 text-primary hidden lg:block" />
       <div className="absolute inset-x-0 bottom-0 h-3 stripe-bar" />
 
-      <div className="relative z-10 w-full grid grid-cols-1 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] gap-[clamp(2.5rem,5vw,4rem)] items-center">
+      <div className="relative z-10 w-full grid grid-cols-1 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] stack-columns items-center">
         <div className="max-w-xl">
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
-            className="label-text mb-[clamp(0.875rem,1.8vw,1.25rem)] block uppercase"
+            className="label-text space-kicker block uppercase"
           >
             Entertainment Marketing &middot; Social &amp; Creator Campaigns
           </motion.span>
@@ -33,7 +33,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.2, 0, 0, 1] }}
-            className="type-display text-foreground mb-[clamp(0.5rem,0.9vw,0.75rem)] text-balance"
+            className="type-display text-foreground space-title text-balance"
           >
             Marissa Cohen
           </motion.h1>
@@ -41,7 +41,7 @@ const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.08 }}
-            className="type-kicker text-muted-foreground mb-[clamp(1.25rem,2.6vw,1.75rem)]"
+            className="type-kicker text-muted-foreground space-kicker"
           >
             MBA, University of Southern California
           </motion.p>
@@ -49,7 +49,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.12, ease: [0.2, 0, 0, 1] }}
-            className="type-lead text-muted-foreground space-y-[clamp(0.875rem,1.6vw,1.125rem)] mb-[clamp(1.75rem,3.2vw,2.5rem)] text-pretty leading-[2]"
+            className="type-lead text-muted-foreground stack-prose space-lead text-pretty leading-[2]"
           >
             <p>
               Nine years in, I&rsquo;ve built <span className="swipe bg-brand-yellow">engaged audiences</span>{" "}

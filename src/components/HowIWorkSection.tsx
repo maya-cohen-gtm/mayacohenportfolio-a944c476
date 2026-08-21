@@ -33,16 +33,16 @@ const principles = [
 ];
 
 const HowIWorkSection = () => (
-  <section id="how-i-work" className="relative overflow-hidden px-8 md:px-16 py-24 border-t border-border accent-green">
+  <section id="how-i-work" className="relative overflow-hidden section-x section-y border-t border-border accent-green">
     <Flower className="pointer-events-none absolute -top-6 left-[-2rem] w-28 h-28 md:-top-10 md:left-[-3rem] md:w-48 md:h-48 text-brand-green/50" />
     <Eye className="pointer-events-none absolute top-16 right-6 w-16 h-9 md:right-12 md:w-24 md:h-14 text-primary/70" />
-    <h2 className="label-text mb-4">How I Work</h2>
-    <p className="text-lg text-muted-foreground max-w-2xl mb-12">
+    <h2 className="label-text space-title">How I Work</h2>
+    <p className="type-lead text-muted-foreground max-w-2xl space-lead text-pretty">
       The operating model behind the campaigns — what I own, how fast we move, and
       how decisions get made.
     </p>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 stack-grid space-block">
       {operatingModel.map((item, i) => (
         <motion.div
           key={item.label}
