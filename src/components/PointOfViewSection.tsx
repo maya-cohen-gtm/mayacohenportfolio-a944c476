@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { accentFor } from "@/lib/accents";
-import { Starburst, Zigzag } from "@/components/GenZGraphics";
+import { Starburst, ZigZag } from "@/components/GenZGraphics";
 
 const takes = [
   {
@@ -29,7 +29,7 @@ const PointOfViewSection = () => (
     className="relative overflow-hidden section-x section-y border-t border-border accent-blue"
   >
     <Starburst className="pointer-events-none absolute -top-8 right-[-2rem] w-28 h-28 md:right-[-3rem] md:w-48 md:h-48 text-brand-yellow/60" />
-    <Zigzag className="pointer-events-none absolute bottom-10 left-6 w-24 h-8 md:w-40 md:h-12 text-brand-pink/70 hidden md:block" />
+    <ZigZag className="pointer-events-none absolute bottom-10 left-6 w-24 h-8 md:w-40 md:h-12 text-brand-pink/70 hidden md:block" />
 
     <h2 className="label-text space-kicker">Point of View</h2>
 
