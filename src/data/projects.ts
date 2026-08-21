@@ -64,9 +64,9 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: "henry-winkler-tiktok",
-    metric: "1.3M followers · 6.1M likes · talent-led short form",
+    metric: "1.3M followers · 6.1M likes · talent-led short-form",
     brand: "Henry Winkler x TikTok",
-    title: "Talent-Led Short Form for Barry's Final Season",
+    title: "Talent-Led Short-Form for Barry's Final Season",
     description: "Running an 80-year-old icon's TikTok as an owned channel during HBO's Barry S4.",
     tag: "Social Media",
     image: barryFinalSeason,
