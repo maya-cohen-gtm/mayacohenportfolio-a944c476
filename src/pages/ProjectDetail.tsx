@@ -103,7 +103,7 @@ const ProjectDetail = () => {
         </h1>
         <button
           onClick={() => navigate("/")}
-          className="group flex items-center gap-4 accent-text font-semibold tracking-widest uppercase text-sm cursor-pointer"
+          className="group flex items-center gap-4 accent-text type-cta cursor-pointer"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>All Projects</span>
@@ -130,7 +130,7 @@ const ProjectDetail = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
         <button
           onClick={() => navigate("/")}
-          className="absolute top-8 left-8 z-10 flex items-center gap-3 rounded-full bg-card/90 px-5 py-3 accent-text border-2 border-foreground uppercase tracking-widest text-sm cursor-pointer hover:gap-4 transition-all"
+          className="absolute top-8 left-8 z-10 flex items-center gap-3 rounded-full bg-card/90 px-5 py-3 accent-text border-2 border-foreground type-cta cursor-pointer hover:gap-4 transition-all"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>Back</span>
@@ -144,11 +144,11 @@ const ProjectDetail = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.2, 0, 0, 1] }}
         >
-          <span className="label-text mb-4 block">{project.brand}</span>
+          <span className="type-kicker text-foreground mb-4 block">{project.brand}</span>
           <h1 className="type-h1 text-foreground mb-4">
             {project.title}
           </h1>
-          <p className="text-xl text-muted-foreground mb-16 max-w-2xl">
+          <p className="type-lead text-muted-foreground mb-16 max-w-2xl text-pretty">
             {project.description}
           </p>
         </motion.div>
@@ -169,14 +169,14 @@ const ProjectDetail = () => {
               transition={{ duration: 0.6 }}
               className={`border-t border-border pt-8 ${accentFor(projectIndex + sIdx)}`}
             >
-              <h2 className="label-text mb-6">{section.label}</h2>
+              <h2 className="type-kicker text-foreground mb-[clamp(1rem,2vw,1.5rem)]">{section.label}</h2>
               {section.content && (
                 section.label === "Press & Recognition" ? (
-                  <div className="text-lg text-foreground/80 leading-relaxed max-w-3xl whitespace-pre-line">
+                  <div className="type-lead text-foreground/80 max-w-3xl whitespace-pre-line text-pretty">
                     {renderPressContent(section.content, project.links)}
                   </div>
                 ) : (
-                  <p className="text-lg text-foreground/80 leading-relaxed max-w-3xl">
+                  <p className="type-lead text-foreground/80 max-w-3xl text-pretty">
                     {renderTextWithLinks(section.content, project.links)}
                   </p>
                 )
@@ -184,7 +184,7 @@ const ProjectDetail = () => {
               {section.items && section.items.length > 0 && (
                 <ul className="space-y-4 max-w-3xl mt-4">
                   {section.items.map((item, idx) => (
-                    <li key={idx} className="text-lg text-foreground/80 leading-relaxed flex gap-3">
+                    <li key={idx} className="type-lead text-foreground/80 flex gap-3 text-pretty">
                       <span className="accent-text mt-1.5 shrink-0 font-bold">•</span>
                       <span>{renderTextWithLinks(item, project.links)}</span>
                     </li>
@@ -204,7 +204,7 @@ const ProjectDetail = () => {
             transition={{ duration: 0.6 }}
             className={`mt-24 ${accentFor(projectIndex + 1)}`}
           >
-            <h2 className="label-text mb-8">{project.video.label ?? "Trailer"}</h2>
+            <h2 className="type-kicker text-foreground mb-[clamp(1.25rem,2.4vw,2rem)]">{project.video.label ?? "Trailer"}</h2>
             <div className="w-full max-w-full overflow-hidden rounded-2xl md:rounded-3xl border-2 border-foreground accent-card bg-muted aspect-video">
               <iframe
                 src={project.video.url}
@@ -216,14 +216,14 @@ const ProjectDetail = () => {
               />
             </div>
             {project.video.caption && (
-              <p className="mt-4 text-base text-muted-foreground max-w-3xl">{project.video.caption}</p>
+              <p className="mt-4 type-meta text-muted-foreground max-w-3xl">{project.video.caption}</p>
             )}
           </motion.div>
         )}
 
         {/* Gallery */}
         <div className="mt-24">
-          <h2 className="label-text mb-8">Gallery</h2>
+          <h2 className="type-kicker text-foreground mb-[clamp(1.25rem,2.4vw,2rem)]">Gallery</h2>
           <div className={project.id === "pipex-virtual-launch" || project.id === "multiplatform-memoir-launch" ? "columns-1 md:columns-2 lg:columns-3" : project.id === "becoming-memoir-launch" ? "grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-12" : `grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3`}>
             {project.gallery.map((img, i) => {
               const isPipex = project.id === "pipex-virtual-launch";
@@ -275,7 +275,7 @@ const ProjectDetail = () => {
       <div className="px-8 md:px-16 py-16 border-t border-border">
         <button
           onClick={() => navigate("/")}
-          className="group flex items-center gap-4 accent-text font-semibold tracking-widest uppercase text-sm cursor-pointer"
+          className="group flex items-center gap-4 accent-text type-cta cursor-pointer"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>All Projects</span>
