@@ -172,12 +172,8 @@ const ProjectDetail = () => {
     );
   }
 
-  const sectionList: ProjectSection[] = project.sections || [
-    { label: "Context", content: project.context },
-    { label: "My Role", content: project.role },
-    { label: "Impact", content: project.impact },
-    ...(project.press ? [{ label: "Press & Recognition", content: project.press }] : []),
-  ];
+  const sectionList: ProjectSection[] = resolveSections(project);
+
 
   const tocItems = [
     ...(project.problem ? [{ id: "the-challenge", label: "The Challenge" }] : []),
