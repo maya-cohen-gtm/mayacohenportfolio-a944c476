@@ -23,9 +23,11 @@ export type MadlibSlot = {
   nounClass: string;
 };
 
-export const ROTATION_MS = 3200;
+/** Desired rotation speed in ms. Clamped to a safe range below. */
+const ROTATION_MS_RAW = 3200;
 
-export const MADLIB_SLOTS: MadlibSlot[] = [
+const RAW_SLOTS: MadlibSlot[] = [
+
   {
     verb: "engage global audiences",
     verbClass: "bg-brand-yellow",
