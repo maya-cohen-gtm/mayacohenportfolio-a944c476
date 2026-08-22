@@ -282,6 +282,11 @@
     .hero-bio p {
       max-width: 30ch;
     }
+
+    /* enough room now: keep each highlighted phrase on one unbroken line */
+    .hero-bio .swipe {
+      white-space: nowrap;
+    }
   }
 
   @media (min-width: 768px) {
@@ -290,9 +295,10 @@
     }
 
     .hero-bio p {
-      max-width: 34ch;
+      max-width: 32ch;
     }
   }
+
 
 
 
