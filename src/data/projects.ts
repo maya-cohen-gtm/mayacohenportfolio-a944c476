@@ -30,6 +30,8 @@ import humanitasDga from "@/assets/humanitas-dga.jpg";
 import humanitasWinners from "@/assets/humanitas-winners.webp";
 import humanitasAva from "@/assets/humanitas-ava-duvernay.webp";
 
+import type { CaseStudyTemplateKey } from "@/config/caseStudyTemplates";
+
 const traceeMichelleCaseStudy = traceeMichelleInterview;
 
 export type ProjectLink = {
