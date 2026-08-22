@@ -1,6 +1,7 @@
 import { useParams, useNavigate, useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { projects, type ProjectLink, type ProjectSection } from "@/data/projects";
+import { resolveSections } from "@/config/caseStudyTemplates";
 import { ArrowLeft } from "lucide-react";
 import { accentFor, accentForKey } from "@/lib/accents";
 import React from "react";
@@ -172,12 +173,8 @@ const ProjectDetail = () => {
     );
   }
 
-  const sectionList: ProjectSection[] = project.sections || [
-    { label: "Context", content: project.context },
-    { label: "My Role", content: project.role },
-    { label: "Impact", content: project.impact },
-    ...(project.press ? [{ label: "Press & Recognition", content: project.press }] : []),
-  ];
+  const sectionList: ProjectSection[] = resolveSections(project);
+
 
   const tocItems = [
     ...(project.problem ? [{ id: "the-challenge", label: "The Challenge" }] : []),

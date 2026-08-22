@@ -30,6 +30,8 @@ import humanitasDga from "@/assets/humanitas-dga.jpg";
 import humanitasWinners from "@/assets/humanitas-winners.webp";
 import humanitasAva from "@/assets/humanitas-ava-duvernay.webp";
 
+import type { CaseStudyTemplateKey } from "@/config/caseStudyTemplates";
+
 const traceeMichelleCaseStudy = traceeMichelleInterview;
 
 export type ProjectLink = {
@@ -72,7 +74,10 @@ export type Project = {
   gallery: string[];
   video?: { url: string; title: string; caption?: string; label?: string };
   links?: ProjectLink[];
+  /** Explicit section list; overrides the template when provided. */
   sections?: ProjectSection[];
+  /** Page template key from src/config/caseStudyTemplates.ts (defaults to "standard"). */
+  template?: CaseStudyTemplateKey;
 };
 export const projects: Project[] = [
   {
