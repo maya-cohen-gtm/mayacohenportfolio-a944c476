@@ -67,9 +67,9 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.12, ease: [0.2, 0, 0, 1] }}
             className="text-foreground space-lead hero-bio text-[clamp(1.25rem,2.2vw,1.75rem)] font-medium leading-[1.6]"
           >
-            <p className="flex flex-wrap items-baseline gap-x-2 gap-y-4">
-              <span>Let&rsquo;s</span>
-              <span className="relative inline-block align-baseline min-w-0">
+            <p>
+              <span>Let&rsquo;s </span>
+              <span className="swipe-slot">
                 <AnimatePresence mode="wait" initial={false}>
                   <motion.span
                     key={slot.verb}
@@ -77,14 +77,14 @@ const HeroSection = () => {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.4 }}
-                    className={`swipe inline-block ${slot.verbClass}`}
+                    className={`swipe ${slot.verbClass}`}
                   >
                     {slot.verb}
                   </motion.span>
                 </AnimatePresence>
               </span>
-              <span>for</span>
-              <span className="relative inline-block align-baseline min-w-0">
+              <span> for </span>
+              <span className="swipe-slot">
                 <AnimatePresence mode="wait" initial={false}>
                   <motion.span
                     key={slot.noun}
@@ -92,13 +92,14 @@ const HeroSection = () => {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.4 }}
-                    className={`swipe inline-block ${slot.nounClass}`}
+                    className={`swipe ${slot.nounClass}`}
                   >
                     {slot.noun}
                   </motion.span>
                 </AnimatePresence>
               </span>
             </p>
+
           </motion.div>
 
 
