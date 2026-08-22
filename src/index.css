@@ -242,6 +242,7 @@
 
   /* Editorial marker-swipe highlight for key phrases */
   .swipe {
+    display: inline;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
     padding: 0.1em 0.3em;
@@ -251,6 +252,7 @@
     color: hsl(var(--foreground));
     /* keep phrases intact where there is room, but never overflow small screens */
     overflow-wrap: break-word;
+    hyphens: none;
   }
 
   @media (min-width: 768px) {
@@ -260,16 +262,38 @@
     }
   }
 
-  /* Hero bio: extra leading so stacked swipes never collide */
+  /* Hero bio: inline flow so long phrases wrap cleanly and stay on the text baseline */
   .hero-bio {
-    line-height: 1.95;
+    line-height: 1.9;
+    text-wrap: pretty;
+  }
+
+  .hero-bio p {
+    display: block;
+    max-width: 22ch;
+  }
+
+  .hero-bio .swipe-slot {
+    display: inline;
+    white-space: normal;
+  }
+
+  @media (min-width: 640px) {
+    .hero-bio p {
+      max-width: 30ch;
+    }
   }
 
   @media (min-width: 768px) {
     .hero-bio {
-      line-height: 2.05;
+      line-height: 2;
+    }
+
+    .hero-bio p {
+      max-width: 34ch;
     }
   }
+
 
 
   .label-text {
