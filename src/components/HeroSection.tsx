@@ -6,6 +6,7 @@ import { MADLIB_SLOTS as BIO_SLOTS, ROTATION_MS } from "@/config/heroMadlib";
 
 const HeroSection = () => {
   const [slotIndex, setSlotIndex] = useState(0);
+  const [imageState, setImageState] = useState<"loading" | "loaded" | "error">("loading");
   const slot = BIO_SLOTS[slotIndex];
 
   useEffect(() => {
