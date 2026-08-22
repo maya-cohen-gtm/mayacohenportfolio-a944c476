@@ -23,9 +23,11 @@ export type MadlibSlot = {
   nounClass: string;
 };
 
-export const ROTATION_MS = 3200;
+/** Desired rotation speed in ms. Clamped to a safe range below. */
+const ROTATION_MS_RAW = 3200;
 
-export const MADLIB_SLOTS: MadlibSlot[] = [
+const RAW_SLOTS: MadlibSlot[] = [
+
   {
     verb: "engage global audiences",
     verbClass: "bg-brand-yellow",
@@ -81,3 +83,81 @@ export const MADLIB_SLOTS: MadlibSlot[] = [
     nounClass: "bg-brand-yellow",
   },
 ];
+
+/* -------------------------------------------------------------------------
+ * Validation & safe fallbacks
+ * -----------------------------------------------------------------------*/
+
+/** Color classes that are guaranteed to exist in the design system. */
+const ALLOWED_CLASSES = [
+  "bg-primary text-primary-foreground",
+  "bg-secondary",
+  "bg-brand-yellow",
+  "bg-brand-green text-primary-foreground",
+  "bg-brand-blue text-primary-foreground",
+] as const;
+
+const FALLBACK_CLASS = "bg-brand-yellow";
+
+/** Used when the config is empty or every entry is unusable. */
+const FALLBACK_SLOT: MadlibSlot = {
+  verb: "build story-first campaigns",
+  verbClass: "bg-brand-yellow",
+  noun: "premium IP.",
+  nounClass: "bg-secondary",
+};
+
+const MIN_ROTATION_MS = 1200;
+const MAX_ROTATION_MS = 20000;
+
+const warn = (message: string) => {
+  if (import.meta.env.DEV) console.warn(`[heroMadlib] ${message}`);
+};
+
+const safeText = (value: unknown, fallback: string, field: string, index: number) => {
+  if (typeof value === "string" && value.trim().length > 0) return value.trim();
+  warn(`slot ${index}: missing "${field}" — using fallback text.`);
+  return fallback;
+};
+
+const safeClass = (value: unknown, field: string, index: number) => {
+  if (typeof value === "string" && (ALLOWED_CLASSES as readonly string[]).includes(value.trim())) {
+    return value.trim();
+  }
+  warn(`slot ${index}: "${field}" is not an allowed color class — using ${FALLBACK_CLASS}.`);
+  return FALLBACK_CLASS;
+};
+
+const sanitizeSlots = (slots: unknown): MadlibSlot[] => {
+  if (!Array.isArray(slots) || slots.length === 0) {
+    warn("MADLIB_SLOTS is empty or not an array — using a single fallback slot.");
+    return [FALLBACK_SLOT];
+  }
+
+  const cleaned = slots
+    .filter((slot): slot is Record<string, unknown> => !!slot && typeof slot === "object")
+    .map((slot, index) => ({
+      verb: safeText(slot.verb, FALLBACK_SLOT.verb, "verb", index),
+      verbClass: safeClass(slot.verbClass, "verbClass", index),
+      noun: safeText(slot.noun, FALLBACK_SLOT.noun, "noun", index),
+      nounClass: safeClass(slot.nounClass, "nounClass", index),
+    }));
+
+  return cleaned.length > 0 ? cleaned : [FALLBACK_SLOT];
+};
+
+const sanitizeRotation = (ms: unknown): number => {
+  if (typeof ms !== "number" || !Number.isFinite(ms)) {
+    warn("ROTATION_MS is not a finite number — defaulting to 3200ms.");
+    return 3200;
+  }
+  const clamped = Math.min(Math.max(ms, MIN_ROTATION_MS), MAX_ROTATION_MS);
+  if (clamped !== ms) warn(`ROTATION_MS clamped to ${clamped}ms.`);
+  return clamped;
+};
+
+/** Validated slots — always at least one entry with valid text and colors. */
+export const MADLIB_SLOTS: MadlibSlot[] = sanitizeSlots(RAW_SLOTS);
+
+/** Validated rotation interval, clamped to 1.2s–20s. */
+export const ROTATION_MS: number = sanitizeRotation(ROTATION_MS_RAW);
