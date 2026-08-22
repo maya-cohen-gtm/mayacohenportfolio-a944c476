@@ -72,7 +72,10 @@ export type Project = {
   gallery: string[];
   video?: { url: string; title: string; caption?: string; label?: string };
   links?: ProjectLink[];
+  /** Explicit section list; overrides the template when provided. */
   sections?: ProjectSection[];
+  /** Page template key from src/config/caseStudyTemplates.ts (defaults to "standard"). */
+  template?: CaseStudyTemplateKey;
 };
 export const projects: Project[] = [
   {
