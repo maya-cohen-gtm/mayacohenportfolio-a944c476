@@ -1,6 +1,7 @@
 import { useParams, useNavigate, useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { projects, type ProjectLink, type ProjectSection } from "@/data/projects";
+import { resolveSections } from "@/config/caseStudyTemplates";
 import { ArrowLeft } from "lucide-react";
 import { accentFor, accentForKey } from "@/lib/accents";
 import React from "react";
