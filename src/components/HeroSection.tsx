@@ -129,12 +129,33 @@ const HeroSection = () => {
           className="justify-self-center lg:justify-self-end w-full max-w-sm"
         >
           <div className="relative rounded-[2rem] overflow-hidden surface-card p-0">
-          <img
-            src={headshot}
-            alt="Marissa Cohen, social media and executive communications marketer"
-            className="w-full h-[22rem] md:h-[26rem] object-cover object-[center_20%]"
-          />
+            {imageState !== "loaded" && (
+              <div
+                aria-hidden
+                className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-gradient-to-br from-secondary via-accent to-primary/60"
+              >
+                <Starburst className="w-14 h-14 text-foreground/70" />
+                {imageState === "error" && (
+                  <span className="type-cta text-foreground">Marissa Cohen</span>
+                )}
+              </div>
+            )}
+            {imageState !== "error" && (
+              <img
+                src={headshot}
+                alt="Marissa Cohen, social media and executive communications marketer"
+                loading="eager"
+                decoding="async"
+                onLoad={() => setImageState("loaded")}
+                onError={() => setImageState("error")}
+                className={`w-full h-[22rem] md:h-[26rem] object-cover object-[center_20%] transition-opacity duration-500 ${
+                  imageState === "loaded" ? "opacity-100" : "opacity-0"
+                }`}
+              />
+            )}
+            {imageState === "error" && <div className="w-full h-[22rem] md:h-[26rem]" />}
           </div>
+
         </motion.div>
       </div>
     </section>
