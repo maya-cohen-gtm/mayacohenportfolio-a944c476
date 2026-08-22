@@ -4,8 +4,19 @@ import headshot from "@/assets/headshot.jpg";
 import { Starburst, Asterisk, Checker, Bolt, Flower, ZigZag, Eye } from "@/components/GenZGraphics";
 import { MADLIB_SLOTS as BIO_SLOTS, ROTATION_MS } from "@/config/heroMadlib";
 
+const HeroSection = () => {
+  const [slotIndex, setSlotIndex] = useState(0);
+  const slot = BIO_SLOTS[slotIndex];
+
+  useEffect(() => {
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce) return;
+    const id = window.setInterval(() => {
+      setSlotIndex((i) => (i + 1) % BIO_SLOTS.length);
+    }, ROTATION_MS);
     return () => window.clearInterval(id);
   }, []);
+
 
   const scrollToWork = () => {
     document.getElementById("work")?.scrollIntoView({ behavior: "smooth" });
