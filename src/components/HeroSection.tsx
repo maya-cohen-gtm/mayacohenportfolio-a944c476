@@ -60,7 +60,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.08 }}
             className="type-kicker text-muted-foreground space-kicker"
           >
-            USC MBA, ENTERTAINMENT MARKETING
+            USC MBA, ENTERTAINMENT & DIGITAL MARKETING
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 16 }}
