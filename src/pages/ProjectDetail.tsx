@@ -219,16 +219,26 @@ const ProjectDetail = () => {
     );
   }
 
-  const sectionList: ProjectSection[] = resolveSections(project);
+  const allSections: ProjectSection[] = resolveSections(project);
+  const FOCUS_LABELS = ["Context", "My Role", "Impact"];
+  const sectionList = readingMode
+    ? allSections.filter((s) => FOCUS_LABELS.includes(s.label))
+    : allSections;
 
+  const tocItems = readingMode
+    ? sectionList.map((s) => ({ id: slugify(s.label), label: s.label }))
+    : [
+        ...(project.problem ? [{ id: "the-challenge", label: "The Challenge" }] : []),
+        ...sectionList.map((s) => ({ id: slugify(s.label), label: s.label })),
+        ...(project.video ? [{ id: "video", label: project.video.label ?? "Trailer" }] : []),
+        ...(project.gallery && project.gallery.length > 0
+          ? [{ id: "gallery", label: "Gallery" }]
+          : []),
+        ...(project.reflection
+          ? [{ id: "reflection", label: "What I'd Do Differently" }]
+          : []),
+      ];
 
-  const tocItems = [
-    ...(project.problem ? [{ id: "the-challenge", label: "The Challenge" }] : []),
-    ...sectionList.map((s) => ({ id: slugify(s.label), label: s.label })),
-    ...(project.video ? [{ id: "video", label: project.video.label ?? "Trailer" }] : []),
-    ...(project.gallery && project.gallery.length > 0 ? [{ id: "gallery", label: "Gallery" }] : []),
-    ...(project.reflection ? [{ id: "reflection", label: "What I'd Do Differently" }] : []),
-  ];
 
   return (
 
