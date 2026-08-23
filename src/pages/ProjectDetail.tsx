@@ -310,7 +310,7 @@ const ProjectDetail = () => {
 
 
           <div className="min-w-0 flex-1">
-        {project.problem && (
+        {project.problem && !readingMode && (
           <motion.div
             id="the-challenge"
             initial={{ opacity: 0, y: 16 }}
