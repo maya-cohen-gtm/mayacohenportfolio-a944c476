@@ -284,7 +284,7 @@ const ProjectDetail = () => {
           <p className="type-lead text-muted-foreground mb-8 max-w-2xl text-pretty">
             {project.description}
           </p>
-          {project.scope && project.scope.length > 0 && (
+          {project.scope && project.scope.length > 0 && !readingMode && (
             <dl className="mb-16 grid grid-cols-2 gap-x-6 gap-y-5 border-y-2 border-foreground py-6 sm:grid-cols-4 max-w-4xl">
               {project.scope.map((s) => (
                 <div key={s.label}>
@@ -294,10 +294,20 @@ const ProjectDetail = () => {
               ))}
             </dl>
           )}
+          <button
+            type="button"
+            onClick={() => setReadingMode((v) => !v)}
+            aria-pressed={readingMode}
+            className="mb-12 inline-flex items-center gap-2 rounded-full border-2 border-foreground bg-card px-5 py-2.5 type-cta text-foreground cursor-pointer transition-colors hover:accent-tint focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-foreground/30"
+          >
+            <BookOpen className="w-4 h-4" />
+            <span>{readingMode ? "Exit reading mode" : "Reading mode"}</span>
+          </button>
         </motion.div>
 
         <div className="lg:flex lg:gap-14 lg:items-start">
-          <CaseStudyToc items={tocItems} />
+          <CaseStudyNav items={tocItems} readingMode={readingMode} />
+
 
           <div className="min-w-0 flex-1">
         {project.problem && (
