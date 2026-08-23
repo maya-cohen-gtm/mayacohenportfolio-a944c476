@@ -6,55 +6,55 @@
 
 @layer base {
   :root {
-    --background: 0 0% 99%;
-    --foreground: 0 0% 4%;
+    --background: 225 20% 96%;
+    --foreground: 0 0% 0%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 4%;
+    --card: 225 20% 96%;
+    --card-foreground: 0 0% 0%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 4%;
+    --popover: 225 20% 96%;
+    --popover-foreground: 0 0% 0%;
 
-    --primary: 357 93% 47%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 1 99% 40%;
+    --primary-foreground: 225 20% 96%;
 
-    --secondary: 33 100% 50%;
-    --secondary-foreground: 0 0% 4%;
+    --secondary: 36 99% 54%;
+    --secondary-foreground: 0 0% 0%;
 
-    --muted: 0 0% 94%;
-    --muted-foreground: 0 0% 32%;
+    --muted: 225 20% 96%;
+    --muted-foreground: 0 0% 0%;
 
-    --accent: 199 100% 50%;
-    --accent-foreground: 0 0% 4%;
+    --accent: 210 98% 50%;
+    --accent-foreground: 0 0% 0%;
 
-    --brand-green: 199 100% 50%;
-    --brand-blue: 199 100% 50%;
-    --brand-yellow: 33 100% 50%;
-    --brand-pink: 357 93% 47%;
+    --brand-green: 210 98% 50%;
+    --brand-blue: 210 98% 50%;
+    --brand-yellow: 36 99% 54%;
+    --brand-pink: 1 99% 40%;
 
-    --destructive: 357 93% 47%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 1 99% 40%;
+    --destructive-foreground: 225 20% 96%;
 
-    --border: 0 0% 4%;
-    --input: 0 0% 4%;
-    --ring: 357 93% 47%;
+    --border: 0 0% 0%;
+    --input: 0 0% 0%;
+    --ring: 1 99% 40%;
 
     --radius: 0.25rem;
 
-    --gradient-pastel: linear-gradient(90deg, hsl(357 93% 47%) 0% 33.33%, hsl(33 100% 50%) 33.33% 66.66%, hsl(199 100% 50%) 66.66% 100%);
-    --gradient-primary: linear-gradient(100deg, hsl(357 93% 47%), hsl(33 100% 50%) 50%, hsl(199 100% 50%));
-    --shadow-soft: 8px 8px 0 0 hsl(0 0% 4%);
-    --shadow-hard-sm: 4px 4px 0 0 hsl(0 0% 4%);
+    --gradient-pastel: linear-gradient(90deg, hsl(1 99% 40%) 0% 33.33%, hsl(36 99% 54%) 33.33% 66.66%, hsl(210 98% 50%) 66.66% 100%);
+    --gradient-primary: linear-gradient(100deg, hsl(1 99% 40%), hsl(36 99% 54%) 50%, hsl(210 98% 50%));
+    --shadow-soft: 8px 8px 0 0 hsl(0 0% 0%);
+    --shadow-hard-sm: 4px 4px 0 0 hsl(0 0% 0%);
 
 
-    --sidebar-background: 0 0% 99%;
-    --sidebar-foreground: 0 0% 4%;
-    --sidebar-primary: 357 93% 47%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 94%;
-    --sidebar-accent-foreground: 0 0% 4%;
-    --sidebar-border: 0 0% 88%;
-    --sidebar-ring: 357 93% 47%;
+    --sidebar-background: 225 20% 96%;
+    --sidebar-foreground: 0 0% 0%;
+    --sidebar-primary: 1 99% 40%;
+    --sidebar-primary-foreground: 225 20% 96%;
+    --sidebar-accent: 225 20% 96%;
+    --sidebar-accent-foreground: 0 0% 0%;
+    --sidebar-border: 0 0% 0%;
+    --sidebar-ring: 1 99% 40%;
   }
 }
 
@@ -352,18 +352,18 @@
     height: 0.9rem;
     background-image: linear-gradient(
       to bottom,
-      #E8060F 0 33.33%,
-      #FF8C00 33.33% 66.66%,
-      #00B0FF 66.66% 100%
+      #c90301 0 33.33%,
+      #fea015 33.33% 66.66%,
+      #027ffb 66.66% 100%
     );
   }
 
   .stripe-block {
     background-image: linear-gradient(
       to bottom,
-      #E8060F 0 33.33%,
-      #FF8C00 33.33% 66.66%,
-      #00B0FF 66.66% 100%
+      #c90301 0 33.33%,
+      #fea015 33.33% 66.66%,
+      #027ffb 66.66% 100%
     );
   }
 
@@ -382,23 +382,23 @@
   /* --section-accent: saturated fill (borders, shadows, dots, tints)        */
   /* --section-accent-ink: darkened variant, always readable on cream/white  */
   .accent-orange {
-    --section-accent: 357 93% 47%;
+    --section-accent: 1 99% 40%;
     --section-accent-ink: 357 85% 38%;
   }
   .accent-pink {
-    --section-accent: 33 100% 50%;
+    --section-accent: 36 99% 54%;
     --section-accent-ink: 28 95% 34%;
   }
   .accent-yellow {
-    --section-accent: 199 100% 50%;
+    --section-accent: 210 98% 50%;
     --section-accent-ink: 205 90% 33%;
   }
   .accent-green {
-    --section-accent: 0 0% 4%;
-    --section-accent-ink: 0 0% 4%;
+    --section-accent: 0 0% 0%;
+    --section-accent-ink: 0 0% 0%;
   }
   .accent-blue {
-    --section-accent: 33 100% 50%;
+    --section-accent: 36 99% 54%;
     --section-accent-ink: 205 90% 33%;
   }
 
