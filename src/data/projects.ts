@@ -217,8 +217,8 @@ export const projects: Project[] = [
         "Led strategy for all social accounts, covering diversity and inclusion, accessibility, engagement, and moderation guidelines.",
         "Led messaging and the launch playbook for two national product launches across paid, earned, and owned channels.",
       ]},
-      { label: "Impact", content: "5M+ social views on the Glamour keynote content. $21M raised for the Time's Up Legal Defense Fund in 60 days. Becoming held the NYT Bestsellers list for 100 weeks. Co-marketing campaigns with third-party studios and networks doubled our following in six months, and the two national product launches sold 2M+ units in four months, with a documented, repeatable launch process left behind for future teams." },
-      { label: "Press & Recognition", content: "Becoming spent 100 weeks on the New York Times Bestsellers list and sold 2 million copies in its first 15 days. The Becoming tour sold out venues nationwide, including 17,500 seats at the LA Forum. Tracee Ellis Ross's Glamour Women of the Year speech received national coverage from The Washington Post, HuffPost, and Upworthy, leading to her TED2018 invitation. The Time's Up Legal Defense Fund raised $21 million within 60 days, supporting over 1,700 women across 60+ industries." },
+      { label: "Impact", content: "5M+ social views on the Glamour keynote content. $21M raised for the Time's Up Legal Defense Fund in 60 days. Becoming held the NYT Bestsellers list for 100 weeks, and the tour sold out arenas nationwide including 17,500 seats at the Kia Forum in Los Angeles. Co-marketing campaigns with third-party studios and networks doubled our following in six months, and the two national product launches — including PATTERN Beauty's haircare rollout — sold 2M+ units in four months, with a documented, repeatable launch process left behind for future teams." },
+      { label: "Press & Recognition", content: "Becoming spent 100 weeks on the New York Times Bestsellers list and sold 2 million copies in its first 15 days. The Becoming tour sold out venues nationwide, including 17,500 seats at the Kia Forum in Los Angeles. Tracee Ellis Ross's Glamour Women of the Year speech received national coverage from The Washington Post, HuffPost, and Upworthy, leading to her TED2018 invitation. The Time's Up Legal Defense Fund raised $21 million within 60 days, supporting over 1,700 women across 60+ industries." },
     ],
     video: {
       url: "https://www.youtube.com/embed/boB9modnMYQ",
@@ -226,7 +226,14 @@ export const projects: Project[] = [
       label: "In Conversation",
       caption: "Michelle Obama and Tracee Ellis Ross at the 2018 United State of Women Summit — the kind of talent-plus-principal moment the influencer and partnership program was built to create and amplify.",
     },
-    gallery: [becomingBookDisplay, traceeMichelleInterview, becomingTimesup, becomingGlamourWoty],
+    gallery: [
+      becomingBookDisplay,
+      traceeMichelleInterview,
+      { src: becomingTimesup, href: "https://www.wmagazine.com/story/times-up-wear-black-golden-globes-reese-witherspoon-natalie-portman", caption: "W Magazine: Time's Up and the all-black Golden Globes red carpet", alt: "Time's Up Golden Globes red carpet" },
+      { src: traceeAllurePattern, href: "https://www.allure.com/story/tracee-ellis-ross-pattern-beauty-hair-care-line", caption: "Allure: Tracee Ellis Ross launches PATTERN Beauty", alt: "Tracee Ellis Ross PATTERN Beauty press" },
+      becomingGlamourWoty,
+    ],
+
   },
 
   {
