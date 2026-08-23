@@ -71,7 +71,8 @@ export type Project = {
   role: string;
   impact: string;
   press?: string;
-  gallery: string[];
+  /** Gallery images. Use an object to hyperlink an image to press/source. */
+  gallery: GalleryItem[];
   video?: { url: string; title: string; caption?: string; label?: string };
   links?: ProjectLink[];
   /** Explicit section list; overrides the template when provided. */
