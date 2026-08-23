@@ -66,6 +66,44 @@ const CaseStudyToc = ({
     </nav>
   );
 };
+const CaseStudyNav = ({
+  items,
+  readingMode,
+}: {
+  items: { id: string; label: string }[];
+  readingMode: boolean;
+}) => {
+  const active = useActiveSection(items.map((i) => i.id));
+
+  const jumpTo = (id: string) =>
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+
+  return (
+    <>
+      <CaseStudyToc items={items} active={active} />
+      {readingMode && items.length > 0 && (
+        <div className="fixed bottom-4 left-1/2 z-40 -translate-x-1/2 lg:hidden">
+          <div className="flex items-center gap-1 rounded-full border-2 border-foreground bg-card/95 px-2 py-2 shadow-lg backdrop-blur">
+            {items.map((item) => (
+              <button
+                key={item.id}
+                onClick={() => jumpTo(item.id)}
+                className={`type-tag rounded-full px-3 py-1.5 transition-colors cursor-pointer ${
+                  active === item.id
+                    ? "bg-foreground text-background"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                {item.label}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+    </>
+  );
+};
+
 
 
 
