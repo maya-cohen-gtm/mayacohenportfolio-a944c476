@@ -3,11 +3,14 @@ import { accentFor } from "@/lib/accents";
 import { Starburst, Bolt } from "@/components/GenZGraphics";
 
 const stats = [
-  { value: "3M+", label: "Audience reached across owned talent and entertainment channels" },
-  { value: "+42,425%", label: "YouTube view growth in two years on a video-first channel" },
-  { value: "$8M+", label: "Annual creator, influencer & paid social budget managed" },
-  { value: "$21M / 60 days", label: "Raised through an integrated celebrity-led campaign" },
+  { value: "2.15M", label: "First-week viewers for Trolls: Holiday in Harmony, with zero theatrical box office available" },
+  { value: "$21M / 60 days", label: "Raised for the Time's Up Legal Defense Fund through a celebrity-led launch" },
+  { value: "66,000+", label: "Copies sold of a New York Times bestselling memoir, 17,000 in week one" },
+  { value: "3,000+", label: "Enterprise employees onboarded to DreamWorks Technology (PipelineX)" },
+  { value: "1.3M", label: "Followers built on a talent-led TikTok channel during HBO's Barry finale" },
+  { value: "$100,000", label: "Writers' fund converted from +9,000 followers of audience growth" },
 ];
+
 
 
 const StatsSection = () => (
@@ -15,7 +18,7 @@ const StatsSection = () => (
     <Starburst className="pointer-events-none absolute -top-8 right-[-2rem] w-32 h-32 md:-top-16 md:right-[-3rem] md:w-56 md:h-56 text-brand-yellow/70" />
     <Bolt className="pointer-events-none absolute bottom-6 left-[-1rem] w-14 h-24 text-primary/60 rotate-12" />
     <h2 className="label-text mb-10">By the Numbers</h2>
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       {stats.map((stat, i) => (
         <motion.div
           key={stat.value}
