@@ -45,6 +45,20 @@ export type ProjectSection = {
   items?: string[];
 };
 
+/** A gallery entry: a plain image, or an image linked to a press/source URL. */
+export type GalleryItem =
+  | string
+  | {
+      src: string;
+      /** Optional external URL the image links to. */
+      href?: string;
+      /** Optional caption shown under the image. */
+      caption?: string;
+      /** Optional alt text override. */
+      alt?: string;
+    };
+
+
 export type ProjectScope = {
   label: string;
   value: string;
@@ -71,7 +85,8 @@ export type Project = {
   role: string;
   impact: string;
   press?: string;
-  gallery: string[];
+  /** Gallery images. Use an object to hyperlink an image to press/source. */
+  gallery: GalleryItem[];
   video?: { url: string; title: string; caption?: string; label?: string };
   links?: ProjectLink[];
   /** Explicit section list; overrides the template when provided. */
@@ -233,44 +248,49 @@ export const projects: Project[] = [
   },
   {
     id: "pipex-virtual-launch",
-    problem: "An enterprise-wide infrastructure transformation had to be understood, believed, and acted on by 3,000+ employees across a global studio — most of whom had no reason to care about the technology itself.",
+    problem: "2020 closed theaters and scattered a 3,000-person studio to home offices. The films still had to ship — and the infrastructure that would carry the studio into the rebound had to launch at the same time.",
     reflection: "I'd have led with the business story, not the platform. Engagement climbed fastest once employees saw the transformation tied to films they were proud of — that narrative should have opened the program rather than emerging midway through it.",
     scope: [
-      { label: "Ownership", value: "Business Communications Lead" },
+      { label: "Ownership", value: "Business Communications & GTM lead" },
       { label: "Audience", value: "3,000+ global employees" },
-      { label: "Program scale", value: "Multi-year growth program" },
-      { label: "Stakeholders", value: "Infrastructure & studio leadership" },
+      { label: "Scope", value: "9 cross-functional teams" },
+      { label: "Timeline", value: "2020 shutdown — 2022 rebound" },
     ],
-    outcome: "80%+ adoption of the enterprise collaboration channel across 3,000+ employees and over 50% of data center strategic priorities delivered, supporting a multi-year program through significant business growth.",
-    metric: "3,000+ employees reached · 22,000+ newsletter downloads",
+    outcome: "Kept production momentum through the industry's worst disruption: Trolls: Holiday in Harmony captured 2.15M first-week viewers with zero box office available, while PipelineX launched the cloud infrastructure the studio scaled on through the 2021–2022 theatrical rebound.",
+    metric: "2.15M first-week viewers · 3,000+ employees onboarded to PipelineX",
     brand: "DreamWorks Animation",
-    title: "Business Communications at Scale — PipelineX",
-    description: "Enterprise communications program aligning 3,000+ global employees behind an enterprise-wide transformation.",
+    title: "Trolls: Holiday in Harmony — PipelineX",
+    description: "Two simultaneous launches in 2020: an alternative-distribution Trolls special and the studio's first cloud production pipeline.",
     tag: "Executive Comms",
     image: pipexTrollsHoliday,
     cardImage: pipexCardCover,
-    context: "DreamWorks Animation's PipelineX was a proprietary cloud-native production infrastructure powering the studio's first fully cloud-based films. The technology was only half the problem: a transformation of that size only works if the business understands it. Leadership needed a communications program that could translate a highly technical, enterprise-scale initiative into a story 3,000+ global employees could follow, believe, and act on — across email, the corporate web presence, internal social, and executive channels.",
-    role: "I built and ran the business communications program behind the transformation — the operating system that kept a global workforce, studio leadership, and infrastructure teams telling the same story. That meant owning the channel mix end to end (enterprise newsletter, weekly executive email, corporate web, internal social), setting the narrative that connected an infrastructure investment to the films the studio was making, and building feedback loops so leadership could hear the organization back.",
-    impact: "Reached 3,000+ employees across a global studio with a single, consistent business narrative: 22,000+ newsletter downloads, 80%+ adoption of the enterprise social collaboration channel, and 70+ modernized corporate web pages. The studio's first crowdsourcing campaign generated 3x the industry average in actionable ideas, turning communications into a two-way channel leadership could act on. Through the OKR program I drove over 50% of infrastructure data center strategic priorities, and supported leadership communications through a period of significant program growth.",
+    context: "In 2020 theatrical revenue went to zero and DreamWorks Animation moved 3,000+ employees remote overnight. Two things had to happen at once: deliver Trolls: Holiday in Harmony into NBCUniversal's pivot to broadcast and streaming distribution, and stand up PipelineX — the studio's first cloud-native production pipeline, built in the spirit of the MovieLabs 2030 Vision and the Universal–Microsoft Azure partnership. One protected near-term revenue; the other protected the studio's ability to scale when theaters reopened.",
+    role: "I ran go-to-market and business communications across both launches, coordinating 9 cross-functional teams under live production constraints with zero lapse in delivery.",
+    impact: "Trolls: Holiday in Harmony drew 1.84M live views and 2.15M total first-week viewers — alternative-distribution revenue captured in a quarter with no theatrical box office. Modernizing the Trolls asset library for cloud made those assets reusable downstream across consumer products, games, and future franchise titles rather than rebuilt per project. PipelineX launched enterprise-wide with 80%+ adoption of the collaboration channel and 22,000+ newsletter downloads across 3,000+ employees, cutting the pipeline's technical debt and processing lag — and giving the studio the throughput it needed to capture the 2021–2022 theatrical rebound. The same cloud-first approach carried the franchise's digital-first launch strategy, which generated $95M+ in consumer rental fees for Trolls World Tour in three weeks, outperforming the original film's entire domestic theatrical run.",
     sections: [
-      { label: "Context", content: "DreamWorks Animation's PipelineX was a proprietary cloud-native production infrastructure powering the studio's first fully cloud-based films. The technology was only half the problem: a transformation of that size only works if the business understands it. Leadership needed a communications program that could translate a highly technical, enterprise-scale initiative into a story 3,000+ global employees could follow, believe, and act on." },
-      { label: "My Role", content: "I built and ran the business communications program behind the transformation — the operating system that kept a global workforce, studio leadership, and infrastructure teams telling the same story.", items: [
-        "Owned the enterprise communications channel mix: internal newsletter and weekly email campaigns to 3,000+ employees, driving 22,000+ downloads while elevating company narratives through employee recognition and knowledge sharing.",
-        "Led the corporate website redesign as a communications surface, modernizing 70+ pages so the transformation story was consistent externally and internally.",
-        "Launched the studio's first crowdsourcing campaign — a structured listening channel that returned 3x the industry average in actionable ideas back to leadership.",
-        "Implemented the enterprise social collaboration pilot, reaching 80%+ adoption across 3,000+ employees and giving the business a persistent internal channel.",
-        "Ran the Objectives and Key Results program as a communications discipline, translating strategy into language teams could execute against and driving over 50% of infrastructure data center strategic priorities.",
-        "Delivered executive communications and operations support as the program scaled substantially year over year, unifying tools and resources and resolving cross-functional workflow gaps across Marketing.",
+      { label: "Context", content: "In 2020 theatrical revenue went to zero and DreamWorks Animation moved 3,000+ employees remote overnight. Two things had to happen at once: deliver Trolls: Holiday in Harmony into NBCUniversal's pivot to broadcast and streaming distribution, and launch PipelineX — the studio's first cloud-native production pipeline, aligned with the MovieLabs 2030 Vision and the Universal–Microsoft Azure partnership." },
+      { label: "My Role", content: "GTM and business communications lead across both launches — 9 cross-functional teams, live studio constraints, zero lapse in delivery.", items: [
+        "Launched the flagship Trolls IP onto the studio's first cloud-based pipeline, removing remote-work delivery risk.",
+        "Modernized the Trolls asset library for cloud so assets stayed reusable across consumer products, games, and future titles — protecting margin instead of rebuilding per project.",
+        "Ran simultaneous GTM for the special and the platform, compressing time-to-market during the theatrical slump.",
+        "Drove enterprise adoption of PipelineX across 3,000+ employees through newsletter, weekly executive email, and internal social.",
+        "Reduced technical debt and processing lag in the pipeline, converting engineering overhead into throughput.",
       ]},
-      { label: "Impact", content: "Reached 3,000+ employees across a global studio with a single, consistent business narrative: 22,000+ newsletter downloads, 80%+ adoption of the enterprise social collaboration channel, and 70+ modernized corporate web pages. The first crowdsourcing campaign returned 3x the industry average in actionable ideas. The OKR program drove over 50% of infrastructure data center strategic priorities, supporting a multi-year program through significant business growth." },
-
+      { label: "Impact", content: "1.84M live views and 2.15M first-week viewers for Trolls: Holiday in Harmony with zero box office available. 80%+ adoption of the enterprise collaboration channel and 22,000+ newsletter downloads across 3,000+ employees. Over 50% of infrastructure data center strategic priorities delivered through the OKR program. The cloud-first franchise strategy carried into Trolls World Tour's digital-first launch — $95M+ in consumer rental fees in three weeks, beating the original film's full domestic theatrical run — and left the studio positioned for the 2021–2022 rebound." },
     ],
     video: {
       url: "https://www.youtube.com/embed/okb_--K7p14",
       title: "Trolls Holiday in Harmony — Official Trailer",
-      caption: "Trolls Holiday in Harmony, one of the DreamWorks productions delivered on the cloud-native PipelineX pipeline.",
+      caption: "Trolls Holiday in Harmony, delivered on the cloud-native PipelineX pipeline.",
     },
-    gallery: [pipexPersonas, pipexTimeline, pipexRoadmap, pipexTrollsEmail, pipexTrollsHoliday, pipexLaunchLetter, pipexHappyHour],
+    gallery: [
+      { src: dwTrollsWorldTour, href: "https://variety.com/2021/film/news/dreamworks-trolls-world-tour-croods-new-age-1234946338/", caption: "Variety: Trolls World Tour's record-breaking digital-first launch", alt: "Trolls World Tour key art" },
+      { src: dwAzurePartnership, href: "https://news.microsoft.com/source/2020/08/21/universal-filmed-entertainment-group-and-microsoft-azure-announce-partnership-to-accelerate-live-action-and-animation-productions/", caption: "Universal Filmed Entertainment Group x Microsoft Azure cloud partnership", alt: "DreamWorks Animation logo" },
+      { src: dwTrollsHolidayKeyart, href: "https://www.universalpicturesathome.com/movies/trolls-holiday-in-harmony", caption: "Distribution: Trolls: Holiday in Harmony", alt: "Trolls: Holiday in Harmony key art" },
+      { src: dwTrollsHolidayPress, href: "https://deadline.com/2021/10/anna-kendrick-justin-timberlake-kenan-thompson-rachel-bloom-voice-cast-trolls-holiday-special-nbc-1234858250/", caption: "Deadline: voice cast announcement for the NBC holiday special", alt: "Trolls: Holiday in Harmony still" },
+      { src: dwMovielabs2030, href: "https://movielabs.com/the-2030-vision/", caption: "The MovieLabs 2030 Vision — the cloud-native production standard PipelineX was built toward", alt: "MovieLabs 2030 Vision cloud production diagram" },
+    ],
+
   },
 ];
 
