@@ -3,7 +3,7 @@ import { accentFor } from "@/lib/accents";
 
 import type { ReactNode } from "react";
 
-const stats: { value: string; label: ReactNode }[] = [
+const stats: { value: string; label: ReactNode; valueClass?: string }[] = [
   { value: "2.15M", label: "First-week viewers for Trolls: Holiday in Harmony, with zero theatrical box office available" },
   { value: "$21M / 60 days", label: "Raised for the Time's Up Legal Defense Fund through a celebrity-led launch" },
   {
@@ -15,7 +15,7 @@ const stats: { value: string; label: ReactNode }[] = [
       </>
     ),
   },
-  { value: "+3,000", label: "Enterprise employees onboarded to DreamWorks Technology (PipelineX)" },
+  { value: "+3,000", valueClass: "text-brand-yellow", label: "Enterprise employees onboarded to DreamWorks Technology (PipelineX)" },
   { value: "1.3M", label: "Followers built on a talent-led TikTok channel during HBO's Barry finale" },
   {
     value: "$100,000",
@@ -45,7 +45,7 @@ const StatsSection = () => (
           transition={{ duration: 0.6, delay: i * 0.05 }}
           className={`surface-card accent-card p-8 ${accentFor(i)}`}
         >
-          <div className="type-stat accent-text mb-3">
+          <div className={`type-stat mb-3 ${stat.valueClass ?? "accent-text"}`}>
             {stat.value}
           </div>
           <p className="text-foreground/70 leading-tight font-medium">{stat.label}</p>
