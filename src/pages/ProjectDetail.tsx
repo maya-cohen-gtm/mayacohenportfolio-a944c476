@@ -310,7 +310,28 @@ const ProjectDetail = () => {
 
 
           <div className="min-w-0 flex-1">
+        {project.highlights && project.highlights.length > 0 && (
+          <motion.div
+            id="impact-highlights"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className={`scroll-mt-28 mb-16 rounded-2xl border-2 border-foreground bg-card p-5 md:p-6 max-w-3xl ${accentFor(projectIndex)}`}
+          >
+            <h2 className="type-tag text-muted-foreground mb-3">Impact Highlights</h2>
+            <ul className="space-y-3">
+              {project.highlights.map((h, i) => (
+                <li key={i} className="type-lead font-semibold text-foreground flex gap-3 text-pretty">
+                  <span className="accent-text mt-1.5 shrink-0 font-bold">•</span>
+                  <span>{h}</span>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        )}
         {project.problem && !readingMode && (
+
           <motion.div
             id="the-challenge"
             initial={{ opacity: 0, y: 16 }}
