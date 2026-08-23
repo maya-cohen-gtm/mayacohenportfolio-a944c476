@@ -53,12 +53,6 @@ const RAW_SLOTS: MadlibSlot[] = [
     nounClass: "bg-brand-green text-primary-foreground",
   },
   {
-    verb: "scale executive voice",
-    verbClass: "bg-brand-blue text-primary-foreground",
-    noun: "the C-suite.",
-    nounClass: "bg-secondary",
-  },
-  {
     verb: "spark culture-first moments",
     verbClass: "bg-secondary",
     noun: "franchise launches.",
