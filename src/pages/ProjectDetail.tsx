@@ -488,8 +488,9 @@ const ProjectDetail = () => {
 
           </div>
         </div>
+        )}
 
-        {project.reflection && (
+        {project.reflection && !readingMode && (
           <motion.div
             id="reflection"
             initial={{ opacity: 0, y: 16 }}
