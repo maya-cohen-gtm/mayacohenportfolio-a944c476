@@ -71,7 +71,7 @@ const RAW_SLOTS: MadlibSlot[] = [
     nounClass: "bg-brand-blue text-primary-foreground",
   },
   {
-    verb: "make big news land",
+    verb: "make big products land",
     verbClass: "bg-primary text-primary-foreground",
     noun: "global audiences.",
     nounClass: "bg-brand-yellow",
