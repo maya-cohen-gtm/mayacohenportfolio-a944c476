@@ -2,7 +2,7 @@ import { useParams, useNavigate, useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { projects, type ProjectLink, type ProjectSection } from "@/data/projects";
 import { resolveSections } from "@/config/caseStudyTemplates";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, BookOpen } from "lucide-react";
 import { accentFor, accentForKey } from "@/lib/accents";
 import React from "react";
 import { Starburst, Asterisk, Checker } from "@/components/GenZGraphics";
@@ -32,8 +32,13 @@ const useActiveSection = (ids: string[]) => {
   return active;
 };
 
-const CaseStudyToc = ({ items }: { items: { id: string; label: string }[] }) => {
-  const active = useActiveSection(items.map((i) => i.id));
+const CaseStudyToc = ({
+  items,
+  active,
+}: {
+  items: { id: string; label: string }[];
+  active: string;
+}) => {
   if (items.length === 0) return null;
 
   return (
@@ -61,6 +66,45 @@ const CaseStudyToc = ({ items }: { items: { id: string; label: string }[] }) => 
     </nav>
   );
 };
+const CaseStudyNav = ({
+  items,
+  readingMode,
+}: {
+  items: { id: string; label: string }[];
+  readingMode: boolean;
+}) => {
+  const active = useActiveSection(items.map((i) => i.id));
+
+  const jumpTo = (id: string) =>
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+
+  return (
+    <>
+      <CaseStudyToc items={items} active={active} />
+      {readingMode && items.length > 0 && (
+        <div className="fixed bottom-4 left-1/2 z-40 -translate-x-1/2 lg:hidden">
+          <div className="flex items-center gap-1 rounded-full border-2 border-foreground bg-card/95 px-2 py-2 shadow-lg backdrop-blur">
+            {items.map((item) => (
+              <button
+                key={item.id}
+                onClick={() => jumpTo(item.id)}
+                className={`type-tag rounded-full px-3 py-1.5 transition-colors cursor-pointer ${
+                  active === item.id
+                    ? "bg-foreground text-background"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                {item.label}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+    </>
+  );
+};
+
+
 
 
 const renderTextWithLinks = (text: string, links?: ProjectLink[]): React.ReactNode => {
@@ -153,6 +197,8 @@ const ProjectDetail = () => {
   const projectIndex = projects.findIndex((p) => p.id === id);
   const project = projects[projectIndex];
   const pageAccent = projectIndex >= 0 ? accentFor(projectIndex) : accentForKey(id ?? "");
+  const [readingMode, setReadingMode] = React.useState(false);
+
 
   if (!project) {
     return (
@@ -173,23 +219,38 @@ const ProjectDetail = () => {
     );
   }
 
-  const sectionList: ProjectSection[] = resolveSections(project);
+  const allSections: ProjectSection[] = resolveSections(project);
+  const FOCUS_LABELS = ["Context", "My Role", "Impact"];
+  const sectionList = readingMode
+    ? allSections.filter((s) => FOCUS_LABELS.includes(s.label))
+    : allSections;
 
+  const tocItems = readingMode
+    ? sectionList.map((s) => ({ id: slugify(s.label), label: s.label }))
+    : [
+        ...(project.problem ? [{ id: "the-challenge", label: "The Challenge" }] : []),
+        ...sectionList.map((s) => ({ id: slugify(s.label), label: s.label })),
+        ...(project.video ? [{ id: "video", label: project.video.label ?? "Trailer" }] : []),
+        ...(project.gallery && project.gallery.length > 0
+          ? [{ id: "gallery", label: "Gallery" }]
+          : []),
+        ...(project.reflection
+          ? [{ id: "reflection", label: "What I'd Do Differently" }]
+          : []),
+      ];
 
-  const tocItems = [
-    ...(project.problem ? [{ id: "the-challenge", label: "The Challenge" }] : []),
-    ...sectionList.map((s) => ({ id: slugify(s.label), label: s.label })),
-    ...(project.video ? [{ id: "video", label: project.video.label ?? "Trailer" }] : []),
-    ...(project.gallery && project.gallery.length > 0 ? [{ id: "gallery", label: "Gallery" }] : []),
-    ...(project.reflection ? [{ id: "reflection", label: "What I'd Do Differently" }] : []),
-  ];
 
   return (
 
     <main className={`relative bg-background min-h-screen overflow-x-clip ${pageAccent}`}>
-      <Starburst className="pointer-events-none absolute top-[55vh] right-[-2rem] w-32 h-32 md:right-[-4rem] md:w-56 md:h-56 text-secondary/70" />
-      <Asterisk className="pointer-events-none absolute top-[120vh] left-[-2rem] w-28 h-28 text-primary/50 rotate-12 hidden md:block" />
-      <Checker className="pointer-events-none absolute bottom-24 right-8 w-28 h-28 text-brand-blue/60 hidden md:block" />
+      {!readingMode && (
+        <>
+          <Starburst className="pointer-events-none absolute top-[55vh] right-[-2rem] w-32 h-32 md:right-[-4rem] md:w-56 md:h-56 text-secondary/70" />
+          <Asterisk className="pointer-events-none absolute top-[120vh] left-[-2rem] w-28 h-28 text-primary/50 rotate-12 hidden md:block" />
+          <Checker className="pointer-events-none absolute bottom-24 right-8 w-28 h-28 text-brand-blue/60 hidden md:block" />
+        </>
+      )}
+
       {/* Header image */}
       <div className="relative aspect-[16/9] md:aspect-auto md:h-[60vh] w-full overflow-hidden">
         <img
@@ -223,7 +284,7 @@ const ProjectDetail = () => {
           <p className="type-lead text-muted-foreground mb-8 max-w-2xl text-pretty">
             {project.description}
           </p>
-          {project.scope && project.scope.length > 0 && (
+          {project.scope && project.scope.length > 0 && !readingMode && (
             <dl className="mb-16 grid grid-cols-2 gap-x-6 gap-y-5 border-y-2 border-foreground py-6 sm:grid-cols-4 max-w-4xl">
               {project.scope.map((s) => (
                 <div key={s.label}>
@@ -233,13 +294,23 @@ const ProjectDetail = () => {
               ))}
             </dl>
           )}
+          <button
+            type="button"
+            onClick={() => setReadingMode((v) => !v)}
+            aria-pressed={readingMode}
+            className="mb-12 inline-flex items-center gap-2 rounded-full border-2 border-foreground bg-card px-5 py-2.5 type-cta text-foreground cursor-pointer transition-colors hover:accent-tint focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-foreground/30"
+          >
+            <BookOpen className="w-4 h-4" />
+            <span>{readingMode ? "Exit reading mode" : "Reading mode"}</span>
+          </button>
         </motion.div>
 
         <div className="lg:flex lg:gap-14 lg:items-start">
-          <CaseStudyToc items={tocItems} />
+          <CaseStudyNav items={tocItems} readingMode={readingMode} />
+
 
           <div className="min-w-0 flex-1">
-        {project.problem && (
+        {project.problem && !readingMode && (
           <motion.div
             id="the-challenge"
             initial={{ opacity: 0, y: 16 }}
@@ -298,7 +369,7 @@ const ProjectDetail = () => {
         </div>
 
         {/* Video */}
-        {project.video && (
+        {project.video && !readingMode && (
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -325,6 +396,7 @@ const ProjectDetail = () => {
         )}
 
         {/* Gallery */}
+        {!readingMode && (
         <div id="gallery" className="scroll-mt-28 mt-24">
           <h2 className="type-kicker text-foreground mb-[clamp(1.25rem,2.4vw,2rem)]">Gallery</h2>
           <div className={project.id === "pipex-virtual-launch" || project.id === "multiplatform-memoir-launch" ? "columns-1 md:columns-2 lg:columns-3" : project.id === "becoming-memoir-launch" ? "grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-12" : `grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3`}>
@@ -416,8 +488,9 @@ const ProjectDetail = () => {
 
           </div>
         </div>
+        )}
 
-        {project.reflection && (
+        {project.reflection && !readingMode && (
           <motion.div
             id="reflection"
             initial={{ opacity: 0, y: 16 }}
