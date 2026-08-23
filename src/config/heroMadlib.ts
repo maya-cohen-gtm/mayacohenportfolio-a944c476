@@ -47,7 +47,7 @@ const RAW_SLOTS: MadlibSlot[] = [
     nounClass: "bg-brand-yellow",
   },
   {
-    verb: "build story-first campaigns",
+    verb: "build storytelling-rich campaigns",
     verbClass: "bg-primary text-primary-foreground",
     noun: "creators & studios.",
     nounClass: "bg-brand-green text-primary-foreground",
@@ -108,7 +108,7 @@ const FALLBACK_CLASS = "bg-brand-yellow";
 
 /** Used when the config is empty or every entry is unusable. */
 const FALLBACK_SLOT: MadlibSlot = {
-  verb: "build story-first campaigns",
+  verb: "build storytelling-rich campaigns",
   verbClass: "bg-brand-yellow",
   noun: "premium IP.",
   nounClass: "bg-secondary",
