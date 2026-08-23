@@ -12,7 +12,7 @@ type Endorsement = {
 
 const endorsements: Endorsement[] = [
   {
-    quote: "Marissa is a natural public speaker, promoter and storyteller. She has a sharp understanding of how to position ideas, products, and narratives in a way that resonates with target audiences. Her instincts in marketing are both data-informed and culturally aware, allowing her to craft strategies that feel timely, relevant, and impactful. In high-pressure, fast-paced environments, Marissa takes initiative, brings clarity to ambiguity, and keeps the team aligned and motivated. She balances confidence with humility, always open to feedback while maintaining a strong point of view.",
+    quote: "Marissa brings a rare mix of creative intuition and technical fluency. She has distinguished herself as both a strategic thinker and forward-looking marketer. She has a sharp understanding of how to position brands, products, and narratives in a way that resonates with target audiences.  In high-pressure, fast-paced environments, Marissa takes initiative, brings clarity to ambiguity, and keeps the team aligned and motivated. She balances confidence with humility, always open to feedback while maintaining a strong point of view.",
     name: "Cian Nacar",
     role: "Director Strategic Initiatives, Warner Music Group; Classmate, USC Marshall School of Business",
   },
