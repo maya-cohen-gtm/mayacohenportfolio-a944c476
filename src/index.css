@@ -47,14 +47,14 @@
     --shadow-hard-sm: 4px 4px 0 0 hsl(0 0% 4%);
 
 
-    --sidebar-background: 40 60% 97%;
-    --sidebar-foreground: 207 45% 16%;
-    --sidebar-primary: 16 99% 56%;
+    --sidebar-background: 0 0% 99%;
+    --sidebar-foreground: 0 0% 4%;
+    --sidebar-primary: 357 93% 47%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 44 60% 94%;
-    --sidebar-accent-foreground: 207 45% 16%;
-    --sidebar-border: 40 30% 88%;
-    --sidebar-ring: 16 99% 56%;
+    --sidebar-accent: 0 0% 94%;
+    --sidebar-accent-foreground: 0 0% 4%;
+    --sidebar-border: 0 0% 88%;
+    --sidebar-ring: 357 93% 47%;
   }
 }
 
