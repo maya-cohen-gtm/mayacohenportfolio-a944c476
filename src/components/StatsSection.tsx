@@ -12,7 +12,7 @@ const stats: { value: string; label: ReactNode }[] = [
     label: (
       <>
         Copies sold of a New York Times bestselling memoir,{" "}
-        <strong className="font-bold text-brand-yellow">17,000</strong> in week one
+        <strong className="font-bold accent-text">17,000</strong> in week one
       </>
     ),
   },
