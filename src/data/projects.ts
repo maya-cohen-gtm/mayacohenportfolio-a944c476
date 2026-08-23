@@ -73,6 +73,8 @@ export type Project = {
   image: string;
   cardImage?: string;
   metric?: string;
+  /** 3 skimmable metric bullets shown at the top of the case study */
+  highlights?: string[];
   /** Scope & ownership badges: budget, team, stakeholder level, timeline */
   scope?: ProjectScope[];
   /** One-line business outcome shown at the top of the Impact section */
@@ -98,7 +100,7 @@ export const projects: Project[] = [
   {
     id: "henry-winkler-tiktok",
     problem: "A beloved personal account with a Gen Z audience had to sell a prestige show about a hitman — without becoming an ad unit or losing the charm that built it.",
-    reflection: "I'd have instrumented the account earlier. We read sentiment qualitatively from comments, which worked, but a lightweight tagging system from day one would have let me prove the press-to-short-form loop's contribution to tune-in rather than argue it anecdotally.",
+    reflection: "I'd instrument the channel from day one — comment sentiment told us what was working, but tagging would have proved the press-to-short-form loop's contribution to tune-in.",
     scope: [
       { label: "Ownership", value: "Owned channel lead" },
       { label: "Stakeholders", value: "Talent + HBO marketing" },
@@ -107,6 +109,11 @@ export const projects: Project[] = [
     ],
     outcome: "Turned a personal account into a 1.3M-follower owned audience HBO never had to buy access to — and made every press booking return three platform-native assets at zero incremental production cost.",
     metric: "1.3M followers · 6.1M likes · talent-led short-form",
+    highlights: [
+      "1.3M-follower owned audience built for HBO's Barry finale — no paid access required",
+      "6.1M lifetime likes and massive global engagement across channels",
+      "Multi-million dollar brand deals managed inside the channel's voice rules",
+    ],
     brand: "Henry Winkler x TikTok",
     title: "Talent-Led Short-Form for Barry's Final Season",
     description: "Running an 80-year-old icon's TikTok as an owned channel during HBO's Barry S4.",
@@ -144,7 +151,7 @@ export const projects: Project[] = [
   {
     id: "multiplatform-memoir-launch",
     problem: "A 15-city national tour for a high-demand talent, where a single misfired press moment or logistics gap could cost the launch window.",
-    reflection: "I'd have built the digital layer in parallel with the tour rather than in service of it. We captured extraordinary on-the-road content, but a pre-planned always-on content engine would have compounded the tour's reach between stops instead of only around them.",
+    reflection: "I'd build the always-on content engine in parallel with the tour, so reach compounded between stops instead of only around them.",
     scope: [
       { label: "Ownership", value: "Chief of Staff, GTM lead" },
       { label: "Scope", value: "15+ cities · 20+ regional markets" },
@@ -153,6 +160,11 @@ export const projects: Project[] = [
     ],
     outcome: "A New York Times Bestseller that held the list for 11 weeks and sold 66,000+ copies, earning a second commercial tour leg that extended revenue into a second consecutive year.",
     metric: "66,000+ copies sold · 11 weeks on NYT Bestsellers list",
+    highlights: [
+      "+17,000 print copies in week one, growing to +66,000 copies sold within months",
+      "New York Times Bestseller for 11 weeks across a 15+ city national tour",
+      "20+ city press and fan expo circuit delivered with zero corrections or walk-backs",
+    ],
     brand: "Henry Winkler x Celadon Books",
     title: "Multiplatform Campaign for Memoir Launch",
     description: "National launch campaign for a NYT bestselling memoir across 15+ cities.",
@@ -187,7 +199,7 @@ export const projects: Project[] = [
   {
     id: "becoming-memoir-launch",
     problem: "Two culturally sensitive campaigns needed A-list voices activated credibly and fast, with consistent messaging across partners we did not directly control.",
-    reflection: "I'd have set shared measurement with partners up front. Briefing and approvals were tight, but each partner reported differently, so proving aggregate campaign lift took longer than it should have.",
+    reflection: "I'd set shared measurement with partners up front — each reported differently, which slowed proof of aggregate lift.",
     scope: [
       { label: "Ownership", value: "Influencer & partnership lead" },
       { label: "Stakeholders", value: "SAG-AFTRA C-suite + A-list talent" },
@@ -196,6 +208,11 @@ export const projects: Project[] = [
     ],
     outcome: "$21M raised in 60 days and 2M+ units sold across two national launches, with a documented launch playbook left behind for future teams.",
     metric: "$21M in 60 days · 5M+ views on keynote content",
+    highlights: [
+      "$21M raised in 60 days for the Time's Up / #MeToo Movement Fund",
+      "Sold-out Becoming appearance at the 18,000-capacity Kia Forum",
+      "2M+ units sold across two national product launches in four months",
+    ],
     brand: "Joy Mill Entertainment (ABC Signature)",
     title: "Influencer & Partnership Campaigns",
     description: "Influencer outreach and partnership management behind two high-impact GTM campaigns.",
@@ -205,7 +222,7 @@ export const projects: Project[] = [
     context: "In 2018, Michelle Obama launched Becoming, a New York Times Bestseller that held the list for 100 weeks and became one of the best-selling memoirs in publishing history. In the same window, the #MeToo movement launched the Time's Up Legal Defense Fund. Both campaigns needed high-profile voices — talent, creators, and cultural figures like Tracee Ellis Ross — brought in credibly and at speed, with the briefing, approval, and relationship infrastructure to keep the messaging consistent across every channel they touched.",
     role: "Leading creator and influencer marketing for Joy Mill Entertainment (ABC Signature), I led influencer outreach, identification, and partnership management for both GTM campaigns. I led executive communications, including keynote content for the Glamour Women of the Year Summit. I built the influencer briefing packets, ran content approvals, and owned ongoing relations with talent and their teams so that each partner had a clear point of view, on-brand assets, and a channel plan before anything went live. I ran channel monitoring for growth, trends, and insights across all owned accounts and adjusted the social strategy accordingly, and I led strategy development for every account — covering diversity and inclusion, accessibility, audience engagement, and moderation guidelines. In parallel I led messaging and the launch playbook for two national product launches, coordinating paid, earned, and owned channels and documenting a repeatable launch process for future teams.",
     impact: "Influencer briefings, content approvals, and ongoing relations delivered 5M+ social views on the Glamour keynote content. The Time's Up Legal Defense Fund raised $21M in 60 days. Becoming spent 100 weeks on the New York Times Bestsellers list. Across the same period, co-marketing campaigns with third-party studios and networks doubled our social following in six months, and the two national product launches I led sold 2M+ units in four months.",
-    press: "Becoming spent 100 weeks on the New York Times Bestsellers list and sold 2 million copies in its first 15 days. The Becoming tour sold out venues nationwide, including 17,500 seats at the LA Forum. Tracee Ellis Ross's Glamour Women of the Year speech received national coverage from The Washington Post, HuffPost, and Upworthy, leading to her TED2018 invitation. The Time's Up Legal Defense Fund raised $21 million within 60 days, supporting over 1,700 women across 60+ industries.",
+    press: "Becoming spent 100 weeks on the New York Times Bestsellers list and sold 2 million copies in its first 15 days. The Becoming tour sold out venues nationwide, including a sold-out 18,000-capacity Kia Forum. Tracee Ellis Ross's Glamour Women of the Year speech received national coverage from The Washington Post, HuffPost, and Upworthy, leading to her TED2018 invitation. The Time's Up Legal Defense Fund raised $21 million within 60 days, supporting over 1,700 women across 60+ industries.",
     links: [
       { text: "W Magazine — Time's Up: the all-black Golden Globes red carpet", url: "https://www.wmagazine.com/story/times-up-wear-black-golden-globes-reese-witherspoon-natalie-portman" },
     ],
@@ -225,7 +242,7 @@ export const projects: Project[] = [
         "Two national product launches sold 2M+ units in four months, with a repeatable launch playbook left behind.",
       ]},
 
-      { label: "Press & Recognition", content: "Becoming spent 100 weeks on the New York Times Bestsellers list and sold 2 million copies in its first 15 days. The Becoming tour sold out venues nationwide, including 17,500 seats at the Kia Forum in Los Angeles. Tracee Ellis Ross's Glamour Women of the Year speech received national coverage from The Washington Post, HuffPost, and Upworthy, leading to her TED2018 invitation. The Time's Up Legal Defense Fund raised $21 million within 60 days, supporting over 1,700 women across 60+ industries." },
+      { label: "Press & Recognition", content: "Becoming spent 100 weeks on the New York Times Bestsellers list and sold 2 million copies in its first 15 days. The Becoming tour sold out venues nationwide, including the 18,000-capacity Kia Forum in Los Angeles. Tracee Ellis Ross's Glamour Women of the Year speech received national coverage from The Washington Post, HuffPost, and Upworthy, leading to her TED2018 invitation. The Time's Up Legal Defense Fund raised $21 million within 60 days, supporting over 1,700 women across 60+ industries." },
     ],
     video: {
       url: "https://www.youtube.com/embed/boB9modnMYQ",
@@ -246,7 +263,7 @@ export const projects: Project[] = [
   {
     id: "humanitas-awards-show",
     problem: "A live Hollywood awards show required floor production and real-time social coverage at once, with no margin for a delayed or off-brand post.",
-    reflection: "I'd have staffed a second person for live coverage. Shooting, captioning, and publishing solo from the step and repeat worked, but it capped how much we could cover — a two-person floor team would have doubled output at marginal cost.",
+    reflection: "I'd staff a second person on the floor — solo shooting, captioning, and publishing worked, but capped coverage volume.",
     scope: [
       { label: "Ownership", value: "Marketing Manager" },
       { label: "Scope", value: "300–400 content creators" },
@@ -255,6 +272,11 @@ export const projects: Project[] = [
     ],
     outcome: "Grew the organization's social following by 9,000+ and helped convert that visibility into a $100,000 writers' fund, while delivering the awards activation end to end.",
     metric: "+9,000 followers · $100,000 writers' fund",
+    highlights: [
+      "+9,000 followers converted into a $100,000 fund for film and TV writers",
+      "300–400 content creators coordinated across the awards program",
+      "Full Hollywood awards activation delivered end to end, live floor plus real-time social",
+    ],
     brand: "The Humanitas Prize",
     title: "Specialty Social Media Management",
     description: "Owned the live social feed for a Hollywood awards ceremony, in real time from the floor.",
@@ -269,7 +291,7 @@ export const projects: Project[] = [
   {
     id: "pipex-virtual-launch",
     problem: "2020 closed theaters and scattered a 3,000-person studio to home offices. The films still had to ship — and the infrastructure that would carry the studio into the rebound had to launch at the same time.",
-    reflection: "I'd have led with the business story, not the platform. Engagement climbed fastest once employees saw the transformation tied to films they were proud of — that narrative should have opened the program rather than emerging midway through it.",
+    reflection: "I'd lead with the business story, not the platform — adoption climbed fastest once employees saw the work tied to films they were proud of.",
     scope: [
       { label: "Ownership", value: "Business Communications & GTM lead" },
       { label: "Audience", value: "3,000+ global employees" },
@@ -278,8 +300,13 @@ export const projects: Project[] = [
     ],
     outcome: "Kept production momentum through the industry's worst disruption: Trolls: Holiday in Harmony captured 2.15M first-week viewers with zero box office available, while PipelineX launched the cloud infrastructure the studio scaled on through the 2021–2022 theatrical rebound.",
     metric: "2.15M first-week viewers · 3,000+ employees onboarded to PipelineX",
+    highlights: [
+      "+2.15M first-week viewers and +1.84M live views with zero theatrical box office",
+      "Enterprise-wide cloud platform launch adopted across +3,000 employees",
+      "9 cross-functional teams project managed with zero lapse in product delivery",
+    ],
     brand: "DreamWorks Animation",
-    title: "Trolls: Holiday in Harmony — PipelineX",
+    title: "Dual Launch: Franchise Special + Studio Cloud Platform",
     description: "Two simultaneous launches in 2020: an alternative-distribution Trolls special and the studio's first cloud production pipeline.",
     tag: "Executive Comms",
     image: pipexTrollsHoliday,
