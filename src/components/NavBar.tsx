@@ -22,10 +22,10 @@ const NavBar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-5 sm:px-8 md:px-16 h-14 transition-colors duration-500 ${
-        scrolled ? "bg-background/85 backdrop-blur-md border-b border-border" : "bg-transparent"
+        scrolled ? "bg-background border-b-4 border-foreground" : "bg-transparent"
       }`}
     >
-      <a href="/" className="text-primary font-semibold text-lg tracking-tight">
+      <a href="/" className="bg-primary text-primary-foreground border-2 border-foreground px-2 py-0.5 font-black text-lg tracking-tighter">
         MC
       </a>
       <div className="flex items-center gap-4 sm:gap-6 md:gap-8">
@@ -37,7 +37,7 @@ const NavBar = () => {
           <button
             key={link.id}
             onClick={() => scrollTo(link.id)}
-            className="type-tag whitespace-nowrap text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+            className="mono-meta whitespace-nowrap text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
           >
             {link.label}
           </button>

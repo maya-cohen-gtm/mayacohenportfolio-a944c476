@@ -26,7 +26,7 @@ const HeroSection = () => {
 
   return (
     <section className="relative w-full min-h-[80svh] lg:min-h-[88svh] flex items-center section-x hero-y overflow-hidden pastel-bg">
-      {/* Editorial stripes: retro-broadcast red / orange / blue rules */}
+      {/* Bold print block: heavy rule instead of decorative shapes */}
       <div className="absolute inset-x-0 bottom-0 h-3 stripe-bar" />
 
       <div className="relative z-10 w-full grid grid-cols-1 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] stack-columns items-center">
@@ -35,8 +35,9 @@ const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
-            className="label-text space-kicker block uppercase whitespace-pre-line"
+            className="mono-meta space-kicker flex items-start gap-2 whitespace-pre-line"
           >
+            <span className="mt-1 inline-block h-3 w-3 shrink-0 bg-primary" />
             WHAT DO HENRY WINKLER, TRACEE ELLIS ROSS, AND SHREK{"\n"}HAVE IN COMMON?
           </motion.span>
           <motion.h1
@@ -51,7 +52,7 @@ const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.08 }}
-            className="type-kicker text-muted-foreground space-kicker"
+            className="mono-meta text-muted-foreground space-kicker"
           >
             USC MBA, ENTERTAINMENT & DIGITAL MARKETING
           </motion.p>
@@ -107,7 +108,7 @@ const HeroSection = () => {
           >
             <button
               onClick={scrollToWork}
-              className="group inline-flex items-center gap-3 rounded-none bg-primary text-primary-foreground px-8 py-4 uppercase tracking-[0.18em] type-cta cursor-pointer border border-border transition-transform hover:-translate-y-0.5"
+              className="group inline-flex items-center justify-between gap-6 rounded-none bg-primary text-primary-foreground px-8 py-5 uppercase tracking-tighter font-black text-xl cursor-pointer border-4 border-foreground shadow-[6px_6px_0_0_hsl(var(--foreground))] transition-all hover:bg-foreground hover:shadow-[10px_10px_0_0_hsl(var(--foreground))]"
              
             >
               <span>See My Work</span>

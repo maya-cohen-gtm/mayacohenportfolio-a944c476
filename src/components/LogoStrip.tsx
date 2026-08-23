@@ -11,19 +11,17 @@ const clients = [
 ];
 
 const LogoStrip = () => (
-  <section className="px-8 md:px-16 py-10 border-y border-border bg-background accent-blue overflow-hidden">
-    <div className="flex flex-col gap-5">
-      <p className="label-text">Selected brands &amp; partners</p>
-      <div className="flex flex-wrap items-center gap-x-10 gap-y-4">
-        {clients.map((client, i) => (
-          <span
-            key={client}
-            className={`${accentFor(i)} accent-text text-base md:text-lg font-semibold tracking-tight`}
-          >
-            {client}
-          </span>
-        ))}
-      </div>
+  <section className="px-8 md:px-16 py-8 bg-foreground text-background overflow-hidden">
+    <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+      <span className="mono-meta opacity-60">Selected partners:</span>
+      {clients.map((client, i) => (
+        <span key={client} className="flex items-center gap-6">
+          <span className="mono-meta tracking-[0.18em]">{client}</span>
+          {i < clients.length - 1 && (
+            <span className={`${accentFor(i)} accent-text font-black`}>/</span>
+          )}
+        </span>
+      ))}
     </div>
   </section>
 );
