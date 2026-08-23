@@ -27,9 +27,6 @@ const HeroSection = () => {
   return (
     <section className="relative w-full min-h-[80svh] lg:min-h-[88svh] flex items-center section-x hero-y overflow-hidden pastel-bg">
       {/* Editorial stripes: retro-broadcast red / orange / blue rules */}
-      <div className="absolute top-0 left-0 h-full w-2 stripe-block hidden lg:block" />
-      <div className="absolute top-28 right-0 w-40 md:w-72 stripe-block h-6 md:h-9" />
-      <div className="absolute bottom-24 right-10 w-24 md:w-40 stripe-block h-4 md:h-6 hidden md:block" />
       <div className="absolute inset-x-0 bottom-0 h-3 stripe-bar" />
 
       <div className="relative z-10 w-full grid grid-cols-1 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] stack-columns items-center">
@@ -110,8 +107,8 @@ const HeroSection = () => {
           >
             <button
               onClick={scrollToWork}
-              className="group inline-flex items-center gap-3 rounded-none bg-primary text-primary-foreground px-8 py-4 uppercase tracking-[0.18em] type-cta cursor-pointer border-2 border-foreground transition-transform hover:-translate-y-0.5"
-              style={{ boxShadow: "var(--shadow-soft)" }}
+              className="group inline-flex items-center gap-3 rounded-none bg-primary text-primary-foreground px-8 py-4 uppercase tracking-[0.18em] type-cta cursor-pointer border border-border transition-transform hover:-translate-y-0.5"
+             
             >
               <span>See My Work</span>
               <div className="h-px w-8 bg-primary-foreground transition-all duration-500 group-hover:w-14" />

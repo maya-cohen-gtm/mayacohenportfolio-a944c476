@@ -53,7 +53,7 @@ const ActivationCard = ({
             {project.scope.slice(0, 3).map((s) => (
               <li
                 key={s.label}
-                className="type-tag rounded-full border-2 border-foreground bg-card px-3 py-1 text-foreground"
+                className="type-tag rounded-full border border-border bg-card px-3 py-1 text-foreground"
               >
                 <span className="text-muted-foreground">{s.label}:</span> {s.value}
               </li>

@@ -5,7 +5,6 @@ import { resolveSections } from "@/config/caseStudyTemplates";
 import { ArrowLeft, BookOpen } from "lucide-react";
 import { accentFor, accentForKey } from "@/lib/accents";
 import React from "react";
-import { Starburst, Asterisk, Checker } from "@/components/GenZGraphics";
 
 const slugify = (label: string) =>
   label.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
@@ -83,7 +82,7 @@ const CaseStudyNav = ({
       <CaseStudyToc items={items} active={active} />
       {readingMode && items.length > 0 && (
         <div className="fixed bottom-4 left-1/2 z-40 -translate-x-1/2 lg:hidden">
-          <div className="flex items-center gap-1 rounded-full border-2 border-foreground bg-card/95 px-2 py-2 shadow-lg backdrop-blur">
+          <div className="flex items-center gap-1 rounded-full border border-border bg-card/95 px-2 py-2 shadow-lg backdrop-blur">
             {items.map((item) => (
               <button
                 key={item.id}
@@ -247,9 +246,6 @@ const ProjectDetail = () => {
     <main className={`relative bg-background min-h-screen overflow-x-clip ${pageAccent}`}>
       {!readingMode && (
         <>
-          <Starburst className="pointer-events-none absolute top-[55vh] right-[-2rem] w-32 h-32 md:right-[-4rem] md:w-56 md:h-56 text-secondary/70" />
-          <Asterisk className="pointer-events-none absolute top-[120vh] left-[-2rem] w-28 h-28 text-primary/50 rotate-12 hidden md:block" />
-          <Checker className="pointer-events-none absolute bottom-24 right-8 w-28 h-28 text-brand-blue/60 hidden md:block" />
         </>
       )}
 
@@ -265,7 +261,7 @@ const ProjectDetail = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
         <button
           onClick={() => navigate(backTo)}
-          className="absolute top-8 left-8 z-10 flex items-center gap-3 rounded-full bg-card/90 px-5 py-3 accent-text border-2 border-foreground type-cta cursor-pointer hover:gap-4 transition-all"
+          className="absolute top-8 left-8 z-10 flex items-center gap-3 rounded-full bg-card/90 px-5 py-3 accent-text border border-border type-cta cursor-pointer hover:gap-4 transition-all"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>Back</span>
@@ -300,7 +296,7 @@ const ProjectDetail = () => {
             type="button"
             onClick={() => setReadingMode((v) => !v)}
             aria-pressed={readingMode}
-            className="mb-12 inline-flex items-center gap-2 rounded-full border-2 border-foreground bg-card px-5 py-2.5 type-cta text-foreground cursor-pointer transition-colors hover:accent-tint focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-foreground/30"
+            className="mb-12 inline-flex items-center gap-2 rounded-full border border-border bg-card px-5 py-2.5 type-cta text-foreground cursor-pointer transition-colors hover:accent-tint focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-foreground/30"
           >
             <BookOpen className="w-4 h-4" />
             <span>{readingMode ? "Exit reading mode" : "Reading mode"}</span>
@@ -319,7 +315,7 @@ const ProjectDetail = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className={`scroll-mt-28 mb-16 rounded-2xl border-2 border-foreground bg-card p-5 md:p-6 max-w-3xl ${accentFor(projectIndex)}`}
+            className={`scroll-mt-28 mb-16 rounded-2xl border border-border bg-card p-5 md:p-6 max-w-3xl ${accentFor(projectIndex)}`}
           >
             <h2 className="type-tag text-muted-foreground mb-3">Impact Highlights</h2>
             <ul className="space-y-3">
@@ -340,7 +336,7 @@ const ProjectDetail = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className={`scroll-mt-28 mb-16 rounded-2xl border-2 border-foreground accent-tint p-5 md:p-6 max-w-3xl ${accentFor(projectIndex)}`}
+            className={`scroll-mt-28 mb-16 rounded-2xl border border-border accent-tint p-5 md:p-6 max-w-3xl ${accentFor(projectIndex)}`}
           >
             <h2 className="type-tag text-muted-foreground mb-2">The Challenge</h2>
             <p className="type-lead font-semibold text-foreground text-pretty">{project.problem}</p>
@@ -361,7 +357,7 @@ const ProjectDetail = () => {
             >
               <h2 className="type-kicker text-foreground mb-[clamp(1rem,2vw,1.5rem)]">{section.label}</h2>
               {section.label === "Impact" && project.outcome && (
-                <div className="mb-6 max-w-3xl rounded-2xl border-2 border-foreground accent-tint p-5 md:p-6">
+                <div className="mb-6 max-w-3xl rounded-2xl border border-border accent-tint p-5 md:p-6">
                   <span className="type-tag text-muted-foreground block mb-2">Why it mattered to the business</span>
                   <p className="type-lead font-semibold text-foreground text-pretty">{project.outcome}</p>
                 </div>
@@ -402,7 +398,7 @@ const ProjectDetail = () => {
             className={`scroll-mt-28 mt-24 ${accentFor(projectIndex + 1)}`}
           >
             <h2 className="type-kicker text-foreground mb-[clamp(1.25rem,2.4vw,2rem)]">{project.video.label ?? "Trailer"}</h2>
-            <div className="w-full max-w-full overflow-hidden rounded-2xl md:rounded-3xl border-2 border-foreground accent-card bg-muted aspect-video">
+            <div className="w-full max-w-full overflow-hidden rounded-2xl md:rounded-3xl border border-border accent-card bg-muted aspect-video">
               <iframe
                 src={project.video.url}
                 title={project.video.title}
@@ -470,8 +466,8 @@ const ProjectDetail = () => {
               );
 
               const wrapperClass = isMasonry
-                ? `overflow-hidden rounded-3xl bg-muted border-2 border-foreground accent-card ${accentFor(i)}`
-                : `overflow-hidden rounded-3xl bg-muted relative border-2 border-foreground accent-card ${accentFor(i)} ${
+                ? `overflow-hidden rounded-3xl bg-muted border border-border accent-card ${accentFor(i)}`
+                : `overflow-hidden rounded-3xl bg-muted relative border border-border accent-card ${accentFor(i)} ${
                     isBecoming
                       ? "aspect-[4/3] md:aspect-auto md:h-[380px]"
                       : isHumanitas
