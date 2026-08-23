@@ -35,9 +35,9 @@ const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
-            className="label-text space-kicker block uppercase"
+            className="label-text space-kicker block uppercase whitespace-pre-line"
           >
-            WHAT DO HENRY WINKLER, TRACEE ELLIS ROSS, AND SHREK HAVE IN COMMON?
+            WHAT DO HENRY WINKLER, TRACEE ELLIS ROSS, AND SHREK{"\n"}HAVE IN COMMON?
           </motion.span>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
