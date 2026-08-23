@@ -349,24 +349,24 @@
   /* --section-accent: saturated fill (borders, shadows, dots, tints)        */
   /* --section-accent-ink: darkened variant, always readable on cream/white  */
   .accent-orange {
-    --section-accent: 16 99% 56%;
-    --section-accent-ink: 16 92% 40%;
+    --section-accent: 357 93% 47%;
+    --section-accent-ink: 357 85% 38%;
   }
   .accent-pink {
-    --section-accent: 344 100% 74%;
-    --section-accent-ink: 344 68% 40%;
+    --section-accent: 33 100% 50%;
+    --section-accent-ink: 28 95% 34%;
   }
   .accent-yellow {
-    --section-accent: 44 98% 53%;
-    --section-accent-ink: 36 92% 32%;
+    --section-accent: 199 100% 50%;
+    --section-accent-ink: 205 90% 33%;
   }
   .accent-green {
-    --section-accent: 159 100% 32%;
-    --section-accent-ink: 159 100% 24%;
+    --section-accent: 0 0% 4%;
+    --section-accent-ink: 0 0% 4%;
   }
   .accent-blue {
-    --section-accent: 207 55% 47%;
-    --section-accent-ink: 207 58% 34%;
+    --section-accent: 33 100% 50%;
+    --section-accent-ink: 205 90% 33%;
   }
 
   .accent-text {
