@@ -32,8 +32,13 @@ const useActiveSection = (ids: string[]) => {
   return active;
 };
 
-const CaseStudyToc = ({ items }: { items: { id: string; label: string }[] }) => {
-  const active = useActiveSection(items.map((i) => i.id));
+const CaseStudyToc = ({
+  items,
+  active,
+}: {
+  items: { id: string; label: string }[];
+  active: string;
+}) => {
   if (items.length === 0) return null;
 
   return (
@@ -61,6 +66,7 @@ const CaseStudyToc = ({ items }: { items: { id: string; label: string }[] }) => 
     </nav>
   );
 };
+
 
 
 const renderTextWithLinks = (text: string, links?: ProjectLink[]): React.ReactNode => {
