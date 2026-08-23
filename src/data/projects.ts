@@ -122,19 +122,17 @@ export const projects: Project[] = [
       { text: "Business Insider on the account's organic reach", url: "https://www.businessinsider.com/henry-winkler-tiktok-viral-dances-grandchildren-2022-1" },
     ],
     sections: [
-      { label: "Context", content: "Henry Winkler joined TikTok in November 2020 at his granddaughter's urging and — with only a handful of posts — became one of the platform's most unlikely organic successes, with his early dance videos alone reaching tens of millions of views. By the time HBO's Barry entered its fourth and final season in 2023, the account sat at 1.3M followers and 6.1M likes: a Gen Z audience that had found him through TikTok, not Happy Days or Barry. The opportunity was to convert that audience into viewers for the final season without turning a beloved personal channel into an ad unit." },
-      { label: "My Role", content: "I treated the account as an owned channel with its own editorial rules rather than a distribution endpoint for HBO assets. The core call: never post a trailer cut. Everything shipped had to be something only Henry could make — grandkid dances, set moments, reactions to the show, and unguarded on-the-day footage from the press run." },
-      { label: "Format & Cadence", content: "The operating rules that made the channel repeatable:", items: [
-        "Vertical, face-forward, one idea per video; hook inside the first two seconds.",
-        "Caption carries the joke so the video lands with sound off.",
-        "Cadence tied to the Sunday-night episode drop and the Emmy voting window, not a fixed weekly slot.",
-        "Every press booking cut into three platform-native posts — one press hit, three assets, no incremental production cost.",
-        "Voice rule: the caption sounds like Henry, never like a studio.",
+      { label: "Context", content: "Henry Winkler joined TikTok in 2020 and became one of the platform's most unlikely organic successes. By HBO's Barry Season 4 in 2023, the account sat at 1.3M followers and 6.1M likes — a Gen Z audience that found him on TikTok, not Happy Days. The job: convert that audience into finale viewers without turning a beloved personal channel into an ad unit." },
+      { label: "My Role", content: "Partnered with HBO teams on creator marketing for the Barry series finale, running the account as an owned channel:", items: [
+        "Adapted legacy IP into short-form content optimized for digital media — no trailer cuts, only what Henry could make.",
+        "Cut every press booking into three platform-native posts: one hit, three assets, zero incremental production cost.",
+        "Managed multi-million dollar brand deals and partnerships inside the channel's voice rules.",
+        "Ran community management and fed comment sentiment back into press talking points.",
       ]},
-      { label: "Judgment Calls", content: "A warm personal account promoting a show about a hitman is a tonal minefield. I kept the channel's charm intact by refusing studio-supplied promo cuts and keeping the darker Barry material in press, not on TikTok. Community management ran on a clear line: reply in-voice to top comments in the first hour, never engage on finale spoilers, politics, or comments conflating the character's violence with the man." },
-      { label: "Impact", content: "The channel finished the Barry campaign as a genuine owned audience — 1.3M followers and 6.1M lifetime likes — that HBO did not have to buy access to. Short-form comment sentiment fed directly back into press prep: the questions fans kept asking became the beats placed in talking points for the next appearance. Barry Season 4 averaged 3.4M viewers per episode and earned 11 Emmy nominations at the 75th Emmy Awards. The audience also became a revenue surface: I sourced and executed brand partnerships on the channel, keeping every sponsored post inside the same voice rules that built it." },
-      { label: "Press & Recognition", content: "Henry Winkler's TikTok account (@henry.winkler) has 1.3M followers and 6.1M likes. Business Insider (January 2022) reported his first six videos had accumulated 33 million views. HBO's Barry Season 4 premiered April 16, 2023 and concluded May 28, 2023, earning 11 Emmy nominations at the 75th Annual Emmy Awards." },
+      { label: "Impact", content: "Amassed massive global engagement across channels — 1.3M followers and 6.1M lifetime likes as an owned audience HBO never had to buy access to. Barry Season 4 averaged 3.4M viewers per episode and earned 11 Emmy nominations at the 75th Emmy Awards." },
+      { label: "Press & Recognition", content: "@henry.winkler has 1.3M followers and 6.1M likes; Business Insider reported his first six videos drew 33 million views. Barry Season 4 ran April–May 2023 and earned 11 Emmy nominations." },
     ],
+
     video: {
       url: "https://www.youtube.com/embed/9LcF-AqTwkk",
       title: "Henry Winkler on the end of 'Barry' and the Bundt cake",
@@ -167,12 +165,23 @@ export const projects: Project[] = [
     press: "Being Henry: The Fonz...and Beyond debuted as a New York Times Bestseller through Celadon Books in 2023 and spent 11 weeks on the list. The national tour sold out multiple venues including The Town Hall NYC, Harvard Bookstore Cambridge MA, and the Smithsonian Institution Washington DC. Press appearances spanned primetime and syndicated television and major podcast platforms. The 2024 paperback release generated a second national tour leg, extending the campaign's market reach into a second consecutive year. Fan convention integrations reached audiences across 20+ regional markets.",
     links: [{ text: "live video on X", url: "https://x.com/hwinkler4real/status/1704224861047156996" }],
     sections: [
-      { label: "Context", content: "In 2023, Emmy Award-winning actor Henry Winkler launched his memoir \"Being Henry: The Fonz...and Beyond\" through Celadon Books as a national hardcover tour, followed by a paperback tour in 2024. The campaign required coordinating a multi-city live event series across major US markets, managing a high-profile talent with significant public and media demand, and translating a publishing GTM strategy into flawless on-the-ground execution." },
-      { label: "My Role", content: "As Chief of Staff to Henry Winkler, I served as the operational and strategic lead for the national GTM launch of Being Henry across 15+ US markets. I built and ran the execution infrastructure behind a multi-channel campaign spanning live experiential activations, press, digital content, and fan community integrations. I owned market-by-market launch operations across 15+ cities ensuring brand consistency and talent readiness at every activation. I developed messaging frameworks and media talking points deployed across primetime, syndicated, and podcast press appearances. I supported integrated marketing campaigns across social and digital channels, coordinating content timing and messaging across platforms to amplify key launch moments including the NYT Bestseller debut and tour stop announcements. I led PR coordination and experiential marketing integrations across 7+ fan conventions. I produced launch content including video announcements and digital activations supporting the book's consumer marketing campaign, including a live virtual appearance for Access Hollywood and a live video on X celebrating 7,000 signed memoir copies. I also contributed to brand voice and editorial positioning for supporting campaign materials." },
-      { label: "Judgment Calls", content: "A memoir tour puts personal material into rooms you do not control. Before the campaign went live I mapped the sensitive territory in the book — family, dyslexia, decades of industry relationships — and built tiered talking points so Henry always had a warm, in-voice answer ready rather than a deflection. I pre-cleared boundaries with producers, sat in on live segments to catch questions heading somewhere unplanned, and made real-time calls about what to take and what to redirect. Nothing from the two-year run required a correction or a walk-back." },
-      { label: "Impact", content: "Being Henry debuted as a New York Times Bestseller, held the list for 11 weeks, and sold 66,000+ copies — including 17,000 in its first week on sale. The national tour spanned 15+ cities and 20+ regional markets with multiple sold-out stops including The Town Hall NYC, Harvard Bookstore Cambridge MA, and the Smithsonian Institution Washington DC. Project managed 7+ fan conventions and 15 speaker appearances reaching 10,000+ attendees. Press campaign spanned primetime, syndicated, and podcast appearances with direct producer responsibilities. The paperback release in 2024 generated a full second tour leg, anchoring the book's sustained market presence across two consecutive years." },
-      { label: "Press & Recognition", content: "Being Henry: The Fonz...and Beyond debuted as a New York Times Bestseller through Celadon Books in 2023 and spent 11 weeks on the list. The national tour sold out multiple venues including The Town Hall NYC, Harvard Bookstore Cambridge MA, and the Smithsonian Institution Washington DC. Press appearances spanned primetime and syndicated television and major podcast platforms. The 2024 paperback release generated a second national tour leg, extending the campaign's market reach into a second consecutive year. Fan convention integrations reached audiences across 20+ regional markets." },
+      { label: "Context", content: "In 2023, Emmy Award-winning actor Henry Winkler launched his memoir \"Being Henry: The Fonz...and Beyond\" with Celadon Books — a national hardcover tour followed by a paperback tour in 2024, with high public and media demand and no margin for a missed launch window." },
+      { label: "My Role", content: "As Chief of Staff, I led GTM for the memoir launch:", items: [
+        "Enabled go-to-market for the New York Times bestselling memoir across 15+ cities and 20+ regional markets.",
+        "Aligned business teams on highly matrixed brand positioning and storytelling.",
+        "Built messaging frameworks and talking points for primetime, syndicated, and podcast press.",
+        "Project managed primetime press and fan expo circuits across 20+ cities in North America.",
+      ]},
+      { label: "Judgment Calls", content: "A memoir tour puts personal material into rooms you do not control. I mapped the sensitive territory up front, built tiered talking points, pre-cleared boundaries with producers, and made real-time calls on the floor. Nothing across the two-year run required a correction or walk-back." },
+      { label: "Impact", content: "Commercial results:", items: [
+        "+17,000 print copies in first-week sales, growing to +66,000 copies sold within months.",
+        "New York Times Bestseller for 11 weeks, with sold-out stops from The Town Hall NYC to the Smithsonian.",
+        "7+ fan conventions and 15 speaker appearances reaching 10,000+ attendees.",
+        "A 2024 paperback tour leg that extended revenue into a second consecutive year.",
+      ]},
+      { label: "Press & Recognition", content: "Being Henry: The Fonz...and Beyond debuted as a New York Times Bestseller through Celadon Books in 2023 and spent 11 weeks on the list, with sold-out stops including The Town Hall NYC, Harvard Bookstore, and the Smithsonian Institution." },
     ],
+
     gallery: [henryHelloSign, henrySethMeyers, henryFanexpo, henrySeatedBook, henryHodaJenna],
   },
   {
@@ -202,16 +211,20 @@ export const projects: Project[] = [
     ],
     sections: [
       { label: "Context", content: "In 2018, Michelle Obama launched Becoming, a New York Times Bestseller that held the list for 100 weeks. In the same window, the #MeToo movement launched the Time's Up Legal Defense Fund. Both campaigns needed high-profile voices — talent, creators, and cultural figures like Tracee Ellis Ross — brought in credibly and at speed, with the briefing, approval, and relationship infrastructure to keep messaging consistent across every channel they touched." },
-      { label: "My Role", content: "I led influencer outreach, identification, and partnership management across both campaigns:", items: [
-        "Identified and recruited influencers and talent partners aligned with each campaign's brand equity.",
-        "Led executive communications, including keynote content for the Glamour Women of the Year Summit.",
-        "Collaborated with C-suite leadership at SAG-AFTRA alongside Tracee Ellis Ross, Natalie Portman, Tessa Thompson, Brie Larson, and Laura Dern.",
-        "Built influencer briefings, ran content approvals, and owned day-to-day relations with partners and their teams.",
-        "Ran channel monitoring for growth, trends, and insights, adjusting social strategy accordingly.",
-        "Led strategy for all social accounts, covering diversity and inclusion, accessibility, engagement, and moderation guidelines.",
+      { label: "My Role", content: "I led influencer outreach and partnership management across both campaigns:", items: [
+        "Built a close, day-to-day working relationship with Emmy-winning actress Tracee Ellis Ross (ABC's Black-ish).",
+        "Led executive communications, including keynote content for Glamour's Women of the Year Summit — which informed the messaging and positioning frameworks for the sold-out launch of PATTERN Beauty.",
+        "Collaborated with C-suite executives at SAG-AFTRA alongside Tracee Ellis Ross, Natalie Portman, Tessa Thompson, Brie Larson, and Laura Dern.",
+        "Built influencer briefings, ran content approvals, and owned day-to-day partner relations.",
         "Led messaging and the launch playbook for two national product launches across paid, earned, and owned channels.",
       ]},
-      { label: "Impact", content: "5M+ social views on the Glamour keynote content. $21M raised for the Time's Up Legal Defense Fund in 60 days. Becoming held the NYT Bestsellers list for 100 weeks, and the tour sold out arenas nationwide including 17,500 seats at the Kia Forum in Los Angeles. Co-marketing campaigns with third-party studios and networks doubled our following in six months, and the two national product launches — including PATTERN Beauty's haircare rollout — sold 2M+ units in four months, with a documented, repeatable launch process left behind for future teams." },
+      { label: "Impact", content: "Business outcomes:", items: [
+        "Enabled GTM for Michelle Obama's Becoming, including a sold-out appearance at the 18,000-capacity Kia Forum.",
+        "Enabled the historic launch of Time's Up, which initiated the #MeToo Movement Fund and raised $21M in 60 days.",
+        "5M+ social views on the Glamour Women of the Year keynote content.",
+        "Two national product launches sold 2M+ units in four months, with a repeatable launch playbook left behind.",
+      ]},
+
       { label: "Press & Recognition", content: "Becoming spent 100 weeks on the New York Times Bestsellers list and sold 2 million copies in its first 15 days. The Becoming tour sold out venues nationwide, including 17,500 seats at the Kia Forum in Los Angeles. Tracee Ellis Ross's Glamour Women of the Year speech received national coverage from The Washington Post, HuffPost, and Upworthy, leading to her TED2018 invitation. The Time's Up Legal Defense Fund raised $21 million within 60 days, supporting over 1,700 women across 60+ industries." },
     ],
     video: {
@@ -249,7 +262,7 @@ export const projects: Project[] = [
     image: humanitasBeverlyWilshire,
     context: "The Humanitas Prize is one of Hollywood's most respected awards ceremonies, described by Barbara Walters as what the Nobel Prize is to literature and the Pulitzer Prize is to journalism. The Annual Humanitas Prizes Awards Show and Toast recognized film and television writers whose work affirms the human condition, drawing industry attendees spanning network executives, writers, and producers from every major studio. The ceremony required a production team capable of managing both the high-visibility public-facing elements of a red carpet awards show and the behind-the-scenes operational complexity of a live event with real-time technical demands.",
     role: "As Marketing Manager, I owned technical, creative, and operational workstreams across the full event lifecycle. On the technical side, I drove keyword SEO with SEMrush and Ahrefs, optimized KPIs with Meta Analytics dashboards, and translated data insights into strategic recommendations for the Brand Marketing team. Creatively, I crafted and aligned messaging across all channels, designed assets in Adobe Photoshop and Canva, and covered the awards ceremony live on X (Twitter), including captioning and photography at the step and repeat. Operationally, I coordinated 300-400 content creators ranging from up-and-coming influencers to established screenwriters (Black-ish, This Is Us), built and managed multi-platform content calendars in Excel under tight timelines, and project managed social media across all channels including content creation, posting, and workflow automation in Hootsuite.",
-    impact: "Grew the organization's social following by 9,000+ and supported the launch of a $100,000 fund for television and film writers. Coordinated 300-400 content creators and produced a full-scale Hollywood awards ceremony activation end to end, managing the intersection of live event operations and real-time digital brand presence simultaneously. SEO and analytics work fed directly into Brand Marketing strategy, while workflow automation kept a multi-platform calendar on schedule through the live show. The dual responsibility of floor production and live social coverage is a skill set directly transferable to any brand activation requiring both physical and digital execution.",
+    impact: "Translated data insights into strategic recommendations for the Brand Marketing team that converted +9,000 followers into a $100,000 fund for television and film writers. Coordinated 300-400 content creators and delivered a full-scale Hollywood awards ceremony activation end to end — live floor production and real-time social coverage at the same time.",
     press: "Annual Humanitas Prizes Awards Show and Toast, Four Seasons Beverly Hills. Winning projects at the ceremony included Hidden Figures, Hacksaw Ridge, Ava DuVernay's 13th, Black-ish, and This Is Us. The Humanitas Prize has been covered annually by Variety, The Hollywood Reporter, Los Angeles Times, Deadline, and The Wrap. The organization has dispensed over 1.8 million dollars in prize money to television and film writers since 1974.",
     gallery: [humanitasAva, humanitasDga, humanitasWinners],
   },
@@ -271,20 +284,25 @@ export const projects: Project[] = [
     tag: "Executive Comms",
     image: pipexTrollsHoliday,
     cardImage: pipexCardCover,
-    context: "In 2020 theatrical revenue went to zero and DreamWorks Animation moved 3,000+ employees remote overnight. Two things had to happen at once: deliver Trolls: Holiday in Harmony into NBCUniversal's pivot to broadcast and streaming distribution, and stand up PipelineX — the studio's first cloud-native production pipeline, built in the spirit of the MovieLabs 2030 Vision and the Universal–Microsoft Azure partnership. One protected near-term revenue; the other protected the studio's ability to scale when theaters reopened.",
+    context: "In 2020, theatrical revenue went to zero and DreamWorks Animation moved 3,000+ employees remote overnight. Two launches had to land at once: Trolls: Holiday in Harmony into NBCUniversal's broadcast and streaming pivot, and PipelineX — the studio's first cloud-native production pipeline. One protected near-term revenue; the other protected the studio's ability to scale when theaters reopened.",
     role: "I ran go-to-market and business communications across both launches, coordinating 9 cross-functional teams under live production constraints with zero lapse in delivery.",
-    impact: "Trolls: Holiday in Harmony drew 1.84M live views and 2.15M total first-week viewers — alternative-distribution revenue captured in a quarter with no theatrical box office. Modernizing the Trolls asset library for cloud made those assets reusable downstream across consumer products, games, and future franchise titles rather than rebuilt per project. PipelineX launched enterprise-wide with 80%+ adoption of the collaboration channel and 22,000+ newsletter downloads across 3,000+ employees, cutting the pipeline's technical debt and processing lag — and giving the studio the throughput it needed to capture the 2021–2022 theatrical rebound. The same cloud-first approach carried the franchise's digital-first launch strategy, which generated $95M+ in consumer rental fees for Trolls World Tour in three weeks, outperforming the original film's entire domestic theatrical run.",
+    impact: "1.84M live views and 2.15M first-week viewers for Trolls: Holiday in Harmony — alternative-distribution revenue captured in a quarter with no box office. PipelineX launched enterprise-wide across 3,000+ employees, modernizing NBCUniversal's studio division assets and giving the studio the throughput to capture the 2021–2022 content rebound.",
     sections: [
-      { label: "Context", content: "In 2020 theatrical revenue went to zero and DreamWorks Animation moved 3,000+ employees remote overnight. Two things had to happen at once: deliver Trolls: Holiday in Harmony into NBCUniversal's pivot to broadcast and streaming distribution, and launch PipelineX — the studio's first cloud-native production pipeline, aligned with the MovieLabs 2030 Vision and the Universal–Microsoft Azure partnership." },
+      { label: "Context", content: "2020: theatrical revenue at zero, 3,000+ employees remote overnight. Two launches had to land simultaneously — the flagship Trolls IP into NBCUniversal's streaming and broadcast pivot, and PipelineX, the studio's first cloud-native production pipeline." },
       { label: "My Role", content: "GTM and business communications lead across both launches — 9 cross-functional teams, live studio constraints, zero lapse in delivery.", items: [
-        "Launched the flagship Trolls IP onto the studio's first cloud-based pipeline, removing remote-work delivery risk.",
-        "Modernized the Trolls asset library for cloud so assets stayed reusable across consumer products, games, and future titles — protecting margin instead of rebuilding per project.",
-        "Ran simultaneous GTM for the special and the platform, compressing time-to-market during the theatrical slump.",
-        "Drove enterprise adoption of PipelineX across 3,000+ employees through newsletter, weekly executive email, and internal social.",
-        "Reduced technical debt and processing lag in the pipeline, converting engineering overhead into throughput.",
+        "Mitigated remote-work operational risk by launching the flagship Trolls IP onto the studio's first cloud pipeline.",
+        "Orchestrated simultaneous GTM for the special and the platform, accelerating studio time-to-market during the theatrical slump.",
+        "Produced business communications that protected technology ROI and drove pipeline adoption across 3,000+ employees.",
+        "Project managed content creation and product development across 9 cross-functional teams under live studio constraints.",
       ]},
-      { label: "Impact", content: "1.84M live views and 2.15M first-week viewers for Trolls: Holiday in Harmony with zero box office available. 80%+ adoption of the enterprise collaboration channel and 22,000+ newsletter downloads across 3,000+ employees. Over 50% of infrastructure data center strategic priorities delivered through the OKR program. The cloud-first franchise strategy carried into Trolls World Tour's digital-first launch — $95M+ in consumer rental fees in three weeks, beating the original film's full domestic theatrical run — and left the studio positioned for the 2021–2022 rebound." },
+      { label: "Impact", content: "Business outcomes across both launches:", items: [
+        "+1.84M live views and +2.15M first-week viewers for Trolls: Holiday in Harmony, offsetting zero-dollar box office.",
+        "Enterprise-wide commercial launch of DreamWorks Technology (PipelineX), modernizing NBCUniversal's studio division assets.",
+        "Secured business continuity and the infrastructure behind the studio's 2021–2022 content rebound.",
+        "Cloud-first franchise strategy carried into Trolls World Tour's digital-first release: $95M+ in rental fees in three weeks.",
+      ]},
     ],
+
     video: {
       url: "https://www.youtube.com/embed/okb_--K7p14",
       title: "Trolls Holiday in Harmony — Official Trailer",
