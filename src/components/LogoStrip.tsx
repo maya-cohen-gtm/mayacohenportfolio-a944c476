@@ -21,7 +21,7 @@ const LogoStrip = () => (
           <span className="text-xl md:text-3xl font-bold tracking-tight">{client}</span>
           {i < clients.length - 1 && (
             <span className={`${SEP_COLORS[i % 3]} text-xl md:text-3xl font-black`}>
-              {client === "SAG-AFTRA" ? "—" : "/"}
+              /
             </span>
           )}
         </span>
