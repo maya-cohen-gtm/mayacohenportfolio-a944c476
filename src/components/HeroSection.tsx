@@ -26,8 +26,8 @@ const HeroSection = () => {
 
   return (
     <section className="relative w-full min-h-[80svh] lg:min-h-[88svh] flex items-center section-x hero-y overflow-hidden pastel-bg">
-      {/* Bold print block: heavy rule instead of decorative shapes */}
-      <div className="absolute inset-x-0 bottom-0 h-3 stripe-bar" />
+
+
 
       <div className="relative z-10 w-full grid grid-cols-1 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] stack-columns items-center">
         <div className="max-w-xl lg:max-w-2xl">
