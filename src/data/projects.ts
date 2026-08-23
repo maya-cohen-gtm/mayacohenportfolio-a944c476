@@ -73,6 +73,8 @@ export type Project = {
   image: string;
   cardImage?: string;
   metric?: string;
+  /** 3 skimmable metric bullets shown at the top of the case study */
+  highlights?: string[];
   /** Scope & ownership badges: budget, team, stakeholder level, timeline */
   scope?: ProjectScope[];
   /** One-line business outcome shown at the top of the Impact section */
@@ -107,6 +109,11 @@ export const projects: Project[] = [
     ],
     outcome: "Turned a personal account into a 1.3M-follower owned audience HBO never had to buy access to — and made every press booking return three platform-native assets at zero incremental production cost.",
     metric: "1.3M followers · 6.1M likes · talent-led short-form",
+    highlights: [
+      "1.3M-follower owned audience built for HBO's Barry finale — no paid access required",
+      "6.1M lifetime likes and massive global engagement across channels",
+      "Multi-million dollar brand deals managed inside the channel's voice rules",
+    ],
     brand: "Henry Winkler x TikTok",
     title: "Talent-Led Short-Form for Barry's Final Season",
     description: "Running an 80-year-old icon's TikTok as an owned channel during HBO's Barry S4.",
@@ -153,6 +160,11 @@ export const projects: Project[] = [
     ],
     outcome: "A New York Times Bestseller that held the list for 11 weeks and sold 66,000+ copies, earning a second commercial tour leg that extended revenue into a second consecutive year.",
     metric: "66,000+ copies sold · 11 weeks on NYT Bestsellers list",
+    highlights: [
+      "+17,000 print copies in week one, growing to +66,000 copies sold within months",
+      "New York Times Bestseller for 11 weeks across a 15+ city national tour",
+      "20+ city press and fan expo circuit delivered with zero corrections or walk-backs",
+    ],
     brand: "Henry Winkler x Celadon Books",
     title: "Multiplatform Campaign for Memoir Launch",
     description: "National launch campaign for a NYT bestselling memoir across 15+ cities.",
@@ -196,6 +208,11 @@ export const projects: Project[] = [
     ],
     outcome: "$21M raised in 60 days and 2M+ units sold across two national launches, with a documented launch playbook left behind for future teams.",
     metric: "$21M in 60 days · 5M+ views on keynote content",
+    highlights: [
+      "$21M raised in 60 days for the Time's Up / #MeToo Movement Fund",
+      "Sold-out Becoming appearance at the 18,000-capacity Kia Forum",
+      "2M+ units sold across two national product launches in four months",
+    ],
     brand: "Joy Mill Entertainment (ABC Signature)",
     title: "Influencer & Partnership Campaigns",
     description: "Influencer outreach and partnership management behind two high-impact GTM campaigns.",
@@ -255,6 +272,11 @@ export const projects: Project[] = [
     ],
     outcome: "Grew the organization's social following by 9,000+ and helped convert that visibility into a $100,000 writers' fund, while delivering the awards activation end to end.",
     metric: "+9,000 followers · $100,000 writers' fund",
+    highlights: [
+      "+9,000 followers converted into a $100,000 fund for film and TV writers",
+      "300–400 content creators coordinated across the awards program",
+      "Full Hollywood awards activation delivered end to end, live floor plus real-time social",
+    ],
     brand: "The Humanitas Prize",
     title: "Specialty Social Media Management",
     description: "Owned the live social feed for a Hollywood awards ceremony, in real time from the floor.",
@@ -278,6 +300,11 @@ export const projects: Project[] = [
     ],
     outcome: "Kept production momentum through the industry's worst disruption: Trolls: Holiday in Harmony captured 2.15M first-week viewers with zero box office available, while PipelineX launched the cloud infrastructure the studio scaled on through the 2021–2022 theatrical rebound.",
     metric: "2.15M first-week viewers · 3,000+ employees onboarded to PipelineX",
+    highlights: [
+      "+2.15M first-week viewers and +1.84M live views with zero theatrical box office",
+      "Enterprise-wide cloud platform launch adopted across +3,000 employees",
+      "9 cross-functional teams project managed with zero lapse in product delivery",
+    ],
     brand: "DreamWorks Animation",
     title: "Dual Launch: Franchise Special + Studio Cloud Platform",
     description: "Two simultaneous launches in 2020: an alternative-distribution Trolls special and the studio's first cloud production pipeline.",
