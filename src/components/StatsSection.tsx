@@ -18,7 +18,16 @@ const stats: { value: string; label: ReactNode }[] = [
   },
   { value: "3,000+", label: "Enterprise employees onboarded to DreamWorks Technology (PipelineX)" },
   { value: "1.3M", label: "Followers built on a talent-led TikTok channel during HBO's Barry finale" },
-  { value: "$100,000", label: "Writers' fund converted from +9,000 followers of audience growth" },
+  {
+    value: "$100,000",
+    label: (
+      <>
+        Writers' fund converted from{" "}
+        <strong className="font-bold accent-text">+9,000</strong> followers of audience growth
+      </>
+    ),
+  },
+
 ];
 
 
