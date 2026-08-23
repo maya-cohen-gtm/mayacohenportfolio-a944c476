@@ -29,21 +29,21 @@ const ROTATION_MS_RAW = 3200;
 const RAW_SLOTS: MadlibSlot[] = [
 
   {
-    verb: "engage global audiences",
+    verb: "earn attention on day one",
     verbClass: "bg-brand-yellow",
-    noun: "premium IP.",
+    noun: "streaming premieres.",
     nounClass: "bg-secondary",
   },
   {
-    verb: "turn fandom into reach",
+    verb: "amplify talent's real voice",
     verbClass: "bg-secondary",
     noun: "talent-led social.",
     nounClass: "bg-brand-blue text-primary-foreground",
   },
   {
-    verb: "drive measurable growth",
+    verb: "turn superfans into opening-weekend numbers",
     verbClass: "bg-brand-green text-primary-foreground",
-    noun: "streaming launches.",
+    noun: "premium IP.",
     nounClass: "bg-brand-yellow",
   },
   {
@@ -59,13 +59,13 @@ const RAW_SLOTS: MadlibSlot[] = [
     nounClass: "bg-primary text-primary-foreground",
   },
   {
-    verb: "grow communities that stick",
+    verb: "grow communities that keep showing up",
     verbClass: "bg-brand-yellow",
     noun: "fandom-led brands.",
     nounClass: "bg-brand-green text-primary-foreground",
   },
   {
-    verb: "translate data into ideas",
+    verb: "turn watch data into the next campaign",
     verbClass: "bg-brand-green text-primary-foreground",
     noun: "always-on social.",
     nounClass: "bg-brand-blue text-primary-foreground",
@@ -77,15 +77,15 @@ const RAW_SLOTS: MadlibSlot[] = [
     nounClass: "bg-brand-yellow",
   },
   {
-    verb: "scale content from launch",
+    verb: "sell out launches",
     verbClass: "bg-brand-blue text-primary-foreground",
-    noun: "millions of sales worldwide.",
+    noun: "global IP.",
     nounClass: "bg-secondary",
   },
   {
-    verb: "connect premium storytelling",
+    verb: "make premium storytelling unmissable",
     verbClass: "bg-secondary",
-    noun: "audiences who lean in, obsess, subscribe.",
+    noun: "audiences who lean in and subscribe.",
     nounClass: "bg-brand-green text-primary-foreground",
   },
 ];
