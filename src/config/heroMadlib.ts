@@ -82,7 +82,20 @@ const RAW_SLOTS: MadlibSlot[] = [
     noun: "global audiences.",
     nounClass: "bg-brand-yellow",
   },
+  {
+    verb: "scale content from launch",
+    verbClass: "bg-brand-blue text-primary-foreground",
+    noun: "millions of sales worldwide.",
+    nounClass: "bg-secondary",
+  },
+  {
+    verb: "connect premium storytelling",
+    verbClass: "bg-secondary",
+    noun: "audiences who lean in, obsess, subscribe.",
+    nounClass: "bg-brand-green text-primary-foreground",
+  },
 ];
+
 
 /* -------------------------------------------------------------------------
  * Validation & safe fallbacks
