@@ -28,7 +28,7 @@ const HeroSection = () => {
     <section className="relative w-full min-h-[80svh] lg:min-h-[88svh] flex items-center section-x hero-y overflow-hidden pastel-bg">
       {/* Editorial stripes: retro-broadcast red / orange / blue rules */}
       <div className="absolute top-0 left-0 h-full w-2 stripe-block hidden lg:block" />
-      <div className="absolute top-10 right-0 w-40 md:w-72 stripe-block h-6 md:h-9" />
+      <div className="absolute top-28 right-0 w-40 md:w-72 stripe-block h-6 md:h-9" />
       <div className="absolute bottom-24 right-10 w-24 md:w-40 stripe-block h-4 md:h-6 hidden md:block" />
       <div className="absolute inset-x-0 bottom-0 h-3 stripe-bar" />
 
