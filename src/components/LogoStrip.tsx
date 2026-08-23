@@ -8,6 +8,7 @@ const clients = [
   "SAG-AFTRA",
   "Kia Forum",
   "Glamour",
+  "Humanitas Prize",
 ];
 
 
