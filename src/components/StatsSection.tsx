@@ -15,7 +15,7 @@ const stats: { value: string; label: ReactNode; valueClass?: string }[] = [
       </>
     ),
   },
-  { value: "+3,000", label: "Enterprise employees onboarded to DreamWorks Technology (PipelineX)" },
+  { value: "+3,000", valueClass: "text-brand-yellow", label: "Enterprise employees onboarded to DreamWorks Technology (PipelineX)" },
   { value: "1.3M", label: "Followers built on a talent-led TikTok channel during HBO's Barry finale" },
   {
     value: "$100,000",
