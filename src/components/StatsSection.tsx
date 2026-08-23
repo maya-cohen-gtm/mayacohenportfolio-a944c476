@@ -48,7 +48,7 @@ const StatsSection = () => (
           <div className="type-stat accent-text mb-3">
             {stat.value}
           </div>
-          <p className="text-muted-foreground">{stat.label}</p>
+          <p className="text-foreground/70 leading-tight font-medium">{stat.label}</p>
         </motion.div>
       ))}
     </div>

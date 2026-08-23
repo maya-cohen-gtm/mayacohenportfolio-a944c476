@@ -52,7 +52,7 @@ const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.08 }}
-            className="type-kicker text-muted-foreground space-kicker"
+            className="mono-meta text-muted-foreground space-kicker"
           >
             USC MBA, ENTERTAINMENT & DIGITAL MARKETING
           </motion.p>
@@ -108,7 +108,7 @@ const HeroSection = () => {
           >
             <button
               onClick={scrollToWork}
-              className="group inline-flex items-center gap-3 rounded-none bg-primary text-primary-foreground px-8 py-4 uppercase tracking-[0.18em] type-cta cursor-pointer border border-border transition-transform hover:-translate-y-0.5"
+              className="group inline-flex items-center justify-between gap-6 rounded-none bg-primary text-primary-foreground px-8 py-5 uppercase tracking-tighter font-black text-xl cursor-pointer border-4 border-foreground shadow-[6px_6px_0_0_hsl(var(--foreground))] transition-all hover:bg-foreground hover:shadow-[10px_10px_0_0_hsl(var(--foreground))]"
              
             >
               <span>See My Work</span>
