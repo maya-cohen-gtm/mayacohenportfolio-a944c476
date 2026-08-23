@@ -17,7 +17,7 @@ const endorsements: Endorsement[] = [
     role: "Director Strategic Initiatives, Warner Music Group; Classmate, USC Marshall School of Business",
   },
   {
-    quote: "Marissa transformed GWiB's social media presence from the ground up — she re-vamped our logo, campaigns, and posts, built a cohesive content schedule, and drove over 200% engagement growth. As a leader, she is someone I never need to worry about: the work gets done, and done well. She brings creative ideas, asks smart questions, supports the team, and collaborates with humility and confidence. Any team would be lucky to have her.",
+    quote: "Marissa transformed GWiB's social media presence from the ground up — she re-vamped both our brand strategy and social media campaigns, and drove over 200% engagement growth. As a leader, she is someone I never need to worry about: the work gets done, and done well. As a result of her social media management, GWiB has been reached out to by major brands to collaborate and host events with. I know she will remain creative, communicate proactively, and support everyone else whenever needed. Any team would be lucky to have her.",
     name: "Jasmine Kaur",
     role: "Senior Consultant, EY; President of Graduate Women in Business (GWiB)",
   },
