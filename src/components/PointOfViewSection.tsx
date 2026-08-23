@@ -57,7 +57,7 @@ const PointOfViewSection = () => (
           transition={{ duration: 0.6, delay: i * 0.06 }}
           className={`surface-card accent-card p-8 ${accentFor(i + 1)}`}
         >
-          <span className="type-stat accent-text block mb-4">{take.number}</span>
+          <span className={`type-stat block mb-4 ${take.number === "03" ? "text-primary" : "accent-text"}`}>{take.number}</span>
           <h3 className="type-h3 text-foreground mb-4 text-pretty">{take.title}</h3>
           <p className="text-muted-foreground leading-relaxed text-pretty">{take.body}</p>
         </motion.article>
