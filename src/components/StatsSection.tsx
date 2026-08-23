@@ -3,7 +3,7 @@ import { accentFor } from "@/lib/accents";
 
 import type { ReactNode } from "react";
 
-const stats: { value: string; label: ReactNode }[] = [
+const stats: { value: string; label: ReactNode; valueClass?: string }[] = [
   { value: "2.15M", label: "First-week viewers for Trolls: Holiday in Harmony, with zero theatrical box office available" },
   { value: "$21M / 60 days", label: "Raised for the Time's Up Legal Defense Fund through a celebrity-led launch" },
   {
