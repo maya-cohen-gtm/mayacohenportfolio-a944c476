@@ -228,8 +228,10 @@ const ProjectDetail = () => {
   const tocItems = readingMode
     ? sectionList.map((s) => ({ id: slugify(s.label), label: s.label }))
     : [
+        ...(project.highlights?.length ? [{ id: "impact-highlights", label: "Impact Highlights" }] : []),
         ...(project.problem ? [{ id: "the-challenge", label: "The Challenge" }] : []),
         ...sectionList.map((s) => ({ id: slugify(s.label), label: s.label })),
+
         ...(project.video ? [{ id: "video", label: project.video.label ?? "Trailer" }] : []),
         ...(project.gallery && project.gallery.length > 0
           ? [{ id: "gallery", label: "Gallery" }]
