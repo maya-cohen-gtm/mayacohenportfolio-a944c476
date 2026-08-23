@@ -6,8 +6,10 @@ const clients = [
   "DreamWorks Animation",
   "ABC Signature",
   "SAG-AFTRA",
+  "Kia Forum",
   "Glamour",
 ];
+
 
 const LogoStrip = () => (
   <section className="px-8 md:px-16 py-10 border-y border-border bg-background accent-blue">
