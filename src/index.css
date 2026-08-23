@@ -383,15 +383,15 @@
   /* --section-accent-ink: darkened variant, always readable on cream/white  */
   .accent-orange {
     --section-accent: 1 99% 40%;
-    --section-accent-ink: 357 85% 38%;
+    --section-accent-ink: 1 99% 40%;
   }
   .accent-pink {
     --section-accent: 36 99% 54%;
-    --section-accent-ink: 28 95% 34%;
+    --section-accent-ink: 36 99% 54%;
   }
   .accent-yellow {
     --section-accent: 210 98% 50%;
-    --section-accent-ink: 205 90% 33%;
+    --section-accent-ink: 210 98% 50%;
   }
   .accent-green {
     --section-accent: 0 0% 0%;
@@ -399,7 +399,7 @@
   }
   .accent-blue {
     --section-accent: 36 99% 54%;
-    --section-accent-ink: 205 90% 33%;
+    --section-accent-ink: 210 98% 50%;
   }
 
   .accent-text {

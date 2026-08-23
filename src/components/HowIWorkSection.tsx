@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
-import { accentFor } from "@/lib/accents";
+
+// Red -> yellow -> blue rotation using the brand palette
+const BRAND_CYCLE = ["accent-orange", "accent-pink", "accent-yellow"] as const;
 
 const operatingModel = [
   {
@@ -47,9 +49,10 @@ const HowIWorkSection = () => (
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: i * 0.05 }}
-          className={`surface-card accent-card p-8 ${accentFor(i + 3)}`}
+          className={`surface-card accent-card p-8 pt-7 ${BRAND_CYCLE[i % BRAND_CYCLE.length]}`}
         >
-          <span className="label-text mb-3 block">{item.label}</span>
+          <span className="accent-fill mb-5 block h-2 w-14" />
+          <span className="label-text accent-text mb-3 block">{item.label}</span>
           <div className="text-xl font-semibold text-foreground mb-3">{item.value}</div>
           <p className="text-muted-foreground text-sm leading-relaxed">{item.detail}</p>
         </motion.div>
@@ -61,11 +64,11 @@ const HowIWorkSection = () => (
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="surface-card accent-card p-8 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-4"
+      className="surface-card p-8 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-4"
     >
-      {principles.map((line) => (
-        <li key={line} className="flex gap-3 text-foreground/80 leading-relaxed">
-          <span className="accent-text font-semibold">&mdash;</span>
+      {principles.map((line, i) => (
+        <li key={line} className={`flex gap-3 text-foreground/80 leading-relaxed ${BRAND_CYCLE[i % BRAND_CYCLE.length]}`}>
+          <span className="accent-fill mt-2 h-3 w-3 shrink-0" />
           <span>{line}</span>
         </li>
       ))}
