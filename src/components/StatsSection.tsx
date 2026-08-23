@@ -8,22 +8,22 @@ const stats: { value: string; label: ReactNode }[] = [
   { value: "2.15M", label: "First-week viewers for Trolls: Holiday in Harmony, with zero theatrical box office available" },
   { value: "$21M / 60 days", label: "Raised for the Time's Up Legal Defense Fund through a celebrity-led launch" },
   {
-    value: "66,000+",
+    value: "+66,000",
     label: (
       <>
         Copies sold of a New York Times bestselling memoir,{" "}
-        <strong className="font-bold accent-text">17,000+</strong> in week one
+        <strong className="font-bold accent-text">+17,000</strong> in week one
       </>
     ),
   },
-  { value: "3,000+", label: "Enterprise employees onboarded to DreamWorks Technology (PipelineX)" },
+  { value: "+3,000", label: "Enterprise employees onboarded to DreamWorks Technology (PipelineX)" },
   { value: "1.3M", label: "Followers built on a talent-led TikTok channel during HBO's Barry finale" },
   {
     value: "$100,000",
     label: (
       <>
         Writers' fund converted from{" "}
-        <strong className="font-bold accent-text">9,000+</strong> followers of audience growth
+        <strong className="font-bold accent-text">+9,000</strong> followers of audience growth
       </>
     ),
   },
