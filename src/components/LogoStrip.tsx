@@ -14,7 +14,7 @@ const clients = [
 
 const LogoStrip = () => {
   const ref = useRef<HTMLDivElement>(null);
-  const inView = useInView(ref, { amount: 0.4 });
+  const inView = useInView(ref, { amount: 0.3, margin: "0px 0px -15% 0px" });
 
   return (
     <section className="px-8 md:px-16 py-10 border-y border-border bg-background accent-blue overflow-hidden">
@@ -24,11 +24,11 @@ const LogoStrip = () => {
           {clients.map((client, i) => (
             <motion.span
               key={client}
-              initial={false}
+              initial={{ opacity: 0, x: 48 }}
               animate={
                 inView
                   ? { opacity: 1, x: 0 }
-                  : { opacity: 0, x: -40 }
+                  : { opacity: 0, x: -48 }
               }
               transition={{
                 duration: 0.5,
