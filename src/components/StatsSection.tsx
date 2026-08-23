@@ -23,7 +23,7 @@ const stats: { value: string; label: ReactNode }[] = [
     label: (
       <>
         Writers' fund converted from{" "}
-        <strong className="font-bold accent-text">+9,000</strong> followers of audience growth
+        <strong className="font-bold accent-text">9,000+</strong> followers of audience growth
       </>
     ),
   },
