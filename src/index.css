@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Figtree:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -39,7 +39,7 @@
     --input: 0 0% 4%;
     --ring: 357 93% 47%;
 
-    --radius: 1.25rem;
+    --radius: 0.25rem;
 
     --gradient-pastel: linear-gradient(90deg, hsl(357 93% 47%) 0% 33.33%, hsl(33 100% 50%) 33.33% 66.66%, hsl(199 100% 50%) 66.66% 100%);
     --gradient-primary: linear-gradient(100deg, hsl(357 93% 47%), hsl(33 100% 50%) 50%, hsl(199 100% 50%));
@@ -65,11 +65,11 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Figtree', system-ui, -apple-system, sans-serif;
+    font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Outfit', system-ui, sans-serif;
+    font-family: 'Space Grotesk', system-ui, sans-serif;
     text-wrap: balance;
   }
 
@@ -83,15 +83,19 @@
   /* ---- Global editorial typography scale ---- */
   /* Display: hero name / page-defining statements */
   .type-display {
-    font-size: clamp(2.5rem, 5.5vw, 4.5rem);
-    line-height: 1.02;
-    letter-spacing: -0.03em;
+    font-family: 'Syncopate', 'Space Grotesk', sans-serif;
+    font-size: clamp(2rem, 4.6vw, 3.75rem);
+    line-height: 1.06;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
     @apply font-bold;
   }
 
   /* H1: page titles (case studies, 404) */
   .type-h1 {
-    font-size: clamp(2.25rem, 4.8vw, 4rem);
+    font-family: 'Syncopate', 'Space Grotesk', sans-serif;
+    text-transform: uppercase;
+    font-size: clamp(1.85rem, 3.6vw, 3rem);
     line-height: 1.06;
     letter-spacing: -0.028em;
     @apply font-semibold;
@@ -99,7 +103,9 @@
 
   /* H2: section headlines */
   .type-h2 {
-    font-size: clamp(1.75rem, 3.2vw, 2.75rem);
+    font-family: 'Syncopate', 'Space Grotesk', sans-serif;
+    text-transform: uppercase;
+    font-size: clamp(1.35rem, 2.3vw, 2rem);
     line-height: 1.12;
     letter-spacing: -0.022em;
     @apply font-semibold;
@@ -248,7 +254,7 @@
     -webkit-box-decoration-break: clone;
     padding: 0.1em 0.3em;
     margin-inline: -0.02em;
-    border-radius: 0.35em;
+    border-radius: 0;
     font-weight: 600;
     color: hsl(var(--foreground));
     /* keep phrases intact where there is room, but never overflow small screens */
@@ -259,7 +265,7 @@
   @media (min-width: 768px) {
     .swipe {
       padding: 0.12em 0.38em;
-      border-radius: 0.4rem;
+      border-radius: 0;
     }
   }
 
@@ -316,7 +322,7 @@
   }
 
   .surface-card {
-    @apply bg-card rounded-3xl border-2 border-foreground;
+    @apply bg-card rounded-none border-2 border-foreground;
     box-shadow: var(--shadow-soft);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
@@ -332,6 +338,26 @@
 
   .stripe-bar {
     background-image: var(--gradient-pastel);
+  }
+
+  /* Editorial stripes: stacked red / orange / blue rules */
+  .stripe-rule {
+    height: 0.9rem;
+    background-image: linear-gradient(
+      to bottom,
+      #E8060F 0 33.33%,
+      #FF8C00 33.33% 66.66%,
+      #00B0FF 66.66% 100%
+    );
+  }
+
+  .stripe-block {
+    background-image: linear-gradient(
+      to bottom,
+      #E8060F 0 33.33%,
+      #FF8C00 33.33% 66.66%,
+      #00B0FF 66.66% 100%
+    );
   }
 
   .gradient-text {
