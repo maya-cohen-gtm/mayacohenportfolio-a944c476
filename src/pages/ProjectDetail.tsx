@@ -328,7 +328,13 @@ const ProjectDetail = () => {
         <div id="gallery" className="scroll-mt-28 mt-24">
           <h2 className="type-kicker text-foreground mb-[clamp(1.25rem,2.4vw,2rem)]">Gallery</h2>
           <div className={project.id === "pipex-virtual-launch" || project.id === "multiplatform-memoir-launch" ? "columns-1 md:columns-2 lg:columns-3" : project.id === "becoming-memoir-launch" ? "grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-12" : `grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3`}>
-            {project.gallery.map((img, i) => {
+            {project.gallery.map((item, i) => {
+              const img = typeof item === "string" ? item : item.src;
+              const href = typeof item === "string" ? undefined : item.href;
+              const caption = typeof item === "string" ? undefined : item.caption;
+              const alt =
+                (typeof item === "string" ? undefined : item.alt) ??
+                `${project.title} gallery ${i + 1}`;
               const isPipex = project.id === "pipex-virtual-launch";
               const isHenry = project.id === "multiplatform-memoir-launch";
               const isBecoming = project.id === "becoming-memoir-launch";
@@ -336,40 +342,69 @@ const ProjectDetail = () => {
               const isBarryVertical = project.id === "henry-winkler-tiktok" && i < 3;
               const isMasonry = isPipex || isHenry;
 
-              return isMasonry ? (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className={`overflow-hidden rounded-3xl bg-muted break-inside-avoid mb-4 border-2 border-foreground accent-card ${accentFor(i)}`}
+              const imgClass = isMasonry
+                ? "w-full h-auto object-cover"
+                : `w-full h-full ${
+                    isHumanitas
+                      ? "object-cover object-center"
+                      : isBecoming
+                      ? i === 3
+                        ? "object-contain p-4 bg-background"
+                        : "object-cover object-center"
+                      : isBarryVertical
+                      ? "object-cover object-center"
+                      : "object-cover"
+                  }`;
+
+              const picture = (
+                <img src={img} alt={alt} className={imgClass} loading="lazy" />
+              );
+
+              const media = href ? (
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={caption ? `${caption} (opens in a new tab)` : alt}
+                  className="block w-full h-full focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-foreground/40 transition-transform duration-300 hover:scale-[1.02]"
                 >
-                  <img
-                    src={img}
-                    alt={`${project.title} gallery ${i + 1}`}
-                    className="w-full h-auto object-cover"
-                    loading="lazy"
-                  />
-                </motion.div>
+                  {picture}
+                </a>
               ) : (
-                <motion.div
+                picture
+              );
+
+              const wrapperClass = isMasonry
+                ? `overflow-hidden rounded-3xl bg-muted break-inside-avoid mb-4 border-2 border-foreground accent-card ${accentFor(i)}`
+                : `overflow-hidden rounded-3xl bg-muted relative border-2 border-foreground accent-card ${accentFor(i)} ${
+                    isBecoming
+                      ? `${i === 1 || i === 3 ? "lg:col-span-8" : "lg:col-span-4"} aspect-[4/3] md:aspect-auto md:h-[380px]`
+                      : isHumanitas
+                      ? "aspect-video"
+                      : isBarryVertical
+                      ? "aspect-[3/4]"
+                      : "aspect-square"
+                  }`;
+
+              return (
+                <motion.figure
                   key={i}
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className={`overflow-hidden rounded-3xl bg-muted relative border-2 border-foreground accent-card ${accentFor(i)} ${isBecoming ? `${i === 1 || i === 3 ? "lg:col-span-8" : "lg:col-span-4"} aspect-[4/3] md:aspect-auto md:h-[380px]` : isHumanitas ? "aspect-video" : isBarryVertical ? "aspect-[3/4]" : "aspect-square"}`}
+                  className={isMasonry ? "break-inside-avoid mb-4" : ""}
                 >
-                  <img
-                    src={img}
-                    alt={`${project.title} gallery ${i + 1}`}
-                    className={`w-full h-full ${isHumanitas ? "object-cover object-center" : isBecoming ? (i === 3 ? "object-contain p-4 bg-background" : "object-cover object-center") : isBarryVertical ? "object-cover object-center" : "object-cover"}`}
-                    loading="lazy"
-                    />
-                  </motion.div>
+                  <div className={wrapperClass}>{media}</div>
+                  {caption && (
+                    <figcaption className="mt-2 type-meta text-muted-foreground">
+                      {caption}
+                    </figcaption>
+                  )}
+                </motion.figure>
               );
             })}
+
           </div>
         </div>
 
