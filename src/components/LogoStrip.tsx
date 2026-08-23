@@ -24,11 +24,11 @@ const LogoStrip = () => {
           {clients.map((client, i) => (
             <motion.span
               key={client}
-              initial={false}
+              initial={{ opacity: 0, x: 48 }}
               animate={
                 inView
                   ? { opacity: 1, x: 0 }
-                  : { opacity: 0, x: -40 }
+                  : { opacity: 0, x: -48 }
               }
               transition={{
                 duration: 0.5,
