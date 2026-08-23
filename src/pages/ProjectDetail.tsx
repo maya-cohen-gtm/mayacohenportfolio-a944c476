@@ -375,10 +375,10 @@ const ProjectDetail = () => {
               );
 
               const wrapperClass = isMasonry
-                ? `overflow-hidden rounded-3xl bg-muted break-inside-avoid mb-4 border-2 border-foreground accent-card ${accentFor(i)}`
+                ? `overflow-hidden rounded-3xl bg-muted border-2 border-foreground accent-card ${accentFor(i)}`
                 : `overflow-hidden rounded-3xl bg-muted relative border-2 border-foreground accent-card ${accentFor(i)} ${
                     isBecoming
-                      ? `${i === 1 || i === 3 ? "lg:col-span-8" : "lg:col-span-4"} aspect-[4/3] md:aspect-auto md:h-[380px]`
+                      ? "aspect-[4/3] md:aspect-auto md:h-[380px]"
                       : isHumanitas
                       ? "aspect-video"
                       : isBarryVertical
@@ -393,8 +393,17 @@ const ProjectDetail = () => {
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className={isMasonry ? "break-inside-avoid mb-4" : ""}
+                  className={
+                    isMasonry
+                      ? "break-inside-avoid mb-4"
+                      : isBecoming
+                      ? i === 1 || i === 3
+                        ? "lg:col-span-8"
+                        : "lg:col-span-4"
+                      : ""
+                  }
                 >
+
                   <div className={wrapperClass}>{media}</div>
                   {caption && (
                     <figcaption className="mt-2 type-meta text-muted-foreground">
