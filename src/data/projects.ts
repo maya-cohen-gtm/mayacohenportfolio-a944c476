@@ -211,16 +211,20 @@ export const projects: Project[] = [
     ],
     sections: [
       { label: "Context", content: "In 2018, Michelle Obama launched Becoming, a New York Times Bestseller that held the list for 100 weeks. In the same window, the #MeToo movement launched the Time's Up Legal Defense Fund. Both campaigns needed high-profile voices — talent, creators, and cultural figures like Tracee Ellis Ross — brought in credibly and at speed, with the briefing, approval, and relationship infrastructure to keep messaging consistent across every channel they touched." },
-      { label: "My Role", content: "I led influencer outreach, identification, and partnership management across both campaigns:", items: [
-        "Identified and recruited influencers and talent partners aligned with each campaign's brand equity.",
-        "Led executive communications, including keynote content for the Glamour Women of the Year Summit.",
-        "Collaborated with C-suite leadership at SAG-AFTRA alongside Tracee Ellis Ross, Natalie Portman, Tessa Thompson, Brie Larson, and Laura Dern.",
-        "Built influencer briefings, ran content approvals, and owned day-to-day relations with partners and their teams.",
-        "Ran channel monitoring for growth, trends, and insights, adjusting social strategy accordingly.",
-        "Led strategy for all social accounts, covering diversity and inclusion, accessibility, engagement, and moderation guidelines.",
+      { label: "My Role", content: "I led influencer outreach and partnership management across both campaigns:", items: [
+        "Built a close, day-to-day working relationship with Emmy-winning actress Tracee Ellis Ross (ABC's Black-ish).",
+        "Led executive communications, including keynote content for Glamour's Women of the Year Summit — which informed the messaging and positioning frameworks for the sold-out launch of PATTERN Beauty.",
+        "Collaborated with C-suite executives at SAG-AFTRA alongside Tracee Ellis Ross, Natalie Portman, Tessa Thompson, Brie Larson, and Laura Dern.",
+        "Built influencer briefings, ran content approvals, and owned day-to-day partner relations.",
         "Led messaging and the launch playbook for two national product launches across paid, earned, and owned channels.",
       ]},
-      { label: "Impact", content: "5M+ social views on the Glamour keynote content. $21M raised for the Time's Up Legal Defense Fund in 60 days. Becoming held the NYT Bestsellers list for 100 weeks, and the tour sold out arenas nationwide including 17,500 seats at the Kia Forum in Los Angeles. Co-marketing campaigns with third-party studios and networks doubled our following in six months, and the two national product launches — including PATTERN Beauty's haircare rollout — sold 2M+ units in four months, with a documented, repeatable launch process left behind for future teams." },
+      { label: "Impact", content: "Business outcomes:", items: [
+        "Enabled GTM for Michelle Obama's Becoming, including a sold-out appearance at the 18,000-capacity Kia Forum.",
+        "Enabled the historic launch of Time's Up, which initiated the #MeToo Movement Fund and raised $21M in 60 days.",
+        "5M+ social views on the Glamour Women of the Year keynote content.",
+        "Two national product launches sold 2M+ units in four months, with a repeatable launch playbook left behind.",
+      ]},
+
       { label: "Press & Recognition", content: "Becoming spent 100 weeks on the New York Times Bestsellers list and sold 2 million copies in its first 15 days. The Becoming tour sold out venues nationwide, including 17,500 seats at the Kia Forum in Los Angeles. Tracee Ellis Ross's Glamour Women of the Year speech received national coverage from The Washington Post, HuffPost, and Upworthy, leading to her TED2018 invitation. The Time's Up Legal Defense Fund raised $21 million within 60 days, supporting over 1,700 women across 60+ industries." },
     ],
     video: {
