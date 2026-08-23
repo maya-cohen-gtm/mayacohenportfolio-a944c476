@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
-import { accentFor } from "@/lib/accents";
+
+// Red -> yellow -> blue rotation using the brand palette
+const BRAND_CYCLE = ["accent-orange", "accent-pink", "accent-yellow"] as const;
 
 const operatingModel = [
   {
