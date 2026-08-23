@@ -45,6 +45,20 @@ export type ProjectSection = {
   items?: string[];
 };
 
+/** A gallery entry: a plain image, or an image linked to a press/source URL. */
+export type GalleryItem =
+  | string
+  | {
+      src: string;
+      /** Optional external URL the image links to. */
+      href?: string;
+      /** Optional caption shown under the image. */
+      caption?: string;
+      /** Optional alt text override. */
+      alt?: string;
+    };
+
+
 export type ProjectScope = {
   label: string;
   value: string;
