@@ -197,6 +197,8 @@ const ProjectDetail = () => {
   const projectIndex = projects.findIndex((p) => p.id === id);
   const project = projects[projectIndex];
   const pageAccent = projectIndex >= 0 ? accentFor(projectIndex) : accentForKey(id ?? "");
+  const [readingMode, setReadingMode] = React.useState(false);
+
 
   if (!project) {
     return (
