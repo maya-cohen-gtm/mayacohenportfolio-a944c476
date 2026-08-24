@@ -13,10 +13,10 @@ const Index = () => (
   <main className="bg-background min-h-screen">
     <NavBar />
     <HeroSection />
-    <div className="stripe-rule w-full" role="presentation" aria-hidden="true" />
     <LogoStrip />
-
+    <div className="stripe-rule w-full" role="presentation" aria-hidden="true" />
     <StatsSection />
+
     <ActivationGrid />
     <HowIWorkSection />
     <PointOfViewSection />
