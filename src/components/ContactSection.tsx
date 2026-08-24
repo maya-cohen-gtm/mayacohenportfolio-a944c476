@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 const ContactSection = () => (
-  <footer id="contact" className="relative overflow-hidden section-y-lg section-x text-center border-t border-border pastel-bg accent-orange">
+  <footer id="contact" className="relative overflow-hidden section-y-lg section-x text-center pastel-bg accent-orange">
     <motion.h2
       initial={{ opacity: 0, y: 16 }}
       whileInView={{ opacity: 1, y: 0 }}
