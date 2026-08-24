@@ -367,49 +367,6 @@
     );
   }
 
-  /* Signature triple-rule underline for section headlines (sized to the text) */
-  .rule-heading {
-    display: inline-block;
-    padding-bottom: 0.6rem;
-    position: relative;
-  }
-
-  .rule-heading::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 0.5rem;
-    background-image: linear-gradient(
-      to bottom,
-      #c90301 0 33.33%,
-      #fea015 33.33% 66.66%,
-      #027ffb 66.66% 100%
-    );
-  }
-
-  /* Signature triple-rule tab in the top-left corner of a card */
-  .card-tab {
-    position: relative;
-  }
-
-  .card-tab::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 3.5rem;
-    height: 0.5625rem;
-    background-image: linear-gradient(
-      to bottom,
-      #c90301 0 33.33%,
-      #fea015 33.33% 66.66%,
-      #027ffb 66.66% 100%
-    );
-  }
-
-
   .gradient-text {
     background-image: var(--gradient-primary);
     -webkit-background-clip: text;
