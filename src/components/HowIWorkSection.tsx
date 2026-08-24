@@ -34,7 +34,7 @@ const principles = [
 ];
 
 const HowIWorkSection = () => (
-  <section id="how-i-work" className="relative overflow-hidden section-x section-y border-t border-border accent-green">
+  <section id="how-i-work" className="relative overflow-hidden section-x section-y accent-green">
     <h2 className="label-text space-kicker">How I Work</h2>
     <p className="type-lead text-muted-foreground max-w-2xl space-lead text-pretty">
       The operating model behind the campaigns — what I own, how fast we move, and

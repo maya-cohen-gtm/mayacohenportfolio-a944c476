@@ -31,7 +31,7 @@ const EndorsementsSection = () => {
   if (endorsements.length === 0) return null;
 
   return (
-    <section id="words" className="relative overflow-hidden px-8 md:px-16 py-24 border-t border-border accent-pink">
+    <section id="words" className="relative overflow-hidden px-8 md:px-16 py-24 accent-pink">
       <h2 className="label-text mb-10">What People Say</h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
         {endorsements.map((item, i) => {

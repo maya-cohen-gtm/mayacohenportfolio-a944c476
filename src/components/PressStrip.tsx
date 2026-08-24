@@ -31,7 +31,7 @@ const items = [
 const PressStrip = () => (
   <section
     id="press"
-    className="relative overflow-hidden section-x section-y border-t border-border"
+    className="relative overflow-hidden section-x section-y"
   >
     <h2 className="label-text space-kicker">Selected Press &amp; Recognition</h2>
 

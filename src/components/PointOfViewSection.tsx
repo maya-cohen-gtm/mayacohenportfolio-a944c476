@@ -26,7 +26,7 @@ const takes = [
 const PointOfViewSection = () => (
   <section
     id="point-of-view"
-    className="relative overflow-hidden section-x section-y border-t border-border accent-blue"
+    className="relative overflow-hidden section-x section-y accent-blue"
   >
 
     <h2 className="label-text space-kicker">Point of View</h2>
