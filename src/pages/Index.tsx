@@ -13,7 +13,9 @@ const Index = () => (
   <main className="bg-background min-h-screen">
     <NavBar />
     <HeroSection />
+    <div className="stripe-rule w-full" role="presentation" aria-hidden="true" />
     <LogoStrip />
+
     <StatsSection />
     <ActivationGrid />
     <HowIWorkSection />
