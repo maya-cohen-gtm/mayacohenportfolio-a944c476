@@ -46,7 +46,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, ease: [0.2, 0, 0, 1] }}
             className="type-display text-foreground space-title text-balance"
           >
-            Marissa Cohen
+            MARISSA COHEN, MBA
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -54,7 +54,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.08 }}
             className="mono-meta text-muted-foreground space-kicker"
           >
-            USC MBA, ENTERTAINMENT & DIGITAL MARKETING
+            ENTERTAINMENT + DIGITAL + CREATOR CAMPAIGNS
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 16 }}
