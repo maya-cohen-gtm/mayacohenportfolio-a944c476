@@ -33,7 +33,7 @@ const PressStrip = () => (
     id="press"
     className="relative overflow-hidden section-x section-y border-t border-border"
   >
-    <h2 className="label-text space-kicker">Selected Press &amp; Recognition</h2>
+    <h2 className="label-text rule-heading space-kicker">Selected Press &amp; Recognition</h2>
 
     <p className="type-lead text-muted-foreground max-w-2xl space-lead text-pretty">
       Campaigns I've worked on, as covered by the rooms that were watching.
@@ -47,7 +47,7 @@ const PressStrip = () => (
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: i * 0.05 }}
-          className={`surface-card accent-card p-6 ${accentFor(i)}`}
+          className={`surface-card accent-card card-tab p-6 ${accentFor(i)}`}
         >
           <p className="type-h3 text-foreground text-pretty">{item.outlet}</p>
           <p className="type-meta text-muted-foreground mt-2 text-pretty">
