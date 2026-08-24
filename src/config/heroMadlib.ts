@@ -35,7 +35,7 @@ const RAW_SLOTS: MadlibSlot[] = [
     nounClass: "bg-secondary",
   },
   {
-    verb: "amplify talent's real voice",
+    verb: "amplify authentic voices",
     verbClass: "bg-secondary",
     noun: "talent-led social.",
     nounClass: "bg-brand-blue text-primary-foreground",
