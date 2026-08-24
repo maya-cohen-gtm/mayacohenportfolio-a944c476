@@ -29,7 +29,7 @@ const PointOfViewSection = () => (
     className="relative overflow-hidden section-x section-y border-t border-border accent-blue"
   >
 
-    <h2 className="label-text space-kicker">Point of View</h2>
+    <h2 className="label-text rule-heading space-kicker">Point of View</h2>
 
     <motion.p
       initial={{ opacity: 0, y: 16 }}
@@ -55,7 +55,7 @@ const PointOfViewSection = () => (
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: i * 0.06 }}
-          className={`surface-card accent-card p-8 ${accentFor(i + 1)}`}
+          className={`surface-card accent-card card-tab p-8 ${accentFor(i + 1)}`}
         >
           <span className={`type-stat block mb-4 ${take.number === "03" ? "text-primary" : "accent-text"}`}>{take.number}</span>
           <h3 className="type-h3 text-foreground mb-4 text-pretty">{take.title}</h3>
