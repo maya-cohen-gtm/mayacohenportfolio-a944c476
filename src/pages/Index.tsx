@@ -14,7 +14,7 @@ const Index = () => (
     <NavBar />
     <HeroSection />
     <LogoStrip />
-    <div className="stripe-rule w-full" role="presentation" aria-hidden="true" />
+    
     <StatsSection />
 
     <ActivationGrid />
