@@ -21,7 +21,7 @@ const endorsements: Endorsement[] = [
     role: "Senior Consultant, EY; President of Graduate Women in Business (GWiB)",
   },
   {
-    quote: "Marissa's flavor of public speaking is unlike anything I've ever seen! I was blown away. She has all the makings of a confident and strategic thinker, but blends it with comedy. Marissa's presentations are an incredible portrayal of humor, persuasion, and strength.",
+    quote: "Marissa's flavor of public speaking is unlike anything I've ever seen! I was blown away. She has all the makings of a confident and strategic thinker, but blends it with comedy. Marissa's presentations are an incredible portrayal of humor, persuasion, and strength. I was so inspired by her ability to simultaneously captivate, inspire, and crack-up an entire audience. Marissa completely stands out.",
     name: "John Shehan",
     role: "Consultant, Deloitte",
   },
