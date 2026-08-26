@@ -83,9 +83,9 @@ const RAW_SLOTS: MadlibSlot[] = [
     nounClass: "bg-secondary",
   },
   {
-    verb: "make premium storytelling unmissable",
+    verb: "make premium content go viral",
     verbClass: "bg-secondary",
-    noun: "audiences who lean in and subscribe.",
+    noun: "massive global audiences.",
     nounClass: "bg-brand-green text-primary-foreground",
   },
 ];
