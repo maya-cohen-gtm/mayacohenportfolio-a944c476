@@ -12,7 +12,7 @@ const operatingModel = [
   {
     label: "Team",
     value: "Cross-functional pods",
-    detail: "Collaborated with Finance, Sales, Legal, and Product teams; briefed agencies and freelance editors on deadline.",
+    detail: "Collaborated with Finance, Sales, Legal, and Product teams, ensuring meetings are social and enjoyable. ",
   },
   {
     label: "Cadence",
