@@ -19,10 +19,11 @@ const stats: { value: string; label: ReactNode; valueClass?: string }[] = [
   { value: "1.3M", label: "Followers built on a talent-led TikTok channel during HBO's Barry finale" },
   {
     value: "$100,000",
+    valueClass: "text-brand-yellow",
     label: (
       <>
-        Writers' fund converted from{" "}
-        <strong className="font-bold accent-text">+9,000</strong> followers of audience growth
+        Humanitas Prize writers' fund converted from{" "}
+        <strong className="font-bold text-brand-yellow">+9,000</strong> followers of audience growth
       </>
     ),
   },
