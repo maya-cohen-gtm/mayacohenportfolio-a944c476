@@ -4,6 +4,8 @@ import headshot from "@/assets/headshot.jpg";
 import { Starburst } from "@/components/GenZGraphics";
 import { MADLIB_SLOTS as BIO_SLOTS, ROTATION_MS } from "@/config/heroMadlib";
 
+const HERO_VIDEO_ID = "okb_--K7p14";
+
 const HeroSection = () => {
   const [slotIndex, setSlotIndex] = useState(0);
   const [imageState, setImageState] = useState<"loading" | "loaded" | "error">("loading");
