@@ -15,7 +15,7 @@ const Index = () => (
     <NavBar />
     <HeroSection />
     <LogoStrip />
-    
+    <AudienceRouter />
     <StatsSection />
 
     <ActivationGrid />
