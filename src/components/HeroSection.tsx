@@ -4,8 +4,6 @@ import headshot from "@/assets/headshot.jpg";
 import { Starburst } from "@/components/GenZGraphics";
 import { MADLIB_SLOTS as BIO_SLOTS, ROTATION_MS } from "@/config/heroMadlib";
 
-const HERO_VIDEO_ID = "okb_--K7p14";
-
 const HeroSection = () => {
   const [slotIndex, setSlotIndex] = useState(0);
   const [imageState, setImageState] = useState<"loading" | "loaded" | "error">("loading");
@@ -126,51 +124,31 @@ const HeroSection = () => {
           className="justify-self-center lg:justify-self-end w-full max-w-sm"
         >
           <div className="relative overflow-hidden surface-card p-0">
-            <div className="relative w-full h-[22rem] md:h-[26rem] overflow-hidden bg-foreground">
-              <iframe
-                src={`https://www.youtube.com/embed/${HERO_VIDEO_ID}?autoplay=1&mute=1&loop=1&playlist=${HERO_VIDEO_ID}&controls=0&modestbranding=1&playsinline=1&rel=0&showinfo=0`}
-                title="Trolls: Holiday in Harmony — official trailer"
-                allow="autoplay; encrypted-media; picture-in-picture"
-                loading="lazy"
-                aria-hidden="true"
-                tabIndex={-1}
-                className="pointer-events-none absolute left-1/2 top-1/2 h-[120%] w-[240%] -translate-x-1/2 -translate-y-1/2 border-0"
-              />
-
-              <a
-                href={`https://www.youtube.com/watch?v=${HERO_VIDEO_ID}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group absolute inset-0 flex flex-col items-center justify-center gap-4 bg-foreground/25 transition-colors hover:bg-foreground/40"
+            {imageState !== "loaded" && (
+              <div
+                aria-hidden
+                className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-gradient-to-br from-secondary via-accent to-primary/60"
               >
-                <span className="flex h-16 w-16 items-center justify-center rounded-full border-4 border-background bg-primary transition-transform group-hover:scale-110">
-                  <svg viewBox="0 0 24 24" className="h-6 w-6 translate-x-0.5 fill-background" aria-hidden="true">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </span>
-                <span className="mono-meta text-background">Watch the trailer</span>
-              </a>
-            </div>
-
-            <div className="flex items-center gap-3 border-t-4 border-foreground bg-background p-3">
-              {imageState !== "error" && (
-                <img
-                  src={headshot}
-                  alt="Marissa Cohen, social media and executive communications marketer"
-                  loading="eager"
-                  decoding="async"
-                  onLoad={() => setImageState("loaded")}
-                  onError={() => setImageState("error")}
-                  className="h-12 w-12 shrink-0 border-2 border-foreground object-cover object-[center_20%]"
-                />
-              )}
-              {imageState === "error" && (
-                <Starburst className="h-12 w-12 shrink-0 text-foreground/70" />
-              )}
-              <span className="mono-meta text-muted-foreground leading-tight">
-                TROLLS: HOLIDAY IN HARMONY{"\n"}2.15M FIRST-WEEK VIEWERS
-              </span>
-            </div>
+                <Starburst className="w-14 h-14 text-foreground/70" />
+                {imageState === "error" && (
+                  <span className="type-cta text-foreground">Marissa Cohen</span>
+                )}
+              </div>
+            )}
+            {imageState !== "error" && (
+              <img
+                src={headshot}
+                alt="Marissa Cohen, social media and executive communications marketer"
+                loading="eager"
+                decoding="async"
+                onLoad={() => setImageState("loaded")}
+                onError={() => setImageState("error")}
+                className={`w-full h-[22rem] md:h-[26rem] object-cover object-[center_20%] transition-opacity duration-500 ${
+                  imageState === "loaded" ? "opacity-100" : "opacity-0"
+                }`}
+              />
+            )}
+            {imageState === "error" && <div className="w-full h-[22rem] md:h-[26rem]" />}
           </div>
 
         </motion.div>
