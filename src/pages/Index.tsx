@@ -1,6 +1,7 @@
 import NavBar from "@/components/NavBar";
 import HeroSection from "@/components/HeroSection";
 import LogoStrip from "@/components/LogoStrip";
+import AudienceRouter from "@/components/AudienceRouter";
 import StatsSection from "@/components/StatsSection";
 import ActivationGrid from "@/components/ActivationGrid";
 import HowIWorkSection from "@/components/HowIWorkSection";
